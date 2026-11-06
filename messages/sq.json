@@ -1,0 +1,947 @@
+{
+  "nav": {
+    "home": "Kreu",
+    "sameDay": "Dhëmbë në një ditë",
+    "sameDayOverview": "Përmbledhje",
+    "sameDayHow": "Si funksionon",
+    "sameDayCandidates": "Kush është kandidat",
+    "treatments": "Trajtimet",
+    "allTreatments": "Të gjitha trajtimet",
+    "clinic": "Klinika",
+    "drDede": "Dr. Donela Dede",
+    "team": "Ekipi",
+    "technology": "Teknologjia",
+    "laboratory": "Laboratori digjital",
+    "environment": "Ambienti",
+    "whyOneOfTwo": "Pse një nga dy",
+    "tourism": "Turizëm dentar",
+    "tourismHow": "Si funksionon",
+    "apartments": "Apartamentet",
+    "packages": "Paketat",
+    "travel": "Udhëtimi",
+    "discoverAlbania": "Zbulo Shqipërinë",
+    "faq": "Pyetje të shpeshta",
+    "results": "Rezultatet",
+    "beforeAfter": "Para dhe pas",
+    "patientStories": "Historitë e pacientëve",
+    "prices": "Çmimet",
+    "journal": "Artikuj",
+    "book": "Rezervo konsultë",
+    "contact": "Kontakt",
+    "thankYou": "Faleminderit",
+    "privacy": "Politika e privatësisë",
+    "cookies": "Politika e cookies",
+    "terms": "Kushtet e përdorimit",
+    "accessibility": "Aksesueshmëria",
+    "groups": {
+      "people": "Njerëzit",
+      "place": "Klinika jonë",
+      "plan": "Planifikoni",
+      "stay": "Qëndrimi",
+      "contact": "Kontakt"
+    },
+    "featured": {
+      "sameDay": {
+        "title": "Vini pa dhëmbë, largohuni me dhëmbë fiks",
+        "text": "Diagnozë 3D, kirurgji e udhëhequr dhe laboratori ynë digjital, të gjitha në një vend."
+      },
+      "clinic": {
+        "title": "Një nga vetëm dy klinikat në Shqipëri",
+        "text": "Pse dhëmbët e plotë në një ditë janë të mundur këtu."
+      },
+      "tourism": {
+        "title": "Qëndroni në apartamentet tona",
+        "text": "Akomodim për pacientët që udhëtojnë për trajtim."
+      }
+    },
+    "descriptions": {
+      "sameDayOverview": "Çfarë janë dhëmbët fiks në një ditë dhe pse ndryshojnë jetën.",
+      "sameDayHow": "Dita e trajtimit, hap pas hapi.",
+      "sameDayCandidates": "Një vetëkontroll i shpejtë para konsultës.",
+      "drDede": "Mjekja që drejton klinikën dhe kryen ndërhyrjet.",
+      "team": "Njerëzit që kujdesen për ju.",
+      "technology": "Tomografi 3D CBCT, skanim digjital dhe kirurgji e udhëhequr.",
+      "laboratory": "Ku dizajnohen dhe frezohen dhëmbët tuaj të rinj.",
+      "environment": "Një ambient i ndritshëm, i qetë dhe modern.",
+      "whyOneOfTwo": "Çfarë i bën të mundur këtu dhëmbët e plotë në një ditë.",
+      "tourismHow": "Nga mesazhi i parë deri te fluturimi për në shtëpi.",
+      "packages": "Trajtimi dhe qëndrimi në një plan të vetëm.",
+      "faq": "Përgjigje për pyetjet më të shpeshta.",
+      "apartments": "Apartamente private të rezervuara për pacientët tanë.",
+      "travel": "Fluturimet, mbërritja dhe këshilla praktike.",
+      "discoverAlbania": "Kthejeni trajtimin në një pushim të shkurtër.",
+      "beforeAfter": "Raste të ndara me pëlqimin e pacientëve.",
+      "patientStories": "Përvoja të treguara nga pacientët tanë."
+    }
+  },
+  "treatments": {
+    "categories": {
+      "implantology": "Implantologji",
+      "digital-implant": "Implantologji digjitale",
+      "aesthetic": "Estetikë dentare",
+      "general": "Stomatologji e përgjithshme"
+    },
+    "items": {
+      "single-implant": "Implant i vetëm",
+      "multiple-implants": "Implante të shumëfishta",
+      "all-on-4": "All-on-4",
+      "all-on-6": "All-on-6",
+      "replacing-old-bridges": "Zëvendësimi i urave të vjetra",
+      "bone-grafting-sinus-lift": "Grefë kockore dhe ngritje sinusi",
+      "3d-ct-scan": "Skaner 3D CT",
+      "digital-impressions": "Masa digjitale",
+      "guided-surgery": "Kirurgji e udhëhequr",
+      "digital-smile-design": "Dizajni digjital i buzëqeshjes",
+      "zirconia-crowns": "Kurora zirkoni",
+      "veneers": "Faceta",
+      "bridges": "Ura dentare",
+      "teeth-whitening": "Zbardhimi i dhëmbëve",
+      "endodontics": "Endodonti",
+      "oral-surgery": "Kirurgji orale",
+      "hygiene": "Higjienë dentare",
+      "children": "Stomatologji për fëmijë"
+    },
+    "categoryText": {
+      "implantology": "Nga një dhëmb i vetëm që mungon deri te harku i plotë: implante që duken, ndihen dhe funksionojnë si dhëmbë natyralë.",
+      "digital-implant": "Skanim 3D, masa digjitale dhe kirurgji e udhëhequr nga kompjuteri për trajtime të sakta dhe më të rehatshme.",
+      "aesthetic": "Zirkon, faceta dhe zbardhim të dizajnuara në laboratorin tonë për një buzëqeshje natyrale dhe të ndritshme.",
+      "general": "Endodonti, kirurgji orale, higjienë dhe kujdes i butë për pacientët më të vegjël."
+    },
+    "desc": {
+      "single-implant": "Një implant titani zëvendëson rrënjën që mungon dhe një kurorë e punuar në laboratorin tonë plotëson dhëmbin — pa prekur dhëmbët fqinjë.",
+      "multiple-implants": "Disa dhëmbë që mungojnë rikthehen mbi pak implante me kurora fikse ose urë, të planifikuara në 3D.",
+      "all-on-4": "Një hark i plotë fiks i mbështetur mbi katër implante. Në rastet e përshtatshme dhëmbët fiks të përkohshëm vendosen në të njëjtën ditë.",
+      "all-on-6": "Një hark i plotë fiks mbi gjashtë implante për mbështetje dhe stabilitet më të madh, ideal kur kocka e lejon.",
+      "replacing-old-bridges": "Urat e vjetra të dëmtuara ose joestetike hiqen dhe zëvendësohen me punime mbi implante që zgjasin.",
+      "bone-grafting-sinus-lift": "Kur kocka nuk mjafton, teknikat rigjeneruese rindërtojnë vëllimin e nevojshëm për të vendosur implantet në mënyrë të sigurt.",
+      "3d-ct-scan": "Tomografia 3D CBCT tregon në detaje kockën, nervat dhe sinuset — baza e çdo plani implantesh.",
+      "digital-impressions": "Skaneri intraoral zëvendëson pastën tradicionale të masave: i shpejtë, i saktë dhe i rehatshëm.",
+      "guided-surgery": "Implantet planifikohen në kompjuter dhe vendosen përmes një udhëzuesi kirurgjikal për saktësi dhe shërim më të shpejtë.",
+      "digital-smile-design": "Buzëqeshja e re dizajnohet digjitalisht në harmoni me fytyrën tuaj, që ta shihni rezultatin para trajtimit.",
+      "zirconia-crowns": "Kurora zirkoni të forta dhe pa metal, të dizajnuara dhe frezuara në laboratorin tonë për një pamje natyrale.",
+      "veneers": "Guaska të holla qeramike që korrigjojnë formën, ngjyrën dhe hapësirat e vogla me përgatitje minimale.",
+      "bridges": "Ura fikse që zëvendësojnë një ose më shumë dhëmbë, të punuara me saktësi në laboratorin tonë digjital.",
+      "teeth-whitening": "Zbardhim profesional që ndriçon buzëqeshjen në mënyrë të sigurt, nën mbikëqyrje klinike.",
+      "endodontics": "Mjekimi i kanaleve shpëton dhëmbin natyral dhe largon dhimbjen dhe infeksionin.",
+      "oral-surgery": "Heqje dhëmbësh, dhëmbë të pjekurisë dhe kirurgji e vogël orale të kryera me kujdes dhe saktësi.",
+      "hygiene": "Pastrim profesional dhe parandalim për t'i mbajtur mishrat dhe implantet të shëndetshëm për një kohë të gjatë.",
+      "children": "Kujdes i butë dhe i durueshëm që i ndihmon fëmijët të ndihen të sigurt te dentisti që në vizitën e parë."
+    },
+    "steps": {
+      "implantology": [
+        {
+          "title": "Konsultë dhe tomografi 3D",
+          "text": "Ju vizitojmë dhe bëjmë një tomografi 3D CBCT për të matur kockën dhe për të planifikuar me siguri."
+        },
+        {
+          "title": "Planifikim digjital",
+          "text": "Pozicioni i implanteve planifikohet në kompjuter së bashku me dhëmbët përfundimtarë."
+        },
+        {
+          "title": "Vendosja e implanteve",
+          "text": "Implantet vendosen me anestezi lokale, sipas planit."
+        },
+        {
+          "title": "Dhëmbë nga laboratori ynë",
+          "text": "Laboratori përgatit dhëmbët e përkohshëm dhe përfundimtarë dhe i përshtat me saktësi."
+        }
+      ],
+      "digital-implant": [
+        {
+          "title": "Skanimi",
+          "text": "Tomografia 3D dhe skaneri intraoral e regjistrojnë gojën digjitalisht, pa pastë masash."
+        },
+        {
+          "title": "Dizajni",
+          "text": "Trajtimi dhe dhëmbët e ardhshëm dizajnohen në ekran."
+        },
+        {
+          "title": "Udhëzuesi",
+          "text": "Një udhëzues kirurgjikal e transferon planin me saktësi në gojë."
+        },
+        {
+          "title": "Dorëzimi",
+          "text": "Punimet frezohen në klinikë dhe vendosen me rregullime minimale."
+        }
+      ],
+      "aesthetic": [
+        {
+          "title": "Analiza e buzëqeshjes",
+          "text": "Dëgjojmë dëshirat tuaja dhe studiojmë fytyrën, buzët dhe dhëmbët."
+        },
+        {
+          "title": "Dizajn digjital",
+          "text": "Forma dhe ngjyra dizajnohen digjitalisht dhe bien dakord me ju."
+        },
+        {
+          "title": "Punimi në laborator",
+          "text": "Punimet në zirkon ose qeramikë realizohen në laboratorin tonë."
+        },
+        {
+          "title": "Vendosja përfundimtare",
+          "text": "I përshtatim, i rafinojmë dhe i lustrojmë për një rezultat natyral dhe të qëndrueshëm."
+        }
+      ],
+      "general": [
+        {
+          "title": "Kontrolli",
+          "text": "Një vizitë e plotë me radiografi digjitale kur nevojitet."
+        },
+        {
+          "title": "Plan i qartë",
+          "text": "Shpjegojmë mundësitë dhe kostot para se të fillojmë."
+        },
+        {
+          "title": "Trajtim i butë",
+          "text": "Trajtimi kryhet në mënyrë të rehatshme, hap pas hapi."
+        },
+        {
+          "title": "Parandalimi",
+          "text": "Ju ndihmojmë ta ruani rezultatin me higjienë dhe kontrolle të rregullta."
+        }
+      ]
+    }
+  },
+  "ui": {
+    "skipToContent": "Kalo te përmbajtja",
+    "menu": "Menuja",
+    "openMenu": "Hap menunë",
+    "closeMenu": "Mbyll menunë",
+    "mainNavigation": "Navigimi kryesor",
+    "language": "Gjuha",
+    "whatsapp": "Na shkruani në WhatsApp",
+    "announcement": "Konsultë falas — na dërgoni ortopanoramikën tuaj dhe merrni një plan trajtimi personal.",
+    "breadcrumbs": "Ju jeni këtu",
+    "placeholder": "Përmbajtja e kësaj faqeje do të shtohet së shpejti.",
+    "backHome": "Kthehu në faqen kryesore",
+    "viewAll": "Shiko të gjitha",
+    "footerTagline": "Kujdes dentar i avancuar në Shqipëri: kirurgji orale, implantologji, endodonti dhe estetikë dentare, me laboratorin tonë digjital — nën drejtimin e Dr. Donela Dede.",
+    "rights": "Të gjitha të drejtat të rezervuara.",
+    "cookie": {
+      "text": "Ne përdorim cookies për të përmirësuar faqen.",
+      "accept": "Prano",
+      "reject": "Refuzo",
+      "more": "Më shumë"
+    },
+    "priceOnRequest": "Pas konsultës",
+    "learnMore": "Mëso më shumë",
+    "readMore": "Lexo më shumë",
+    "discover": "Zbulo",
+    "bookCta": "Rezervo një konsultë falas",
+    "whatsappCta": "Shkruaj në WhatsApp",
+    "step": "Hapi",
+    "before": "Para",
+    "after": "Pas",
+    "compare": "Krahasimi para dhe pas",
+    "compareSlider": "Lëvizni për të krahasuar para dhe pas",
+    "all": "Të gjitha",
+    "followUs": "Na ndiqni në Instagram",
+    "instagram": "Instagram",
+    "contactSoon": "Të dhënat e plota të kontaktit do të publikohen këtu së shpejti. Ndërkohë na shkruani përmes formularit.",
+    "address": "Adresa",
+    "phone": "Telefoni",
+    "email": "Email",
+    "hours": "Orari",
+    "openMap": "Hap në Google Maps",
+    "published": "Publikuar",
+    "backToJournal": "Kthehu te artikujt",
+    "relatedTreatments": "Trajtime të ngjashme",
+    "includes": "Çfarë përfshihet",
+    "photosSoon": "Galeria e fotove së shpejti",
+    "noResultsYet": "Raste të reja publikohen rregullisht, gjithmonë me pëlqimin me shkrim të pacientit.",
+    "noStoriesYet": "Historitë e pacientëve publikohen vetëm me pëlqimin e tyre. Ndërkohë, ndiqni punën tonë të përditshme në Instagram.",
+    "inThisCategory": "Në këtë kategori",
+    "howItWorks": "Si funksionon",
+    "otherCategories": "Fusha të tjera",
+    "minRead": "{minutes} min lexim",
+    "medicalNote": "Ky informacion është i përgjithshëm dhe nuk zëvendëson një vizitë klinike personale.",
+    "logoAlt": "Logoja e Albania Dental Clinic",
+    "photoBy": "Foto: Albania Dental Clinic",
+    "faqTitle": "Pyetje të shpeshta",
+    "resultsCount": "Raste",
+    "askQuestion": "Bëni një pyetje"
+  },
+  "pages": {
+    "home": {
+      "title": "Albania Dental Clinic — Dhëmbë në një ditë dhe implante",
+      "description": "Dhëmbë fiks në një ditë, implantologji dhe laborator digjital në klinikë. Një nga vetëm dy klinikat në Shqipëri me dhëmbë të plotë në një ditë. Dr. Donela Dede."
+    },
+    "sameDay": {
+      "title": "Dhëmbë në një ditë",
+      "description": "Vini pa dhëmbë, largohuni me dhëmbë fiks: dhëmbë të plotë mbi implante në një ditë, me diagnozë 3D, kirurgji të udhëhequr dhe laboratorin tonë."
+    },
+    "sameDayHow": {
+      "title": "Dhëmbë në një ditë: si funksionon",
+      "description": "Nga radiografia te dhëmbët fiks: gjashtë hapat e trajtimit në një ditë në Albania Dental Clinic."
+    },
+    "sameDayCandidates": {
+      "title": "Kush është kandidat për dhëmbë në një ditë",
+      "description": "Zbuloni nëse dhëmbët fiks mbi implante në një ditë janë për ju, me një vetëkontroll të shpejtë."
+    },
+    "treatments": {
+      "title": "Trajtimet",
+      "description": "Implantologji, implantologji digjitale, estetikë dhe stomatologji e përgjithshme në Albania Dental Clinic."
+    },
+    "clinic": {
+      "title": "Klinika",
+      "description": "Dr. Donela Dede, ekipi, teknologjia 3D dhe laboratori digjital në klinikë — të gjitha nën një çati."
+    },
+    "drDede": {
+      "title": "Dr. Donela Dede",
+      "description": "Dr. Donela Dede drejton Albania Dental Clinic: kirurgji orale, implantologji, endodonti dhe estetikë dentare."
+    },
+    "team": {
+      "title": "Ekipi",
+      "description": "Njihuni me mjekët, asistentët dhe teknikët dentarë të Albania Dental Clinic."
+    },
+    "technology": {
+      "title": "Teknologjia",
+      "description": "Tomografi 3D CBCT, skaner intraoral, radiografi digjitale, laborator CAD/CAM dhe kirurgji e udhëhequr."
+    },
+    "laboratory": {
+      "title": "Laboratori digjital",
+      "description": "Laboratori ynë CAD/CAM dizajnon dhe frezon dhëmbë zirkoni — edhe në ditën e ndërhyrjes."
+    },
+    "environment": {
+      "title": "Ambienti",
+      "description": "Një klinikë e ndritshme, e qetë dhe moderne ku të rriturit dhe fëmijët ndihen mirë."
+    },
+    "whyOneOfTwo": {
+      "title": "Pse një nga dy",
+      "description": "Pse Albania Dental Clinic është një nga vetëm dy klinikat në Shqipëri me dhëmbë të plotë në një ditë."
+    },
+    "tourism": {
+      "title": "Turizëm dentar",
+      "description": "Trajtim dentar në Shqipëri me plan personal dhe apartamentet e klinikës për pacientët."
+    },
+    "tourismHow": {
+      "title": "Turizëm dentar: si funksionon",
+      "description": "Pesë hapa nga dërgimi i radiografisë deri te kthimi në shtëpi me buzëqeshje të re."
+    },
+    "apartments": {
+      "title": "Apartamentet",
+      "description": "Apartamente private të rezervuara për pacientët e Albania Dental Clinic gjatë trajtimit."
+    },
+    "packages": {
+      "title": "Paketat",
+      "description": "Trajtimi dhe qëndrimi në një plan personal."
+    },
+    "travel": {
+      "title": "Udhëtimi",
+      "description": "Fluturimet, dokumentet, monedha dhe këshilla praktike për pacientët që udhëtojnë."
+    },
+    "discoverAlbania": {
+      "title": "Zbulo Shqipërinë",
+      "description": "Riviera, Berati, Gjirokastra, Butrinti dhe Tirana: kthejeni trajtimin në pushim."
+    },
+    "faq": {
+      "title": "Turizëm dentar: pyetje të shpeshta",
+      "description": "Përgjigje për dhëmbët në një ditë, udhëtimin për trajtim dhe çmimet."
+    },
+    "results": {
+      "title": "Rezultatet",
+      "description": "Raste para dhe pas dhe histori pacientësh, të ndara me pëlqim me shkrim."
+    },
+    "beforeAfter": {
+      "title": "Para dhe pas",
+      "description": "Krahasoni para dhe pas trajtimeve me implante dhe estetike në Albania Dental Clinic."
+    },
+    "patientStories": {
+      "title": "Historitë e pacientëve",
+      "description": "Përvoja të pacientëve të trajtuar në Albania Dental Clinic."
+    },
+    "prices": {
+      "title": "Çmimet",
+      "description": "Çmime transparente të konfirmuara me shkrim pas konsultës dhe skanimit 3D."
+    },
+    "journal": {
+      "title": "Artikuj",
+      "description": "Artikuj për implantet, dhëmbët në një ditë dhe turizmin dentar në Shqipëri."
+    },
+    "book": {
+      "title": "Rezervo një konsultë falas",
+      "description": "Dërgoni kërkesën dhe radiografinë për një vlerësim të parë falas dhe plan personal trajtimi."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Kontaktoni Albania Dental Clinic në shqip, italisht ose anglisht."
+    },
+    "thankYou": {
+      "title": "Faleminderit",
+      "description": "Kërkesa juaj u dërgua."
+    },
+    "privacy": {
+      "title": "Politika e privatësisë",
+      "description": "Si i përpunon Albania Dental Clinic të dhënat personale dhe shëndetësore."
+    },
+    "cookies": {
+      "title": "Politika e cookies",
+      "description": "Si i përdor kjo faqe cookies."
+    },
+    "terms": {
+      "title": "Kushtet e përdorimit",
+      "description": "Kushtet e përdorimit të faqes së Albania Dental Clinic."
+    },
+    "accessibility": {
+      "title": "Aksesueshmëria",
+      "description": "Angazhimi ynë për një faqe të aksesueshme."
+    },
+    "notFound": {
+      "title": "Faqja nuk u gjet",
+      "text": "Faqja që kërkoni nuk ekziston ose është zhvendosur."
+    }
+  },
+  "form": {
+    "name": "Emri dhe mbiemri",
+    "email": "Email",
+    "phone": "Telefoni / WhatsApp",
+    "country": "Shteti",
+    "interest": "Jam i interesuar për",
+    "interestOptions": {
+      "sameDay": "Dhëmbë në një ditë",
+      "implants": "Implante",
+      "aesthetic": "Estetikë dentare",
+      "general": "Stomatologji e përgjithshme",
+      "tourism": "Turizëm dentar dhe apartamente",
+      "other": "Tjetër"
+    },
+    "message": "Mesazhi",
+    "messagePlaceholder": "Na tregoni shkurt për situatën tuaj…",
+    "xray": "Ortopanoramikë ose tomografi (opsionale)",
+    "xrayHint": "JPG, PNG, WEBP ose PDF · maks. 10 MB",
+    "xrayChoose": "Zgjidhni një skedar",
+    "consent": "Pranoj që Albania Dental Clinic të përpunojë të dhënat e mia, përfshirë radiografitë, për t'iu përgjigjur kërkesës sime.",
+    "privacyLink": "Politika e privatësisë",
+    "submit": "Dërgo kërkesën",
+    "sending": "Duke dërguar…",
+    "required": "E detyrueshme",
+    "optional": "opsionale",
+    "errors": {
+      "generic": "Diçka nuk shkoi mirë. Provoni përsëri ose na shkruani në WhatsApp.",
+      "name": "Ju lutemi shkruani emrin tuaj.",
+      "contact": "Ju lutemi shkruani një email ose numër telefoni.",
+      "email": "Ju lutemi shkruani një adresë email të vlefshme.",
+      "consent": "Ju lutemi pranoni përpunimin e të dhënave.",
+      "xray": "Skedari duhet të jetë JPG, PNG, WEBP ose PDF dhe më pak se 10 MB."
+    },
+    "arrival": "Mbërritja",
+    "departure": "Largimi",
+    "guests": "Persona",
+    "apartmentTitle": "Kërkoni disponueshmërinë",
+    "apartmentText": "Na tregoni datat dhe do t'ju konfirmojmë disponueshmërinë së bashku me planin e trajtimit.",
+    "apartmentSubmit": "Kërko disponueshmërinë"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Albania Dental Clinic · Dr. Donela Dede",
+      "title": "Vini pa dhëmbë.",
+      "accent": "Largohuni me buzëqeshje.",
+      "text": "Dhëmbë fiks në një ditë, implantologji dhe laboratori ynë digjital — të gjitha në një vend, në një nga vetëm dy klinikat në Shqipëri që ofrojnë dhëmbë të plotë në një ditë.",
+      "primary": "Rezervo një konsultë falas",
+      "secondary": "Si funksionojnë dhëmbët në një ditë",
+      "badge": "Një nga vetëm dy klinikat në Shqipëri",
+      "imageAlt": "Dr. Donela Dede me një paciente në Albania Dental Clinic",
+      "scroll": "Lëviz"
+    },
+    "trust": [
+      "Dhëmbë fiks në një ditë",
+      "Diagnozë 3D CBCT",
+      "Laborator digjital në klinikë",
+      "Kirurgji implantesh e udhëhequr",
+      "Punime në zirkon",
+      "Apartamente për pacientët"
+    ],
+    "oneRoof": {
+      "eyebrow": "Gjithçka nën një çati",
+      "title": "Diagnoza, kirurgjia dhe laboratori në një vend të vetëm",
+      "text": "Shumë klinika e dërgojnë tomografinë në një qendër dhe masat në një laborator të jashtëm. Këtu çdo hap ndodh në të njëjtën ndërtesë — dhe kjo i bën të mundur dhëmbët e plotë në një ditë.",
+      "pillars": [
+        {
+          "title": "Diagnozë 3D",
+          "text": "Tomografia CBCT tregon kockën, nervat dhe sinuset në tre dimensione para çdo vendimi."
+        },
+        {
+          "title": "Kirurgji e udhëhequr",
+          "text": "Implantet planifikohen digjitalisht dhe vendosen me saktësi, për një ndërhyrje më të butë."
+        },
+        {
+          "title": "Laborator digjital",
+          "text": "Teknikët tanë i dizajnojnë dhe i frezojnë dhëmbët tuaj në klinikë, në zirkon dhe materiale cilësore."
+        },
+        {
+          "title": "Dorëzim në të njëjtën ditë",
+          "text": "Në rastet e përshtatshme largoheni nga klinika me dhëmbë fiks në ditën e ndërhyrjes."
+        }
+      ],
+      "cta": "Pse një nga dy"
+    },
+    "treatments": {
+      "eyebrow": "Trajtimet",
+      "title": "Nga një implant i vetëm deri te një buzëqeshje krejt e re",
+      "text": "Kirurgji orale, implantologji, endodonti dhe estetikë dentare — të planifikuara digjitalisht dhe të realizuara nga një ekip i vetëm.",
+      "cta": "Të gjitha trajtimet"
+    },
+    "results": {
+      "eyebrow": "Rezultatet",
+      "title": "Punë që duket",
+      "text": "Një urë e vjetër e zëvendësuar me një punim të ri mbi implante. E ndarë me pëlqimin e pacientit.",
+      "cta": "Shiko më shumë rezultate"
+    },
+    "team": {
+      "eyebrow": "Njihuni me mjeken",
+      "title": "Dr. Donela Dede",
+      "text": "Dr. Donela Dede drejton Albania Dental Clinic dhe ndjek personalisht çdo pacient — nga skanimi i parë 3D deri te buzëqeshja përfundimtare. Puna e saj përqendrohet në kirurgji orale, implantologji, endodonti dhe estetikë dentare.",
+      "cta": "Njihuni me Dr. Dede"
+    },
+    "environment": {
+      "eyebrow": "Klinika jonë",
+      "title": "E ndritshme, e qetë dhe plotësisht e pajisur",
+      "text": "Kabinete moderne, radiologji digjitale në klinikë dhe një ekip që merr kohë për të shpjeguar. Të rriturit dhe fëmijët ndihen mirë që në vizitën e parë.",
+      "cta": "Shiko klinikën"
+    },
+    "tourism": {
+      "eyebrow": "Turizëm dentar",
+      "title": "Trajtimi dhe qëndrimi juaj, të organizuara",
+      "text": "Po udhëtoni për trajtim? Ne i planifikojmë datat sipas ndërhyrjes dhe mund të qëndroni në apartamentet e vetë klinikës.",
+      "items": [
+        {
+          "title": "Plan personal",
+          "text": "Dërgoni radiografinë, merrni një plan dhe ditët që duhet të qëndroni."
+        },
+        {
+          "title": "Apartamentet tona",
+          "text": "Apartamente private të rezervuara për pacientët gjatë trajtimit."
+        },
+        {
+          "title": "Zbulo Shqipërinë",
+          "text": "Det, male dhe histori — kthejeni në një pushim të shkurtër."
+        }
+      ],
+      "cta": "Planifikoni vizitën"
+    },
+    "stories": {
+      "eyebrow": "Çdo ditë në klinikë",
+      "title": "Ndiqni punën tonë në Instagram",
+      "text": "Raste reale, skanime 3D, punime laboratori dhe buzëqeshjet e pacientëve tanë — çdo ditë.",
+      "cta": "Ndiq @albaniadental_clinic"
+    }
+  },
+  "sameDay": {
+    "eyebrow": "Dhëmbë në një ditë",
+    "intro": "Nëse keni humbur shumë ose të gjithë dhëmbët, ose dhëmbët tuaj nuk mund të shpëtohen më, mund të merrni një hark të plotë dhëmbësh fiks mbi implante — në një ditë të vetme.",
+    "what": {
+      "title": "Çfarë janë dhëmbët në një ditë?",
+      "text": "Një hark i plotë dhëmbësh fiks fiksohet mbi pak implante (zakonisht katër ose gjashtë, si në All-on-4 dhe All-on-6) menjëherë pas ndërhyrjes. Nuk kaloni muaj me protezë të lëvizshme: shkoni në shtëpi me dhëmbë fiks të përkohshëm dhe, pas shërimit, ata zëvendësohen me urën përfundimtare të punuar në laboratorin tonë."
+    },
+    "benefits": [
+      {
+        "title": "Fiks, jo të lëvizshëm",
+        "text": "Dhëmbët qëndrojnë në vend: pa ngjitës, pa lëvizje kur flisni ose buzëqeshni."
+      },
+      {
+        "title": "Një ditë ndërhyrjeje",
+        "text": "Heqja e dhëmbëve, implantet dhe dhëmbët fiks të përkohshëm në të njëjtin seancë."
+      },
+      {
+        "title": "Më pak udhëtime",
+        "text": "Ideale për pacientët nga jashtë falë laboratorit në klinikë."
+      },
+      {
+        "title": "Vetëbesimi kthehet",
+        "text": "Hani, flisni dhe buzëqeshni sërish me dhëmbë me pamje natyrale."
+      }
+    ],
+    "whyHere": {
+      "title": "Pse është e mundur këtu",
+      "text": "Dhëmbët në një ditë kërkojnë diagnozë 3D, kirurgji të saktë dhe një laborator që punojnë krah për krah, në të njëjtën ditë. Albania Dental Clinic i ka të treja nën një çati — dhe është një nga vetëm dy klinikat në Shqipëri që mund të ofrojë trajtimin e plotë."
+    },
+    "ctaHow": "Shiko ditën hap pas hapi",
+    "ctaCandidate": "A jam kandidat?"
+  },
+  "sameDayHow": {
+    "intro": "Një trajtim tipik në një ditë, nga kontakti i parë deri te buzëqeshja e re. Plani juaj konfirmohet pas skanimit 3D dhe konsultës.",
+    "steps": [
+      {
+        "title": "Kontakti i parë",
+        "text": "Na dërgoni një ortopanoramikë ose tomografi të fundit përmes formularit ose WhatsApp. Ju japim një mendim të parë dhe planifikojmë vizitën."
+      },
+      {
+        "title": "Konsultë dhe tomografi 3D CBCT",
+        "text": "Në klinikë ju vizitojmë dhe bëjmë një skanim 3D për të matur kockën dhe për të planifikuar pozicionin e implanteve."
+      },
+      {
+        "title": "Planifikim digjital",
+        "text": "Ndërhyrja dhe dhëmbët tuaj të rinj dizajnohen së bashku në kompjuter. Ju e shihni dhe e miratoni planin."
+      },
+      {
+        "title": "Ndërhyrja",
+        "text": "Me anestezi lokale hiqen dhëmbët e dëmtuar dhe vendosen implantet sipas planit."
+      },
+      {
+        "title": "Dhëmbë nga laboratori ynë",
+        "text": "Ndërsa pushoni, teknikët tanë përgatisin dhëmbët fiks të përkohshëm në laboratorin ngjitur."
+      },
+      {
+        "title": "Largoheni me dhëmbë fiks",
+        "text": "Po atë ditë dhëmbët fiksohen mbi implante. Pas shërimit zëvendësohen me urën përfundimtare."
+      }
+    ],
+    "note": "Ngarkimi i menjëhershëm është i mundur vetëm kur cilësia e kockës dhe shëndeti i përgjithshëm e lejojnë. Në të kundërt, do t'ju shpjegojmë qartë alternativën më të mirë."
+  },
+  "sameDayCandidates": {
+    "intro": "Shumica e të rriturve që kanë humbur shumë dhëmbë, ose dhëmbët e të cilëve nuk mund të shpëtohen, mund të trajtohen me dhëmbë fiks mbi implante. Përgjigjja përfundimtare vjen gjithmonë nga skanimi 3D dhe vizita klinike.",
+    "good": {
+      "title": "Mund të jeni kandidat i mirë nëse",
+      "items": [
+        "Mbani protezë të lëvizshme dhe dëshironi dhëmbë fiks",
+        "Shumë nga dhëmbët tuaj lëvizin, janë të thyer ose ju dhembin",
+        "Një urë e vjetër ose punim me implante nuk funksionon më",
+        "Ju kanë thënë që keni pak kockë (grefa kockore mund të ndihmojë)",
+        "Dëshironi të pakësoni numrin e udhëtimeve për trajtim"
+      ]
+    },
+    "evaluate": {
+      "title": "E vlerësojmë me kujdes nëse",
+      "items": [
+        "Keni diabet të pakontrolluar ose sëmundje të tjera serioze",
+        "Pini shumë duhan",
+        "Merrni ilaçe që ndikojnë te kocka (për shembull disa ilaçe për osteoporozën)",
+        "Po kryeni ose keni kryer së fundmi radioterapi në kokë dhe qafë"
+      ]
+    },
+    "check": {
+      "title": "Vetëkontroll i shpejtë",
+      "intro": "Katër pyetje, një minutë. Kjo nuk është diagnozë — thjesht na ndihmon të përgatisim konsultën tuaj.",
+      "questions": [
+        {
+          "q": "Sa dhëmbë natyralë ju mungojnë?",
+          "options": [
+            "Pak",
+            "Shumë",
+            "Të gjithë ose pothuajse të gjithë"
+          ]
+        },
+        {
+          "q": "A mbani aktualisht protezë të lëvizshme?",
+          "options": [
+            "Po",
+            "Jo"
+          ]
+        },
+        {
+          "q": "A keni një ortopanoramikë ose tomografi të fundit?",
+          "options": [
+            "Po",
+            "Jo"
+          ]
+        },
+        {
+          "q": "A do të udhëtonit drejt klinikës për trajtim?",
+          "options": [
+            "Jetoj afër",
+            "Po",
+            "Ende nuk e di"
+          ]
+        }
+      ],
+      "progress": "Pyetja {current} nga {total}",
+      "resultTitle": "Faleminderit — le të flasim",
+      "resultText": "Sipas përgjigjeve tuaja, një konsultë falas është hapi i duhur. Na dërgoni radiografinë nëse e keni dhe do të përgatisim një plan personal.",
+      "resultNoXray": "Nuk keni ende radiografi? Asnjë problem — e bëjmë skanimin 3D në klinikë.",
+      "restart": "Fillo përsëri",
+      "back": "Mbrapa"
+    }
+  },
+  "treatmentsPage": {
+    "intro": "Çdo trajtim fillon me dëgjim dhe një diagnozë të saktë. Më pas planifikojmë digjitalisht dhe e realizojmë punën me ekipin dhe laboratorin tonë.",
+    "categoryIntro": "Zgjidhni një trajtim për të lexuar si funksionon."
+  },
+  "clinicPage": {
+    "intro": "Një klinikë e ndërtuar mbi një ide: diagnoza, kirurgjia dhe laboratori që punojnë së bashku, për trajtime të sakta, më të shpejta dhe më të rehatshme."
+  },
+  "drDede": {
+    "eyebrow": "Drejtuese e klinikës",
+    "intro": "Dr. Donela Dede drejton Albania Dental Clinic dhe është kirurgia që qëndron pas trajtimeve të dhëmbëve në një ditë.",
+    "specialtiesTitle": "Fushat e punës",
+    "approachTitle": "Qasja e saj",
+    "approach": [
+      {
+        "title": "Fillimisht dëgjimi",
+        "text": "Çdo plan fillon duke kuptuar çfarë dëshiron dhe nga çfarë frikësohet pacienti."
+      },
+      {
+        "title": "Saktësia",
+        "text": "Diagnozë 3D dhe planifikim digjital para çdo implanti."
+      },
+      {
+        "title": "Një ekip i vetëm",
+        "text": "Kirurgjia dhe laboratori në kontakt të vazhdueshëm, nën mbikëqyrjen e saj të drejtpërdrejtë."
+      }
+    ],
+    "imageAlt": "Dr. Donela Dede në Albania Dental Clinic"
+  },
+  "teamPage": {
+    "intro": "Pas çdo buzëqeshjeje qëndron një ekip: mjekë, asistentë dhe teknikë dentarë që punojnë krah për krah në të njëjtën klinikë.",
+    "comingSoon": "Profilet e të gjithë ekipit do të publikohen së shpejti."
+  },
+  "technologyPage": {
+    "intro": "Këtu teknologjia nuk është luks — është ajo që lejon diagnozë të saktë, kirurgji më të butë dhe dhëmbë gati në të njëjtën ditë."
+  },
+  "laboratoryPage": {
+    "intro": "Laboratori ynë digjital është zemra e klinikës. Dhëmbët dizajnohen dhe frezohen disa hapa larg kabinetit.",
+    "points": [
+      {
+        "title": "Dizajn CAD/CAM",
+        "text": "Punimet dizajnohen në ekran nga skanimet digjitale të gojës suaj."
+      },
+      {
+        "title": "Frezimi i zirkonit",
+        "text": "Kurorat dhe urat frezohen nga blloqe zirkoni me cilësi të lartë."
+      },
+      {
+        "title": "Rregullime në pak minuta",
+        "text": "Tekniku mund ta përsosë formën dhe ngjyrën gjatë vizitës suaj."
+      },
+      {
+        "title": "Dhëmbë në një ditë",
+        "text": "Dhëmbët fiks të përkohshëm përgatiten në ditën e ndërhyrjes."
+      }
+    ],
+    "imageAlt": "Urë zirkoni e frezuar në laboratorin e klinikës"
+  },
+  "environmentPage": {
+    "intro": "Një ambient i ndritshëm dhe i qetë, i menduar që të rriturit dhe fëmijët të ndihen mirë.",
+    "gallery": {
+      "room": "Kabineti i trajtimit",
+      "children": "Pacientët tanë më të vegjël",
+      "doctor": "Dr. Donela Dede me një paciente",
+      "cbct": "Tomografi 3D CBCT në klinikë"
+    }
+  },
+  "whyPage": {
+    "intro": "Dhëmbët e plotë në një ditë kërkojnë tre gjëra në të njëjtën ditë dhe në të njëjtin vend. Pak klinika i kanë të treja.",
+    "reasons": [
+      {
+        "title": "Diagnozë 3D në klinikë",
+        "text": "Një skaner CBCT në klinikë: pa qendra të jashtme, pa pritje për rezultatet."
+      },
+      {
+        "title": "Përvojë kirurgjikale",
+        "text": "Kirurgji orale dhe implantologji të kryera nga Dr. Dede, me planifikim digjital."
+      },
+      {
+        "title": "Laboratori ynë",
+        "text": "Dhëmbët dizajnohen dhe prodhohen në klinikë, ndërsa pacienti është ende aty."
+      },
+      {
+        "title": "Një ekip i koordinuar",
+        "text": "Mjekja, asistentët dhe teknikët ndjekin një plan të vetëm, nga skanimi te buzëqeshja."
+      }
+    ],
+    "closing": "Prandaj Albania Dental Clinic është një nga vetëm dy klinikat në Shqipëri që mund të ofrojnë dhëmbë të plotë në një ditë."
+  },
+  "tourismPage": {
+    "intro": "Pacientët vijnë nga e gjithë Shqipëria dhe nga jashtë. Ne e organizojmë trajtimin dhe qëndrimin së bashku, që ju të mendoni vetëm për buzëqeshjen e re."
+  },
+  "tourismHow": {
+    "intro": "Pesë hapa të thjeshtë nga mesazhi i parë deri te fluturimi për në shtëpi.",
+    "steps": [
+      {
+        "title": "Dërgoni radiografinë",
+        "text": "Përmes formularit ose WhatsApp, me disa fjalë për situatën tuaj."
+      },
+      {
+        "title": "Merrni planin",
+        "text": "Ju propozojmë një plan trajtimi, ditët e nevojshme dhe një preventiv."
+      },
+      {
+        "title": "Rezervoni datat dhe qëndrimin",
+        "text": "Zgjidhni datat; mund t'ju rezervojmë një nga apartamentet tona."
+      },
+      {
+        "title": "Trajtimi",
+        "text": "Skanim 3D, ndërhyrje dhe dhëmbë nga laboratori ynë, sipas planit."
+      },
+      {
+        "title": "Kthimi dhe kontrollet",
+        "text": "Ktheheni në shtëpi me udhëzime të qarta; qëndrojmë në kontakt për kontrollet."
+      }
+    ]
+  },
+  "packagesPage": {
+    "intro": "Trajtim dhe akomodim së bashku. Çdo paketë personalizohet pas radiografisë ose skanimit 3D.",
+    "note": "Çmimet varen nga rasti juaj dhe konfirmohen me shkrim pas konsultës."
+  },
+  "apartmentsPage": {
+    "intro": "Apartamentet e klinikës janë të rezervuara për pacientët gjatë trajtimit — një vend i qetë për të pushuar mes takimeve.",
+    "formTitle": "Rezervoni konsultën dhe qëndrimin",
+    "formText": "Apartamentet tona nuk jepen me qira ditore — janë të rezervuara për pacientët gjatë trajtimit. Dërgoni kërkesën dhe, nëse e keni, radiografinë: ne e planifikojmë së bashku trajtimin dhe qëndrimin tuaj."
+  },
+  "travelPage": {
+    "intro": "Informacion praktik për të planifikuar udhëtimin.",
+    "sections": [
+      {
+        "title": "Fluturimet",
+        "text": "Aeroporti Ndërkombëtar i Tiranës (TIA) ka fluturime direkte nga shumë qytete italiane dhe evropiane. Takimet i planifikojmë sipas mbërritjes dhe largimit tuaj."
+      },
+      {
+        "title": "Dokumentet",
+        "text": "Shtetasit e shumë vendeve evropiane mund të hyjnë në Shqipëri me kartë identiteti ose pasaportë të vlefshme. Kontrolloni rregullat aktuale për vendin tuaj para udhëtimit."
+      },
+      {
+        "title": "Paratë",
+        "text": "Monedha vendase është leku shqiptar (ALL). Kartat pranohen gjerësisht në qytete dhe euro pranohet shpesh në zonat turistike."
+      },
+      {
+        "title": "Gjuha",
+        "text": "Komunikojmë me pacientët në shqip, italisht dhe anglisht."
+      }
+    ]
+  },
+  "discoverPage": {
+    "intro": "Mes takimeve, Shqipëria ka shumë për të ofruar: det, male, histori dhe ushqim të shkëlqyer.",
+    "places": [
+      {
+        "title": "Riviera shqiptare",
+        "text": "Ujë kristal dhe plazhe nga Vlora deri në Dhërmi, Himarë dhe Ksamil."
+      },
+      {
+        "title": "Berati dhe Gjirokastra",
+        "text": "Dy qytete të UNESCO-s me shtëpi guri dhe trashëgimi osmane."
+      },
+      {
+        "title": "Butrinti",
+        "text": "Një park arkeologjik me rrënoja greke, romake dhe veneciane në mes të natyrës."
+      },
+      {
+        "title": "Tirana",
+        "text": "Një kryeqytet plot jetë me rrugë shumëngjyrëshe, kafene, muze dhe malin e Dajtit."
+      }
+    ],
+    "note": "Këshilla jonë: vizitoni para ndërhyrjes dhe pushoni pas saj."
+  },
+  "faqPage": {
+    "intro": "Përgjigje për pyetjet që na bëni më shpesh. Nuk e gjeni tuajën? Na shkruani.",
+    "topics": {
+      "same-day": "Dhëmbë në një ditë",
+      "treatments": "Trajtimet",
+      "tourism": "Udhëtimi për trajtim",
+      "prices": "Çmimet",
+      "general": "Të përgjithshme"
+    }
+  },
+  "resultsPage": {
+    "intro": "Rezultatet flasin më shumë se fjalët. Këtu ndajmë raste dhe histori — gjithmonë me pëlqimin me shkrim të pacientit."
+  },
+  "beforeAfterPage": {
+    "intro": "Lëvizni rrëshqitësin për të krahasuar para dhe pas. Çdo rast publikohet me pëlqimin me shkrim të pacientit."
+  },
+  "storiesPage": {
+    "intro": "Përvoja e pacientëve tanë, me fjalët e tyre."
+  },
+  "pricesPage": {
+    "intro": "Çdo gojë është e ndryshme, prandaj çmimet e sakta i japim vetëm pas një vizite klinike dhe skanimi 3D. Preventivi me shkrim përfshin çdo hap, pa surpriza.",
+    "treatment": "Trajtimi",
+    "price": "Çmimi",
+    "note": "Na dërgoni ortopanoramikën për një vlerësim të parë falas."
+  },
+  "journalPage": {
+    "intro": "Artikuj të qartë për implantet, dhëmbët në një ditë dhe turizmin dentar në Shqipëri."
+  },
+  "bookPage": {
+    "intro": "Na tregoni për situatën tuaj. Nëse keni një ortopanoramikë ose tomografi të fundit, bashkëngjiteni — do t'ju përgjigjemi me një vlerësim të parë.",
+    "nextTitle": "Çfarë ndodh më pas",
+    "next": [
+      "Shqyrtojmë kërkesën dhe radiografinë tuaj",
+      "Ju kontaktojmë me telefon, WhatsApp ose email",
+      "Bien dakord për datën e konsultës dhe, nëse duhet, qëndrimin"
+    ]
+  },
+  "contactPage": {
+    "intro": "Jemi të lumtur t'u përgjigjemi pyetjeve tuaja në shqip, italisht ose anglisht."
+  },
+  "thankYouPage": {
+    "text": "Faleminderit, kërkesa juaj u dërgua. Do t'ju kontaktojmë sa më shpejt.",
+    "next": "Ndërkohë, mësoni më shumë për dhëmbët në një ditë."
+  },
+  "legal": {
+    "updated": "Përditësuar së fundmi: nëntor 2026",
+    "draftNote": "Ky tekst është draft dhe do të rishikohet nga klinika para publikimit.",
+    "privacy": [
+      {
+        "title": "Kush jemi",
+        "text": "Albania Dental Clinic, nën drejtimin e Dr. Donela Dede, është përgjegjëse për të dhënat personale të mbledhura përmes kësaj faqeje."
+      },
+      {
+        "title": "Çfarë të dhënash mbledhim",
+        "text": "Kur dërgoni një kërkesë mbledhim emrin, të dhënat e kontaktit, mesazhin tuaj dhe, nëse zgjidhni t'i bashkëngjitni, radiografi ose imazhe të tjera mjekësore."
+      },
+      {
+        "title": "Pse i përdorim",
+        "text": "Vetëm për t'iu përgjigjur kërkesës, për të përgatitur një plan trajtimi dhe për të organizuar vizitën. Nuk i shesim të dhënat tuaja dhe nuk i përdorim për marketing të palidhur."
+      },
+      {
+        "title": "Të dhënat shëndetësore",
+        "text": "Radiografitë dhe informacioni klinik janë të dhëna shëndetësore. Përpunohen me pëlqimin tuaj të shprehur, aksesohen vetëm nga stafi klinik dhe mbrohen me masa sigurie të përshtatshme."
+      },
+      {
+        "title": "Sa kohë i ruajmë",
+        "text": "Kërkesat që nuk çojnë në trajtim fshihen pas një periudhe të arsyeshme. Kartelat klinike ruhen për periudhën e kërkuar nga ligji."
+      },
+      {
+        "title": "Të drejtat tuaja",
+        "text": "Mund të kërkoni qasje, korrigjim ose fshirje të të dhënave, ose ta tërhiqni pëlqimin në çdo kohë, duke i shkruar klinikës."
+      }
+    ],
+    "cookies": [
+      {
+        "title": "Çfarë janë cookies",
+        "text": "Cookies janë skedarë të vegjël që ruhen nga shfletuesi dhe ndihmojnë një faqe të funksionojë dhe të kujtojë zgjedhjet tuaja."
+      },
+      {
+        "title": "Cookies të nevojshme",
+        "text": "Përdorim vetëm ato që nevojiten për funksionimin e faqes, si kujtimi i gjuhës dhe i zgjedhjes suaj për cookies."
+      },
+      {
+        "title": "Statistikat",
+        "text": "Cookies statistikore ose marketingu përdoren vetëm nëse i pranoni në banerin e cookies."
+      },
+      {
+        "title": "Ndryshimi i zgjedhjes",
+        "text": "Mund t'i fshini cookies nga cilësimet e shfletuesit në çdo kohë; baneri do të shfaqet përsëri."
+      }
+    ],
+    "terms": [
+      {
+        "title": "Vetëm informacion",
+        "text": "Përmbajtja e kësaj faqeje është informacion i përgjithshëm dhe nuk zëvendëson një vizitë klinike te dentisti."
+      },
+      {
+        "title": "Çmimet dhe planet",
+        "text": "Planet e trajtimit dhe çmimet janë personale dhe bëhen detyruese vetëm me një preventiv me shkrim pas konsultës."
+      },
+      {
+        "title": "Rezultatet",
+        "text": "Rezultatet e treguara janë raste individuale; rezultatet ndryshojnë nga pacienti te pacienti."
+      },
+      {
+        "title": "Pronësia intelektuale",
+        "text": "Tekstet, fotografitë dhe logoja i përkasin Albania Dental Clinic dhe nuk mund të ripërdoren pa leje."
+      }
+    ],
+    "accessibility": [
+      {
+        "title": "Angazhimi ynë",
+        "text": "Duam që kjo faqe të jetë e përdorshme nga të gjithë dhe ndjekim udhëzimet WCAG 2.1 AA."
+      },
+      {
+        "title": "Çfarë bëjmë",
+        "text": "Navigim me tastierë, fokus i dukshëm, tekste alternative për imazhet, kontrast i mjaftueshëm i ngjyrave dhe respektim i cilësimeve për lëvizje të reduktuar."
+      },
+      {
+        "title": "Komente",
+        "text": "Nëse diçka është e vështirë për t'u përdorur, na njoftoni përmes faqes së kontaktit dhe do ta rregullojmë."
+      }
+    ]
+  }
+}

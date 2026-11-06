@@ -1,0 +1,947 @@
+{
+  "nav": {
+    "home": "Home",
+    "sameDay": "Denti in un giorno",
+    "sameDayOverview": "Panoramica",
+    "sameDayHow": "Come funziona",
+    "sameDayCandidates": "Chi è candidato",
+    "treatments": "Trattamenti",
+    "allTreatments": "Tutti i trattamenti",
+    "clinic": "La clinica",
+    "drDede": "Dr.ssa Donela Dede",
+    "team": "Il team",
+    "technology": "Tecnologia",
+    "laboratory": "Laboratorio digitale",
+    "environment": "L'ambiente",
+    "whyOneOfTwo": "Perché una delle due",
+    "tourism": "Turismo dentale",
+    "tourismHow": "Come funziona",
+    "apartments": "Appartamenti",
+    "packages": "Pacchetti",
+    "travel": "Il viaggio",
+    "discoverAlbania": "Scopri l'Albania",
+    "faq": "Domande frequenti",
+    "results": "Risultati",
+    "beforeAfter": "Prima e dopo",
+    "patientStories": "Storie dei pazienti",
+    "prices": "Prezzi",
+    "journal": "Journal",
+    "book": "Prenota consulenza",
+    "contact": "Contatti",
+    "thankYou": "Grazie",
+    "privacy": "Informativa privacy",
+    "cookies": "Cookie policy",
+    "terms": "Termini e condizioni",
+    "accessibility": "Accessibilità",
+    "groups": {
+      "people": "Le persone",
+      "place": "La nostra clinica",
+      "plan": "Pianifica",
+      "stay": "Il soggiorno",
+      "contact": "Contatti"
+    },
+    "featured": {
+      "sameDay": {
+        "title": "Arrivi senza denti, esci con denti fissi",
+        "text": "Diagnosi 3D, chirurgia guidata e il nostro laboratorio digitale, tutto in un unico luogo."
+      },
+      "clinic": {
+        "title": "Una delle sole due cliniche in Albania",
+        "text": "Perché qui sono possibili denti completi in un giorno."
+      },
+      "tourism": {
+        "title": "Soggiorna nei nostri appartamenti",
+        "text": "Alloggio per i pazienti che viaggiano per le cure."
+      }
+    },
+    "descriptions": {
+      "sameDayOverview": "Cosa sono i denti fissi in un giorno e perché cambiano la vita.",
+      "sameDayHow": "La giornata del trattamento, passo dopo passo.",
+      "sameDayCandidates": "Un rapido autotest prima della consulenza.",
+      "drDede": "La dottoressa che guida la clinica ed esegue la chirurgia.",
+      "team": "Le persone che si prendono cura di te.",
+      "technology": "TAC 3D CBCT, scansione digitale e chirurgia guidata.",
+      "laboratory": "Dove i tuoi nuovi denti vengono progettati e fresati.",
+      "environment": "Un luogo luminoso, tranquillo e moderno.",
+      "whyOneOfTwo": "Cosa rende possibili qui i denti completi in un giorno.",
+      "tourismHow": "Dal primo messaggio al volo di ritorno.",
+      "packages": "Cure e soggiorno in un unico piano.",
+      "faq": "Le risposte alle domande più frequenti.",
+      "apartments": "Appartamenti privati riservati ai nostri pazienti.",
+      "travel": "Voli, arrivo e consigli pratici.",
+      "discoverAlbania": "Trasforma le cure in una breve vacanza.",
+      "beforeAfter": "Casi condivisi con il consenso dei pazienti.",
+      "patientStories": "Esperienze raccontate dai nostri pazienti."
+    }
+  },
+  "treatments": {
+    "categories": {
+      "implantology": "Implantologia",
+      "digital-implant": "Implantologia digitale",
+      "aesthetic": "Estetica dentale",
+      "general": "Odontoiatria generale"
+    },
+    "items": {
+      "single-implant": "Impianto singolo",
+      "multiple-implants": "Impianti multipli",
+      "all-on-4": "All-on-4",
+      "all-on-6": "All-on-6",
+      "replacing-old-bridges": "Sostituzione di vecchi ponti",
+      "bone-grafting-sinus-lift": "Innesto osseo e rialzo del seno",
+      "3d-ct-scan": "TAC 3D",
+      "digital-impressions": "Impronte digitali",
+      "guided-surgery": "Chirurgia guidata",
+      "digital-smile-design": "Digital Smile Design",
+      "zirconia-crowns": "Corone in zirconia",
+      "veneers": "Faccette",
+      "bridges": "Ponti dentali",
+      "teeth-whitening": "Sbiancamento dentale",
+      "endodontics": "Endodonzia",
+      "oral-surgery": "Chirurgia orale",
+      "hygiene": "Igiene dentale",
+      "children": "Odontoiatria pediatrica"
+    },
+    "categoryText": {
+      "implantology": "Da un singolo dente mancante all'arcata completa: impianti che sembrano, si sentono e funzionano come denti naturali.",
+      "digital-implant": "TAC 3D, impronte digitali e chirurgia guidata dal computer per cure precise e più confortevoli.",
+      "aesthetic": "Zirconia, faccette e sbiancamento progettati nel nostro laboratorio per un sorriso naturale e luminoso.",
+      "general": "Endodonzia, chirurgia orale, igiene e cure delicate per i più piccoli."
+    },
+    "desc": {
+      "single-implant": "Un impianto in titanio sostituisce la radice mancante e una corona realizzata nel nostro laboratorio completa il dente, senza toccare i denti vicini.",
+      "multiple-implants": "Più denti mancanti vengono ripristinati su pochi impianti con corone fisse o un ponte, pianificati in 3D.",
+      "all-on-4": "Un'arcata fissa completa sostenuta da quattro impianti. Nei casi idonei i denti provvisori fissi vengono applicati lo stesso giorno.",
+      "all-on-6": "Un'arcata fissa completa su sei impianti per maggiore supporto e stabilità, ideale quando il volume osseo lo consente.",
+      "replacing-old-bridges": "Vecchi ponti danneggiati o antiestetici vengono rimossi e sostituiti con restauri su impianti duraturi.",
+      "bone-grafting-sinus-lift": "Quando l'osso è insufficiente, tecniche rigenerative ricostruiscono il volume necessario per inserire gli impianti in sicurezza.",
+      "3d-ct-scan": "Una TAC 3D CBCT mostra in dettaglio osso, nervi e seni mascellari: la base di ogni piano implantare.",
+      "digital-impressions": "Lo scanner intraorale sostituisce la pasta per impronte tradizionale: veloce, preciso e confortevole.",
+      "guided-surgery": "Gli impianti vengono pianificati al computer e inseriti tramite una guida chirurgica per precisione e guarigione più rapida.",
+      "digital-smile-design": "Il nuovo sorriso viene progettato digitalmente in armonia con il viso, così vedi il risultato prima delle cure.",
+      "zirconia-crowns": "Corone in zirconia resistenti e senza metallo, progettate e fresate nel nostro laboratorio per un aspetto naturale.",
+      "veneers": "Sottili gusci in ceramica che correggono forma, colore e piccoli spazi con una preparazione minima.",
+      "bridges": "Ponti fissi che sostituiscono uno o più denti, realizzati con precisione nel nostro laboratorio digitale.",
+      "teeth-whitening": "Sbiancamento professionale che illumina il sorriso in sicurezza, sotto controllo clinico.",
+      "endodontics": "La cura canalare salva il dente naturale ed elimina dolore e infezione.",
+      "oral-surgery": "Estrazioni, denti del giudizio e piccola chirurgia orale eseguite con cura e precisione.",
+      "hygiene": "Pulizia professionale e prevenzione per mantenere sani gengive e impianti nel tempo.",
+      "children": "Cure delicate e pazienti che aiutano i bambini a sentirsi al sicuro dal dentista fin dalla prima visita."
+    },
+    "steps": {
+      "implantology": [
+        {
+          "title": "Visita e TAC 3D",
+          "text": "Ti visitiamo ed eseguiamo una TAC 3D CBCT per misurare l'osso e pianificare in sicurezza."
+        },
+        {
+          "title": "Pianificazione digitale",
+          "text": "La posizione degli impianti viene pianificata al computer insieme ai denti definitivi."
+        },
+        {
+          "title": "Inserimento degli impianti",
+          "text": "Gli impianti vengono inseriti in anestesia locale, seguendo il piano."
+        },
+        {
+          "title": "Denti dal nostro laboratorio",
+          "text": "Il laboratorio realizza i denti provvisori e definitivi e li adatta con precisione."
+        }
+      ],
+      "digital-implant": [
+        {
+          "title": "Scansione",
+          "text": "TAC 3D e scanner intraorale acquisiscono la bocca in digitale, senza pasta per impronte."
+        },
+        {
+          "title": "Progettazione",
+          "text": "Il trattamento e i futuri denti vengono progettati sullo schermo."
+        },
+        {
+          "title": "Guida",
+          "text": "Una guida chirurgica trasferisce il piano con precisione nella bocca."
+        },
+        {
+          "title": "Consegna",
+          "text": "I restauri vengono fresati internamente e applicati con ritocchi minimi."
+        }
+      ],
+      "aesthetic": [
+        {
+          "title": "Analisi del sorriso",
+          "text": "Ascoltiamo i tuoi desideri e studiamo viso, labbra e denti."
+        },
+        {
+          "title": "Progetto digitale",
+          "text": "Forma e colore vengono progettati digitalmente e concordati con te."
+        },
+        {
+          "title": "Lavorazione in laboratorio",
+          "text": "I restauri in zirconia o ceramica vengono realizzati nel nostro laboratorio."
+        },
+        {
+          "title": "Applicazione finale",
+          "text": "Adattiamo, rifiniamo e lucidiamo per un risultato naturale e duraturo."
+        }
+      ],
+      "general": [
+        {
+          "title": "Controllo",
+          "text": "Una visita completa con radiografie digitali quando necessarie."
+        },
+        {
+          "title": "Piano chiaro",
+          "text": "Spieghiamo le opzioni e i costi prima di iniziare."
+        },
+        {
+          "title": "Cure delicate",
+          "text": "Il trattamento si svolge in modo confortevole, passo dopo passo."
+        },
+        {
+          "title": "Prevenzione",
+          "text": "Ti aiutiamo a mantenere il risultato con igiene e controlli regolari."
+        }
+      ]
+    }
+  },
+  "ui": {
+    "skipToContent": "Vai al contenuto",
+    "menu": "Menu",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu",
+    "mainNavigation": "Navigazione principale",
+    "language": "Lingua",
+    "whatsapp": "Scrivici su WhatsApp",
+    "announcement": "Consulenza gratuita — inviaci la tua panoramica e ricevi un piano di cura personalizzato.",
+    "breadcrumbs": "Sei qui",
+    "placeholder": "Il contenuto di questa pagina sarà aggiunto a breve.",
+    "backHome": "Torna alla home",
+    "viewAll": "Vedi tutto",
+    "footerTagline": "Odontoiatria avanzata in Albania: chirurgia orale, implantologia, endodonzia ed estetica dentale, con il nostro laboratorio digitale — guidata dalla Dr.ssa Donela Dede.",
+    "rights": "Tutti i diritti riservati.",
+    "cookie": {
+      "text": "Usiamo i cookie per migliorare il sito.",
+      "accept": "Accetta",
+      "reject": "Rifiuta",
+      "more": "Scopri di più"
+    },
+    "priceOnRequest": "Dopo la consulenza",
+    "learnMore": "Scopri di più",
+    "readMore": "Leggi di più",
+    "discover": "Scopri",
+    "bookCta": "Prenota una consulenza gratuita",
+    "whatsappCta": "Scrivi su WhatsApp",
+    "step": "Fase",
+    "before": "Prima",
+    "after": "Dopo",
+    "compare": "Confronto prima e dopo",
+    "compareSlider": "Sposta per confrontare prima e dopo",
+    "all": "Tutti",
+    "followUs": "Seguici su Instagram",
+    "instagram": "Instagram",
+    "contactSoon": "I nostri recapiti completi saranno pubblicati qui a breve. Nel frattempo scrivici tramite il modulo.",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "email": "Email",
+    "hours": "Orari",
+    "openMap": "Apri in Google Maps",
+    "published": "Pubblicato",
+    "backToJournal": "Torna al journal",
+    "relatedTreatments": "Trattamenti correlati",
+    "includes": "Cosa è incluso",
+    "photosSoon": "Galleria fotografica in arrivo",
+    "noResultsYet": "Nuovi casi vengono pubblicati regolarmente, sempre con il consenso scritto del paziente.",
+    "noStoriesYet": "Le storie dei pazienti sono pubblicate solo con il loro consenso. Nel frattempo segui il nostro lavoro quotidiano su Instagram.",
+    "inThisCategory": "In questa categoria",
+    "howItWorks": "Come funziona",
+    "otherCategories": "Altre aree",
+    "minRead": "{minutes} min di lettura",
+    "medicalNote": "Queste informazioni sono generali e non sostituiscono una visita clinica personale.",
+    "logoAlt": "Logo di Albania Dental Clinic",
+    "photoBy": "Foto: Albania Dental Clinic",
+    "faqTitle": "Domande frequenti",
+    "resultsCount": "Casi",
+    "askQuestion": "Fai una domanda"
+  },
+  "pages": {
+    "home": {
+      "title": "Albania Dental Clinic — Denti in un giorno e impianti",
+      "description": "Denti fissi in un giorno, implantologia e laboratorio digitale interno. Una delle sole due cliniche in Albania con denti completi in un giorno. Dr.ssa Donela Dede."
+    },
+    "sameDay": {
+      "title": "Denti in un giorno",
+      "description": "Arrivi senza denti, esci con denti fissi: denti completi su impianti in un giorno con diagnosi 3D, chirurgia guidata e laboratorio interno."
+    },
+    "sameDayHow": {
+      "title": "Denti in un giorno: come funziona",
+      "description": "Dalla radiografia ai denti fissi: le sei fasi del trattamento in un giorno ad Albania Dental Clinic."
+    },
+    "sameDayCandidates": {
+      "title": "Chi è candidato ai denti in un giorno",
+      "description": "Scopri se i denti fissi su impianti in un giorno possono fare per te, con un rapido autotest."
+    },
+    "treatments": {
+      "title": "Trattamenti",
+      "description": "Implantologia, implantologia digitale, estetica e odontoiatria generale ad Albania Dental Clinic."
+    },
+    "clinic": {
+      "title": "La clinica",
+      "description": "La Dr.ssa Donela Dede, il team, la tecnologia 3D e il laboratorio digitale interno, tutto sotto lo stesso tetto."
+    },
+    "drDede": {
+      "title": "Dr.ssa Donela Dede",
+      "description": "La Dr.ssa Donela Dede guida Albania Dental Clinic: chirurgia orale, implantologia, endodonzia ed estetica dentale."
+    },
+    "team": {
+      "title": "Il team",
+      "description": "Conosci medici, assistenti e odontotecnici di Albania Dental Clinic."
+    },
+    "technology": {
+      "title": "Tecnologia",
+      "description": "TAC 3D CBCT, scanner intraorale, radiografia digitale, laboratorio CAD/CAM e chirurgia guidata."
+    },
+    "laboratory": {
+      "title": "Laboratorio digitale",
+      "description": "Il nostro laboratorio CAD/CAM interno progetta e fresa denti in zirconia, anche il giorno dell'intervento."
+    },
+    "environment": {
+      "title": "L'ambiente",
+      "description": "Una clinica luminosa, tranquilla e moderna dove adulti e bambini si sentono a proprio agio."
+    },
+    "whyOneOfTwo": {
+      "title": "Perché una delle due",
+      "description": "Perché Albania Dental Clinic è una delle sole due cliniche in Albania con denti completi in un giorno."
+    },
+    "tourism": {
+      "title": "Turismo dentale",
+      "description": "Cure dentali in Albania con un piano personale e gli appartamenti della clinica per i pazienti."
+    },
+    "tourismHow": {
+      "title": "Turismo dentale: come funziona",
+      "description": "Cinque passi dall'invio della radiografia al rientro a casa con un nuovo sorriso."
+    },
+    "apartments": {
+      "title": "Appartamenti",
+      "description": "Appartamenti privati riservati ai pazienti di Albania Dental Clinic durante le cure."
+    },
+    "packages": {
+      "title": "Pacchetti",
+      "description": "Cure e soggiorno in un unico piano personale."
+    },
+    "travel": {
+      "title": "Il viaggio",
+      "description": "Voli, documenti, valuta e consigli pratici per chi viaggia in Albania per le cure."
+    },
+    "discoverAlbania": {
+      "title": "Scopri l'Albania",
+      "description": "La Riviera, Berat, Argirocastro, Butrinto e Tirana: trasforma le cure in una breve vacanza."
+    },
+    "faq": {
+      "title": "Turismo dentale: domande frequenti",
+      "description": "Risposte su denti in un giorno, viaggio per le cure e prezzi."
+    },
+    "results": {
+      "title": "Risultati",
+      "description": "Casi prima e dopo e storie dei pazienti, condivisi con consenso scritto."
+    },
+    "beforeAfter": {
+      "title": "Prima e dopo",
+      "description": "Confronta prima e dopo di trattamenti implantari ed estetici ad Albania Dental Clinic."
+    },
+    "patientStories": {
+      "title": "Storie dei pazienti",
+      "description": "Esperienze di pazienti curati ad Albania Dental Clinic."
+    },
+    "prices": {
+      "title": "Prezzi",
+      "description": "Prezzi trasparenti confermati per iscritto dopo visita e TAC 3D."
+    },
+    "journal": {
+      "title": "Journal",
+      "description": "Articoli su impianti, denti in un giorno e turismo dentale in Albania."
+    },
+    "book": {
+      "title": "Prenota una consulenza gratuita",
+      "description": "Invia la tua richiesta e la radiografia per una prima valutazione gratuita e un piano personale."
+    },
+    "contact": {
+      "title": "Contatti",
+      "description": "Contatta Albania Dental Clinic in albanese, italiano o inglese."
+    },
+    "thankYou": {
+      "title": "Grazie",
+      "description": "La tua richiesta è stata inviata."
+    },
+    "privacy": {
+      "title": "Informativa privacy",
+      "description": "Come Albania Dental Clinic tratta i dati personali e sanitari."
+    },
+    "cookies": {
+      "title": "Cookie policy",
+      "description": "Come questo sito utilizza i cookie."
+    },
+    "terms": {
+      "title": "Termini e condizioni",
+      "description": "Termini di utilizzo del sito di Albania Dental Clinic."
+    },
+    "accessibility": {
+      "title": "Accessibilità",
+      "description": "Il nostro impegno per un sito accessibile."
+    },
+    "notFound": {
+      "title": "Pagina non trovata",
+      "text": "La pagina che cerchi non esiste o è stata spostata."
+    }
+  },
+  "form": {
+    "name": "Nome e cognome",
+    "email": "Email",
+    "phone": "Telefono / WhatsApp",
+    "country": "Paese",
+    "interest": "Mi interessa",
+    "interestOptions": {
+      "sameDay": "Denti in un giorno",
+      "implants": "Impianti",
+      "aesthetic": "Estetica dentale",
+      "general": "Odontoiatria generale",
+      "tourism": "Turismo dentale e appartamenti",
+      "other": "Altro"
+    },
+    "message": "Messaggio",
+    "messagePlaceholder": "Raccontaci brevemente la tua situazione…",
+    "xray": "Panoramica o TAC (facoltativa)",
+    "xrayHint": "JPG, PNG, WEBP o PDF · max 10 MB",
+    "xrayChoose": "Scegli un file",
+    "consent": "Acconsento al trattamento dei miei dati, comprese eventuali radiografie, da parte di Albania Dental Clinic per rispondere alla mia richiesta.",
+    "privacyLink": "Informativa privacy",
+    "submit": "Invia richiesta",
+    "sending": "Invio in corso…",
+    "required": "Obbligatorio",
+    "optional": "facoltativo",
+    "errors": {
+      "generic": "Qualcosa è andato storto. Riprova o scrivici su WhatsApp.",
+      "name": "Inserisci il tuo nome.",
+      "contact": "Inserisci un'email o un numero di telefono.",
+      "email": "Inserisci un indirizzo email valido.",
+      "consent": "Accetta il trattamento dei dati.",
+      "xray": "Il file deve essere JPG, PNG, WEBP o PDF e inferiore a 10 MB."
+    },
+    "arrival": "Arrivo",
+    "departure": "Partenza",
+    "guests": "Ospiti",
+    "apartmentTitle": "Richiedi disponibilità",
+    "apartmentText": "Indicaci le date e confermeremo la disponibilità insieme al tuo piano di cura.",
+    "apartmentSubmit": "Richiedi disponibilità"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Albania Dental Clinic · Dr.ssa Donela Dede",
+      "title": "Arrivi senza denti.",
+      "accent": "Esci con un sorriso.",
+      "text": "Denti fissi in un giorno, implantologia e il nostro laboratorio digitale — tutto in un unico luogo, in una delle sole due cliniche in Albania che offrono denti completi in un giorno.",
+      "primary": "Prenota una consulenza gratuita",
+      "secondary": "Come funzionano i denti in un giorno",
+      "badge": "Una delle sole due cliniche in Albania",
+      "imageAlt": "La Dr.ssa Donela Dede con una paziente ad Albania Dental Clinic",
+      "scroll": "Scorri"
+    },
+    "trust": [
+      "Denti fissi in un giorno",
+      "Diagnosi 3D CBCT",
+      "Laboratorio digitale interno",
+      "Chirurgia implantare guidata",
+      "Restauri in zirconia",
+      "Appartamenti per i pazienti"
+    ],
+    "oneRoof": {
+      "eyebrow": "Tutto sotto lo stesso tetto",
+      "title": "Diagnosi, chirurgia e laboratorio in un unico luogo",
+      "text": "Molte cliniche mandano la TAC a un centro e le impronte a un laboratorio esterno. Qui ogni fase avviene nello stesso edificio: è questo che rende possibili i denti completi in un giorno.",
+      "pillars": [
+        {
+          "title": "Diagnosi 3D",
+          "text": "La TAC CBCT mostra osso, nervi e seni in tre dimensioni prima di ogni decisione."
+        },
+        {
+          "title": "Chirurgia guidata",
+          "text": "Gli impianti sono pianificati in digitale e inseriti con precisione, per un intervento più delicato."
+        },
+        {
+          "title": "Laboratorio digitale",
+          "text": "I nostri odontotecnici progettano e fresano i tuoi denti in sede, in zirconia e materiali di qualità."
+        },
+        {
+          "title": "Consegna in giornata",
+          "text": "Nei casi idonei esci dalla clinica con denti fissi il giorno stesso dell'intervento."
+        }
+      ],
+      "cta": "Perché una delle due"
+    },
+    "treatments": {
+      "eyebrow": "Trattamenti",
+      "title": "Da un singolo impianto a un sorriso completamente nuovo",
+      "text": "Chirurgia orale, implantologia, endodonzia ed estetica dentale — pianificate in digitale e realizzate da un unico team.",
+      "cta": "Tutti i trattamenti"
+    },
+    "results": {
+      "eyebrow": "Risultati",
+      "title": "Un lavoro che si vede",
+      "text": "Un vecchio ponte sostituito con un nuovo restauro su impianti. Condiviso con il consenso del paziente.",
+      "cta": "Vedi altri risultati"
+    },
+    "team": {
+      "eyebrow": "La dottoressa",
+      "title": "Dr.ssa Donela Dede",
+      "text": "La Dr.ssa Donela Dede guida Albania Dental Clinic e segue personalmente ogni paziente, dalla prima TAC 3D al sorriso finale. Il suo lavoro si concentra su chirurgia orale, implantologia, endodonzia ed estetica dentale.",
+      "cta": "Conosci la Dr.ssa Dede"
+    },
+    "environment": {
+      "eyebrow": "La nostra clinica",
+      "title": "Luminosa, tranquilla e completamente attrezzata",
+      "text": "Sale di trattamento moderne, radiologia digitale in sede e un team che si prende il tempo di spiegare. Adulti e bambini si sentono a proprio agio fin dalla prima visita.",
+      "cta": "Vedi la clinica"
+    },
+    "tourism": {
+      "eyebrow": "Turismo dentale",
+      "title": "Cure e soggiorno, organizzati per te",
+      "text": "Viaggi per curarti? Pianifichiamo le date intorno all'intervento e puoi soggiornare negli appartamenti della clinica.",
+      "items": [
+        {
+          "title": "Piano personale",
+          "text": "Invia la tua radiografia, ricevi un piano e i giorni di permanenza necessari."
+        },
+        {
+          "title": "I nostri appartamenti",
+          "text": "Appartamenti privati riservati ai pazienti durante le cure."
+        },
+        {
+          "title": "Scopri l'Albania",
+          "text": "Mare, montagne e storia: trasformalo in una breve vacanza."
+        }
+      ],
+      "cta": "Pianifica la visita"
+    },
+    "stories": {
+      "eyebrow": "Ogni giorno in clinica",
+      "title": "Segui il nostro lavoro su Instagram",
+      "text": "Casi reali, TAC 3D, lavori di laboratorio e i sorrisi dei nostri pazienti — condivisi ogni giorno.",
+      "cta": "Segui @albaniadental_clinic"
+    }
+  },
+  "sameDay": {
+    "eyebrow": "Denti in un giorno",
+    "intro": "Se hai perso molti o tutti i denti, o i tuoi denti non si possono più salvare, potresti ricevere un'arcata completa di denti fissi su impianti — in un solo giorno.",
+    "what": {
+      "title": "Cosa sono i denti in un giorno?",
+      "text": "Un'arcata completa di denti fissi viene fissata su pochi impianti (di solito quattro o sei, come in All-on-4 e All-on-6) subito dopo l'intervento. Non passi mesi con una protesi mobile: torni a casa con denti provvisori fissi e, dopo la guarigione, vengono sostituiti dal ponte definitivo realizzato nel nostro laboratorio."
+    },
+    "benefits": [
+      {
+        "title": "Fissi, non mobili",
+        "text": "I denti restano al loro posto: niente adesivi, nessun movimento quando parli o sorridi."
+      },
+      {
+        "title": "Un solo giorno di chirurgia",
+        "text": "Estrazioni, impianti e denti provvisori fissi nella stessa seduta."
+      },
+      {
+        "title": "Meno viaggi",
+        "text": "Ideale per chi viene dall'estero grazie al laboratorio interno."
+      },
+      {
+        "title": "Di nuovo sicuro di te",
+        "text": "Torna a mangiare, parlare e sorridere con denti dall'aspetto naturale."
+      }
+    ],
+    "whyHere": {
+      "title": "Perché qui è possibile",
+      "text": "I denti in un giorno richiedono diagnosi 3D, chirurgia precisa e un laboratorio che lavorino fianco a fianco, nello stesso giorno. Albania Dental Clinic ha tutto sotto lo stesso tetto ed è una delle sole due cliniche in Albania in grado di offrire il trattamento completo."
+    },
+    "ctaHow": "Vedi la giornata passo dopo passo",
+    "ctaCandidate": "Sono un candidato?"
+  },
+  "sameDayHow": {
+    "intro": "Un tipico trattamento in un giorno, dal primo contatto al nuovo sorriso. Il tuo piano viene confermato dopo la TAC 3D e la visita.",
+    "steps": [
+      {
+        "title": "Primo contatto",
+        "text": "Inviaci una panoramica o una TAC recente tramite il modulo o WhatsApp. Ti diamo un primo parere e pianifichiamo la visita."
+      },
+      {
+        "title": "Visita e TAC 3D CBCT",
+        "text": "In clinica ti visitiamo ed eseguiamo una TAC 3D per misurare l'osso e pianificare la posizione degli impianti."
+      },
+      {
+        "title": "Pianificazione digitale",
+        "text": "L'intervento e i nuovi denti vengono progettati insieme al computer. Vedi e approvi il piano."
+      },
+      {
+        "title": "Intervento",
+        "text": "In anestesia locale si rimuovono i denti compromessi e si inseriscono gli impianti secondo il piano."
+      },
+      {
+        "title": "Denti dal nostro laboratorio",
+        "text": "Mentre riposi, i nostri odontotecnici preparano i denti provvisori fissi nel laboratorio accanto."
+      },
+      {
+        "title": "Esci con denti fissi",
+        "text": "Lo stesso giorno i denti vengono fissati sugli impianti. Dopo la guarigione vengono sostituiti dal ponte definitivo."
+      }
+    ],
+    "note": "Il carico immediato è possibile solo se la qualità dell'osso e lo stato di salute generale lo consentono. In caso contrario, ti spiegheremo chiaramente la migliore alternativa."
+  },
+  "sameDayCandidates": {
+    "intro": "La maggior parte degli adulti che ha perso molti denti, o i cui denti non si possono salvare, può essere trattata con denti fissi su impianti. La risposta definitiva arriva sempre dalla TAC 3D e dalla visita.",
+    "good": {
+      "title": "Potresti essere un buon candidato se",
+      "items": [
+        "Porti una protesi mobile e desideri denti fissi",
+        "Molti dei tuoi denti si muovono, sono rotti o fanno male",
+        "Un vecchio ponte o lavoro implantare non funziona più",
+        "Ti hanno detto che hai poco osso (l'innesto osseo può aiutare)",
+        "Vuoi ridurre il numero di viaggi per le cure"
+      ]
+    },
+    "evaluate": {
+      "title": "Valutiamo con attenzione se",
+      "items": [
+        "Hai un diabete non controllato o altre patologie generali importanti",
+        "Fumi molto",
+        "Assumi farmaci che agiscono sull'osso (per esempio alcuni farmaci per l'osteoporosi)",
+        "Stai facendo o hai fatto di recente radioterapia di testa e collo"
+      ]
+    },
+    "check": {
+      "title": "Autotest rapido",
+      "intro": "Quattro domande, un minuto. Non è una diagnosi: ci aiuta solo a preparare la tua consulenza.",
+      "questions": [
+        {
+          "q": "Quanti denti naturali ti mancano?",
+          "options": [
+            "Pochi",
+            "Molti",
+            "Tutti o quasi tutti"
+          ]
+        },
+        {
+          "q": "Porti attualmente una protesi mobile?",
+          "options": [
+            "Sì",
+            "No"
+          ]
+        },
+        {
+          "q": "Hai una panoramica o una TAC recente?",
+          "options": [
+            "Sì",
+            "No"
+          ]
+        },
+        {
+          "q": "Verresti in Albania per le cure?",
+          "options": [
+            "Vivo in Albania",
+            "Sì",
+            "Non lo so ancora"
+          ]
+        }
+      ],
+      "progress": "Domanda {current} di {total}",
+      "resultTitle": "Grazie — parliamone",
+      "resultText": "In base alle tue risposte, una consulenza gratuita è il passo giusto. Inviaci la radiografia se ce l'hai e prepareremo un piano personale.",
+      "resultNoXray": "Non hai ancora una radiografia? Nessun problema: eseguiamo la TAC 3D in clinica.",
+      "restart": "Ricomincia",
+      "back": "Indietro"
+    }
+  },
+  "treatmentsPage": {
+    "intro": "Ogni trattamento inizia con l'ascolto e una diagnosi accurata. Poi pianifichiamo in digitale e realizziamo il lavoro con il nostro team e il nostro laboratorio.",
+    "categoryIntro": "Scegli un trattamento per scoprire come funziona."
+  },
+  "clinicPage": {
+    "intro": "Una clinica costruita su un'idea: diagnosi, chirurgia e laboratorio che lavorano insieme, per cure precise, più rapide e più confortevoli."
+  },
+  "drDede": {
+    "eyebrow": "Direttrice della clinica",
+    "intro": "La Dr.ssa Donela Dede guida Albania Dental Clinic ed è la chirurga dietro i trattamenti di denti in un giorno.",
+    "specialtiesTitle": "Aree di attività",
+    "approachTitle": "Il suo approccio",
+    "approach": [
+      {
+        "title": "Prima l'ascolto",
+        "text": "Ogni piano nasce dal capire cosa il paziente desidera e cosa teme."
+      },
+      {
+        "title": "Precisione",
+        "text": "Diagnosi 3D e pianificazione digitale prima di ogni impianto."
+      },
+      {
+        "title": "Un solo team",
+        "text": "Chirurgia e laboratorio in contatto costante, sotto la sua supervisione diretta."
+      }
+    ],
+    "imageAlt": "La Dr.ssa Donela Dede ad Albania Dental Clinic"
+  },
+  "teamPage": {
+    "intro": "Dietro ogni sorriso c'è un team: medici, assistenti e odontotecnici che lavorano fianco a fianco nella stessa clinica.",
+    "comingSoon": "I profili di tutto il team saranno pubblicati a breve."
+  },
+  "technologyPage": {
+    "intro": "Qui la tecnologia non è un lusso: è ciò che permette una diagnosi accurata, una chirurgia più delicata e denti pronti in giornata."
+  },
+  "laboratoryPage": {
+    "intro": "Il nostro laboratorio digitale è il cuore della clinica. I denti vengono progettati e fresati a pochi passi dalla sala operativa.",
+    "points": [
+      {
+        "title": "Progettazione CAD/CAM",
+        "text": "I restauri vengono progettati sullo schermo dalle scansioni digitali della bocca."
+      },
+      {
+        "title": "Fresatura della zirconia",
+        "text": "Corone e ponti vengono fresati da blocchi di zirconia di alta qualità."
+      },
+      {
+        "title": "Ritocchi in pochi minuti",
+        "text": "L'odontotecnico può perfezionare forma e colore durante la tua visita."
+      },
+      {
+        "title": "Denti in un giorno",
+        "text": "I denti provvisori fissi vengono realizzati il giorno dell'intervento."
+      }
+    ],
+    "imageAlt": "Ponte in zirconia fresato nel laboratorio della clinica"
+  },
+  "environmentPage": {
+    "intro": "Un luogo luminoso e tranquillo, pensato perché adulti e bambini si sentano a proprio agio.",
+    "gallery": {
+      "room": "Sala di trattamento",
+      "children": "I nostri pazienti più piccoli",
+      "doctor": "La Dr.ssa Donela Dede con una paziente",
+      "cbct": "TAC 3D CBCT in sede"
+    }
+  },
+  "whyPage": {
+    "intro": "I denti completi in un giorno richiedono tre cose nello stesso giorno e nello stesso luogo. Poche cliniche le hanno tutte.",
+    "reasons": [
+      {
+        "title": "Diagnosi 3D in sede",
+        "text": "Uno scanner CBCT in clinica: nessun centro esterno, nessuna attesa per i risultati."
+      },
+      {
+        "title": "Esperienza chirurgica",
+        "text": "Chirurgia orale e implantologia eseguite dalla Dr.ssa Dede, con pianificazione digitale."
+      },
+      {
+        "title": "Il nostro laboratorio",
+        "text": "I denti vengono progettati e prodotti internamente, mentre il paziente è ancora in clinica."
+      },
+      {
+        "title": "Un team coordinato",
+        "text": "Medico, assistenti e odontotecnici seguono un unico piano, dalla scansione al sorriso."
+      }
+    ],
+    "closing": "Per questo Albania Dental Clinic è una delle sole due cliniche in Albania che possono offrire denti completi in un giorno."
+  },
+  "tourismPage": {
+    "intro": "I pazienti arrivano da tutta l'Albania e dall'estero. Organizziamo cure e soggiorno insieme, così puoi pensare solo al tuo nuovo sorriso."
+  },
+  "tourismHow": {
+    "intro": "Cinque semplici passi dal primo messaggio al volo di ritorno.",
+    "steps": [
+      {
+        "title": "Invia la radiografia",
+        "text": "Tramite il modulo o WhatsApp, con qualche parola sulla tua situazione."
+      },
+      {
+        "title": "Ricevi il piano",
+        "text": "Ti proponiamo un piano di cura, i giorni necessari e un preventivo."
+      },
+      {
+        "title": "Prenota date e alloggio",
+        "text": "Scegli le date; possiamo riservarti uno dei nostri appartamenti."
+      },
+      {
+        "title": "Le cure",
+        "text": "TAC 3D, intervento e denti dal nostro laboratorio, secondo il piano."
+      },
+      {
+        "title": "Rientro e controlli",
+        "text": "Torni a casa con istruzioni chiare; restiamo in contatto per i controlli."
+      }
+    ]
+  },
+  "packagesPage": {
+    "intro": "Cure e alloggio insieme. Ogni pacchetto è personalizzato dopo la tua radiografia o TAC 3D.",
+    "note": "I prezzi dipendono dal caso e vengono confermati per iscritto dopo la consulenza."
+  },
+  "apartmentsPage": {
+    "intro": "Gli appartamenti della clinica sono riservati ai pazienti durante le cure: un luogo tranquillo dove riposare tra un appuntamento e l'altro.",
+    "formTitle": "Prenota consulenza e soggiorno",
+    "formText": "I nostri appartamenti non sono in affitto giornaliero: sono riservati ai pazienti durante le cure. Invia la richiesta e, se ce l'hai, la radiografia: pianifichiamo insieme cure e soggiorno."
+  },
+  "travelPage": {
+    "intro": "Informazioni pratiche per organizzare il viaggio.",
+    "sections": [
+      {
+        "title": "Voli",
+        "text": "L'aeroporto internazionale di Tirana (TIA) ha voli diretti da molte città italiane ed europee. Pianifichiamo gli appuntamenti in base al tuo arrivo e alla tua partenza."
+      },
+      {
+        "title": "Documenti",
+        "text": "I cittadini di molti paesi europei possono entrare in Albania con carta d'identità valida o passaporto. Verifica le regole aggiornate per il tuo paese prima di partire."
+      },
+      {
+        "title": "Denaro",
+        "text": "La valuta locale è il lek albanese (ALL). Le carte sono molto diffuse in città e l'euro è spesso accettato nelle zone turistiche."
+      },
+      {
+        "title": "Lingua",
+        "text": "Comunichiamo con i pazienti in albanese, italiano e inglese."
+      }
+    ]
+  },
+  "discoverPage": {
+    "intro": "Tra un appuntamento e l'altro, l'Albania ha molto da offrire: mare, montagne, storia e ottima cucina.",
+    "places": [
+      {
+        "title": "La Riviera albanese",
+        "text": "Acque cristalline e spiagge da Valona a Dhërmi, Himara e Ksamil."
+      },
+      {
+        "title": "Berat e Argirocastro",
+        "text": "Due città patrimonio UNESCO di case in pietra ed eredità ottomana."
+      },
+      {
+        "title": "Butrinto",
+        "text": "Un parco archeologico con rovine greche, romane e veneziane immerse nella natura."
+      },
+      {
+        "title": "Tirana",
+        "text": "Una capitale vivace di strade colorate, caffè, musei e il monte Dajti."
+      }
+    ],
+    "note": "Il nostro consiglio: visita prima dell'intervento e riposa dopo."
+  },
+  "faqPage": {
+    "intro": "Le risposte alle domande che ci fate più spesso. Non trovi la tua? Scrivici.",
+    "topics": {
+      "same-day": "Denti in un giorno",
+      "treatments": "Trattamenti",
+      "tourism": "Viaggiare per le cure",
+      "prices": "Prezzi",
+      "general": "Generale"
+    }
+  },
+  "resultsPage": {
+    "intro": "I risultati contano più delle parole. Qui condividiamo casi e storie, sempre con il consenso scritto del paziente."
+  },
+  "beforeAfterPage": {
+    "intro": "Sposta il cursore per confrontare prima e dopo. Ogni caso è pubblicato con il consenso scritto del paziente."
+  },
+  "storiesPage": {
+    "intro": "L'esperienza dei nostri pazienti, con le loro parole."
+  },
+  "pricesPage": {
+    "intro": "Ogni bocca è diversa: diamo prezzi esatti solo dopo una visita clinica e una TAC 3D. Il preventivo scritto include ogni fase, senza sorprese.",
+    "treatment": "Trattamento",
+    "price": "Prezzo",
+    "note": "Inviaci la tua panoramica per una prima stima gratuita."
+  },
+  "journalPage": {
+    "intro": "Articoli chiari su impianti, denti in un giorno e turismo dentale in Albania."
+  },
+  "bookPage": {
+    "intro": "Raccontaci la tua situazione. Se hai una panoramica o una TAC recente, allegala: ti risponderemo con una prima valutazione.",
+    "nextTitle": "Cosa succede dopo",
+    "next": [
+      "Esaminiamo la tua richiesta e la radiografia",
+      "Ti contattiamo per telefono, WhatsApp o email",
+      "Concordiamo la data della visita e, se serve, il soggiorno"
+    ]
+  },
+  "contactPage": {
+    "intro": "Siamo felici di rispondere alle tue domande in albanese, italiano o inglese."
+  },
+  "thankYouPage": {
+    "text": "Grazie, la tua richiesta è stata inviata. Ti contatteremo il prima possibile.",
+    "next": "Nell'attesa, scopri di più sui denti in un giorno."
+  },
+  "legal": {
+    "updated": "Ultimo aggiornamento: novembre 2026",
+    "draftNote": "Questo testo è una bozza e sarà verificato dalla clinica prima della pubblicazione.",
+    "privacy": [
+      {
+        "title": "Chi siamo",
+        "text": "Albania Dental Clinic, guidata dalla Dr.ssa Donela Dede, è responsabile dei dati personali raccolti tramite questo sito."
+      },
+      {
+        "title": "Quali dati raccogliamo",
+        "text": "Quando invii una richiesta raccogliamo nome, recapiti, il tuo messaggio e, se scegli di allegarle, radiografie o altre immagini mediche."
+      },
+      {
+        "title": "Perché li usiamo",
+        "text": "Solo per rispondere alla tua richiesta, preparare un piano di cura e organizzare la visita. Non vendiamo i tuoi dati e non li usiamo per marketing non correlato."
+      },
+      {
+        "title": "Dati sanitari",
+        "text": "Radiografie e informazioni cliniche sono dati sanitari. Sono trattati con il tuo consenso esplicito, accessibili solo al personale clinico e protetti con misure di sicurezza adeguate."
+      },
+      {
+        "title": "Per quanto tempo",
+        "text": "Le richieste che non portano a un trattamento vengono cancellate dopo un periodo ragionevole. Le cartelle cliniche sono conservate per il periodo previsto dalla legge."
+      },
+      {
+        "title": "I tuoi diritti",
+        "text": "Puoi chiedere di accedere, correggere o cancellare i tuoi dati, o revocare il consenso in qualsiasi momento, scrivendo alla clinica."
+      }
+    ],
+    "cookies": [
+      {
+        "title": "Cosa sono i cookie",
+        "text": "I cookie sono piccoli file salvati dal browser che aiutano un sito a funzionare e a ricordare le tue scelte."
+      },
+      {
+        "title": "Cookie necessari",
+        "text": "Usiamo solo ciò che serve al funzionamento del sito, come ricordare la lingua e la tua scelta sui cookie."
+      },
+      {
+        "title": "Statistiche",
+        "text": "Cookie statistici o di marketing vengono usati solo se li accetti nel banner."
+      },
+      {
+        "title": "Cambiare la scelta",
+        "text": "Puoi cancellare i cookie dalle impostazioni del browser in qualsiasi momento; il banner comparirà di nuovo."
+      }
+    ],
+    "terms": [
+      {
+        "title": "Solo informazioni",
+        "text": "I contenuti di questo sito sono informazioni generali e non sostituiscono una visita clinica dal dentista."
+      },
+      {
+        "title": "Prezzi e piani",
+        "text": "Piani di cura e prezzi sono personali e diventano vincolanti solo con un preventivo scritto dopo la consulenza."
+      },
+      {
+        "title": "Risultati",
+        "text": "I risultati mostrati sono casi individuali; gli esiti variano da paziente a paziente."
+      },
+      {
+        "title": "Proprietà intellettuale",
+        "text": "Testi, fotografie e logo appartengono ad Albania Dental Clinic e non possono essere riutilizzati senza autorizzazione."
+      }
+    ],
+    "accessibility": [
+      {
+        "title": "Il nostro impegno",
+        "text": "Vogliamo che questo sito sia utilizzabile da tutti e seguiamo le linee guida WCAG 2.1 AA."
+      },
+      {
+        "title": "Cosa facciamo",
+        "text": "Navigazione da tastiera, focus visibile, testi alternativi per le immagini, contrasto sufficiente e rispetto delle impostazioni di movimento ridotto."
+      },
+      {
+        "title": "Segnalazioni",
+        "text": "Se qualcosa è difficile da usare, faccelo sapere dalla pagina contatti e lo correggeremo."
+      }
+    ]
+  }
+}

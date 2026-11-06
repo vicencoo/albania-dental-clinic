@@ -1,0 +1,947 @@
+{
+  "nav": {
+    "home": "Home",
+    "sameDay": "Same-Day Teeth",
+    "sameDayOverview": "Overview",
+    "sameDayHow": "How it works",
+    "sameDayCandidates": "Who is a candidate",
+    "treatments": "Treatments",
+    "allTreatments": "All treatments",
+    "clinic": "Clinic",
+    "drDede": "Dr. Donela Dede",
+    "team": "Team",
+    "technology": "Technology",
+    "laboratory": "Digital laboratory",
+    "environment": "Our environment",
+    "whyOneOfTwo": "Why one of two",
+    "tourism": "Dental Tourism",
+    "tourismHow": "How it works",
+    "apartments": "Apartments",
+    "packages": "Packages",
+    "travel": "Travel",
+    "discoverAlbania": "Discover Albania",
+    "faq": "FAQ",
+    "results": "Results",
+    "beforeAfter": "Before & after",
+    "patientStories": "Patient stories",
+    "prices": "Prices",
+    "journal": "Journal",
+    "book": "Book consultation",
+    "contact": "Contact",
+    "thankYou": "Thank you",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "terms": "Terms of use",
+    "accessibility": "Accessibility",
+    "groups": {
+      "people": "People",
+      "place": "Our clinic",
+      "plan": "Plan your visit",
+      "stay": "Your stay",
+      "contact": "Contact"
+    },
+    "featured": {
+      "sameDay": {
+        "title": "Arrive without teeth, leave with fixed teeth",
+        "text": "3D diagnosis, guided surgery and our own digital lab, all in one place."
+      },
+      "clinic": {
+        "title": "One of only two clinics in Albania",
+        "text": "Why complete same-day teeth are possible here."
+      },
+      "tourism": {
+        "title": "Stay in our apartments",
+        "text": "Accommodation for patients travelling for treatment."
+      }
+    },
+    "descriptions": {
+      "sameDayOverview": "What same-day fixed teeth are and why they change lives.",
+      "sameDayHow": "Your treatment day, step by step.",
+      "sameDayCandidates": "A quick self-check before your consultation.",
+      "drDede": "The doctor who leads the clinic and performs the surgery.",
+      "team": "The people who take care of you.",
+      "technology": "3D CBCT, digital scanning and guided surgery.",
+      "laboratory": "Where your new teeth are designed and milled.",
+      "environment": "A bright, calm and modern place to be treated.",
+      "whyOneOfTwo": "What makes complete same-day teeth possible here.",
+      "tourismHow": "From your first message to your flight home.",
+      "packages": "Treatment and stay combined in one plan.",
+      "faq": "Answers to the questions patients ask most.",
+      "apartments": "Private apartments reserved for our patients.",
+      "travel": "Flights, arrival and practical tips.",
+      "discoverAlbania": "Turn your treatment into a short holiday.",
+      "beforeAfter": "Cases shared with our patients' consent.",
+      "patientStories": "Experiences told by our patients."
+    }
+  },
+  "treatments": {
+    "categories": {
+      "implantology": "Implantology",
+      "digital-implant": "Digital implantology",
+      "aesthetic": "Aesthetic dentistry",
+      "general": "General dentistry"
+    },
+    "categoryText": {
+      "implantology": "From a single missing tooth to a full arch: implants that look, feel and work like natural teeth.",
+      "digital-implant": "3D scans, digital impressions and computer-guided surgery for precise, more comfortable treatment.",
+      "aesthetic": "Zirconia, veneers and whitening designed in our own lab for a natural, luminous smile.",
+      "general": "Endodontics, oral surgery, hygiene and gentle care for the youngest patients."
+    },
+    "items": {
+      "single-implant": "Single implant",
+      "multiple-implants": "Multiple implants",
+      "all-on-4": "All-on-4",
+      "all-on-6": "All-on-6",
+      "replacing-old-bridges": "Replacing old bridges",
+      "bone-grafting-sinus-lift": "Bone grafting & sinus lift",
+      "3d-ct-scan": "3D CT scan",
+      "digital-impressions": "Digital impressions",
+      "guided-surgery": "Guided surgery",
+      "digital-smile-design": "Digital Smile Design",
+      "zirconia-crowns": "Zirconia crowns",
+      "veneers": "Veneers",
+      "bridges": "Bridges",
+      "teeth-whitening": "Teeth whitening",
+      "endodontics": "Endodontics",
+      "oral-surgery": "Oral surgery",
+      "hygiene": "Dental hygiene",
+      "children": "Children's dentistry"
+    },
+    "desc": {
+      "single-implant": "A titanium implant replaces the missing root and a crown made in our lab completes the tooth — without touching the neighbouring teeth.",
+      "multiple-implants": "Several missing teeth are restored on a small number of implants with fixed crowns or a bridge, planned in 3D.",
+      "all-on-4": "A complete fixed arch supported by four implants. In suitable cases the fixed provisional teeth are placed on the same day.",
+      "all-on-6": "A full fixed arch on six implants for extra support and stability, ideal when bone volume allows it.",
+      "replacing-old-bridges": "Failing or unaesthetic old bridges are removed and replaced with implant-supported restorations that last.",
+      "bone-grafting-sinus-lift": "When bone is insufficient, regenerative techniques rebuild the volume needed to place implants safely.",
+      "3d-ct-scan": "A three-dimensional CBCT scan shows bone, nerves and sinuses in detail — the foundation of every implant plan.",
+      "digital-impressions": "An intraoral scanner replaces traditional impression paste: fast, precise and comfortable.",
+      "guided-surgery": "Implants are planned on the computer and placed through a surgical guide for precision and faster healing.",
+      "digital-smile-design": "Your new smile is designed digitally in harmony with your face, so you can see the result before treatment.",
+      "zirconia-crowns": "Strong, metal-free zirconia crowns designed and milled in our own laboratory for a natural look.",
+      "veneers": "Thin ceramic shells that correct shape, colour and small gaps with minimal preparation.",
+      "bridges": "Fixed bridges that replace one or more teeth, made with precision in our digital lab.",
+      "teeth-whitening": "Professional whitening that brightens your smile safely under clinical supervision.",
+      "endodontics": "Root canal treatment that saves the natural tooth and removes pain and infection.",
+      "oral-surgery": "Extractions, wisdom teeth and minor oral surgery performed with care and precision.",
+      "hygiene": "Professional cleaning and prevention to keep gums and implants healthy for the long term.",
+      "children": "Gentle, patient care that helps children feel safe at the dentist from their very first visit."
+    },
+    "steps": {
+      "implantology": [
+        {
+          "title": "Consultation & 3D CT",
+          "text": "We examine you and take a 3D CBCT scan to measure bone and plan safely."
+        },
+        {
+          "title": "Digital planning",
+          "text": "The implant position is planned on the computer together with the final teeth."
+        },
+        {
+          "title": "Implant placement",
+          "text": "Implants are placed under local anaesthesia, guided by the plan."
+        },
+        {
+          "title": "Teeth from our lab",
+          "text": "Our laboratory produces the provisional and final teeth and fits them precisely."
+        }
+      ],
+      "digital-implant": [
+        {
+          "title": "Scan",
+          "text": "3D CBCT and intraoral scanning capture your mouth digitally, with no impression paste."
+        },
+        {
+          "title": "Design",
+          "text": "The treatment and the future teeth are designed on screen."
+        },
+        {
+          "title": "Guide",
+          "text": "A surgical guide transfers the plan precisely to the mouth."
+        },
+        {
+          "title": "Deliver",
+          "text": "Restorations are milled in-house and fitted with minimal adjustments."
+        }
+      ],
+      "aesthetic": [
+        {
+          "title": "Smile analysis",
+          "text": "We listen to your wishes and study your face, lips and teeth."
+        },
+        {
+          "title": "Digital design",
+          "text": "Shape and shade are designed digitally and agreed with you."
+        },
+        {
+          "title": "Lab crafting",
+          "text": "Zirconia or ceramic restorations are made in our own laboratory."
+        },
+        {
+          "title": "Final fitting",
+          "text": "We fit, refine and polish for a natural, lasting result."
+        }
+      ],
+      "general": [
+        {
+          "title": "Check-up",
+          "text": "A complete examination with digital X-rays when needed."
+        },
+        {
+          "title": "Clear plan",
+          "text": "We explain the options and the costs before starting."
+        },
+        {
+          "title": "Gentle treatment",
+          "text": "Treatment is carried out comfortably, step by step."
+        },
+        {
+          "title": "Prevention",
+          "text": "We help you keep the result with hygiene and regular controls."
+        }
+      ]
+    }
+  },
+  "ui": {
+    "skipToContent": "Skip to content",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNavigation": "Main navigation",
+    "language": "Language",
+    "whatsapp": "Message us on WhatsApp",
+    "announcement": "Free consultation — send us your panoramic X-ray and receive a personal treatment plan.",
+    "breadcrumbs": "Breadcrumb",
+    "placeholder": "Content for this page is coming soon.",
+    "backHome": "Back to home",
+    "viewAll": "View all",
+    "footerTagline": "Advanced dental care in Albania: oral surgery, implantology, endodontics and aesthetic dentistry, with our own digital laboratory — led by Dr. Donela Dede.",
+    "rights": "All rights reserved.",
+    "priceOnRequest": "After consultation",
+    "learnMore": "Learn more",
+    "readMore": "Read more",
+    "discover": "Discover",
+    "bookCta": "Book a free consultation",
+    "whatsappCta": "Write on WhatsApp",
+    "step": "Step",
+    "before": "Before",
+    "after": "After",
+    "compare": "Before and after comparison",
+    "compareSlider": "Move to compare before and after",
+    "all": "All",
+    "followUs": "Follow us on Instagram",
+    "instagram": "Instagram",
+    "contactSoon": "Our full contact details will be published here very soon. Meanwhile, write to us through the form.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening hours",
+    "openMap": "Open in Google Maps",
+    "published": "Published",
+    "backToJournal": "Back to the journal",
+    "relatedTreatments": "Related treatments",
+    "includes": "What's included",
+    "photosSoon": "Photo gallery coming soon",
+    "noResultsYet": "More cases are published regularly, always with the patient's written consent.",
+    "noStoriesYet": "Patient stories are published only with their consent. Meanwhile, follow our daily work on Instagram.",
+    "inThisCategory": "In this category",
+    "howItWorks": "How it works",
+    "otherCategories": "Other areas",
+    "minRead": "{minutes} min read",
+    "medicalNote": "This information is general and does not replace a personal clinical examination.",
+    "logoAlt": "Albania Dental Clinic logo",
+    "photoBy": "Photo: Albania Dental Clinic",
+    "cookie": {
+      "text": "We use cookies to improve this website.",
+      "accept": "Accept",
+      "reject": "Reject",
+      "more": "Learn more"
+    },
+    "faqTitle": "Frequently asked questions",
+    "resultsCount": "Cases",
+    "askQuestion": "Ask a question"
+  },
+  "form": {
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone / WhatsApp",
+    "country": "Country",
+    "interest": "I'm interested in",
+    "interestOptions": {
+      "sameDay": "Same-day teeth",
+      "implants": "Implants",
+      "aesthetic": "Aesthetic dentistry",
+      "general": "General dentistry",
+      "tourism": "Dental tourism & apartments",
+      "other": "Other"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Tell us briefly about your situation…",
+    "xray": "Panoramic X-ray or CT (optional)",
+    "xrayHint": "JPG, PNG, WEBP or PDF · max 10 MB",
+    "xrayChoose": "Choose a file",
+    "consent": "I agree that Albania Dental Clinic processes my data, including any X-ray, to answer my request.",
+    "privacyLink": "Privacy policy",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "required": "Required",
+    "optional": "optional",
+    "errors": {
+      "generic": "Something went wrong. Please try again or write to us on WhatsApp.",
+      "name": "Please enter your name.",
+      "contact": "Please enter an email or a phone number.",
+      "email": "Please enter a valid email address.",
+      "consent": "Please accept the processing of your data.",
+      "xray": "The file must be JPG, PNG, WEBP or PDF and under 10 MB."
+    },
+    "arrival": "Arrival",
+    "departure": "Departure",
+    "guests": "Guests",
+    "apartmentTitle": "Request availability",
+    "apartmentText": "Tell us your dates and we will confirm availability together with your treatment plan.",
+    "apartmentSubmit": "Request availability"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Albania Dental Clinic · Dr. Donela Dede",
+      "title": "Arrive without teeth.",
+      "accent": "Leave with a smile.",
+      "text": "Same-day fixed teeth, implantology and our own digital laboratory — all in one place, at one of only two clinics in Albania that offer complete same-day teeth.",
+      "primary": "Book a free consultation",
+      "secondary": "How same-day teeth work",
+      "badge": "One of only two clinics in Albania",
+      "imageAlt": "Dr. Donela Dede with a patient at Albania Dental Clinic",
+      "scroll": "Scroll"
+    },
+    "trust": [
+      "Same-day fixed teeth",
+      "3D CBCT diagnostics",
+      "In-house digital laboratory",
+      "Guided implant surgery",
+      "Zirconia restorations",
+      "Apartments for our patients"
+    ],
+    "oneRoof": {
+      "eyebrow": "Everything under one roof",
+      "title": "Diagnosis, surgery and laboratory in a single place",
+      "text": "Most clinics send scans to one centre and impressions to an external lab. Here, every step happens in the same building — which is what makes complete same-day teeth possible.",
+      "pillars": [
+        {
+          "title": "3D diagnosis",
+          "text": "A CBCT scan shows bone, nerves and sinuses in three dimensions before any decision is made."
+        },
+        {
+          "title": "Guided surgery",
+          "text": "Implants are planned digitally and placed with precision, for a gentler procedure."
+        },
+        {
+          "title": "Digital laboratory",
+          "text": "Our technicians design and mill your teeth on site, in zirconia and high-quality materials."
+        },
+        {
+          "title": "Same-day delivery",
+          "text": "In suitable cases you leave the clinic with fixed teeth on the very day of surgery."
+        }
+      ],
+      "cta": "Why one of two"
+    },
+    "treatments": {
+      "eyebrow": "Treatments",
+      "title": "From a single implant to a completely new smile",
+      "text": "Oral surgery, implantology, endodontics and aesthetic dentistry — planned digitally and delivered by one team.",
+      "cta": "All treatments"
+    },
+    "results": {
+      "eyebrow": "Results",
+      "title": "Work you can see",
+      "text": "An old bridge replaced with a new implant-supported restoration. Shared with the patient's consent.",
+      "cta": "See more results"
+    },
+    "team": {
+      "eyebrow": "Meet the doctor",
+      "title": "Dr. Donela Dede",
+      "text": "Dr. Donela Dede leads Albania Dental Clinic and personally follows every patient — from the first 3D scan to the final smile. Her work focuses on oral surgery, implantology, endodontics and aesthetic dentistry.",
+      "cta": "Meet Dr. Dede"
+    },
+    "environment": {
+      "eyebrow": "Our clinic",
+      "title": "Bright, calm and fully equipped",
+      "text": "Modern treatment rooms, digital radiology on site and a team that takes the time to explain. Adults and children feel at ease from the first visit.",
+      "cta": "See the clinic"
+    },
+    "tourism": {
+      "eyebrow": "Dental tourism",
+      "title": "Your treatment and your stay, organised",
+      "text": "Travelling for treatment? We plan the dates around your surgery and you can stay in the clinic's own apartments.",
+      "items": [
+        {
+          "title": "Personal plan",
+          "text": "Send your X-ray, receive a plan and the dates you need to stay."
+        },
+        {
+          "title": "Our apartments",
+          "text": "Private apartments reserved for patients during treatment."
+        },
+        {
+          "title": "Discover Albania",
+          "text": "Sea, mountains and history — make it a short holiday."
+        }
+      ],
+      "cta": "Plan your visit"
+    },
+    "stories": {
+      "eyebrow": "Every day at the clinic",
+      "title": "Follow our work on Instagram",
+      "text": "Real cases, 3D scans, lab work and the smiles of our patients — shared daily.",
+      "cta": "Follow @albaniadental_clinic"
+    }
+  },
+  "sameDay": {
+    "eyebrow": "Same-Day Teeth",
+    "intro": "If you have lost many or all of your teeth, or your teeth can no longer be saved, you may be able to receive a complete fixed arch of teeth on implants — in a single day.",
+    "what": {
+      "title": "What are same-day teeth?",
+      "text": "A full arch of fixed teeth is attached to a small number of implants (usually four or six, as in All-on-4 and All-on-6) immediately after surgery. You do not spend months with a removable denture: you go home with fixed provisional teeth, and after healing they are replaced by the final bridge made in our laboratory."
+    },
+    "benefits": [
+      {
+        "title": "Fixed, not removable",
+        "text": "Teeth stay in place: no adhesives, no movement when you speak or smile."
+      },
+      {
+        "title": "One day of surgery",
+        "text": "Extractions, implants and fixed provisional teeth in the same session."
+      },
+      {
+        "title": "Fewer trips",
+        "text": "Ideal for patients travelling from abroad thanks to the in-house lab."
+      },
+      {
+        "title": "Confidence back",
+        "text": "Eat, speak and smile again with natural-looking teeth."
+      }
+    ],
+    "whyHere": {
+      "title": "Why it is possible here",
+      "text": "Same-day teeth need 3D diagnosis, precise surgery and a laboratory working side by side, on the same day. Albania Dental Clinic has all three under one roof — and is one of only two clinics in Albania able to offer the complete treatment."
+    },
+    "ctaHow": "See the day step by step",
+    "ctaCandidate": "Am I a candidate?"
+  },
+  "sameDayHow": {
+    "intro": "A typical same-day treatment, from the first contact to your new smile. Your own plan is confirmed after the 3D scan and the consultation.",
+    "steps": [
+      {
+        "title": "First contact",
+        "text": "Send us a recent panoramic X-ray or CT through the form or WhatsApp. We give you a first opinion and plan the visit."
+      },
+      {
+        "title": "Consultation & 3D CBCT",
+        "text": "At the clinic we examine you and take a 3D scan to measure bone volume and plan implant positions."
+      },
+      {
+        "title": "Digital planning",
+        "text": "The surgery and your new teeth are designed together on the computer. You see and approve the plan."
+      },
+      {
+        "title": "Surgery",
+        "text": "Under local anaesthesia, failing teeth are removed and the implants are placed following the plan."
+      },
+      {
+        "title": "Teeth from our lab",
+        "text": "While you rest, our technicians prepare your fixed provisional teeth in the laboratory next door."
+      },
+      {
+        "title": "You leave with fixed teeth",
+        "text": "The same day the teeth are fixed on the implants. After healing, they are replaced by the final bridge."
+      }
+    ],
+    "note": "Same-day loading is possible only when bone quality and general health allow it. If not, we will explain the best alternative clearly."
+  },
+  "sameDayCandidates": {
+    "intro": "Most adults who have lost many teeth, or whose teeth can no longer be saved, can be treated with fixed teeth on implants. The final answer always comes from the 3D scan and the clinical exam.",
+    "good": {
+      "title": "You may be a good candidate if",
+      "items": [
+        "You wear a removable denture and want fixed teeth",
+        "Many of your teeth are loose, broken or painful",
+        "An old bridge or implant work is failing",
+        "You have been told you have too little bone (bone grafting may help)",
+        "You want to reduce the number of trips for treatment"
+      ]
+    },
+    "evaluate": {
+      "title": "We evaluate carefully if",
+      "items": [
+        "You have uncontrolled diabetes or other serious general conditions",
+        "You smoke heavily",
+        "You take medication that affects bone (for example some osteoporosis drugs)",
+        "You are undergoing or have recently undergone radiotherapy of the head and neck"
+      ]
+    },
+    "check": {
+      "title": "Quick self-check",
+      "intro": "Four questions, one minute. This is not a diagnosis — it only helps us prepare your consultation.",
+      "questions": [
+        {
+          "q": "How many of your own teeth are you missing?",
+          "options": [
+            "A few",
+            "Many",
+            "All or almost all"
+          ]
+        },
+        {
+          "q": "Do you currently wear a removable denture?",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "q": "Do you have a recent panoramic X-ray or CT?",
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "q": "Would you travel to Albania for treatment?",
+          "options": [
+            "I live in Albania",
+            "Yes",
+            "Not sure yet"
+          ]
+        }
+      ],
+      "progress": "Question {current} of {total}",
+      "resultTitle": "Thank you — let's talk",
+      "resultText": "Based on your answers, a free consultation is the right next step. Send us your X-ray if you have one and we will prepare a personal plan.",
+      "resultNoXray": "No X-ray yet? No problem — we take a 3D scan at the clinic.",
+      "restart": "Start again",
+      "back": "Back"
+    }
+  },
+  "treatmentsPage": {
+    "intro": "Every treatment begins with listening and an accurate diagnosis. Then we plan digitally and carry out the work with our own team and laboratory.",
+    "categoryIntro": "Choose a treatment to read how it works."
+  },
+  "clinicPage": {
+    "intro": "A clinic built around one idea: diagnosis, surgery and laboratory working together, for treatments that are precise, faster and more comfortable."
+  },
+  "drDede": {
+    "eyebrow": "Clinic director",
+    "intro": "Dr. Donela Dede leads Albania Dental Clinic and is the surgeon behind its same-day teeth treatments.",
+    "specialtiesTitle": "Areas of practice",
+    "approachTitle": "Her approach",
+    "approach": [
+      {
+        "title": "Listening first",
+        "text": "Every plan begins with understanding what the patient wants and fears."
+      },
+      {
+        "title": "Precision",
+        "text": "3D diagnosis and digital planning before every implant."
+      },
+      {
+        "title": "One team",
+        "text": "Surgery and laboratory in constant contact, under her direct supervision."
+      }
+    ],
+    "imageAlt": "Dr. Donela Dede at Albania Dental Clinic"
+  },
+  "teamPage": {
+    "intro": "Behind every smile is a team: doctors, assistants and dental technicians working side by side in the same clinic.",
+    "comingSoon": "Profiles of the whole team will be published soon."
+  },
+  "technologyPage": {
+    "intro": "Technology is not a luxury here — it is what allows accurate diagnosis, gentler surgery and teeth ready on the same day."
+  },
+  "laboratoryPage": {
+    "intro": "Our own digital laboratory is the heart of the clinic. Teeth are designed and milled a few steps away from the treatment room.",
+    "points": [
+      {
+        "title": "CAD/CAM design",
+        "text": "Restorations are designed on screen from the digital scans of your mouth."
+      },
+      {
+        "title": "Zirconia milling",
+        "text": "Crowns and bridges are milled from high-quality zirconia blocks."
+      },
+      {
+        "title": "Adjustments in minutes",
+        "text": "The technician can refine shape and colour during your visit."
+      },
+      {
+        "title": "Same-day teeth",
+        "text": "Provisional fixed teeth are produced on the day of surgery."
+      }
+    ],
+    "imageAlt": "Zirconia bridge milled in the clinic's laboratory"
+  },
+  "environmentPage": {
+    "intro": "A bright and calm place, designed so that adults and children feel at ease.",
+    "gallery": {
+      "room": "Treatment room",
+      "children": "Our youngest patients",
+      "doctor": "Dr. Donela Dede with a patient",
+      "cbct": "3D CBCT on site"
+    }
+  },
+  "whyPage": {
+    "intro": "Complete same-day teeth require three things on the same day and in the same place. Few clinics have all of them.",
+    "reasons": [
+      {
+        "title": "3D diagnosis on site",
+        "text": "A CBCT scanner in the clinic: no external centres, no waiting for results."
+      },
+      {
+        "title": "Surgical experience",
+        "text": "Oral surgery and implantology performed by Dr. Dede, with digital planning."
+      },
+      {
+        "title": "Our own laboratory",
+        "text": "Teeth are designed and produced in-house, while the patient is still at the clinic."
+      },
+      {
+        "title": "One coordinated team",
+        "text": "Doctor, assistants and technicians follow one plan, from scan to smile."
+      }
+    ],
+    "closing": "That is why Albania Dental Clinic is one of only two clinics in Albania that can offer complete same-day teeth."
+  },
+  "tourismPage": {
+    "intro": "Patients come to us from Albania and abroad. We organise treatment and stay together, so you can focus on your new smile."
+  },
+  "tourismHow": {
+    "intro": "Five simple steps from your first message to your flight home.",
+    "steps": [
+      {
+        "title": "Send your X-ray",
+        "text": "Through the form or WhatsApp, with a few words about your situation."
+      },
+      {
+        "title": "Receive your plan",
+        "text": "We propose a treatment plan, the number of days needed and an estimate."
+      },
+      {
+        "title": "Book dates and stay",
+        "text": "Choose your dates; we can reserve one of our apartments for you."
+      },
+      {
+        "title": "Treatment",
+        "text": "3D scan, surgery and teeth from our lab, following the plan."
+      },
+      {
+        "title": "Go home & follow-up",
+        "text": "You return home with clear instructions; we stay in touch for controls."
+      }
+    ]
+  },
+  "packagesPage": {
+    "intro": "Treatment and accommodation combined. Every package is personalised after your X-ray or 3D scan.",
+    "note": "Prices depend on your case and are confirmed in writing after the consultation."
+  },
+  "apartmentsPage": {
+    "intro": "The clinic's own apartments are reserved for patients during treatment — a quiet place to rest between appointments.",
+    "formTitle": "Book your consultation and stay",
+    "formText": "Our apartments are not for daily rental — they are reserved for patients during their treatment. Send your request and, if you have one, your X-ray: we plan the treatment and your stay together."
+  },
+  "travelPage": {
+    "intro": "Practical information to plan your trip.",
+    "sections": [
+      {
+        "title": "Flights",
+        "text": "Tirana International Airport (TIA) has direct flights from many Italian and European cities. We plan your appointments around your arrival and departure."
+      },
+      {
+        "title": "Documents",
+        "text": "Citizens of many European countries can enter Albania with a valid ID card or passport. Please check the current rules for your country before travelling."
+      },
+      {
+        "title": "Money",
+        "text": "The local currency is the Albanian lek (ALL). Cards are widely accepted in cities and euros are often accepted in tourist areas."
+      },
+      {
+        "title": "Language",
+        "text": "We communicate with patients in Albanian, Italian and English."
+      }
+    ]
+  },
+  "discoverPage": {
+    "intro": "Between appointments, Albania has a lot to offer: sea, mountains, history and excellent food.",
+    "places": [
+      {
+        "title": "The Albanian Riviera",
+        "text": "Crystal-clear water and beaches from Vlorë to Dhërmi, Himarë and Ksamil."
+      },
+      {
+        "title": "Berat & Gjirokastër",
+        "text": "Two UNESCO-listed towns of stone houses and Ottoman heritage."
+      },
+      {
+        "title": "Butrint",
+        "text": "An archaeological park with Greek, Roman and Venetian ruins in a natural setting."
+      },
+      {
+        "title": "Tirana",
+        "text": "A lively capital of colourful streets, cafés, museums and the Dajti mountain."
+      }
+    ],
+    "note": "Our advice: plan sightseeing before surgery, and rest after it."
+  },
+  "faqPage": {
+    "intro": "Answers to the questions we are asked most often. Can't find yours? Write to us.",
+    "topics": {
+      "same-day": "Same-day teeth",
+      "treatments": "Treatments",
+      "tourism": "Travelling for treatment",
+      "prices": "Prices",
+      "general": "General"
+    }
+  },
+  "resultsPage": {
+    "intro": "Results matter more than words. Here we share cases and stories — always with the patient's written consent."
+  },
+  "beforeAfterPage": {
+    "intro": "Move the slider to compare before and after. Every case is published with the patient's written consent."
+  },
+  "storiesPage": {
+    "intro": "The experience of our patients, in their own words."
+  },
+  "pricesPage": {
+    "intro": "Every mouth is different, so we give exact prices only after a clinical examination and 3D scan. Your written quote includes every step, with no surprises.",
+    "treatment": "Treatment",
+    "price": "Price",
+    "note": "Send us your panoramic X-ray for a free first estimate."
+  },
+  "journalPage": {
+    "intro": "Clear articles about implants, same-day teeth and dental tourism in Albania."
+  },
+  "bookPage": {
+    "intro": "Tell us about your situation. If you have a recent panoramic X-ray or CT, attach it — we will reply with a first assessment.",
+    "nextTitle": "What happens next",
+    "next": [
+      "We review your request and X-ray",
+      "We contact you by phone, WhatsApp or email",
+      "We agree on the consultation date and, if needed, your stay"
+    ]
+  },
+  "contactPage": {
+    "intro": "We are happy to answer your questions in Albanian, Italian or English."
+  },
+  "thankYouPage": {
+    "text": "Thank you, your request has been sent. We will contact you as soon as possible.",
+    "next": "While you wait, you can learn more about same-day teeth."
+  },
+  "legal": {
+    "updated": "Last updated: November 2026",
+    "draftNote": "This text is a draft and will be reviewed by the clinic before publication.",
+    "privacy": [
+      {
+        "title": "Who we are",
+        "text": "Albania Dental Clinic, led by Dr. Donela Dede, is responsible for the personal data collected through this website."
+      },
+      {
+        "title": "What data we collect",
+        "text": "When you send a request we collect your name, contact details, your message and, if you choose to attach them, X-rays or other medical images."
+      },
+      {
+        "title": "Why we use it",
+        "text": "Only to answer your request, prepare a treatment plan and organise your visit. We do not sell your data and do not use it for unrelated marketing."
+      },
+      {
+        "title": "Health data",
+        "text": "X-rays and clinical information are health data. They are processed with your explicit consent, accessed only by clinical staff and protected with appropriate security measures."
+      },
+      {
+        "title": "How long we keep it",
+        "text": "Requests that do not lead to treatment are deleted after a reasonable period. Clinical records are kept for the period required by law."
+      },
+      {
+        "title": "Your rights",
+        "text": "You can ask to access, correct or delete your data, or withdraw your consent at any time, by writing to the clinic."
+      }
+    ],
+    "cookies": [
+      {
+        "title": "What cookies are",
+        "text": "Cookies are small files saved by your browser that help a website work and remember your choices."
+      },
+      {
+        "title": "Necessary cookies",
+        "text": "We use only what is needed for the website to function, such as remembering your language and your cookie choice."
+      },
+      {
+        "title": "Analytics",
+        "text": "Analytics or marketing cookies are used only if you accept them in the cookie banner."
+      },
+      {
+        "title": "Changing your choice",
+        "text": "You can delete cookies from your browser settings at any time; the banner will appear again."
+      }
+    ],
+    "terms": [
+      {
+        "title": "Information only",
+        "text": "The content of this website is general information and does not replace a clinical examination by a dentist."
+      },
+      {
+        "title": "Prices and plans",
+        "text": "Treatment plans and prices are personal and become binding only in a written quote after a consultation."
+      },
+      {
+        "title": "Results",
+        "text": "Results shown are individual cases; outcomes vary from patient to patient."
+      },
+      {
+        "title": "Intellectual property",
+        "text": "Texts, photographs and the logo belong to Albania Dental Clinic and may not be reused without permission."
+      }
+    ],
+    "accessibility": [
+      {
+        "title": "Our commitment",
+        "text": "We want this website to be usable by everyone and follow the WCAG 2.1 AA guidelines."
+      },
+      {
+        "title": "What we do",
+        "text": "Keyboard navigation, visible focus, text alternatives for images, sufficient colour contrast and respect for reduced-motion settings."
+      },
+      {
+        "title": "Feedback",
+        "text": "If something is difficult to use, please let us know through the contact page and we will fix it."
+      }
+    ]
+  },
+  "pages": {
+    "home": {
+      "title": "Albania Dental Clinic — Same-day teeth & implants",
+      "description": "Same-day fixed teeth, implantology and an in-house digital lab. One of only two clinics in Albania offering complete same-day teeth. Led by Dr. Donela Dede."
+    },
+    "sameDay": {
+      "title": "Same-Day Teeth",
+      "description": "Arrive without teeth, leave with fixed teeth: complete same-day teeth on implants with 3D diagnosis, guided surgery and our own lab."
+    },
+    "sameDayHow": {
+      "title": "Same-day teeth: how it works",
+      "description": "From X-ray to fixed teeth: the six steps of a same-day teeth treatment at Albania Dental Clinic."
+    },
+    "sameDayCandidates": {
+      "title": "Who is a candidate for same-day teeth",
+      "description": "Find out whether fixed teeth on implants in one day may be right for you, with a quick self-check."
+    },
+    "treatments": {
+      "title": "Treatments",
+      "description": "Implantology, digital implantology, aesthetic and general dentistry at Albania Dental Clinic."
+    },
+    "clinic": {
+      "title": "Clinic",
+      "description": "Dr. Donela Dede, our team, 3D technology and in-house digital laboratory — all under one roof."
+    },
+    "drDede": {
+      "title": "Dr. Donela Dede",
+      "description": "Dr. Donela Dede leads Albania Dental Clinic: oral surgery, implantology, endodontics and aesthetic dentistry."
+    },
+    "team": {
+      "title": "Team",
+      "description": "Meet the doctors, assistants and dental technicians of Albania Dental Clinic."
+    },
+    "technology": {
+      "title": "Technology",
+      "description": "3D CBCT, intraoral scanning, digital X-ray, CAD/CAM lab and guided implant surgery."
+    },
+    "laboratory": {
+      "title": "Digital laboratory",
+      "description": "Our in-house CAD/CAM laboratory designs and mills zirconia teeth — even on the day of surgery."
+    },
+    "environment": {
+      "title": "Our environment",
+      "description": "A bright, calm and modern clinic where adults and children feel at ease."
+    },
+    "whyOneOfTwo": {
+      "title": "Why one of two",
+      "description": "Why Albania Dental Clinic is one of only two clinics in Albania offering complete same-day teeth."
+    },
+    "tourism": {
+      "title": "Dental Tourism",
+      "description": "Dental treatment in Albania with a personal plan and the clinic's own apartments for patients."
+    },
+    "tourismHow": {
+      "title": "Dental tourism: how it works",
+      "description": "Five steps from sending your X-ray to flying home with a new smile."
+    },
+    "apartments": {
+      "title": "Apartments",
+      "description": "Private apartments reserved for patients of Albania Dental Clinic during treatment."
+    },
+    "packages": {
+      "title": "Packages",
+      "description": "Treatment and stay combined in one personal plan."
+    },
+    "travel": {
+      "title": "Travel",
+      "description": "Flights, documents, currency and practical tips for patients travelling to Albania."
+    },
+    "discoverAlbania": {
+      "title": "Discover Albania",
+      "description": "The Riviera, Berat, Gjirokastër, Butrint and Tirana: make your treatment a short holiday."
+    },
+    "faq": {
+      "title": "Dental tourism FAQ",
+      "description": "Answers about same-day teeth, travelling for treatment and prices."
+    },
+    "results": {
+      "title": "Results",
+      "description": "Before and after cases and patient stories, shared with written consent."
+    },
+    "beforeAfter": {
+      "title": "Before & after",
+      "description": "Compare before and after implant and aesthetic treatments at Albania Dental Clinic."
+    },
+    "patientStories": {
+      "title": "Patient stories",
+      "description": "Experiences of patients treated at Albania Dental Clinic."
+    },
+    "prices": {
+      "title": "Prices",
+      "description": "Transparent prices confirmed in writing after consultation and 3D scan."
+    },
+    "journal": {
+      "title": "Journal",
+      "description": "Articles about implants, same-day teeth and dental tourism in Albania."
+    },
+    "book": {
+      "title": "Book a free consultation",
+      "description": "Send your request and X-ray for a free first assessment and personal treatment plan."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact Albania Dental Clinic in Albanian, Italian or English."
+    },
+    "thankYou": {
+      "title": "Thank you",
+      "description": "Your request has been sent."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "How Albania Dental Clinic processes personal and health data."
+    },
+    "cookies": {
+      "title": "Cookie policy",
+      "description": "How this website uses cookies."
+    },
+    "terms": {
+      "title": "Terms of use",
+      "description": "Terms of use of the Albania Dental Clinic website."
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "description": "Our commitment to an accessible website."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "text": "The page you are looking for does not exist or has moved."
+    }
+  }
+}
