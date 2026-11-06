@@ -23,7 +23,7 @@ export function TeamCard({ member }: TeamCardProps) {
             alt={member.name}
             fill
             sizes="(min-width: 1024px) 25vw, 50vw"
-            className="zoom-target object-cover object-top"
+            className="reveal-img-zoom zoom-target object-cover object-top"
           />
         ) : (
           <span className="absolute inset-0 grid place-items-center text-brand-gold">

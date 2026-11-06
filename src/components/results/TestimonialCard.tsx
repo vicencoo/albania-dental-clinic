@@ -13,7 +13,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
     <Link
       href={`/results/patient-stories/${testimonial.slug}`}
-      className="lift reveal flex h-full flex-col rounded-[2rem] border border-brand-sand bg-brand-white p-8"
+      className="lift flex h-full flex-col rounded-[2rem] border border-brand-sand bg-brand-white p-8"
     >
       <span aria-hidden className="font-heading text-6xl leading-none text-brand-gold">
         “

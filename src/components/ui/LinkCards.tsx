@@ -28,7 +28,7 @@ export function LinkCards({
       ? "bg-brand-sky text-brand-blue group-hover:bg-brand-blue"
       : "bg-brand-porcelain text-brand-green group-hover:bg-brand-green";
   return (
-    <ul className={`grid gap-6 sm:grid-cols-2 ${columns === 3 ? "lg:grid-cols-3" : ""}`}>
+    <ul className={`grid gap-6 sm:grid-cols-2 ${columns === 3 ? "reveal-sides lg:grid-cols-3" : "reveal-alternate"}`}>
       {items.map((item, i) => (
         <li key={item.href} className="reveal-rotate" style={stagger(i % 3)}>
           <Link
@@ -42,7 +42,7 @@ export function LinkCards({
                   alt=""
                   fill
                   sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
-                  className="zoom-target object-cover"
+                  className="reveal-img-zoom zoom-target object-cover"
                 />
               </div>
             ) : (

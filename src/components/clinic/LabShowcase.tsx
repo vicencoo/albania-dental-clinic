@@ -19,7 +19,7 @@ export function LabShowcase() {
           <p className="mt-1 font-heading text-2xl">Zirconia</p>
         </div>
       </div>
-      <ul className="grid gap-5 sm:grid-cols-2">
+      <ul className="reveal-alternate grid gap-5 sm:grid-cols-2">
         {points.map((point, i) => (
           <li key={point.title} className="reveal-flip lift rounded-[1.75rem] bg-brand-porcelain p-7" style={stagger(i)}>
             <Icon name={icons[i] ?? "lab"} className={`size-7 ${i < 2 ? "text-brand-blue" : "text-brand-green"}`} />

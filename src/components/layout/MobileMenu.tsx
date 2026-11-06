@@ -54,7 +54,7 @@ export function MobileMenu() {
         aria-expanded={open}
         aria-controls={drawerId}
         onClick={() => setOpen(true)}
-        className="flex items-center gap-2 rounded-full border border-brand-sand px-4 py-2 text-sm transition-colors hover:border-brand-gold"
+        className="flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm text-brand-white transition-colors hover:border-brand-leaf"
       >
         <Icon name="menu" className="size-5" />
         <span>{t("ui.menu")}</span>
@@ -65,33 +65,33 @@ export function MobileMenu() {
         role="dialog"
         aria-modal="true"
         aria-label={t("ui.mainNavigation")}
-        className={`fixed inset-0 z-50 flex flex-col bg-brand-white transition-[opacity,visibility,transform] duration-500 ease-(--ease-luxe) ${
+        className={`obsidian fixed inset-0 z-50 flex flex-col transition-[opacity,visibility,transform] duration-500 ease-(--ease-luxe) ${
           open ? "visible translate-x-0 opacity-100" : "invisible translate-x-8 opacity-0"
         }`}
       >
-        <div className="flex items-center justify-between border-b border-brand-sand px-5 py-3">
-          <Logo />
+        <div className="flex items-center justify-between border-b border-white/10 px-5 py-3">
+          <Logo tone="dark" />
           <button
             ref={closeRef}
             type="button"
             onClick={close}
             aria-label={t("ui.closeMenu")}
-            className="grid size-11 place-items-center rounded-full border border-brand-sand transition-colors hover:border-brand-gold"
+            className="grid size-11 place-items-center rounded-full border border-white/20 transition-colors hover:border-brand-leaf"
           >
             <Icon name="close" className="size-5" />
           </button>
         </div>
-        <div className="border-b border-brand-sand px-5 py-3">
-          <LanguageSwitcher />
+        <div className="border-b border-white/10 px-5 py-3">
+          <LanguageSwitcher tone="dark" />
         </div>
 
         <nav className="flex-1 overflow-y-auto px-5 pb-28" aria-label={t("ui.mainNavigation")}>
-          <ul className="divide-y divide-brand-sand">
+          <ul className="divide-y divide-white/10">
             {mainNav.map((item) => {
               const sectionId = `${baseId}-section-${item.id}`;
               const isExpanded = expanded === item.id;
               const active = isActivePath(pathname, item.href);
-              const labelClass = `${active ? "text-brand-green" : ""} ${item.highlight ? "font-semibold" : ""}`;
+              const labelClass = `${active ? "text-brand-leaf" : "text-brand-white"} ${item.highlight ? "font-semibold" : ""}`;
 
               if (!item.columns) {
                 return (
@@ -120,19 +120,19 @@ export function MobileMenu() {
                     {t(item.labelKey)}
                     <span
                       aria-hidden
-                      className={`grid size-8 place-items-center rounded-full border border-brand-gold/50 text-brand-gold transition-transform duration-300 ${isExpanded ? "rotate-45" : ""}`}
+                      className={`grid size-8 place-items-center rounded-full border border-white/20 text-brand-leaf transition-transform duration-300 ${isExpanded ? "rotate-45" : ""}`}
                     >
                       <Icon name="plus" className="size-4" />
                     </span>
                   </button>
                   <div id={sectionId} hidden={!isExpanded} className="pb-4">
-                    <Link href={item.href} onClick={close} className="block py-2 text-sm font-semibold">
+                    <Link href={item.href} onClick={close} className="block py-2 text-sm font-semibold text-brand-white">
                       {t(item.labelKey)}
                     </Link>
                     {item.columns.map((column, i) => (
                       <div key={column.titleKey ?? i} className="mt-2">
                         {column.titleKey && (
-                          <p className="eyebrow mt-2">
+                          <p className="eyebrow mt-2 text-brand-leaf">
                             {t(column.titleKey)}
                           </p>
                         )}
@@ -143,7 +143,7 @@ export function MobileMenu() {
                                 href={link.href}
                                 onClick={close}
                                 aria-current={pathname === link.href ? "page" : undefined}
-                                className={`block py-2 text-sm ${pathname === link.href ? "text-brand-green" : ""}`}
+                                className={`block py-2 text-sm ${pathname === link.href ? "text-brand-leaf" : "text-brand-white/75"}`}
                               >
                                 {t(link.labelKey)}
                               </Link>
@@ -159,11 +159,11 @@ export function MobileMenu() {
           </ul>
         </nav>
 
-        <div className="sticky bottom-0 border-t border-brand-sand bg-brand-white p-4">
+        <div className="sticky bottom-0 border-t border-white/10 bg-brand-obsidian/95 p-4 backdrop-blur">
           <Link
             href={bookHref}
             onClick={close}
-            className="shine block rounded-full bg-brand-green py-3.5 text-center text-brand-white"
+            className="shine block rounded-full bg-brand-green py-3.5 text-center font-label text-xs uppercase tracking-[0.22em] text-brand-white shadow-glow"
           >
             {t("nav.book")}
           </Link>

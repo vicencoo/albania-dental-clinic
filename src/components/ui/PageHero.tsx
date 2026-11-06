@@ -16,42 +16,44 @@ interface PageHeroProps {
   tone?: "warm" | "sky";
 }
 
-/** Hero used at the top of every inner page. Animations: pure CSS load-in. */
+/**
+ * Hero used at the top of every inner page: dark "obsidian" surface (emerald glow, or a
+ * blue glow for digital / travel pages). Animations: pure CSS load-in.
+ */
 export function PageHero({ title, eyebrow, intro, breadcrumbs, image, children, className, tone = "warm" }: PageHeroProps) {
   return (
-    <section className={cx("relative overflow-clip", tone === "sky" ? "sky-wash" : "bg-brand-porcelain grain", className)}>
-      {/* Decorative arches */}
-      <svg
-        aria-hidden
-        viewBox="0 0 400 400"
-        className={cx("spin-slow pointer-events-none absolute -right-40 -top-40 size-[34rem]", tone === "sky" ? "text-brand-blue/20" : "text-brand-gold/20")}
-      >
-        <circle cx="200" cy="200" r="198" fill="none" stroke="currentColor" strokeDasharray="2 10" />
-        <circle cx="200" cy="200" r="150" fill="none" stroke="currentColor" />
-      </svg>
+    <section
+      className={cx(
+        "obsidian relative overflow-clip",
+        tone === "sky" &&
+          "bg-[radial-gradient(ellipse_60%_55%_at_85%_15%,rgb(31_111_163/0.32),transparent_70%),radial-gradient(ellipse_50%_50%_at_5%_95%,rgb(15_106_76/0.18),transparent_70%)]",
+        className,
+      )}
+    >
+      <span aria-hidden className="absolute inset-x-0 bottom-0 h-px bg-white/[0.07]" />
 
       <div
         className={cx(
-          "container-luxe relative grid items-center gap-12 py-14 lg:py-20",
+          "container-luxe relative grid items-center gap-12 py-16 lg:py-28",
           image && "lg:grid-cols-[1.15fr_0.85fr]",
         )}
       >
         <div>
           {breadcrumbs && (
             <div className="fade-in">
-              <Breadcrumbs items={breadcrumbs} />
+              <Breadcrumbs items={breadcrumbs} tone="dark" />
             </div>
           )}
           {eyebrow && (
-            <p className={cx("eyebrow rise mt-8", tone === "sky" && "text-brand-blue")} style={stagger(0)}>
+            <p className={cx("eyebrow rise mt-10", tone === "sky" ? "text-brand-azure" : "text-brand-leaf")} style={stagger(0)}>
               {eyebrow}
             </p>
           )}
-          <h1 className="rise mt-4 max-w-3xl text-5xl text-brand-ink sm:text-6xl lg:text-7xl" style={stagger(1)}>
+          <h1 className="rise display mt-6 max-w-3xl text-5xl text-brand-white sm:text-6xl lg:text-[5.2rem]" style={stagger(1)}>
             {title}
           </h1>
           {intro && (
-            <p className="rise mt-6 max-w-2xl text-lg leading-relaxed text-brand-muted" style={stagger(2)}>
+            <p className="rise mt-7 max-w-2xl text-lg leading-relaxed text-brand-white/65" style={stagger(2)}>
               {intro}
             </p>
           )}
@@ -75,7 +77,7 @@ export function PageHero({ title, eyebrow, intro, breadcrumbs, image, children, 
             />
             <span
               aria-hidden
-              className="float absolute -bottom-5 -left-5 hidden size-24 rounded-full border border-brand-gold/40 lg:block"
+              className="absolute -bottom-6 -left-6 hidden size-28 rounded-full border border-white/10 lg:block"
             />
           </div>
         )}

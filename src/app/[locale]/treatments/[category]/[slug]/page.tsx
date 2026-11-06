@@ -93,7 +93,7 @@ export default async function TreatmentPage({ params }: Props) {
         <section className="py-20 lg:py-24">
           <div className="container-luxe">
             <SectionHeading title={t("ui.relatedTreatments")} />
-            <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="reveal-sides mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((r, i) => (
                 <li key={r.slug} className="reveal" style={stagger(i)}>
                   <TreatmentCard treatment={r} label={t(r.labelKey)} />

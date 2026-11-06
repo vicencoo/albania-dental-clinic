@@ -18,7 +18,7 @@ export function Logo({ tone = "light", className }: { tone?: "light" | "dark"; c
         priority
         className="size-10 shrink-0 object-contain lg:size-11"
       />
-      <span className="flex flex-col leading-none" aria-hidden>
+      <span className="flex flex-col whitespace-nowrap leading-none" aria-hidden>
         <span
           className={cx(
             "font-label text-[1.15rem] tracking-[0.12em]",
@@ -30,7 +30,7 @@ export function Logo({ tone = "light", className }: { tone?: "light" | "dark"; c
         <span
           className={cx(
             "mt-1 font-label text-[0.6rem] tracking-[0.32em]",
-            tone === "light" ? "text-brand-leaf" : "text-brand-gold-light",
+            tone === "light" ? "text-brand-green" : "text-brand-white/60",
           )}
         >
           DENTAL CLINIC

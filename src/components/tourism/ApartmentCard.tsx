@@ -22,7 +22,7 @@ export function ApartmentCard({ apartment }: ApartmentCardProps) {
     >
       <div className="relative aspect-[4/3] overflow-clip bg-brand-porcelain md:aspect-auto">
         {cover ? (
-          <Image src={cover} alt="" fill sizes="(min-width: 768px) 40vw, 100vw" className="zoom-target object-cover" />
+          <Image src={cover} alt="" fill sizes="(min-width: 768px) 40vw, 100vw" className="reveal-img-zoom zoom-target object-cover" />
         ) : (
           <div className="absolute inset-0 grid place-items-center bg-[radial-gradient(circle_at_30%_20%,rgb(176_141_87/0.2),transparent_60%)]">
             <Icon name="home" className="size-16 text-brand-gold" />

@@ -36,7 +36,7 @@ export default async function Page({ params }: Props) {
             <a
               key={c.slug}
               href={`#${c.slug}`}
-              className="rounded-full border border-brand-gold/50 bg-brand-white px-4 py-2 text-sm transition-colors hover:border-brand-gold hover:text-brand-green"
+              className="hero-pill"
             >
               {t(c.labelKey)}
             </a>
@@ -64,7 +64,7 @@ export default async function Page({ params }: Props) {
                 </p>
               </div>
             </div>
-            <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <ul className="reveal-stagger mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {getTreatmentsByCategory(category.slug).map((treatment, i) => (
                 <li key={treatment.slug} className="reveal-flip" style={stagger(i % 4)}>
                   <TreatmentCard treatment={treatment} label={t(treatment.labelKey)} />

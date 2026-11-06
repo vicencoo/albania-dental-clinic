@@ -15,10 +15,10 @@ export function CTABand({ title, text }: CTABandProps) {
   const wa = whatsappHref();
 
   return (
-    <section className="relative isolate overflow-clip bg-brand-forest text-brand-white">
+    <section className="obsidian relative isolate overflow-clip border-t border-white/[0.06]">
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_20%,rgb(76_154_63/0.35),transparent_45%),radial-gradient(circle_at_85%_80%,rgb(176_141_87/0.3),transparent_45%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_45%_70%_at_15%_50%,rgb(15_106_76/0.35),transparent_70%),radial-gradient(ellipse_40%_60%_at_90%_80%,rgb(31_111_163/0.25),transparent_70%)]"
       />
       <Image
         src="/images/brand/logo-mark.png"
@@ -26,16 +26,16 @@ export function CTABand({ title, text }: CTABandProps) {
         width={420}
         height={420}
         aria-hidden
-        className="parallax pointer-events-none absolute -right-16 -top-10 -z-10 w-80 opacity-[0.07] lg:w-[26rem]"
+        className="parallax pointer-events-none absolute -right-16 -top-10 -z-10 w-80 opacity-[0.05] grayscale lg:w-[26rem]"
       />
-      <div className="container-luxe flex flex-col items-start gap-8 py-20 lg:flex-row lg:items-center lg:justify-between lg:py-24">
+      <div className="container-luxe flex flex-col items-start gap-10 py-24 lg:flex-row lg:items-center lg:justify-between lg:py-32">
         <div className="max-w-2xl">
-          <span aria-hidden className="ornament reveal w-40 text-xs">◆</span>
-          <h2 className="reveal mt-6 text-4xl sm:text-5xl" style={stagger(1)}>
+          <span aria-hidden className="tricolor-line reveal-from-left block w-16" />
+          <h2 className="reveal-text display mt-8 text-[2.6rem] sm:text-6xl" style={stagger(1)}>
             {title}
           </h2>
           {text && (
-            <p className="reveal mt-4 text-lg text-brand-white/75" style={stagger(2)}>
+            <p className="reveal mt-5 text-lg text-brand-white/60" style={stagger(2)}>
               {text}
             </p>
           )}

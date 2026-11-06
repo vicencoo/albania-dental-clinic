@@ -47,7 +47,7 @@ export function TreatmentCard({ treatment, label, variant = "card" }: TreatmentC
             alt=""
             fill
             sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
-            className="zoom-target object-cover"
+            className="reveal-img-zoom zoom-target object-cover"
           />
         )}
       </div>

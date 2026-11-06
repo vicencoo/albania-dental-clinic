@@ -20,7 +20,7 @@ export function Breadcrumbs({ items, tone = "light" }: { items: Crumb[]; tone?: 
     <>
       <nav
         aria-label={t("ui.breadcrumbs")}
-        className={tone === "light" ? "text-xs text-brand-muted" : "text-xs text-brand-white/70"}
+        className={`font-label text-[0.68rem] uppercase tracking-[0.2em] ${tone === "light" ? "text-brand-muted" : "text-brand-white/55"}`}
       >
         <ol className="flex flex-wrap items-center gap-2">
           {all.map((crumb, i) => {
@@ -28,8 +28,8 @@ export function Breadcrumbs({ items, tone = "light" }: { items: Crumb[]; tone?: 
             return (
               <li key={`${crumb.label}-${i}`} className="flex items-center gap-2">
                 {i > 0 && (
-                  <span aria-hidden className="text-brand-gold">
-                    ◆
+                  <span aria-hidden className="opacity-40">
+                    /
                   </span>
                 )}
                 {isLast || !crumb.href ? (

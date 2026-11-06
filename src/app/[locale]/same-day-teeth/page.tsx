@@ -70,7 +70,7 @@ export default async function Page({ params }: Props) {
         </ul>
       </section>
 
-      <section className="relative overflow-clip bg-brand-green py-24 text-brand-white">
+      <section className="obsidian relative overflow-clip py-24 lg:py-32">
         <div className="container-luxe grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <SectionHeading title={t("sameDay.whyHere.title")} intro={t("sameDay.whyHere.text")} tone="dark" />
           <div className="reveal flex flex-wrap gap-4">

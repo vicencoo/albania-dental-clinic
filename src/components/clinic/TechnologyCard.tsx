@@ -26,7 +26,7 @@ export function TechnologyCard({ technology, reverse, index = 0 }: TechnologyCar
               alt={technology.name[locale]}
               fill
               sizes="(min-width: 768px) 45vw, 100vw"
-              className="object-cover"
+              className="reveal-img-zoom object-cover"
             />
           ) : (
             <div className="absolute inset-0 grid place-items-center">
@@ -36,7 +36,7 @@ export function TechnologyCard({ technology, reverse, index = 0 }: TechnologyCar
         </div>
       </div>
       <div className={reverse ? "reveal-right" : "reveal-left"}>
-        <span className="font-heading text-6xl text-brand-blue/35">{String(index + 1).padStart(2, "0")}</span>
+        <span aria-hidden className="font-heading text-6xl font-light text-brand-blue/70">{String(index + 1).padStart(2, "0")}</span>
         <h2 className="mt-2 text-4xl">{technology.name[locale]}</h2>
         <p className="mt-4 text-lg leading-relaxed text-brand-muted">{technology.description[locale]}</p>
       </div>

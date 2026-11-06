@@ -32,7 +32,7 @@ export default async function Page({ params }: Props) {
       />
       <section className="py-20 lg:py-24">
         <div className="container-luxe">
-          <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <ul className="reveal-stagger grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {publishedTeam.map((member, i) => (
               <li key={member.slug} className="reveal" style={stagger(i)}>
                 <TeamCard member={member} />

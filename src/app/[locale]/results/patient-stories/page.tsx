@@ -34,7 +34,7 @@ export default async function Page({ params }: Props) {
       <section className="py-20 lg:py-24">
         <div className="container-luxe">
           {publishedTestimonials.length > 0 ? (
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="reveal-sides grid gap-6 md:grid-cols-3">
               {publishedTestimonials.map((testimonial) => (
                 <TestimonialCard key={testimonial.slug} testimonial={testimonial} />
               ))}

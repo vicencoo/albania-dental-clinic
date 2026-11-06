@@ -11,14 +11,14 @@ export function LanguageSwitcher({ className = "", tone = "light" }: { className
   const locale = useLocale();
   const pathname = usePathname();
   const idle = tone === "light" ? "text-brand-muted hover:text-brand-ink" : "text-brand-white/60 hover:text-brand-white";
-  const current = tone === "light" ? "text-brand-green" : "text-brand-gold-light";
+  const current = tone === "light" ? "text-brand-green" : "text-brand-leaf";
 
   return (
     <nav aria-label={t("language")} className={`font-label text-xs tracking-widest ${className}`}>
       {routing.locales.map((l, i) => (
         <Fragment key={l}>
           {i > 0 && (
-            <span aria-hidden className="mx-1.5 text-brand-gold">
+            <span aria-hidden className={`mx-1.5 ${tone === "light" ? "text-brand-sand" : "text-white/25"}`}>
               ·
             </span>
           )}

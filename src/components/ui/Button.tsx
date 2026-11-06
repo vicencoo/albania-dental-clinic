@@ -7,15 +7,17 @@ import { Icon, type IconName } from "./Icon";
 type Variant = "primary" | "secondary" | "ghost" | "light" | "outline-light";
 
 const variants: Record<Variant, string> = {
-  primary: "shine bg-brand-green text-brand-white hover:bg-brand-green-dark shadow-soft",
-  secondary: "border border-brand-gold/70 text-brand-ink hover:border-brand-gold hover:bg-brand-porcelain",
-  ghost: "px-0! text-brand-green link-underline",
-  light: "shine bg-brand-white text-brand-green-dark hover:bg-brand-porcelain",
-  "outline-light": "border border-brand-white/40 text-brand-white hover:border-brand-white hover:bg-brand-white/10",
+  primary: "shine bg-brand-green text-brand-white shadow-glow hover:bg-brand-leaf hover:text-brand-obsidian",
+  // secondary / ghost adapt automatically inside dark (.obsidian) sections — always readable.
+  secondary:
+    "border border-brand-ink/20 text-brand-ink hover:border-brand-green hover:text-brand-green in-[.obsidian]:border-white/30 in-[.obsidian]:text-brand-white in-[.obsidian]:hover:border-brand-leaf in-[.obsidian]:hover:text-brand-leaf",
+  ghost: "px-0! text-brand-green link-underline in-[.obsidian]:text-brand-leaf",
+  light: "shine bg-brand-white text-brand-obsidian hover:bg-brand-leaf",
+  "outline-light": "border border-brand-white/30 text-brand-white hover:border-brand-leaf hover:text-brand-leaf",
 };
 
 const base =
-  "group inline-flex items-center justify-center gap-2.5 rounded-full px-6 py-3 text-sm font-medium tracking-wide transition-[background-color,border-color,color,transform] duration-300 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-60";
+  "group inline-flex items-center justify-center gap-3 rounded-full px-7 py-3.5 font-label text-[0.72rem] uppercase tracking-[0.2em] transition-[background-color,border-color,color,transform] duration-500 ease-(--ease-luxe) active:scale-[0.98] disabled:pointer-events-none disabled:opacity-60";
 
 type ButtonProps = {
   variant?: Variant;

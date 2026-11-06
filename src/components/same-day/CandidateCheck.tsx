@@ -71,7 +71,7 @@ export function CandidateCheck() {
                     key={option}
                     type="button"
                     onClick={() => answer(i)}
-                    className="group flex items-center justify-between rounded-2xl border border-brand-white/20 px-5 py-4 text-left transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-brand-gold hover:bg-brand-white/10"
+                    className="group flex items-center justify-between rounded-2xl border border-brand-white/20 px-5 py-4 text-left transition-[background-color,border-color,translate] duration-300 hover:-translate-y-0.5 hover:border-brand-gold hover:bg-brand-white/10"
                   >
                     {option}
                     <Icon name="arrow" className="size-4 opacity-0 transition-opacity group-hover:opacity-100" />

@@ -24,16 +24,16 @@ export function Footer() {
   ].filter(Boolean) as { icon: "instagram" | "facebook" | "whatsapp"; href: string; label: string }[];
 
   return (
-    <footer className="relative mt-auto overflow-clip bg-brand-forest text-sm text-brand-white/75">
+    <footer className="relative mt-auto overflow-clip bg-brand-obsidian text-sm text-brand-white/60">
       <span aria-hidden className="tricolor-line absolute inset-x-0 top-0 rounded-none" />
       <div
         aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(circle_at_90%_0%,rgb(176_141_87/0.18),transparent_40%)]"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_95%_0%,rgb(15_106_76/0.22),transparent_70%)]"
       />
-      <div className="container-luxe relative grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">
+      <div className="reveal-stagger container-luxe relative grid gap-12 py-20 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">
         <div>
-          <Link href="/" aria-label={site.name} className="inline-block rounded-2xl bg-brand-white px-4 py-3">
-            <Logo />
+          <Link href="/" aria-label={site.name} className="inline-block">
+            <Logo tone="dark" />
           </Link>
           <p className="mt-6 max-w-xs leading-relaxed">{t("ui.footerTagline")}</p>
 
@@ -41,7 +41,7 @@ export function Footer() {
             <address className="mt-6 space-y-2 not-italic">
               {contacts.map((c) => (
                 <p key={c.text} className="flex items-start gap-2.5">
-                  <Icon name={c.icon} className="mt-0.5 size-4 shrink-0 text-brand-gold-light" />
+                  <Icon name={c.icon} className="mt-0.5 size-4 shrink-0 text-brand-leaf" />
                   {c.href ? (
                     <a href={c.href} className="link-underline hover:text-brand-white">
                       {c.text}
@@ -63,7 +63,7 @@ export function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
-                    className="grid size-10 place-items-center rounded-full border border-brand-white/20 transition-[border-color,background-color,transform] duration-300 hover:-translate-y-0.5 hover:border-brand-gold hover:bg-brand-white/10"
+                    className="grid size-10 place-items-center rounded-full border border-brand-white/20 transition-[border-color,background-color,color,translate] duration-300 hover:-translate-y-0.5 hover:border-brand-leaf hover:text-brand-leaf"
                   >
                     <Icon name={s.icon} className="size-4.5" />
                   </a>
@@ -75,7 +75,7 @@ export function Footer() {
 
         {footerNav.map((group) => (
           <div key={group.titleKey}>
-            <p className="eyebrow mb-4 text-brand-gold-light">{t(group.titleKey)}</p>
+            <p className="eyebrow mb-5 whitespace-nowrap tracking-[0.2em] text-brand-leaf before:w-5">{t(group.titleKey)}</p>
             <ul className="space-y-2.5">
               {group.links.map((link) => (
                 <li key={link.href}>
@@ -89,8 +89,8 @@ export function Footer() {
         ))}
       </div>
 
-      <div className="relative border-t border-brand-white/10">
-        <div className="container-luxe flex flex-wrap items-center justify-between gap-4 py-5 text-xs">
+      <div className="relative border-t border-white/[0.07]">
+        <div className="reveal-fade container-luxe flex flex-wrap items-center justify-between gap-4 py-5 text-xs">
           <p>
             © {site.name}. {t("ui.rights")}
           </p>

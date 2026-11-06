@@ -18,7 +18,7 @@ export function StepList({ steps, layout = "timeline", className, tone = "green"
 
   if (layout === "grid") {
     return (
-      <ol className={cx("grid gap-5 sm:grid-cols-2 lg:grid-cols-4", className)}>
+      <ol className={cx("reveal-stagger grid gap-5 sm:grid-cols-2 lg:grid-cols-4", className)}>
         {steps.map((step, i) => (
           <li
             key={step.title}

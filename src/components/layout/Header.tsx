@@ -11,19 +11,19 @@ export function Header() {
   const t = useTranslations();
 
   return (
-    <header className="scroll-shadow sticky top-0 z-40 border-b border-brand-sand/70 bg-brand-white/95 backdrop-blur-md">
+    <header className="scroll-shadow sticky top-0 z-40 border-b border-white/[0.06] bg-brand-obsidian text-brand-white">
       <div className="container-luxe flex items-center justify-between gap-6">
         <Link href="/" className="py-3.5" aria-label="Albania Dental Clinic">
-          <Logo />
+          <Logo tone="dark" />
         </Link>
 
         <MegaMenu />
 
         <div className="flex items-center gap-4">
-          <LanguageSwitcher className="hidden xl:block" />
+          <LanguageSwitcher tone="dark" className="hidden xl:block" />
           <Link
             href={bookHref}
-            className="shine hidden rounded-full bg-brand-green px-5 py-2.5 text-sm text-brand-white transition-colors hover:bg-brand-green-dark sm:inline-block"
+            className="shine hidden rounded-full bg-brand-green whitespace-nowrap px-6 py-3 font-label text-[0.68rem] uppercase tracking-[0.18em] text-brand-white shadow-glow transition-colors duration-500 hover:bg-brand-leaf hover:text-brand-obsidian sm:inline-block"
           >
             {t("nav.book")}
           </Link>

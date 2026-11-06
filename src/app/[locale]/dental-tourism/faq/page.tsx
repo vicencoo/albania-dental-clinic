@@ -36,7 +36,7 @@ export default async function Page({ params }: Props) {
             <a
               key={topic}
               href={`#${topic}`}
-              className="rounded-full border border-brand-gold/50 bg-brand-white px-4 py-2 text-sm transition-colors hover:border-brand-gold hover:text-brand-green"
+              className="hero-pill"
             >
               {t(`faqPage.topics.${topic}`)}
             </a>

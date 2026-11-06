@@ -31,7 +31,7 @@ export default async function Page({ params }: Props) {
         breadcrumbs={[{ label: t("nav.tourism"), href: "/dental-tourism" }, { label: t("nav.apartments") }]}
       />
       <section className="py-20 lg:py-24">
-        <ul className="container-luxe space-y-8">
+        <ul className="reveal-alternate container-luxe space-y-8">
           {apartments.map((apartment, i) => (
             <li key={apartment.slug} className="reveal" style={stagger(i)}>
               <ApartmentCard apartment={apartment} />

@@ -55,7 +55,7 @@ export default async function CategoryPage({ params }: Props) {
       <section className="py-20 lg:py-24">
         <div className="container-luxe">
           <SectionHeading eyebrow={t("ui.inThisCategory")} title={t("treatmentsPage.categoryIntro")} />
-          <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="reveal-sides mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {getTreatmentsByCategory(category.slug).map((treatment, i) => (
               <li key={treatment.slug} className="reveal" style={stagger(i % 3)}>
                 <TreatmentCard treatment={treatment} label={t(treatment.labelKey)} />

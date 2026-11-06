@@ -37,10 +37,10 @@ export const tone: Record<
   },
 };
 
-/** Treatment areas: implants = brand green, digital = blue, aesthetic (smile) = red accent. */
+/** Treatment areas: implants & care = emerald, digital = blue. Red is reserved for the logo. */
 export const categoryTone: Record<TreatmentCategorySlug, Tone> = {
   implantology: "green",
   "digital-implant": "blue",
-  aesthetic: "red",
+  aesthetic: "green",
   general: "green",
 };

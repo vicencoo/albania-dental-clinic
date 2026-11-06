@@ -39,7 +39,7 @@ export function DoctorProfile({ member }: DoctorProfileProps) {
         </div>
 
         <h2 className="reveal mt-14 text-3xl">{t("specialtiesTitle")}</h2>
-        <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+        <ul className="reveal-alternate mt-6 grid gap-3 sm:grid-cols-2">
           {member.specialties.map((s, i) => (
             <li
               key={s.en}
