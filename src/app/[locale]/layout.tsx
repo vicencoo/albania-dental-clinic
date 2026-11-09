@@ -9,6 +9,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ScrollReveal } from "@/components/layout/ScrollReveal";
 import { ScrollTopOnReload } from "@/components/layout/ScrollTopOnReload";
+import { BackToTop } from "@/components/layout/BackToTop";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { site, siteUrl } from "@/content/site";
 import { fontVariables } from "@/lib/fonts";
@@ -49,6 +50,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
             {children}
           </main>
           <Footer />
+          <BackToTop />
           <WhatsAppButton />
           <CookieBanner />
           <GoogleAds />
