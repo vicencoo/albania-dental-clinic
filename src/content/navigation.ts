@@ -13,6 +13,11 @@ export function isActivePath(pathname: string, href: string): boolean {
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
+/** True when the current page belongs to a top-level nav item (its own section or an `alsoActive` one). */
+export function isNavItemActive(pathname: string, item: NavItem): boolean {
+  return [item.href, ...(item.alsoActive ?? [])].some((href) => isActivePath(pathname, href));
+}
+
 /** Where a top-level item navigates on click: its own overview page (e.g. /treatments). */
 export function primaryHref(item: NavItem): AppPath {
   return item.href;
@@ -44,15 +49,26 @@ export const mainNav: NavItem[] = [
     id: "treatments",
     labelKey: "nav.treatments",
     href: "/treatments",
-    // 4 columns generated from treatments.ts
-    columns: treatmentCategories.map((category) => ({
-      titleKey: category.labelKey,
-      href: `/treatments/${category.slug}` as AppPath,
-      links: getTreatmentsByCategory(category.slug).map((t) => ({
-        labelKey: t.labelKey,
-        href: treatmentHref(t),
+    alsoActive: ["/results"],
+    // 4 columns generated from treatments.ts + a "Results" column
+    columns: [
+      ...treatmentCategories.map((category) => ({
+        titleKey: category.labelKey,
+        href: `/treatments/${category.slug}` as AppPath,
+        links: getTreatmentsByCategory(category.slug).map((t) => ({
+          labelKey: t.labelKey,
+          href: treatmentHref(t),
+        })),
       })),
-    })),
+      {
+        titleKey: "nav.results",
+        href: "/results",
+        links: [
+          { labelKey: "nav.beforeAfter", href: "/results/before-after" },
+          { labelKey: "nav.patientStories", href: "/results/patient-stories" },
+        ],
+      },
+    ],
   },
   {
     id: "clinic",
@@ -72,7 +88,7 @@ export const mainNav: NavItem[] = [
           { labelKey: "nav.technology", href: "/clinic/technology" },
           { labelKey: "nav.laboratory", href: "/clinic/laboratory" },
           { labelKey: "nav.environment", href: "/clinic/environment" },
-          { labelKey: "nav.whyOneOfTwo", href: "/clinic/why-one-of-two" },
+          { labelKey: "nav.whyChooseUs", href: "/clinic/why-choose-us" },
         ],
       },
     ],
@@ -80,19 +96,21 @@ export const mainNav: NavItem[] = [
       titleKey: "nav.featured.clinic.title",
       textKey: "nav.featured.clinic.text",
       image: "/images/team/dr-donela-dede-with-patient.jpg",
-      href: "/clinic/why-one-of-two",
+      href: "/clinic/why-choose-us",
     },
   },
   {
     id: "tourism",
     labelKey: "nav.tourism",
     href: "/dental-tourism",
+    alsoActive: ["/prices"],
     columns: [
       {
         titleKey: "nav.groups.plan",
         links: [
           { labelKey: "nav.tourismHow", href: "/dental-tourism/how-it-works" },
           { labelKey: "nav.packages", href: "/dental-tourism/packages" },
+          { labelKey: "nav.prices", href: "/prices" },
           { labelKey: "nav.faq", href: "/dental-tourism/faq" },
         ],
       },
@@ -112,20 +130,6 @@ export const mainNav: NavItem[] = [
       href: "/dental-tourism/apartments",
     },
   },
-  {
-    id: "results",
-    labelKey: "nav.results",
-    href: "/results",
-    columns: [
-      {
-        links: [
-          { labelKey: "nav.beforeAfter", href: "/results/before-after" },
-          { labelKey: "nav.patientStories", href: "/results/patient-stories" },
-        ],
-      },
-    ],
-  },
-  { id: "prices", labelKey: "nav.prices", href: "/prices" },
   { id: "journal", labelKey: "nav.journal", href: "/journal" },
 ];
 
@@ -172,7 +176,6 @@ export const legalNav = [
   { labelKey: "nav.privacy", href: "/privacy" },
   { labelKey: "nav.cookies", href: "/cookies" },
   { labelKey: "nav.terms", href: "/terms" },
-  { labelKey: "nav.accessibility", href: "/accessibility" },
 ] as const satisfies { labelKey: string; href: AppPath }[];
 
 /**
@@ -191,7 +194,7 @@ export const staticRoutes: AppPath[] = [
   "/clinic/technology",
   "/clinic/laboratory",
   "/clinic/environment",
-  "/clinic/why-one-of-two",
+  "/clinic/why-choose-us",
   "/dental-tourism",
   "/dental-tourism/how-it-works",
   "/dental-tourism/apartments",
@@ -209,5 +212,4 @@ export const staticRoutes: AppPath[] = [
   "/privacy",
   "/cookies",
   "/terms",
-  "/accessibility",
 ];

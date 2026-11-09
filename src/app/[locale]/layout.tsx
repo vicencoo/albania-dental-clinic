@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import "../globals.css";
+import { GoogleAds } from "@/components/analytics/GoogleAds";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { Footer } from "@/components/layout/Footer";
@@ -48,6 +49,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           <Footer />
           <WhatsAppButton />
           <CookieBanner />
+          <GoogleAds />
         </NextIntlClientProvider>
       </body>
     </html>

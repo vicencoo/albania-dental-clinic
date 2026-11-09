@@ -77,8 +77,8 @@ export default async function Page({ params }: Props) {
             <Button href="/same-day-teeth/how-it-works" variant="light">
               {t("sameDay.ctaHow")}
             </Button>
-            <Button href="/clinic/why-one-of-two" variant="outline-light">
-              {t("nav.whyOneOfTwo")}
+            <Button href="/clinic/why-choose-us" variant="outline-light">
+              {t("nav.whyChooseUs")}
             </Button>
           </div>
         </div>

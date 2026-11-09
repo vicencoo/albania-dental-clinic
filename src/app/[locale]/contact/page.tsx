@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ConsultationForm } from "@/components/forms/ConsultationForm";
 import { ContactDetails } from "@/components/layout/ContactDetails";
+import { MapEmbed } from "@/components/layout/MapEmbed";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHero } from "@/components/ui/PageHero";
 import { isPlaceholder, site } from "@/content/site";
@@ -32,12 +33,9 @@ export default async function Page({ params }: Props) {
             <ContactDetails />
             {hasMap && (
               <div className="reveal-scale overflow-clip rounded-[2rem] border border-brand-sand">
-                <iframe
+                <MapEmbed
                   title={site.name}
                   src={`https://www.google.com/maps?q=${site.geo.lat},${site.geo.lng}&z=16&output=embed`}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="aspect-square w-full grayscale-[30%]"
                 />
               </div>
             )}

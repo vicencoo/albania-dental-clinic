@@ -6,24 +6,29 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MegaMenu } from "./MegaMenu";
 import { MobileMenu } from "./MobileMenu";
 
-/** Sticky header; gains a shadow on scroll via a CSS scroll-driven animation (.scroll-shadow). */
+/**
+ * Sticky glass header: logo · centred nav · language + CTA.
+ * Gains a shadow on scroll via a CSS scroll-driven animation (.scroll-shadow).
+ */
 export function Header() {
   const t = useTranslations();
 
   return (
-    <header className="scroll-shadow sticky top-0 z-40 border-b border-white/[0.06] bg-brand-obsidian text-brand-white">
-      <div className="container-luxe flex items-center justify-between gap-6">
-        <Link href="/" className="py-3.5" aria-label="Albania Dental Clinic">
-          <Logo tone="dark" />
+    <header className="scroll-shadow sticky top-0 z-40 border-b border-white/[0.07] text-brand-white">
+      {/* Solid layer (no backdrop-filter: it repainted on every scroll frame and trapped the fixed mobile drawer). */}
+      <span aria-hidden className="absolute inset-0 -z-10 bg-brand-obsidian/[0.97]" />
+      <div className="container-luxe flex h-[4.25rem] items-center justify-between gap-6">
+        <Link href="/" aria-label="Albania Dental Clinic" className="shrink-0">
+          <Logo tone="dark" className="[&_img]:size-9" />
         </Link>
 
         <MegaMenu />
 
-        <div className="flex items-center gap-4">
-          <LanguageSwitcher tone="dark" className="hidden xl:block" />
+        <div className="flex items-center gap-2">
+          <LanguageSwitcher className="hidden xl:block" />
           <Link
             href={bookHref}
-            className="shine hidden rounded-full bg-brand-green whitespace-nowrap px-6 py-3 font-label text-[0.68rem] uppercase tracking-[0.18em] text-brand-white shadow-glow transition-colors duration-500 hover:bg-brand-leaf hover:text-brand-obsidian sm:inline-block"
+            className="hidden h-10 items-center whitespace-nowrap rounded-full bg-brand-white px-5 text-[0.82rem] font-semibold text-brand-obsidian transition-colors duration-300 hover:bg-brand-leaf sm:inline-flex"
           >
             {t("nav.book")}
           </Link>

@@ -13,7 +13,7 @@
     "technology": "Technology",
     "laboratory": "Digital laboratory",
     "environment": "Our environment",
-    "whyOneOfTwo": "Why one of two",
+    "whyChooseUs": "Why choose us",
     "tourism": "Dental Tourism",
     "tourismHow": "How it works",
     "apartments": "Apartments",
@@ -32,7 +32,6 @@
     "privacy": "Privacy policy",
     "cookies": "Cookie policy",
     "terms": "Terms of use",
-    "accessibility": "Accessibility",
     "groups": {
       "people": "People",
       "place": "Our clinic",
@@ -46,7 +45,7 @@
         "text": "3D diagnosis, guided surgery and our own digital lab, all in one place."
       },
       "clinic": {
-        "title": "One of only two clinics in Albania",
+        "title": "One of the few clinics in Albania",
         "text": "Why complete same-day teeth are possible here."
       },
       "tourism": {
@@ -63,7 +62,7 @@
       "technology": "3D CBCT, digital scanning and guided surgery.",
       "laboratory": "Where your new teeth are designed and milled.",
       "environment": "A bright, calm and modern place to be treated.",
-      "whyOneOfTwo": "What makes complete same-day teeth possible here.",
+      "whyChooseUs": "What makes complete same-day teeth possible here.",
       "tourismHow": "From your first message to your flight home.",
       "packages": "Treatment and stay combined in one plan.",
       "faq": "Answers to the questions patients ask most.",
@@ -71,7 +70,8 @@
       "travel": "Flights, arrival and practical tips.",
       "discoverAlbania": "Turn your treatment into a short holiday.",
       "beforeAfter": "Cases shared with our patients' consent.",
-      "patientStories": "Experiences told by our patients."
+      "patientStories": "Experiences told by our patients.",
+      "prices": "Compare costs with the UK, Italy and Turkey."
     }
   },
   "treatments": {
@@ -252,14 +252,18 @@
     "logoAlt": "Albania Dental Clinic logo",
     "photoBy": "Photo: Albania Dental Clinic",
     "cookie": {
-      "text": "We use cookies to improve this website.",
+      "title": "Cookies",
+      "text": "We use Google Ads cookies to measure which of our ads lead to consultation requests. They are only set if you accept.",
       "accept": "Accept",
       "reject": "Reject",
-      "more": "Learn more"
+      "more": "Cookie policy",
+      "settings": "Cookie settings"
     },
     "faqTitle": "Frequently asked questions",
     "resultsCount": "Cases",
-    "askQuestion": "Ask a question"
+    "askQuestion": "Ask a question",
+    "showMap": "Show map",
+    "mapNote": "The map is provided by Google, which may set its own cookies."
   },
   "form": {
     "name": "Full name",
@@ -306,10 +310,10 @@
       "eyebrow": "Albania Dental Clinic · Dr. Donela Dede",
       "title": "Arrive without teeth.",
       "accent": "Leave with a smile.",
-      "text": "Same-day fixed teeth, implantology and our own digital laboratory — all in one place, at one of only two clinics in Albania that offer complete same-day teeth.",
+      "text": "Same-day fixed teeth, implantology and our own digital laboratory — all in one place, at one of the few clinics in Albania that offer complete same-day teeth.",
       "primary": "Book a free consultation",
       "secondary": "How same-day teeth work",
-      "badge": "One of only two clinics in Albania",
+      "badge": "One of the few clinics in Albania",
       "imageAlt": "Dr. Donela Dede with a patient at Albania Dental Clinic",
       "scroll": "Scroll"
     },
@@ -343,7 +347,7 @@
           "text": "In suitable cases you leave the clinic with fixed teeth on the very day of surgery."
         }
       ],
-      "cta": "Why one of two"
+      "cta": "Why choose us"
     },
     "treatments": {
       "eyebrow": "Treatments",
@@ -423,7 +427,7 @@
     ],
     "whyHere": {
       "title": "Why it is possible here",
-      "text": "Same-day teeth need 3D diagnosis, precise surgery and a laboratory working side by side, on the same day. Albania Dental Clinic has all three under one roof — and is one of only two clinics in Albania able to offer the complete treatment."
+      "text": "Same-day teeth need 3D diagnosis, precise surgery and a laboratory working side by side, on the same day. Albania Dental Clinic has all three under one roof — and is one of the few clinics in Albania able to offer the complete treatment."
     },
     "ctaHow": "See the day step by step",
     "ctaCandidate": "Am I a candidate?"
@@ -608,7 +612,7 @@
         "text": "Doctor, assistants and technicians follow one plan, from scan to smile."
       }
     ],
-    "closing": "That is why Albania Dental Clinic is one of only two clinics in Albania that can offer complete same-day teeth."
+    "closing": "That is why Albania Dental Clinic is one of the few clinics in Albania that can offer complete same-day teeth."
   },
   "tourismPage": {
     "intro": "Patients come to us from Albania and abroad. We organise treatment and stay together, so you can focus on your new smile."
@@ -710,10 +714,31 @@
     "intro": "The experience of our patients, in their own words."
   },
   "pricesPage": {
-    "intro": "Every mouth is different, so we give exact prices only after a clinical examination and 3D scan. Your written quote includes every step, with no surprises.",
+    "intro": "See how typical treatment costs compare with the UK, Italy and Turkey — then get an exact, written quote for your own case.",
     "treatment": "Treatment",
     "price": "Price",
-    "note": "Send us your panoramic X-ray for a free first estimate."
+    "note": "Send us your panoramic X-ray for a free first estimate.",
+    "eyebrow": "Price comparison",
+    "tableTitle": "What the same treatment costs elsewhere",
+    "tableIntro": "Indicative starting prices at private clinics, in euro.",
+    "ourClinic": "Albania Dental Clinic",
+    "countries": {
+      "uk": "United Kingdom",
+      "italy": "Italy",
+      "turkey": "Turkey"
+    },
+    "units": {
+      "perTooth": "per tooth",
+      "perArch": "per arch",
+      "perImplant": "per implant, with crown",
+      "fullTreatment": "full treatment"
+    },
+    "from": "from {price}",
+    "freeQuote": "Free quote",
+    "disclaimerTitle": "Your exact price",
+    "disclaimer": "Prices may vary based on individual case complexity. Request a free personalized quote for an exact price based on your dental records.",
+    "disclaimerCta": "Request a free quote",
+    "sourceNote": "Prices for other countries are indicative market averages and may change. They are shown for comparison only."
   },
   "journalPage": {
     "intro": "Clear articles about implants, same-day teeth and dental tourism in Albania."
@@ -769,16 +794,20 @@
         "text": "Cookies are small files saved by your browser that help a website work and remember your choices."
       },
       {
-        "title": "Necessary cookies",
-        "text": "We use only what is needed for the website to function, such as remembering your language and your cookie choice."
+        "title": "Necessary",
+        "text": "Always active: a cookie that remembers your language, and your cookie choice (stored in your browser). They contain no personal data and are not used for advertising."
       },
       {
-        "title": "Analytics",
-        "text": "Analytics or marketing cookies are used only if you accept them in the cookie banner."
+        "title": "Advertising (Google Ads)",
+        "text": "Only if you click “Accept”: Google Ads cookies measure whether a visit from one of our ads leads to a consultation request or a WhatsApp message. Google Ads is not loaded at all until you accept. Provider: Google Ireland Ltd."
+      },
+      {
+        "title": "Google Maps",
+        "text": "The map on the contact page is provided by Google and may set its own cookies. It loads only if you accepted cookies or click “Show map”."
       },
       {
         "title": "Changing your choice",
-        "text": "You can delete cookies from your browser settings at any time; the banner will appear again."
+        "text": "You can change or withdraw your choice at any time via “Cookie settings” at the bottom of every page, or by deleting cookies in your browser."
       }
     ],
     "terms": [
@@ -798,26 +827,12 @@
         "title": "Intellectual property",
         "text": "Texts, photographs and the logo belong to Albania Dental Clinic and may not be reused without permission."
       }
-    ],
-    "accessibility": [
-      {
-        "title": "Our commitment",
-        "text": "We want this website to be usable by everyone and follow the WCAG 2.1 AA guidelines."
-      },
-      {
-        "title": "What we do",
-        "text": "Keyboard navigation, visible focus, text alternatives for images, sufficient colour contrast and respect for reduced-motion settings."
-      },
-      {
-        "title": "Feedback",
-        "text": "If something is difficult to use, please let us know through the contact page and we will fix it."
-      }
     ]
   },
   "pages": {
     "home": {
       "title": "Albania Dental Clinic — Same-day teeth & implants",
-      "description": "Same-day fixed teeth, implantology and an in-house digital lab. One of only two clinics in Albania offering complete same-day teeth. Led by Dr. Donela Dede."
+      "description": "Same-day fixed teeth, implantology and an in-house digital lab. One of the few clinics in Albania offering complete same-day teeth. Led by Dr. Donela Dede."
     },
     "sameDay": {
       "title": "Same-Day Teeth",
@@ -859,9 +874,9 @@
       "title": "Our environment",
       "description": "A bright, calm and modern clinic where adults and children feel at ease."
     },
-    "whyOneOfTwo": {
-      "title": "Why one of two",
-      "description": "Why Albania Dental Clinic is one of only two clinics in Albania offering complete same-day teeth."
+    "whyChooseUs": {
+      "title": "Why choose us",
+      "description": "Why Albania Dental Clinic is one of the few clinics in Albania offering complete same-day teeth."
     },
     "tourism": {
       "title": "Dental Tourism",
@@ -904,8 +919,8 @@
       "description": "Experiences of patients treated at Albania Dental Clinic."
     },
     "prices": {
-      "title": "Prices",
-      "description": "Transparent prices confirmed in writing after consultation and 3D scan."
+      "title": "Price comparison",
+      "description": "Compare dental treatment prices in Albania with the UK, Italy and Turkey. Request a free personalised quote."
     },
     "journal": {
       "title": "Journal",
@@ -934,10 +949,6 @@
     "terms": {
       "title": "Terms of use",
       "description": "Terms of use of the Albania Dental Clinic website."
-    },
-    "accessibility": {
-      "title": "Accessibility",
-      "description": "Our commitment to an accessible website."
     },
     "notFound": {
       "title": "Page not found",

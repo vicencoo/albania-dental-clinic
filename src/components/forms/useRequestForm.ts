@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useLocale } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
+import { trackConversion } from "@/lib/ads";
 
 export type FieldError = "name" | "contact" | "email" | "consent" | "xray" | "generic";
 
@@ -50,6 +51,7 @@ export function useRequestForm() {
     try {
       const res = await fetch("/api/consultation", { method: "POST", body: data });
       if (!res.ok) throw new Error(String(res.status));
+      trackConversion("lead");
       router.push("/thank-you");
     } catch {
       setErrors(["generic"]);

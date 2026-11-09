@@ -162,6 +162,8 @@ export interface NavItem {
   /** If present, the item opens a mega panel */
   columns?: NavColumn[];
   featured?: NavFeatured;
+  /** Other sections that count as "inside" this item (e.g. /results lives under Treatments). */
+  alsoActive?: AppPath[];
 }
 
 export interface FooterGroup {

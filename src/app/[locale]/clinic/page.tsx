@@ -25,7 +25,7 @@ export default async function Page({ params }: Props) {
     { href: "/clinic/technology", key: "technology", image: "/images/clinic/tech-cbct-unit.jpg" },
     { href: "/clinic/laboratory", key: "laboratory", image: "/images/lab/zirconia-bridge.jpg" },
     { href: "/clinic/environment", key: "environment", image: "/images/clinic/treatment-room.jpg" },
-    { href: "/clinic/why-one-of-two", key: "whyOneOfTwo", icon: "sparkle" },
+    { href: "/clinic/why-choose-us", key: "whyChooseUs", icon: "sparkle" },
   ].map(({ key, ...rest }) => ({
     ...rest,
     title: t(`nav.${key}`),

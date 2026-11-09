@@ -8,16 +8,16 @@ export function TrustStrip() {
   const row = (hidden: boolean) => (
     <ul aria-hidden={hidden || undefined} className="flex shrink-0 items-center">
       {items.map((item) => (
-        <li key={item} className="flex items-center gap-8 pr-8 font-heading text-2xl font-light italic text-brand-white/80 sm:text-3xl">
+        <li key={item} className="flex items-center gap-6 pr-6 font-heading text-base font-light italic text-brand-white/70 sm:text-lg">
           <span className="whitespace-nowrap">{item}</span>
-          <span aria-hidden className="size-1.5 shrink-0 rotate-45 bg-brand-leaf" />
+          <span aria-hidden className="size-1 shrink-0 rotate-45 bg-brand-leaf" />
         </li>
       ))}
     </ul>
   );
 
   return (
-    <section aria-label={items.join(", ")} className="reveal-fade overflow-clip border-y border-white/[0.06] bg-brand-obsidian py-7">
+    <section aria-label={items.join(", ")} className="reveal-fade overflow-clip border-y border-white/[0.06] bg-brand-obsidian py-3.5">
       <div className="marquee flex w-max">
         {row(false)}
         {row(true)}

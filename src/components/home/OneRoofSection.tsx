@@ -45,7 +45,7 @@ export function OneRoofSection() {
             ))}
           </ol>
           <div className="reveal-from-left mt-10">
-            <Button href="/clinic/why-one-of-two" variant="secondary">
+            <Button href="/clinic/why-choose-us" variant="secondary">
               {t("cta")}
             </Button>
           </div>

@@ -3,7 +3,7 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
-import { bookHref, isActivePath, mainNav } from "@/content/navigation";
+import { bookHref, isNavItemActive, mainNav } from "@/content/navigation";
 import { Icon } from "@/components/ui/Icon";
 import { Logo } from "@/components/ui/Logo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -54,10 +54,10 @@ export function MobileMenu() {
         aria-expanded={open}
         aria-controls={drawerId}
         onClick={() => setOpen(true)}
-        className="flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm text-brand-white transition-colors hover:border-brand-leaf"
+        aria-label={t("ui.openMenu")}
+        className="grid size-10 place-items-center rounded-full bg-white/[0.06] text-brand-white transition-colors hover:bg-white/[0.12]"
       >
         <Icon name="menu" className="size-5" />
-        <span>{t("ui.menu")}</span>
       </button>
 
       <div
@@ -82,7 +82,7 @@ export function MobileMenu() {
           </button>
         </div>
         <div className="border-b border-white/10 px-5 py-3">
-          <LanguageSwitcher tone="dark" />
+          <LanguageSwitcher variant="inline" />
         </div>
 
         <nav className="flex-1 overflow-y-auto px-5 pb-28" aria-label={t("ui.mainNavigation")}>
@@ -90,7 +90,7 @@ export function MobileMenu() {
             {mainNav.map((item) => {
               const sectionId = `${baseId}-section-${item.id}`;
               const isExpanded = expanded === item.id;
-              const active = isActivePath(pathname, item.href);
+              const active = isNavItemActive(pathname, item);
               const labelClass = `${active ? "text-brand-leaf" : "text-brand-white"} ${item.highlight ? "font-semibold" : ""}`;
 
               if (!item.columns) {

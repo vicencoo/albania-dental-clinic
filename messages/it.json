@@ -13,7 +13,7 @@
     "technology": "Tecnologia",
     "laboratory": "Laboratorio digitale",
     "environment": "L'ambiente",
-    "whyOneOfTwo": "Perché una delle due",
+    "whyChooseUs": "Perché sceglierci",
     "tourism": "Turismo dentale",
     "tourismHow": "Come funziona",
     "apartments": "Appartamenti",
@@ -32,7 +32,6 @@
     "privacy": "Informativa privacy",
     "cookies": "Cookie policy",
     "terms": "Termini e condizioni",
-    "accessibility": "Accessibilità",
     "groups": {
       "people": "Le persone",
       "place": "La nostra clinica",
@@ -46,7 +45,7 @@
         "text": "Diagnosi 3D, chirurgia guidata e il nostro laboratorio digitale, tutto in un unico luogo."
       },
       "clinic": {
-        "title": "Una delle sole due cliniche in Albania",
+        "title": "Una delle poche cliniche in Albania",
         "text": "Perché qui sono possibili denti completi in un giorno."
       },
       "tourism": {
@@ -63,7 +62,7 @@
       "technology": "TAC 3D CBCT, scansione digitale e chirurgia guidata.",
       "laboratory": "Dove i tuoi nuovi denti vengono progettati e fresati.",
       "environment": "Un luogo luminoso, tranquillo e moderno.",
-      "whyOneOfTwo": "Cosa rende possibili qui i denti completi in un giorno.",
+      "whyChooseUs": "Cosa rende possibili qui i denti completi in un giorno.",
       "tourismHow": "Dal primo messaggio al volo di ritorno.",
       "packages": "Cure e soggiorno in un unico piano.",
       "faq": "Le risposte alle domande più frequenti.",
@@ -71,7 +70,8 @@
       "travel": "Voli, arrivo e consigli pratici.",
       "discoverAlbania": "Trasforma le cure in una breve vacanza.",
       "beforeAfter": "Casi condivisi con il consenso dei pazienti.",
-      "patientStories": "Esperienze raccontate dai nostri pazienti."
+      "patientStories": "Esperienze raccontate dai nostri pazienti.",
+      "prices": "Confronta i costi con Regno Unito, Italia e Turchia."
     }
   },
   "treatments": {
@@ -218,10 +218,12 @@
     "footerTagline": "Odontoiatria avanzata in Albania: chirurgia orale, implantologia, endodonzia ed estetica dentale, con il nostro laboratorio digitale — guidata dalla Dr.ssa Donela Dede.",
     "rights": "Tutti i diritti riservati.",
     "cookie": {
-      "text": "Usiamo i cookie per migliorare il sito.",
+      "title": "Cookie",
+      "text": "Utilizziamo i cookie di Google Ads per misurare quali annunci portano a richieste di consulenza. Vengono attivati solo se accetti.",
       "accept": "Accetta",
       "reject": "Rifiuta",
-      "more": "Scopri di più"
+      "more": "Cookie policy",
+      "settings": "Impostazioni cookie"
     },
     "priceOnRequest": "Dopo la consulenza",
     "learnMore": "Scopri di più",
@@ -259,12 +261,14 @@
     "photoBy": "Foto: Albania Dental Clinic",
     "faqTitle": "Domande frequenti",
     "resultsCount": "Casi",
-    "askQuestion": "Fai una domanda"
+    "askQuestion": "Fai una domanda",
+    "showMap": "Mostra mappa",
+    "mapNote": "La mappa è fornita da Google, che può impostare i propri cookie."
   },
   "pages": {
     "home": {
       "title": "Albania Dental Clinic — Denti in un giorno e impianti",
-      "description": "Denti fissi in un giorno, implantologia e laboratorio digitale interno. Una delle sole due cliniche in Albania con denti completi in un giorno. Dr.ssa Donela Dede."
+      "description": "Denti fissi in un giorno, implantologia e laboratorio digitale interno. Una delle poche cliniche in Albania con denti completi in un giorno. Dr.ssa Donela Dede."
     },
     "sameDay": {
       "title": "Denti in un giorno",
@@ -306,9 +310,9 @@
       "title": "L'ambiente",
       "description": "Una clinica luminosa, tranquilla e moderna dove adulti e bambini si sentono a proprio agio."
     },
-    "whyOneOfTwo": {
-      "title": "Perché una delle due",
-      "description": "Perché Albania Dental Clinic è una delle sole due cliniche in Albania con denti completi in un giorno."
+    "whyChooseUs": {
+      "title": "Perché sceglierci",
+      "description": "Perché Albania Dental Clinic è una delle poche cliniche in Albania con denti completi in un giorno."
     },
     "tourism": {
       "title": "Turismo dentale",
@@ -351,8 +355,8 @@
       "description": "Esperienze di pazienti curati ad Albania Dental Clinic."
     },
     "prices": {
-      "title": "Prezzi",
-      "description": "Prezzi trasparenti confermati per iscritto dopo visita e TAC 3D."
+      "title": "Confronto prezzi",
+      "description": "Confronta i prezzi dei trattamenti dentali in Albania con Regno Unito, Italia e Turchia. Richiedi un preventivo personalizzato gratuito."
     },
     "journal": {
       "title": "Journal",
@@ -381,10 +385,6 @@
     "terms": {
       "title": "Termini e condizioni",
       "description": "Termini di utilizzo del sito di Albania Dental Clinic."
-    },
-    "accessibility": {
-      "title": "Accessibilità",
-      "description": "Il nostro impegno per un sito accessibile."
     },
     "notFound": {
       "title": "Pagina non trovata",
@@ -436,10 +436,10 @@
       "eyebrow": "Albania Dental Clinic · Dr.ssa Donela Dede",
       "title": "Arrivi senza denti.",
       "accent": "Esci con un sorriso.",
-      "text": "Denti fissi in un giorno, implantologia e il nostro laboratorio digitale — tutto in un unico luogo, in una delle sole due cliniche in Albania che offrono denti completi in un giorno.",
+      "text": "Denti fissi in un giorno, implantologia e il nostro laboratorio digitale — tutto in un unico luogo, in una delle poche cliniche in Albania che offrono denti completi in un giorno.",
       "primary": "Prenota una consulenza gratuita",
       "secondary": "Come funzionano i denti in un giorno",
-      "badge": "Una delle sole due cliniche in Albania",
+      "badge": "Una delle poche cliniche in Albania",
       "imageAlt": "La Dr.ssa Donela Dede con una paziente ad Albania Dental Clinic",
       "scroll": "Scorri"
     },
@@ -473,7 +473,7 @@
           "text": "Nei casi idonei esci dalla clinica con denti fissi il giorno stesso dell'intervento."
         }
       ],
-      "cta": "Perché una delle due"
+      "cta": "Perché sceglierci"
     },
     "treatments": {
       "eyebrow": "Trattamenti",
@@ -553,7 +553,7 @@
     ],
     "whyHere": {
       "title": "Perché qui è possibile",
-      "text": "I denti in un giorno richiedono diagnosi 3D, chirurgia precisa e un laboratorio che lavorino fianco a fianco, nello stesso giorno. Albania Dental Clinic ha tutto sotto lo stesso tetto ed è una delle sole due cliniche in Albania in grado di offrire il trattamento completo."
+      "text": "I denti in un giorno richiedono diagnosi 3D, chirurgia precisa e un laboratorio che lavorino fianco a fianco, nello stesso giorno. Albania Dental Clinic ha tutto sotto lo stesso tetto ed è una delle poche cliniche in Albania in grado di offrire il trattamento completo."
     },
     "ctaHow": "Vedi la giornata passo dopo passo",
     "ctaCandidate": "Sono un candidato?"
@@ -738,7 +738,7 @@
         "text": "Medico, assistenti e odontotecnici seguono un unico piano, dalla scansione al sorriso."
       }
     ],
-    "closing": "Per questo Albania Dental Clinic è una delle sole due cliniche in Albania che possono offrire denti completi in un giorno."
+    "closing": "Per questo Albania Dental Clinic è una delle poche cliniche in Albania che possono offrire denti completi in un giorno."
   },
   "tourismPage": {
     "intro": "I pazienti arrivano da tutta l'Albania e dall'estero. Organizziamo cure e soggiorno insieme, così puoi pensare solo al tuo nuovo sorriso."
@@ -840,10 +840,31 @@
     "intro": "L'esperienza dei nostri pazienti, con le loro parole."
   },
   "pricesPage": {
-    "intro": "Ogni bocca è diversa: diamo prezzi esatti solo dopo una visita clinica e una TAC 3D. Il preventivo scritto include ogni fase, senza sorprese.",
+    "intro": "Scopri come si confrontano i costi tipici dei trattamenti con Regno Unito, Italia e Turchia — poi ricevi un preventivo scritto ed esatto per il tuo caso.",
     "treatment": "Trattamento",
     "price": "Prezzo",
-    "note": "Inviaci la tua panoramica per una prima stima gratuita."
+    "note": "Inviaci la tua panoramica per una prima stima gratuita.",
+    "eyebrow": "Confronto prezzi",
+    "tableTitle": "Quanto costa lo stesso trattamento altrove",
+    "tableIntro": "Prezzi indicativi di partenza nelle cliniche private, in euro.",
+    "ourClinic": "Albania Dental Clinic",
+    "countries": {
+      "uk": "Regno Unito",
+      "italy": "Italia",
+      "turkey": "Turchia"
+    },
+    "units": {
+      "perTooth": "per dente",
+      "perArch": "per arcata",
+      "perImplant": "per impianto, con corona",
+      "fullTreatment": "trattamento completo"
+    },
+    "from": "da {price}",
+    "freeQuote": "Preventivo gratuito",
+    "disclaimerTitle": "Il tuo prezzo esatto",
+    "disclaimer": "I prezzi possono variare in base alla complessità del singolo caso. Richiedi un preventivo personalizzato gratuito per un prezzo esatto basato sulla tua documentazione dentale.",
+    "disclaimerCta": "Richiedi un preventivo gratuito",
+    "sourceNote": "I prezzi degli altri paesi sono medie di mercato indicative e possono variare. Sono mostrati solo a scopo di confronto."
   },
   "journalPage": {
     "intro": "Articoli chiari su impianti, denti in un giorno e turismo dentale in Albania."
@@ -899,16 +920,20 @@
         "text": "I cookie sono piccoli file salvati dal browser che aiutano un sito a funzionare e a ricordare le tue scelte."
       },
       {
-        "title": "Cookie necessari",
-        "text": "Usiamo solo ciò che serve al funzionamento del sito, come ricordare la lingua e la tua scelta sui cookie."
+        "title": "Necessari",
+        "text": "Sempre attivi: un cookie che ricorda la lingua e la tua scelta sui cookie (salvata nel browser). Non contengono dati personali e non sono usati per la pubblicità."
       },
       {
-        "title": "Statistiche",
-        "text": "Cookie statistici o di marketing vengono usati solo se li accetti nel banner."
+        "title": "Pubblicità (Google Ads)",
+        "text": "Solo se clicchi “Accetta”: i cookie di Google Ads misurano se una visita da un nostro annuncio porta a una richiesta di consulenza o a un messaggio WhatsApp. Google Ads non viene caricato finché non accetti. Fornitore: Google Ireland Ltd."
       },
       {
-        "title": "Cambiare la scelta",
-        "text": "Puoi cancellare i cookie dalle impostazioni del browser in qualsiasi momento; il banner comparirà di nuovo."
+        "title": "Google Maps",
+        "text": "La mappa nella pagina contatti è fornita da Google e può impostare i propri cookie. Si carica solo se hai accettato i cookie o clicchi “Mostra mappa”."
+      },
+      {
+        "title": "Modificare la scelta",
+        "text": "Puoi modificare o revocare la tua scelta in qualsiasi momento da “Impostazioni cookie” in fondo a ogni pagina, oppure cancellando i cookie dal browser."
       }
     ],
     "terms": [
@@ -927,20 +952,6 @@
       {
         "title": "Proprietà intellettuale",
         "text": "Testi, fotografie e logo appartengono ad Albania Dental Clinic e non possono essere riutilizzati senza autorizzazione."
-      }
-    ],
-    "accessibility": [
-      {
-        "title": "Il nostro impegno",
-        "text": "Vogliamo che questo sito sia utilizzabile da tutti e seguiamo le linee guida WCAG 2.1 AA."
-      },
-      {
-        "title": "Cosa facciamo",
-        "text": "Navigazione da tastiera, focus visibile, testi alternativi per le immagini, contrasto sufficiente e rispetto delle impostazioni di movimento ridotto."
-      },
-      {
-        "title": "Segnalazioni",
-        "text": "Se qualcosa è difficile da usare, faccelo sapere dalla pagina contatti e lo correggeremo."
       }
     ]
   }

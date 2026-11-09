@@ -1,76 +1,52 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-
-const STORAGE_KEY = "cookie-consent";
-type Consent = "accepted" | "rejected";
-
-const listeners = new Set<() => void>();
-/** Set after a choice so the banner hides even if storage is unavailable. */
-let hidden = false;
-
-function readConsent(): Consent | null {
-  try {
-    return localStorage.getItem(STORAGE_KEY) as Consent | null;
-  } catch {
-    return null;
-  }
-}
-
-function writeConsent(value: Consent) {
-  try {
-    localStorage.setItem(STORAGE_KEY, value);
-  } catch {
-    // Storage unavailable (private mode) — banner simply hides for this session.
-  }
-  hidden = true;
-  listeners.forEach((l) => l());
-}
-
-
-function subscribe(listener: () => void) {
-  listeners.add(listener);
-  return () => listeners.delete(listener);
-}
+import { setConsent, useBannerVisible } from "@/lib/consent";
 
 /**
- * Minimal consent banner. TODO: wire consent to analytics loading and
- * align wording with the final cookie policy.
+ * Cookie consent banner. "Reject" is exactly as prominent as "Accept" (GDPR / Italian Garante
+ * guidance). The choice controls Google Ads (GoogleAds.tsx) and the Google Maps embed (MapEmbed.tsx).
+ * Re-opened from "Cookie settings" in the footer.
  */
 export function CookieBanner() {
   const t = useTranslations("ui.cookie");
-  const visible = useSyncExternalStore(
-    subscribe,
-    () => !hidden && readConsent() === null,
-    () => false, // never render on the server
-  );
+  const visible = useBannerVisible();
 
   if (!visible) return null;
+
+  const button =
+    "h-10 flex-1 rounded-full px-5 text-[0.82rem] font-semibold transition-colors duration-300 sm:flex-none";
 
   return (
     <div
       role="region"
-      aria-label="Cookies"
-      className="rise fixed inset-x-4 bottom-4 z-40 mx-auto flex max-w-xl flex-wrap items-center gap-3 rounded-3xl border border-brand-white/10 bg-brand-forest/95 p-5 text-sm text-brand-white shadow-soft backdrop-blur-md sm:right-24"
+      aria-label={t("title")}
+      className="rise fixed inset-x-4 bottom-4 z-40 mx-auto max-w-lg rounded-3xl border border-white/10 bg-brand-obsidian-soft p-5 text-sm text-brand-white shadow-[0_24px_60px_-20px_rgb(0_0_0/0.7)] sm:right-24 sm:p-6"
     >
-      <p className="flex-1">
+      <p className="font-semibold">{t("title")}</p>
+      <p className="mt-1.5 leading-relaxed text-brand-white/70">
         {t("text")}{" "}
-        <Link href="/cookies" className="text-brand-gold-light underline underline-offset-4">
+        <Link href="/cookies" className="text-brand-leaf underline underline-offset-4">
           {t("more")}
         </Link>
       </p>
-      <button type="button" onClick={() => writeConsent("rejected")} className="rounded-full px-4 py-2 transition-colors hover:bg-brand-white/10">
-        {t("reject")}
-      </button>
-      <button
-        type="button"
-        onClick={() => writeConsent("accepted")}
-        className="rounded-full bg-brand-gold px-4 py-2 text-brand-ink transition-colors hover:bg-brand-gold-light"
-      >
-        {t("accept")}
-      </button>
+      <div className="mt-4 flex gap-2">
+        <button
+          type="button"
+          onClick={() => setConsent("rejected")}
+          className={`${button} border border-white/25 text-brand-white hover:border-brand-white`}
+        >
+          {t("reject")}
+        </button>
+        <button
+          type="button"
+          onClick={() => setConsent("accepted")}
+          className={`${button} bg-brand-white text-brand-obsidian hover:bg-brand-leaf`}
+        >
+          {t("accept")}
+        </button>
+      </div>
     </div>
   );
 }

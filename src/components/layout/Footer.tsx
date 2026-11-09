@@ -4,6 +4,7 @@ import { footerNav, legalNav } from "@/content/navigation";
 import { isPlaceholder, site, whatsappHref } from "@/content/site";
 import { Icon } from "@/components/ui/Icon";
 import { Logo } from "@/components/ui/Logo";
+import { CookieSettingsButton } from "./CookieSettingsButton";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Footer() {
@@ -102,8 +103,11 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <CookieSettingsButton className="link-underline hover:text-brand-white" />
+            </li>
           </ul>
-          <LanguageSwitcher tone="dark" />
+          <LanguageSwitcher variant="inline" />
         </div>
       </div>
     </footer>

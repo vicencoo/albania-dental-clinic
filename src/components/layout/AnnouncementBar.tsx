@@ -9,13 +9,13 @@ export function AnnouncementBar() {
     <div className="border-b border-white/[0.06] bg-[linear-gradient(90deg,var(--color-brand-green-dark),var(--color-brand-obsidian)_45%,var(--color-brand-obsidian)_55%,var(--color-brand-navy))] text-brand-white/85">
       <Link
         href="/book"
-        className="group container-luxe flex items-center justify-center gap-2 py-2.5 text-center text-xs tracking-[0.08em]"
+        className="group container-luxe flex items-center justify-center gap-2 py-1.5 text-center text-[0.72rem] tracking-[0.02em]"
       >
-        <Icon name="sparkle" className="size-3.5 shrink-0 text-brand-leaf" />
+        <Icon name="sparkle" className="size-3 shrink-0 text-brand-leaf" />
         <span className="link-underline">{t("announcement")}</span>
         <Icon
           name="arrow"
-          className="hidden size-3.5 shrink-0 transition-transform duration-300 group-hover:translate-x-1 sm:block"
+          className="hidden size-3 shrink-0 transition-transform duration-300 group-hover:translate-x-1 sm:block"
         />
       </Link>
     </div>

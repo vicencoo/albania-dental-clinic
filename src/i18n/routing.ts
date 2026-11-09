@@ -28,3 +28,10 @@ export const localeLabels: Record<AppLocale, string> = {
   it: "IT",
   en: "EN",
 };
+
+/** Full language names, each written in its own language (language menu). */
+export const localeNames: Record<AppLocale, string> = {
+  sq: "Shqip",
+  it: "Italiano",
+  en: "English",
+};

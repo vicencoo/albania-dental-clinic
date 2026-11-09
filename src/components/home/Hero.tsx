@@ -22,7 +22,7 @@ export function Hero() {
             <span key={i} className="border-l border-white/[0.04] last:border-r" />
           ))}
         </div>
-        <div className="absolute right-[12%] top-1/2 size-[36rem] -translate-y-1/2 rounded-full bg-brand-green/25 blur-[120px]" />
+        <div className="absolute right-[2%] top-1/2 size-[52rem] -translate-y-1/2 bg-[radial-gradient(closest-side,rgb(15_106_76/0.3),transparent)]" />
       </div>
 
       <div className="container-luxe grid items-center gap-16 pb-24 pt-16 lg:min-h-[calc(100svh-7rem)] lg:grid-cols-[1.15fr_0.85fr] lg:pb-28 lg:pt-20">

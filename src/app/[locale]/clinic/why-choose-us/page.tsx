@@ -8,11 +8,11 @@ import { asLocale } from "@/lib/locale";
 import { pageMetadata } from "@/lib/metadata";
 import { stagger } from "@/lib/style";
 
-const KEY = "whyOneOfTwo";
-const PATH = "/clinic/why-one-of-two";
+const KEY = "whyChooseUs";
+const PATH = "/clinic/why-choose-us";
 const icons: IconName[] = ["cube", "target", "lab", "user"];
 
-type Props = PageProps<"/[locale]/clinic/why-one-of-two">;
+type Props = PageProps<"/[locale]/clinic/why-choose-us">;
 
 export async function generateMetadata({ params }: Props) {
   return pageMetadata(asLocale((await params).locale), KEY, PATH);
@@ -28,9 +28,9 @@ export default async function Page({ params }: Props) {
     <>
       <PageHero
         title={t("nav.featured.clinic.title")}
-        eyebrow={t("nav.whyOneOfTwo")}
+        eyebrow={t("nav.whyChooseUs")}
         intro={t("whyPage.intro")}
-        breadcrumbs={[{ label: t("nav.clinic"), href: "/clinic" }, { label: t("nav.whyOneOfTwo") }]}
+        breadcrumbs={[{ label: t("nav.clinic"), href: "/clinic" }, { label: t("nav.whyChooseUs") }]}
       />
 
       <section className="py-20 lg:py-28">
@@ -40,9 +40,6 @@ export default async function Page({ params }: Props) {
             <div className="absolute inset-8 grid place-items-center rounded-full bg-brand-forest shadow-soft">
               <Image src="/images/brand/logo-mark.png" alt="" width={180} height={180} className="float w-1/2" />
             </div>
-            <span className="absolute -right-2 top-6 rounded-full bg-brand-white px-4 py-2 font-heading text-xl text-brand-red shadow-soft">
-              1 / 2
-            </span>
           </div>
 
           <ol className="grid gap-5 sm:grid-cols-2">

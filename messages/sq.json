@@ -13,7 +13,7 @@
     "technology": "Teknologjia",
     "laboratory": "Laboratori digjital",
     "environment": "Ambienti",
-    "whyOneOfTwo": "Pse një nga dy",
+    "whyChooseUs": "Pse të na zgjidhni",
     "tourism": "Turizëm dentar",
     "tourismHow": "Si funksionon",
     "apartments": "Apartamentet",
@@ -32,7 +32,6 @@
     "privacy": "Politika e privatësisë",
     "cookies": "Politika e cookies",
     "terms": "Kushtet e përdorimit",
-    "accessibility": "Aksesueshmëria",
     "groups": {
       "people": "Njerëzit",
       "place": "Klinika jonë",
@@ -46,7 +45,7 @@
         "text": "Diagnozë 3D, kirurgji e udhëhequr dhe laboratori ynë digjital, të gjitha në një vend."
       },
       "clinic": {
-        "title": "Një nga vetëm dy klinikat në Shqipëri",
+        "title": "Një nga klinikat e pakta në Shqipëri",
         "text": "Pse dhëmbët e plotë në një ditë janë të mundur këtu."
       },
       "tourism": {
@@ -63,7 +62,7 @@
       "technology": "Tomografi 3D CBCT, skanim digjital dhe kirurgji e udhëhequr.",
       "laboratory": "Ku dizajnohen dhe frezohen dhëmbët tuaj të rinj.",
       "environment": "Një ambient i ndritshëm, i qetë dhe modern.",
-      "whyOneOfTwo": "Çfarë i bën të mundur këtu dhëmbët e plotë në një ditë.",
+      "whyChooseUs": "Çfarë i bën të mundur këtu dhëmbët e plotë në një ditë.",
       "tourismHow": "Nga mesazhi i parë deri te fluturimi për në shtëpi.",
       "packages": "Trajtimi dhe qëndrimi në një plan të vetëm.",
       "faq": "Përgjigje për pyetjet më të shpeshta.",
@@ -71,7 +70,8 @@
       "travel": "Fluturimet, mbërritja dhe këshilla praktike.",
       "discoverAlbania": "Kthejeni trajtimin në një pushim të shkurtër.",
       "beforeAfter": "Raste të ndara me pëlqimin e pacientëve.",
-      "patientStories": "Përvoja të treguara nga pacientët tanë."
+      "patientStories": "Përvoja të treguara nga pacientët tanë.",
+      "prices": "Krahasoni kostot me Mbretërinë e Bashkuar, Italinë dhe Turqinë."
     }
   },
   "treatments": {
@@ -218,10 +218,12 @@
     "footerTagline": "Kujdes dentar i avancuar në Shqipëri: kirurgji orale, implantologji, endodonti dhe estetikë dentare, me laboratorin tonë digjital — nën drejtimin e Dr. Donela Dede.",
     "rights": "Të gjitha të drejtat të rezervuara.",
     "cookie": {
-      "text": "Ne përdorim cookies për të përmirësuar faqen.",
+      "title": "Cookies",
+      "text": "Përdorim cookies të Google Ads për të matur cilat reklama tona sjellin kërkesa për konsultë. Aktivizohen vetëm nëse pranoni.",
       "accept": "Prano",
       "reject": "Refuzo",
-      "more": "Më shumë"
+      "more": "Politika e cookies",
+      "settings": "Cilësimet e cookies"
     },
     "priceOnRequest": "Pas konsultës",
     "learnMore": "Mëso më shumë",
@@ -259,12 +261,14 @@
     "photoBy": "Foto: Albania Dental Clinic",
     "faqTitle": "Pyetje të shpeshta",
     "resultsCount": "Raste",
-    "askQuestion": "Bëni një pyetje"
+    "askQuestion": "Bëni një pyetje",
+    "showMap": "Shfaq hartën",
+    "mapNote": "Harta ofrohet nga Google, i cili mund të vendosë cookies të veta."
   },
   "pages": {
     "home": {
       "title": "Albania Dental Clinic — Dhëmbë në një ditë dhe implante",
-      "description": "Dhëmbë fiks në një ditë, implantologji dhe laborator digjital në klinikë. Një nga vetëm dy klinikat në Shqipëri me dhëmbë të plotë në një ditë. Dr. Donela Dede."
+      "description": "Dhëmbë fiks në një ditë, implantologji dhe laborator digjital në klinikë. Një nga klinikat e pakta në Shqipëri me dhëmbë të plotë në një ditë. Dr. Donela Dede."
     },
     "sameDay": {
       "title": "Dhëmbë në një ditë",
@@ -306,9 +310,9 @@
       "title": "Ambienti",
       "description": "Një klinikë e ndritshme, e qetë dhe moderne ku të rriturit dhe fëmijët ndihen mirë."
     },
-    "whyOneOfTwo": {
-      "title": "Pse një nga dy",
-      "description": "Pse Albania Dental Clinic është një nga vetëm dy klinikat në Shqipëri me dhëmbë të plotë në një ditë."
+    "whyChooseUs": {
+      "title": "Pse të na zgjidhni",
+      "description": "Pse Albania Dental Clinic është një nga klinikat e pakta në Shqipëri me dhëmbë të plotë në një ditë."
     },
     "tourism": {
       "title": "Turizëm dentar",
@@ -351,8 +355,8 @@
       "description": "Përvoja të pacientëve të trajtuar në Albania Dental Clinic."
     },
     "prices": {
-      "title": "Çmimet",
-      "description": "Çmime transparente të konfirmuara me shkrim pas konsultës dhe skanimit 3D."
+      "title": "Krahasimi i çmimeve",
+      "description": "Krahasoni çmimet e trajtimeve dentare në Shqipëri me Mbretërinë e Bashkuar, Italinë dhe Turqinë. Kërkoni një ofertë personale falas."
     },
     "journal": {
       "title": "Artikuj",
@@ -381,10 +385,6 @@
     "terms": {
       "title": "Kushtet e përdorimit",
       "description": "Kushtet e përdorimit të faqes së Albania Dental Clinic."
-    },
-    "accessibility": {
-      "title": "Aksesueshmëria",
-      "description": "Angazhimi ynë për një faqe të aksesueshme."
     },
     "notFound": {
       "title": "Faqja nuk u gjet",
@@ -436,10 +436,10 @@
       "eyebrow": "Albania Dental Clinic · Dr. Donela Dede",
       "title": "Vini pa dhëmbë.",
       "accent": "Largohuni me buzëqeshje.",
-      "text": "Dhëmbë fiks në një ditë, implantologji dhe laboratori ynë digjital — të gjitha në një vend, në një nga vetëm dy klinikat në Shqipëri që ofrojnë dhëmbë të plotë në një ditë.",
+      "text": "Dhëmbë fiks në një ditë, implantologji dhe laboratori ynë digjital — të gjitha në një vend, në një nga klinikat e pakta në Shqipëri që ofrojnë dhëmbë të plotë në një ditë.",
       "primary": "Rezervo një konsultë falas",
       "secondary": "Si funksionojnë dhëmbët në një ditë",
-      "badge": "Një nga vetëm dy klinikat në Shqipëri",
+      "badge": "Një nga klinikat e pakta në Shqipëri",
       "imageAlt": "Dr. Donela Dede me një paciente në Albania Dental Clinic",
       "scroll": "Lëviz"
     },
@@ -473,7 +473,7 @@
           "text": "Në rastet e përshtatshme largoheni nga klinika me dhëmbë fiks në ditën e ndërhyrjes."
         }
       ],
-      "cta": "Pse një nga dy"
+      "cta": "Pse të na zgjidhni"
     },
     "treatments": {
       "eyebrow": "Trajtimet",
@@ -553,7 +553,7 @@
     ],
     "whyHere": {
       "title": "Pse është e mundur këtu",
-      "text": "Dhëmbët në një ditë kërkojnë diagnozë 3D, kirurgji të saktë dhe një laborator që punojnë krah për krah, në të njëjtën ditë. Albania Dental Clinic i ka të treja nën një çati — dhe është një nga vetëm dy klinikat në Shqipëri që mund të ofrojë trajtimin e plotë."
+      "text": "Dhëmbët në një ditë kërkojnë diagnozë 3D, kirurgji të saktë dhe një laborator që punojnë krah për krah, në të njëjtën ditë. Albania Dental Clinic i ka të treja nën një çati — dhe është një nga klinikat e pakta në Shqipëri që mund të ofrojë trajtimin e plotë."
     },
     "ctaHow": "Shiko ditën hap pas hapi",
     "ctaCandidate": "A jam kandidat?"
@@ -738,7 +738,7 @@
         "text": "Mjekja, asistentët dhe teknikët ndjekin një plan të vetëm, nga skanimi te buzëqeshja."
       }
     ],
-    "closing": "Prandaj Albania Dental Clinic është një nga vetëm dy klinikat në Shqipëri që mund të ofrojnë dhëmbë të plotë në një ditë."
+    "closing": "Prandaj Albania Dental Clinic është një nga klinikat e pakta në Shqipëri që mund të ofrojnë dhëmbë të plotë në një ditë."
   },
   "tourismPage": {
     "intro": "Pacientët vijnë nga e gjithë Shqipëria dhe nga jashtë. Ne e organizojmë trajtimin dhe qëndrimin së bashku, që ju të mendoni vetëm për buzëqeshjen e re."
@@ -840,10 +840,31 @@
     "intro": "Përvoja e pacientëve tanë, me fjalët e tyre."
   },
   "pricesPage": {
-    "intro": "Çdo gojë është e ndryshme, prandaj çmimet e sakta i japim vetëm pas një vizite klinike dhe skanimi 3D. Preventivi me shkrim përfshin çdo hap, pa surpriza.",
+    "intro": "Shihni si krahasohen kostot tipike të trajtimeve me Mbretërinë e Bashkuar, Italinë dhe Turqinë — pastaj merrni një ofertë të saktë me shkrim për rastin tuaj.",
     "treatment": "Trajtimi",
     "price": "Çmimi",
-    "note": "Na dërgoni ortopanoramikën për një vlerësim të parë falas."
+    "note": "Na dërgoni ortopanoramikën për një vlerësim të parë falas.",
+    "eyebrow": "Krahasimi i çmimeve",
+    "tableTitle": "Sa kushton i njëjti trajtim diku tjetër",
+    "tableIntro": "Çmime orientuese fillestare në klinika private, në euro.",
+    "ourClinic": "Albania Dental Clinic",
+    "countries": {
+      "uk": "Mbretëria e Bashkuar",
+      "italy": "Italia",
+      "turkey": "Turqia"
+    },
+    "units": {
+      "perTooth": "për dhëmb",
+      "perArch": "për nofull",
+      "perImplant": "për implant, me kurorë",
+      "fullTreatment": "trajtim i plotë"
+    },
+    "from": "nga {price}",
+    "freeQuote": "Ofertë falas",
+    "disclaimerTitle": "Çmimi juaj i saktë",
+    "disclaimer": "Çmimet mund të ndryshojnë në bazë të kompleksitetit të çdo rasti. Kërkoni një ofertë personale falas për një çmim të saktë bazuar në dokumentacionin tuaj dentar.",
+    "disclaimerCta": "Kërkoni një ofertë falas",
+    "sourceNote": "Çmimet për vendet e tjera janë mesatare orientuese të tregut dhe mund të ndryshojnë. Shfaqen vetëm për krahasim."
   },
   "journalPage": {
     "intro": "Artikuj të qartë për implantet, dhëmbët në një ditë dhe turizmin dentar në Shqipëri."
@@ -896,19 +917,23 @@
     "cookies": [
       {
         "title": "Çfarë janë cookies",
-        "text": "Cookies janë skedarë të vegjël që ruhen nga shfletuesi dhe ndihmojnë një faqe të funksionojë dhe të kujtojë zgjedhjet tuaja."
+        "text": "Cookies janë skedarë të vegjël që ruhen nga shfletuesi dhe ndihmojnë një faqe të funksionojë dhe të mbajë mend zgjedhjet tuaja."
       },
       {
-        "title": "Cookies të nevojshme",
-        "text": "Përdorim vetëm ato që nevojiten për funksionimin e faqes, si kujtimi i gjuhës dhe i zgjedhjes suaj për cookies."
+        "title": "Të domosdoshme",
+        "text": "Gjithmonë aktive: një cookie që mban mend gjuhën dhe zgjedhja juaj për cookies (e ruajtur në shfletues). Nuk përmbajnë të dhëna personale dhe nuk përdoren për reklama."
       },
       {
-        "title": "Statistikat",
-        "text": "Cookies statistikore ose marketingu përdoren vetëm nëse i pranoni në banerin e cookies."
+        "title": "Reklamat (Google Ads)",
+        "text": "Vetëm nëse klikoni “Prano”: cookies të Google Ads matin nëse një vizitë nga një reklamë jona sjell një kërkesë për konsultë ose një mesazh në WhatsApp. Google Ads nuk ngarkohet fare derisa të pranoni. Ofruesi: Google Ireland Ltd."
+      },
+      {
+        "title": "Google Maps",
+        "text": "Harta në faqen e kontaktit ofrohet nga Google dhe mund të vendosë cookies të veta. Ngarkohet vetëm nëse keni pranuar cookies ose klikoni “Shfaq hartën”."
       },
       {
         "title": "Ndryshimi i zgjedhjes",
-        "text": "Mund t'i fshini cookies nga cilësimet e shfletuesit në çdo kohë; baneri do të shfaqet përsëri."
+        "text": "Mund ta ndryshoni ose tërhiqni zgjedhjen në çdo kohë nga “Cilësimet e cookies” në fund të çdo faqeje, ose duke fshirë cookies në shfletues."
       }
     ],
     "terms": [
@@ -927,20 +952,6 @@
       {
         "title": "Pronësia intelektuale",
         "text": "Tekstet, fotografitë dhe logoja i përkasin Albania Dental Clinic dhe nuk mund të ripërdoren pa leje."
-      }
-    ],
-    "accessibility": [
-      {
-        "title": "Angazhimi ynë",
-        "text": "Duam që kjo faqe të jetë e përdorshme nga të gjithë dhe ndjekim udhëzimet WCAG 2.1 AA."
-      },
-      {
-        "title": "Çfarë bëjmë",
-        "text": "Navigim me tastierë, fokus i dukshëm, tekste alternative për imazhet, kontrast i mjaftueshëm i ngjyrave dhe respektim i cilësimeve për lëvizje të reduktuar."
-      },
-      {
-        "title": "Komente",
-        "text": "Nëse diçka është e vështirë për t'u përdorur, na njoftoni përmes faqes së kontaktit dhe do ta rregullojmë."
       }
     ]
   }

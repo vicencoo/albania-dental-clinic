@@ -13,7 +13,8 @@ import {
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
-import { isActivePath, mainNav, primaryHref } from "@/content/navigation";
+import { isNavItemActive, mainNav, primaryHref } from "@/content/navigation";
+import { Icon } from "@/components/ui/Icon";
 import type { NavItem } from "@/content/types";
 
 const HOVER_CLOSE_DELAY = 150;
@@ -188,16 +189,18 @@ export function MegaMenu() {
       onMouseLeave={scheduleClose}
       onMouseEnter={cancelClose}
     >
-      <ul className="flex items-center gap-6 2xl:gap-8">
+      <ul className="flex items-center gap-0.5 2xl:gap-1">
         {mainNav.map((item) => {
           const isOpen = openId === item.id;
           // Green = the section of the current page. Same-Day keeps its emphasis via weight.
-          const active = isActivePath(pathname, item.href);
-          const triggerClass = `relative flex items-center gap-1.5 whitespace-nowrap py-7 text-[0.74rem] uppercase tracking-[0.12em] transition-colors duration-300 after:absolute after:inset-x-0 after:bottom-5 after:h-px after:origin-left after:bg-brand-leaf after:transition-transform after:duration-500 after:ease-(--ease-luxe) ${
-            active || isOpen
-              ? "text-brand-leaf after:scale-x-100"
-              : "text-brand-white/70 after:scale-x-0 hover:text-brand-white hover:after:scale-x-100"
-          } ${item.highlight ? "font-semibold text-brand-white" : ""}`;
+          const active = isNavItemActive(pathname, item);
+          const triggerClass = `relative flex h-9 items-center gap-1.5 whitespace-nowrap rounded-full px-3.5 text-[0.84rem] font-medium transition-colors duration-300 ${
+            isOpen
+              ? "bg-white/[0.08] text-brand-white"
+              : active
+                ? "text-brand-leaf hover:bg-white/[0.06]"
+                : "text-brand-white/70 hover:bg-white/[0.06] hover:text-brand-white"
+          }`;
           const setRef = (el: HTMLElement | null) => {
             if (el) triggerRefs.current.set(item.id, el);
             else triggerRefs.current.delete(item.id);
@@ -220,6 +223,12 @@ export function MegaMenu() {
                   <span aria-hidden className="pulse-ring size-1.5 rounded-full bg-brand-leaf" />
                 )}
                 {t(item.labelKey)}
+                {item.columns && (
+                  <Icon
+                    name="chevronDown"
+                    className={`size-3.5 opacity-50 transition-transform duration-300 ${isOpen ? "rotate-180 opacity-90" : ""}`}
+                  />
+                )}
               </Link>
 
             </li>
@@ -229,7 +238,7 @@ export function MegaMenu() {
 
       {/* One shared surface: its height morphs between panels (pure CSS transition). */}
       <div
-        className="mega-shell absolute inset-x-0 top-full border-t border-white/[0.06] bg-brand-obsidian-soft/[0.97] text-brand-white shadow-[0_40px_80px_-30px_rgb(0_0_0/0.8)] backdrop-blur-xl"
+        className="mega-shell absolute inset-x-0 top-full border-t border-white/[0.06] bg-brand-obsidian-soft text-brand-white shadow-[0_40px_80px_-30px_rgb(0_0_0/0.8)]"
         data-open={openId !== null}
         style={{ height: openId ? (heights[openId] ?? "auto") : 0 }}
       >
@@ -254,9 +263,19 @@ export function MegaMenu() {
               className="mega-panel absolute inset-x-0 top-0"
             >
               <div className="container-luxe flex gap-12 py-10">
-                <div className={`grid flex-1 gap-8 ${columns.length >= 4 ? "grid-cols-4" : "grid-cols-2"}`}>
+                <div
+                  className={`grid flex-1 gap-8 ${
+                    columns.length >= 5 ? "grid-cols-5" : columns.length >= 4 ? "grid-cols-4" : "grid-cols-2"
+                  }`}
+                >
                   {columns.map((column, i) => (
-                    <div key={column.titleKey ?? i} className="mega-item" style={{ "--i": i } as CSSProperties}>
+                    <div
+                      key={column.titleKey ?? i}
+                      className={`mega-item ${
+                        columns.length >= 5 && i === columns.length - 1 ? "border-l border-white/[0.08] pl-8" : ""
+                      }`}
+                      style={{ "--i": i } as CSSProperties}
+                    >
                       {column.titleKey && (
                         <p className="eyebrow mb-4 text-brand-leaf">
                           {column.href ? (
