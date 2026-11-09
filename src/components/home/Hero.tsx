@@ -15,13 +15,8 @@ export function Hero() {
 
   return (
     <section className="obsidian relative isolate overflow-clip">
-      {/* Architectural hairlines + glow */}
+      {/* Soft glow */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <div className="container-luxe grid h-full grid-cols-4">
-          {[0, 1, 2, 3].map((i) => (
-            <span key={i} className="border-l border-white/4 last:border-r" />
-          ))}
-        </div>
         <div className="absolute right-[2%] top-1/2 size-208 -translate-y-1/2 bg-[radial-gradient(closest-side,rgb(15_106_76/0.3),transparent)]" />
       </div>
 

@@ -59,6 +59,8 @@
 
 @layer base {
   html {
+    /* With body below: iOS Safari only stops sideways page scrolling when html clips too. */
+    overflow-x: clip;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     -webkit-text-size-adjust: 100%;

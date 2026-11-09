@@ -19,19 +19,6 @@ export function TourismPreview() {
 
   return (
     <section className="obsidian relative overflow-clip bg-[radial-gradient(ellipse_60%_60%_at_80%_10%,rgb(31_111_163/0.35),transparent_70%),radial-gradient(ellipse_50%_50%_at_10%_90%,rgb(15_106_76/0.2),transparent_70%)] py-28 lg:py-40">
-      <svg
-        aria-hidden
-        viewBox="0 0 800 200"
-        className="pointer-events-none absolute inset-x-0 top-10 w-full text-brand-azure/20"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M0 150 C 200 40, 400 40, 600 120 S 800 60, 800 60"
-          fill="none"
-          stroke="currentColor"
-          strokeDasharray="4 10"
-        />
-      </svg>
       <div className="container-luxe relative">
         <SectionHeading
           eyebrow={t("eyebrow")}

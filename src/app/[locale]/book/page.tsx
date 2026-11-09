@@ -29,7 +29,7 @@ export default async function Page({ params }: Props) {
         breadcrumbs={[{ label: t("nav.book") }]}
       />
       <section className="py-16 lg:py-24">
-        <div className="container-luxe grid gap-12 lg:grid-cols-[1.5fr_0.8fr] lg:items-start">
+        <div className="container-luxe grid grid-cols-1 gap-12 lg:grid-cols-[1.5fr_0.8fr] lg:items-start">
           <div className="reveal-scale">
             <ConsultationForm />
           </div>

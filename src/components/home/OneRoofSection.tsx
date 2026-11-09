@@ -19,7 +19,7 @@ export function OneRoofSection() {
       <div className="container-luxe grid gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
         <div className="reveal-right relative mx-auto w-full max-w-sm">
           <ArchImage src="/images/lab/zirconia-bridge.jpg" alt="" ratio="aspect-[3/4]" className="shadow-soft" />
-          <div className="reveal-from-right absolute -bottom-8 -right-6 w-48 rounded-xl border border-white/10 bg-brand-obsidian p-6 text-brand-white shadow-soft sm:-right-12">
+          <div className="reveal-from-right absolute -bottom-8 -right-2 w-48 rounded-xl border border-white/10 bg-brand-obsidian p-6 text-brand-white shadow-soft sm:-right-12">
             <span aria-hidden className="tricolor-line block w-10" />
             <p className="mt-4 font-heading text-2xl font-light leading-tight">{pillars[3]?.title}</p>
           </div>

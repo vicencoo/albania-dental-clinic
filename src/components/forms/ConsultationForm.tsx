@@ -40,7 +40,7 @@ export function ConsultationForm({
       onSubmit={onSubmit}
       noValidate
       encType="multipart/form-data"
-      className="relative grid gap-6 rounded-[2.25rem] border border-brand-sand bg-brand-white p-6 shadow-card sm:grid-cols-2 sm:p-10"
+      className="relative grid grid-cols-1 gap-6 rounded-[2.25rem] border border-brand-sand bg-brand-white p-6 shadow-card sm:grid-cols-2 sm:p-10"
     >
       {/* Honeypot (hidden from people and assistive tech) */}
       <div aria-hidden className="absolute left-[-9999px] h-0 overflow-clip">

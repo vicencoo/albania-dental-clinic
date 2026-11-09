@@ -68,7 +68,7 @@ export function MobileMenu() {
         className={`obsidian fixed inset-0 z-50 flex flex-col transition-[opacity,visibility,transform] duration-500 ease-luxe ${
           open
             ? "visible translate-x-0 opacity-100"
-            : "invisible translate-x-8 opacity-0"
+            : "invisible -translate-y-3 opacity-0"
         }`}
       >
         <div className="flex items-center justify-between border-b border-white/10 px-5 py-3">

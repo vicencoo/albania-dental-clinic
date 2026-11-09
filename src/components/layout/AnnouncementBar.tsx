@@ -11,7 +11,6 @@ export function AnnouncementBar() {
         href="/book"
         className="group container-luxe flex items-center justify-center gap-2 py-1.5 text-center text-[0.72rem] tracking-[0.02em]"
       >
-        <Icon name="sparkle" className="size-3 shrink-0 text-brand-leaf" />
         <span className="link-underline">{t("announcement")}</span>
         <Icon
           name="arrow"

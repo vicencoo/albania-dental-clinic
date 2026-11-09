@@ -32,7 +32,7 @@ export default async function Page({ params }: Props) {
         breadcrumbs={[{ label: t("nav.contact") }]}
       />
       <section className="py-16 lg:py-24">
-        <div className="container-luxe grid gap-12 lg:grid-cols-[0.8fr_1.5fr] lg:items-start">
+        <div className="container-luxe grid grid-cols-1 gap-12 lg:grid-cols-[0.8fr_1.5fr] lg:items-start">
           <aside className="space-y-8 lg:sticky lg:top-28">
             <ContactDetails />
             {hasMap && (
