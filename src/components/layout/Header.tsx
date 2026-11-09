@@ -5,10 +5,12 @@ import { Logo } from "@/components/ui/Logo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MegaMenu } from "./MegaMenu";
 import { MobileMenu } from "./MobileMenu";
+import { NavProgress } from "./NavProgress";
 
 /**
  * Sticky glass header: logo · centred nav · language + CTA.
  * Gains a shadow on scroll via a CSS scroll-driven animation (.scroll-shadow).
+ * Its bottom border turns into a loading bar during page navigation (<NavProgress>).
  */
 export function Header() {
   const t = useTranslations();
@@ -35,6 +37,8 @@ export function Header() {
           <MobileMenu />
         </div>
       </div>
+      {/* Loading bar over the bottom border while a new page loads. */}
+      <NavProgress />
     </header>
   );
 }

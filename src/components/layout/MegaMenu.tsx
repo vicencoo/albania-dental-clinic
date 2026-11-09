@@ -26,7 +26,9 @@ const panelItems = mainNav.filter((item) => item.columns);
 
 /** "nav.team" → "nav.descriptions.team" (only nav.* links have descriptions). */
 const descKey = (labelKey: string) =>
-  labelKey.startsWith("nav.") ? `nav.descriptions.${labelKey.slice(4)}` : "nav.descriptions.__none";
+  labelKey.startsWith("nav.")
+    ? `nav.descriptions.${labelKey.slice(4)}`
+    : "nav.descriptions.__none";
 
 /**
  * Desktop mega menu. Reads from src/content/navigation.ts.
@@ -102,7 +104,10 @@ export function MegaMenu() {
         const next = { ...prev };
         for (const entry of entries) {
           const id = (entry.target as HTMLElement).dataset.panel;
-          if (id) next[id] = Math.ceil(entry.borderBoxSize[0]?.blockSize ?? entry.target.clientHeight);
+          if (id)
+            next[id] = Math.ceil(
+              entry.borderBoxSize[0]?.blockSize ?? entry.target.clientHeight,
+            );
         }
         return next;
       });
@@ -124,7 +129,9 @@ export function MegaMenu() {
   const focusPanelLink = (id: string, index: "first" | "last") => {
     // Wait for the panel to become visible before focusing.
     requestAnimationFrame(() => {
-      const links = document.getElementById(panelId(id))?.querySelectorAll<HTMLElement>("a[href]");
+      const links = document
+        .getElementById(panelId(id))
+        ?.querySelectorAll<HTMLElement>("a[href]");
       if (!links?.length) return;
       (index === "first" ? links[0] : links[links.length - 1]).focus();
     });
@@ -134,7 +141,8 @@ export function MegaMenu() {
     const ids = mainNav.map((i) => i.id);
     const next = ids[(ids.indexOf(currentId) + dir + ids.length) % ids.length];
     triggerRefs.current.get(next)?.focus();
-    if (openId) setOpenId(mainNav.find((i) => i.id === next)?.columns ? next : null);
+    if (openId)
+      setOpenId(mainNav.find((i) => i.id === next)?.columns ? next : null);
   };
 
   const onTriggerKeyDown = (e: KeyboardEvent, item: NavItem) => {
@@ -164,20 +172,24 @@ export function MegaMenu() {
 
   const onPanelKeyDown = (e: KeyboardEvent<HTMLDivElement>, item: NavItem) => {
     if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
-    const links = Array.from(e.currentTarget.querySelectorAll<HTMLElement>("a[href]"));
+    const links = Array.from(
+      e.currentTarget.querySelectorAll<HTMLElement>("a[href]"),
+    );
     const index = links.indexOf(document.activeElement as HTMLElement);
     e.preventDefault();
     if (e.key === "ArrowUp" && index <= 0) {
       triggerRefs.current.get(item.id)?.focus();
       return;
     }
-    const next = e.key === "ArrowDown" ? Math.min(index + 1, links.length - 1) : index - 1;
+    const next =
+      e.key === "ArrowDown" ? Math.min(index + 1, links.length - 1) : index - 1;
     links[next]?.focus();
   };
 
   // Close when focus leaves the whole nav (Tab out).
   const onBlur = (e: FocusEvent) => {
-    if (!navRef.current?.contains(e.relatedTarget as Node | null)) setOpenId(null);
+    if (!navRef.current?.contains(e.relatedTarget as Node | null))
+      setOpenId(null);
   };
 
   return (
@@ -198,7 +210,7 @@ export function MegaMenu() {
             isOpen
               ? "bg-white/[0.08] text-brand-white"
               : active
-                ? "text-brand-leaf hover:bg-white/[0.06]"
+                ? "text-brand-leaf bg-white/[0.06] hover:bg-white/[0.06]"
                 : "text-brand-white/70 hover:bg-white/[0.06] hover:text-brand-white"
           }`;
           const setRef = (el: HTMLElement | null) => {
@@ -220,7 +232,10 @@ export function MegaMenu() {
                 className={triggerClass}
               >
                 {item.highlight && (
-                  <span aria-hidden className="pulse-ring size-1.5 rounded-full bg-brand-leaf" />
+                  <span
+                    aria-hidden
+                    className="pulse-ring size-1.5 rounded-full bg-brand-leaf"
+                  />
                 )}
                 {t(item.labelKey)}
                 {item.columns && (
@@ -230,7 +245,6 @@ export function MegaMenu() {
                   />
                 )}
               </Link>
-
             </li>
           );
         })}
@@ -247,7 +261,13 @@ export function MegaMenu() {
           const activeIndex = panelItems.findIndex((p) => p.id === openId);
           // active · before (left of the open item) · after (right of it) · idle (menu closed)
           const state =
-            openId === null ? "idle" : item.id === openId ? "active" : index < activeIndex ? "before" : "after";
+            openId === null
+              ? "idle"
+              : item.id === openId
+                ? "active"
+                : index < activeIndex
+                  ? "before"
+                  : "after";
 
           return (
             <div
@@ -265,14 +285,20 @@ export function MegaMenu() {
               <div className="container-luxe flex gap-12 py-10">
                 <div
                   className={`grid flex-1 gap-8 ${
-                    columns.length >= 5 ? "grid-cols-5" : columns.length >= 4 ? "grid-cols-4" : "grid-cols-2"
+                    columns.length >= 5
+                      ? "grid-cols-5"
+                      : columns.length >= 4
+                        ? "grid-cols-4"
+                        : "grid-cols-2"
                   }`}
                 >
                   {columns.map((column, i) => (
                     <div
                       key={column.titleKey ?? i}
                       className={`mega-item ${
-                        columns.length >= 5 && i === columns.length - 1 ? "border-l border-white/[0.08] pl-8" : ""
+                        columns.length >= 5 && i === columns.length - 1
+                          ? "border-l border-white/[0.08] pl-8"
+                          : ""
                       }`}
                       style={{ "--i": i } as CSSProperties}
                     >
@@ -293,9 +319,13 @@ export function MegaMenu() {
                             <Link
                               href={link.href}
                               onClick={() => close()}
-                              aria-current={pathname === link.href ? "page" : undefined}
+                              aria-current={
+                                pathname === link.href ? "page" : undefined
+                              }
                               className={`group/link -mx-3 block rounded-lg px-3 py-2 transition-colors duration-300 hover:bg-white/[0.04] ${
-                                pathname === link.href ? "text-brand-leaf" : "text-brand-white/85"
+                                pathname === link.href
+                                  ? "text-brand-leaf bg-white/[0.04]"
+                                  : "text-brand-white/85"
                               }`}
                             >
                               <span className="flex items-center gap-2 text-[0.95rem] group-hover/link:text-brand-white">
@@ -337,8 +367,12 @@ export function MegaMenu() {
                       />
                     </div>
                     <div className="p-5">
-                      <p className="font-heading text-2xl leading-tight">{t(item.featured.titleKey)}</p>
-                      <p className="mt-2 text-sm text-brand-white/55">{t(item.featured.textKey)}</p>
+                      <p className="font-heading text-2xl leading-tight">
+                        {t(item.featured.titleKey)}
+                      </p>
+                      <p className="mt-2 text-sm text-brand-white/55">
+                        {t(item.featured.textKey)}
+                      </p>
                     </div>
                   </Link>
                 )}

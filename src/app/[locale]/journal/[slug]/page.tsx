@@ -51,7 +51,7 @@ export default async function JournalPostPage({ params }: Props) {
   return (
     <>
       {/* Reading progress (CSS scroll-driven animation) */}
-      <div aria-hidden className="read-progress tricolor-line fixed inset-x-0 top-0 z-50 scale-x-0 rounded-none" />
+      <div aria-hidden className="read-progress tricolor-line fixed inset-x-0 top-0 z-50 [transform:scaleX(0)] rounded-none" />
 
       <PageHero
         title={title}

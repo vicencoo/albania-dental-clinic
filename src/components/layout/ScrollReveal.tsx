@@ -39,13 +39,20 @@ export function ScrollReveal() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const seen = new WeakSet<Element>();
+    /** Elements whose first (initial-state) observer callback has already arrived. */
+    const measured = new WeakSet<Element>();
 
     const io = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          // Reveal when in view — or when it was skipped past (anchor jump, fast fling).
-          if (!entry.isIntersecting && entry.boundingClientRect.top >= 0) continue;
           const el = entry.target as HTMLElement;
+          const initial = !measured.has(el);
+          measured.add(el);
+          // Reveal when in view — or when the user scrolled past it (anchor jump, fast fling).
+          // Being above the viewport on the FIRST callback doesn't count: that happens while a
+          // new page is mounted before the scroll resets, and it would play the animation early.
+          const skippedPast = !initial && entry.boundingClientRect.top < 0;
+          if (!entry.isIntersecting && !skippedPast) continue;
           const animations = entranceAnimations(el);
           if (animations.length === 0) continue; // not rendered yet (display: none) — keep watching
           io.unobserve(el);

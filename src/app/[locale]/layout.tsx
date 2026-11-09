@@ -8,6 +8,7 @@ import { CookieBanner } from "@/components/layout/CookieBanner";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ScrollReveal } from "@/components/layout/ScrollReveal";
+import { ScrollTopOnReload } from "@/components/layout/ScrollTopOnReload";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { site, siteUrl } from "@/content/site";
 import { fontVariables } from "@/lib/fonts";
@@ -33,7 +34,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   const t = await getTranslations({ locale, namespace: "ui" });
 
   return (
-    <html lang={locale} className={`${fontVariables} h-full antialiased`}>
+    <html lang={locale} data-scroll-behavior="smooth" className={`${fontVariables} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>
           <a
@@ -51,6 +52,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           <WhatsAppButton />
           <CookieBanner />
           <GoogleAds />
+          <ScrollTopOnReload />
           <ScrollReveal />
         </NextIntlClientProvider>
       </body>
