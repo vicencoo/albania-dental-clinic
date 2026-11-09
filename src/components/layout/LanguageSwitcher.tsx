@@ -3,8 +3,23 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
-import { localeLabels, localeNames, routing } from "@/i18n/routing";
+import Image from "next/image";
+import { localeFlags, localeLabels, localeNames, routing, type AppLocale } from "@/i18n/routing";
 import { Icon } from "@/components/ui/Icon";
+
+/** Decorative round flag — the visible label/name carries the meaning. */
+function Flag({ locale, className = "size-4" }: { locale: AppLocale; className?: string }) {
+  return (
+    <Image
+      src={localeFlags[locale]}
+      alt=""
+      aria-hidden
+      width={32}
+      height={32}
+      className={`shrink-0 rounded-full ${className}`}
+    />
+  );
+}
 
 interface LanguageSwitcherProps {
   className?: string;
@@ -33,10 +48,11 @@ export function LanguageSwitcher({ className = "", variant = "dropdown" }: Langu
                 hrefLang={l}
                 lang={l}
                 aria-current={l === locale ? "true" : undefined}
-                className={`block rounded-full px-4 py-1.5 text-xs font-semibold tracking-wide transition-colors ${
+                className={`flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide transition-colors ${
                   l === locale ? "bg-brand-white text-brand-obsidian" : "text-brand-white/60 hover:text-brand-white"
                 }`}
               >
+                <Flag locale={l} className="size-3.5" />
                 {localeLabels[l]}
               </Link>
             </li>
@@ -97,8 +113,8 @@ function LanguageDropdown({ className }: { className: string }) {
           open ? "bg-white/[0.06] text-brand-white" : ""
         }`}
       >
-        <Icon name="globe" className="size-4" />
-        {localeLabels[locale as keyof typeof localeLabels]}
+        <Flag locale={locale as AppLocale} />
+        {localeLabels[locale as AppLocale]}
         <Icon
           name="chevronDown"
           className={`size-3.5 opacity-60 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
@@ -126,9 +142,7 @@ function LanguageDropdown({ className }: { className: string }) {
                 }`}
               >
                 <span className="flex items-center gap-3">
-                  <span className="w-5 text-[0.7rem] font-semibold tracking-wide text-brand-white/40">
-                    {localeLabels[l]}
-                  </span>
+                  <Flag locale={l} className="size-5" />
                   {localeNames[l]}
                 </span>
                 {current && <Icon name="check" className="size-4" />}

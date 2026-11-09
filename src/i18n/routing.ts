@@ -19,7 +19,9 @@ export type AppLocale = (typeof routing.locales)[number];
 
 /** Public URL prefix for a locale ("sq" → "/al"). */
 export function localePrefix(locale: AppLocale): string {
-  return (prefixes as Partial<Record<AppLocale, string>>)[locale] ?? `/${locale}`;
+  return (
+    (prefixes as Partial<Record<AppLocale, string>>)[locale] ?? `/${locale}`
+  );
 }
 
 /** Labels shown in the language switcher: AL · IT · EN */
@@ -34,4 +36,11 @@ export const localeNames: Record<AppLocale, string> = {
   sq: "Shqip",
   it: "Italiano",
   en: "English",
+};
+
+/** Round flag icons shown in the language switcher. */
+export const localeFlags: Record<AppLocale, string> = {
+  sq: "/images/flags/alb.png",
+  it: "/images/flags/ita.png",
+  en: "/images/flags/eng.png",
 };
