@@ -130,39 +130,55 @@ export function MobileMenu() {
                       <Icon name="plus" className="size-4" />
                     </span>
                   </button>
-                  <div id={sectionId} hidden={!isExpanded} className="pb-4">
-                    <Link
-                      href={item.href}
-                      onClick={close}
-                      className="block py-2 text-sm font-semibold text-brand-white"
-                    >
-                      {t(item.labelKey)}
-                    </Link>
-                    {item.columns.map((column, i) => (
-                      <div key={column.titleKey ?? i} className="mt-2">
-                        {column.titleKey && (
-                          <p className="eyebrow mt-2 text-brand-leaf">
-                            {t(column.titleKey)}
-                          </p>
-                        )}
-                        <ul>
-                          {column.links.map((link) => (
-                            <li key={link.href}>
-                              <Link
-                                href={link.href}
-                                onClick={close}
-                                aria-current={
-                                  pathname === link.href ? "page" : undefined
-                                }
-                                className={`block py-2 text-sm ${pathname === link.href ? "text-brand-leaf" : "text-brand-white/75"}`}
-                              >
-                                {t(link.labelKey)}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
+                  {/* Animates to its natural height: grid row 0fr → 1fr. `inert` keeps
+                      collapsed links out of Tab order and screen readers. */}
+                  <div
+                    id={sectionId}
+                    inert={!isExpanded}
+                    className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out motion-reduce:transition-none ${
+                      isExpanded
+                        ? "grid-rows-[1fr] opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="pb-4">
+                        <Link
+                          href={item.href}
+                          onClick={close}
+                          className="block py-2 text-sm font-semibold text-brand-white"
+                        >
+                          {t(item.labelKey)}
+                        </Link>
+                        {item.columns.map((column, i) => (
+                          <div key={column.titleKey ?? i} className="mt-2">
+                            {column.titleKey && (
+                              <p className="eyebrow mt-2 text-brand-leaf">
+                                {t(column.titleKey)}
+                              </p>
+                            )}
+                            <ul>
+                              {column.links.map((link) => (
+                                <li key={link.href}>
+                                  <Link
+                                    href={link.href}
+                                    onClick={close}
+                                    aria-current={
+                                      pathname === link.href
+                                        ? "page"
+                                        : undefined
+                                    }
+                                    className={`block py-2 text-sm ${pathname === link.href ? "text-brand-leaf" : "text-brand-white/75"}`}
+                                  >
+                                    {t(link.labelKey)}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    </div>
                   </div>
                 </li>
               );
