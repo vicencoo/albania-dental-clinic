@@ -23,18 +23,26 @@ export default async function Page({ params }: Props) {
 
   return (
     <>
-      <PageHero title={t(`pages.${KEY}.title`)} intro={t("bookPage.intro")} breadcrumbs={[{ label: t("nav.book") }]} />
+      <PageHero
+        title={t(`pages.${KEY}.title`)}
+        intro={t("bookPage.intro")}
+        breadcrumbs={[{ label: t("nav.book") }]}
+      />
       <section className="py-16 lg:py-24">
         <div className="container-luxe grid gap-12 lg:grid-cols-[1.5fr_0.8fr] lg:items-start">
           <div className="reveal-scale">
             <ConsultationForm />
           </div>
           <aside className="space-y-8 lg:sticky lg:top-28">
-            <div className="reveal rounded-[2rem] bg-brand-forest p-8 text-brand-white">
+            <div className="reveal rounded-4xl bg-brand-forest p-8 text-brand-white">
               <h2 className="text-3xl">{t("bookPage.nextTitle")}</h2>
               <ol className="mt-6 space-y-5">
                 {next.map((item, i) => (
-                  <li key={item} className="reveal flex gap-4" style={stagger(i)}>
+                  <li
+                    key={item}
+                    className="reveal flex gap-4"
+                    style={stagger(i)}
+                  >
                     <span className="grid size-8 shrink-0 place-items-center rounded-full border border-brand-gold-light font-heading text-brand-gold-light">
                       {i + 1}
                     </span>

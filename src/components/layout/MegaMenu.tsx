@@ -18,30 +18,15 @@ import { Icon } from "@/components/ui/Icon";
 import type { NavItem } from "@/content/types";
 
 const HOVER_CLOSE_DELAY = 150;
-/** Hover intent: a short delay before the FIRST open, so brushing across the header doesn't flash the menu. */
 const HOVER_OPEN_DELAY = 70;
 
-/** Items that open a panel, in header order (used for slide direction). */
 const panelItems = mainNav.filter((item) => item.columns);
 
-/** "nav.team" → "nav.descriptions.team" (only nav.* links have descriptions). */
 const descKey = (labelKey: string) =>
   labelKey.startsWith("nav.")
     ? `nav.descriptions.${labelKey.slice(4)}`
     : "nav.descriptions.__none";
 
-/**
- * Desktop mega menu. Reads from src/content/navigation.ts.
- * - Opens on hover and on keyboard (ArrowDown/ArrowUp); clicking a top-level item
- * navigates to the first link of its panel
- * - Esc closes and returns focus to the trigger
- * - ArrowLeft/Right moves between top-level items, ArrowUp/Down moves within a panel
- * - aria-expanded / aria-controls on triggers
- *
- * Motion (pure CSS, see .mega-shell / .mega-panel in globals.css):
- * one shared surface whose height morphs between panels; content slides in from the side
- * you move towards and its columns ease up with a stagger.
- */
 export function MegaMenu() {
   const t = useTranslations();
   const baseId = useId();
@@ -66,7 +51,6 @@ export function MegaMenu() {
     openTimer.current = null;
   };
 
-  /** Hovering a top-level item: switch instantly while open, with a short intent delay when closed. */
   const hoverItem = (item: NavItem) => {
     cancelOpen();
     const next = item.columns ? item.id : null;
@@ -252,7 +236,7 @@ export function MegaMenu() {
 
       {/* One shared surface: its height morphs between panels (pure CSS transition). */}
       <div
-        className="mega-shell absolute inset-x-0 top-full border-t border-white/[0.06] bg-brand-obsidian-soft text-brand-white shadow-[0_40px_80px_-30px_rgb(0_0_0/0.8)]"
+        className="mega-shell absolute inset-x-0 top-full border-t border-white/6 bg-brand-obsidian-soft text-brand-white shadow-[0_40px_80px_-30px_rgb(0_0_0/0.8)]"
         data-open={openId !== null}
         style={{ height: openId ? (heights[openId] ?? "auto") : 0 }}
       >
@@ -297,7 +281,7 @@ export function MegaMenu() {
                       key={column.titleKey ?? i}
                       className={`mega-item ${
                         columns.length >= 5 && i === columns.length - 1
-                          ? "border-l border-white/[0.08] pl-8"
+                          ? "border-l border-white/8 pl-8"
                           : ""
                       }`}
                       style={{ "--i": i } as CSSProperties}
@@ -322,9 +306,9 @@ export function MegaMenu() {
                               aria-current={
                                 pathname === link.href ? "page" : undefined
                               }
-                              className={`group/link -mx-3 block rounded-lg px-3 py-2 transition-colors duration-300 hover:bg-white/[0.04] ${
+                              className={`group/link -mx-3 block rounded-lg px-3 py-2 transition-colors duration-300 hover:bg-white/4 ${
                                 pathname === link.href
-                                  ? "text-brand-leaf bg-white/[0.04]"
+                                  ? "text-brand-leaf bg-white/4"
                                   : "text-brand-white/85"
                               }`}
                             >
@@ -354,16 +338,16 @@ export function MegaMenu() {
                   <Link
                     href={item.featured.href}
                     onClick={() => close()}
-                    className="mega-item group/feat block w-80 shrink-0 overflow-clip rounded-xl border border-white/[0.08] bg-white/[0.03] transition-[border-color,background-color] duration-500 hover:border-brand-leaf/40 hover:bg-white/[0.05]"
+                    className="mega-item group/feat block w-80 shrink-0 overflow-clip rounded-xl border border-white/8 bg-white/3 transition-[border-color,background-color] duration-500 hover:border-brand-leaf/40 hover:bg-white/5"
                     style={{ "--i": columns.length } as CSSProperties}
                   >
-                    <div className="relative aspect-[16/10] overflow-clip">
+                    <div className="relative aspect-16/10 overflow-clip">
                       <Image
                         src={item.featured.image}
                         alt=""
                         fill
                         sizes="320px"
-                        className="object-cover opacity-90 transition-[scale,opacity] duration-1000 ease-(--ease-luxe) group-hover/feat:scale-[1.06] group-hover/feat:opacity-100"
+                        className="object-cover opacity-90 transition-[scale,opacity] duration-1000 ease-luxe group-hover/feat:scale-[1.06] group-hover/feat:opacity-100"
                       />
                     </div>
                     <div className="p-5">

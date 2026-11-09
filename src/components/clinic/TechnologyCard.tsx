@@ -13,13 +13,17 @@ export interface TechnologyCardProps {
 }
 
 /** Alternating image/text row for each technology. */
-export function TechnologyCard({ technology, reverse, index = 0 }: TechnologyCardProps) {
+export function TechnologyCard({
+  technology,
+  reverse,
+  index = 0,
+}: TechnologyCardProps) {
   const locale = useLocale() as AppLocale;
 
   return (
     <article className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
       <div className={cx(reverse ? "reveal-left md:order-2" : "reveal-right")}>
-        <div className="relative aspect-[4/3] overflow-clip rounded-[2rem] bg-brand-sky">
+        <div className="relative aspect-4/3 overflow-clip rounded-4xl bg-brand-sky">
           {technology.image ? (
             <Image
               src={technology.image}
@@ -36,9 +40,16 @@ export function TechnologyCard({ technology, reverse, index = 0 }: TechnologyCar
         </div>
       </div>
       <div className={reverse ? "reveal-right" : "reveal-left"}>
-        <span aria-hidden className="font-heading text-6xl font-light text-brand-blue/70">{String(index + 1).padStart(2, "0")}</span>
+        <span
+          aria-hidden
+          className="font-heading text-6xl font-light text-brand-blue/70"
+        >
+          {String(index + 1).padStart(2, "0")}
+        </span>
         <h2 className="mt-2 text-4xl">{technology.name[locale]}</h2>
-        <p className="mt-4 text-lg leading-relaxed text-brand-muted">{technology.description[locale]}</p>
+        <p className="mt-4 text-lg leading-relaxed text-brand-muted">
+          {technology.description[locale]}
+        </p>
       </div>
     </article>
   );

@@ -6,7 +6,7 @@ import { Icon } from "@/components/ui/Icon";
 export function AnnouncementBar() {
   const t = useTranslations("ui");
   return (
-    <div className="border-b border-white/[0.06] bg-[linear-gradient(90deg,var(--color-brand-green-dark),var(--color-brand-obsidian)_45%,var(--color-brand-obsidian)_55%,var(--color-brand-navy))] text-brand-white/85">
+    <div className="border-b border-white/6 bg-[linear-gradient(90deg,var(--color-brand-green-dark),var(--color-brand-obsidian)_45%,var(--color-brand-obsidian)_55%,var(--color-brand-navy))] text-brand-white/85">
       <Link
         href="/book"
         className="group container-luxe flex items-center justify-center gap-2 py-1.5 text-center text-[0.72rem] tracking-[0.02em]"

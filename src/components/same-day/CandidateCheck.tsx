@@ -25,7 +25,8 @@ export function CandidateCheck() {
   // Question 3 (index 2) asks about an X-ray; index 1 of its options = "No".
   const noXray = answers[2] === 1;
 
-  const focusHeading = () => requestAnimationFrame(() => headingRef.current?.focus());
+  const focusHeading = () =>
+    requestAnimationFrame(() => headingRef.current?.focus());
   const answer = (i: number) => {
     setAnswers((a) => [...a, i]);
     focusHeading();
@@ -47,9 +48,12 @@ export function CandidateCheck() {
         {/* Progress */}
         <div className="mt-5 flex gap-2" aria-hidden>
           {questions.map((_, i) => (
-            <span key={i} className="h-1 flex-1 overflow-clip rounded-full bg-brand-white/15">
+            <span
+              key={i}
+              className="h-1 flex-1 overflow-clip rounded-full bg-brand-white/15"
+            >
               <span
-                className="block h-full origin-left bg-brand-gold transition-transform duration-700 ease-(--ease-luxe)"
+                className="block h-full origin-left bg-brand-gold transition-transform duration-700 ease-luxe"
                 style={{ transform: `scaleX(${i < step ? 1 : 0})` }}
               />
             </span>
@@ -62,7 +66,12 @@ export function CandidateCheck() {
               <legend className="text-sm text-brand-white/70">
                 {t("progress", { current: step + 1, total: questions.length })}
               </legend>
-              <h3 ref={headingRef} tabIndex={-1} id={`${baseId}-q`} className="mt-2 text-3xl outline-none sm:text-4xl">
+              <h3
+                ref={headingRef}
+                tabIndex={-1}
+                id={`${baseId}-q`}
+                className="mt-2 text-3xl outline-none sm:text-4xl"
+              >
                 {current.q}
               </h3>
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
@@ -74,7 +83,10 @@ export function CandidateCheck() {
                     className="group flex items-center justify-between rounded-2xl border border-brand-white/20 px-5 py-4 text-left transition-[background-color,border-color,translate] duration-300 hover:-translate-y-0.5 hover:border-brand-gold hover:bg-brand-white/10"
                   >
                     {option}
-                    <Icon name="arrow" className="size-4 opacity-0 transition-opacity group-hover:opacity-100" />
+                    <Icon
+                      name="arrow"
+                      className="size-4 opacity-0 transition-opacity group-hover:opacity-100"
+                    />
                   </button>
                 ))}
               </div>
@@ -93,11 +105,21 @@ export function CandidateCheck() {
               <span className="grid size-14 place-items-center rounded-full bg-brand-leaf">
                 <Icon name="check" className="size-7" />
               </span>
-              <h3 ref={headingRef} tabIndex={-1} className="mt-6 text-4xl outline-none">
+              <h3
+                ref={headingRef}
+                tabIndex={-1}
+                className="mt-6 text-4xl outline-none"
+              >
                 {t("resultTitle")}
               </h3>
-              <p className="mt-4 max-w-2xl text-lg text-brand-white/80">{t("resultText")}</p>
-              {noXray && <p className="mt-2 max-w-2xl text-brand-white/70">{t("resultNoXray")}</p>}
+              <p className="mt-4 max-w-2xl text-lg text-brand-white/80">
+                {t("resultText")}
+              </p>
+              {noXray && (
+                <p className="mt-2 max-w-2xl text-brand-white/70">
+                  {t("resultNoXray")}
+                </p>
+              )}
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Button href="/book" variant="light">
                   {tUi("bookCta")}

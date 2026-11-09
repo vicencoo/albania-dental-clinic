@@ -12,11 +12,19 @@ export interface TeamCardProps {
 
 export function TeamCard({ member }: TeamCardProps) {
   const locale = useLocale() as AppLocale;
-  const href = member.isLead ? "/clinic/dr-donela-dede" : `/clinic/team/${member.slug}`;
+  const href = member.isLead
+    ? "/clinic/dr-donela-dede"
+    : `/clinic/team/${member.slug}`;
 
   return (
-    <Link href={href} className="lift group block overflow-clip rounded-[2rem] bg-brand-white">
-      <div className="arch relative aspect-[4/5] bg-brand-porcelain" style={{ "--arch-v": "40%" } as CSSProperties}>
+    <Link
+      href={href}
+      className="lift group block overflow-clip rounded-4xl bg-brand-white"
+    >
+      <div
+        className="arch relative aspect-4/5 bg-brand-porcelain"
+        style={{ "--arch-v": "40%" } as CSSProperties}
+      >
         {member.photo ? (
           <Image
             src={member.photo}
@@ -32,8 +40,12 @@ export function TeamCard({ member }: TeamCardProps) {
         )}
       </div>
       <div className="p-6 text-center">
-        <p className="font-heading text-2xl transition-colors group-hover:text-brand-green">{member.name}</p>
-        <p className="mt-1 text-xs uppercase tracking-widest text-brand-muted">{member.role[locale]}</p>
+        <p className="font-heading text-2xl transition-colors group-hover:text-brand-green">
+          {member.name}
+        </p>
+        <p className="mt-1 text-xs uppercase tracking-widest text-brand-muted">
+          {member.role[locale]}
+        </p>
       </div>
     </Link>
   );

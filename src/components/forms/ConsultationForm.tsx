@@ -8,7 +8,14 @@ import { Icon } from "@/components/ui/Icon";
 import { Field, inputClass } from "./Field";
 import { useRequestForm } from "./useRequestForm";
 
-const interests = ["sameDay", "implants", "aesthetic", "general", "tourism", "other"] as const;
+const interests = [
+  "sameDay",
+  "implants",
+  "aesthetic",
+  "general",
+  "tourism",
+  "other",
+] as const;
 
 /** Free consultation form with optional X-ray upload → POST /api/consultation. */
 export function ConsultationForm({
@@ -36,7 +43,7 @@ export function ConsultationForm({
       className="relative grid gap-6 rounded-[2.25rem] border border-brand-sand bg-brand-white p-6 shadow-card sm:grid-cols-2 sm:p-10"
     >
       {/* Honeypot (hidden from people and assistive tech) */}
-      <div aria-hidden className="absolute -left-[9999px] h-0 overflow-clip">
+      <div aria-hidden className="absolute left-[-9999px] h-0 overflow-clip">
         <label>
           Company
           <input type="text" name="company" tabIndex={-1} autoComplete="off" />
@@ -45,7 +52,12 @@ export function ConsultationForm({
       <input type="hidden" name="topic" value="consultation" />
       {apartment && <input type="hidden" name="apartment" value={apartment} />}
 
-      <Field id={f("name")} label={t("name")} error={has("name") ? t("errors.name") : undefined} className="sm:col-span-2">
+      <Field
+        id={f("name")}
+        label={t("name")}
+        error={has("name") ? t("errors.name") : undefined}
+        className="sm:col-span-2"
+      >
         <input
           id={f("name")}
           name="name"
@@ -60,7 +72,13 @@ export function ConsultationForm({
       <Field
         id={f("email")}
         label={t("email")}
-        error={has("email") ? t("errors.email") : has("contact") ? t("errors.contact") : undefined}
+        error={
+          has("email")
+            ? t("errors.email")
+            : has("contact")
+              ? t("errors.contact")
+              : undefined
+        }
       >
         <input
           id={f("email")}
@@ -87,11 +105,21 @@ export function ConsultationForm({
       </Field>
 
       <Field id={f("country")} label={t("country")} optional={t("optional")}>
-        <input id={f("country")} name="country" autoComplete="country-name" className={inputClass} />
+        <input
+          id={f("country")}
+          name="country"
+          autoComplete="country-name"
+          className={inputClass}
+        />
       </Field>
 
       <Field id={f("interest")} label={t("interest")}>
-        <select id={f("interest")} name="interest" defaultValue={defaultInterest ?? "sameDay"} className={inputClass}>
+        <select
+          id={f("interest")}
+          name="interest"
+          defaultValue={defaultInterest ?? "sameDay"}
+          className={inputClass}
+        >
           {interests.map((key) => (
             <option key={key} value={key}>
               {t(`interestOptions.${key}`)}
@@ -100,7 +128,12 @@ export function ConsultationForm({
         </select>
       </Field>
 
-      <Field id={f("message")} label={t("message")} optional={t("optional")} className="sm:col-span-2">
+      <Field
+        id={f("message")}
+        label={t("message")}
+        optional={t("optional")}
+        className="sm:col-span-2"
+      >
         <textarea
           id={f("message")}
           name="message"
@@ -119,12 +152,14 @@ export function ConsultationForm({
       >
         <label
           htmlFor={f("xray")}
-          className="group flex cursor-pointer items-center gap-4 rounded-2xl border border-dashed border-brand-gold/60 bg-brand-porcelain px-5 py-5 transition-colors hover:border-brand-gold hover:bg-brand-sand/60 has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-brand-gold"
+          className="group flex cursor-pointer items-center gap-4 rounded-2xl border border-dashed border-brand-gold/60 bg-brand-porcelain px-5 py-5 transition-colors hover:border-brand-gold hover:bg-brand-sand/60 has-focus-visible:ring-2 has-focus-visible:ring-brand-gold"
         >
           <span className="grid size-11 shrink-0 place-items-center rounded-full bg-brand-white text-brand-green transition-transform duration-300 group-hover:-translate-y-0.5">
             <Icon name="upload" className="size-5" />
           </span>
-          <span className="min-w-0 flex-1 truncate text-sm text-brand-muted">{fileName ?? t("xrayChoose")}</span>
+          <span className="min-w-0 flex-1 truncate text-sm text-brand-muted">
+            {fileName ?? t("xrayChoose")}
+          </span>
           <input
             id={f("xray")}
             name="xray"
@@ -150,20 +185,29 @@ export function ConsultationForm({
           />
           <span>
             {t("consent")}{" "}
-            <Link href="/privacy" className="text-brand-green underline underline-offset-4">
+            <Link
+              href="/privacy"
+              className="text-brand-green underline underline-offset-4"
+            >
               {t("privacyLink")}
             </Link>
           </span>
         </label>
         {has("consent") && (
-          <p id={f("consent-error")} className="rise mt-2 text-xs text-brand-red">
+          <p
+            id={f("consent-error")}
+            className="rise mt-2 text-xs text-brand-red"
+          >
             {t("errors.consent")}
           </p>
         )}
       </div>
 
       {has("generic") && (
-        <p role="alert" className="rise rounded-2xl bg-brand-red/10 px-4 py-3 text-sm text-brand-red sm:col-span-2">
+        <p
+          role="alert"
+          className="rise rounded-2xl bg-brand-red/10 px-4 py-3 text-sm text-brand-red sm:col-span-2"
+        >
           {t("errors.generic")}
         </p>
       )}

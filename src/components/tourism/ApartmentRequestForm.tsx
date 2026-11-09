@@ -12,7 +12,9 @@ export interface ApartmentRequestFormProps {
 }
 
 /** Availability request form → POST /api/consultation (topic=apartment). */
-export function ApartmentRequestForm({ apartmentSlug }: ApartmentRequestFormProps) {
+export function ApartmentRequestForm({
+  apartmentSlug,
+}: ApartmentRequestFormProps) {
   const t = useTranslations("form");
   const id = useId();
   const { pending, onSubmit, has } = useRequestForm();
@@ -30,11 +32,16 @@ export function ApartmentRequestForm({ apartmentSlug }: ApartmentRequestFormProp
       </div>
       <input type="hidden" name="topic" value="apartment" />
       <input type="hidden" name="apartment" value={apartmentSlug} />
-      <div aria-hidden className="absolute -left-[9999px] h-0 overflow-clip">
+      <div aria-hidden className="absolute left-[-9999px] h-0 overflow-clip">
         <input type="text" name="company" tabIndex={-1} autoComplete="off" />
       </div>
 
-      <Field id={f("name")} label={t("name")} error={has("name") ? t("errors.name") : undefined} className="sm:col-span-2">
+      <Field
+        id={f("name")}
+        label={t("name")}
+        error={has("name") ? t("errors.name") : undefined}
+        className="sm:col-span-2"
+      >
         <input
           id={f("name")}
           name="name"
@@ -47,7 +54,13 @@ export function ApartmentRequestForm({ apartmentSlug }: ApartmentRequestFormProp
       <Field
         id={f("email")}
         label={t("email")}
-        error={has("email") ? t("errors.email") : has("contact") ? t("errors.contact") : undefined}
+        error={
+          has("email")
+            ? t("errors.email")
+            : has("contact")
+              ? t("errors.contact")
+              : undefined
+        }
       >
         <input
           id={f("email")}
@@ -55,21 +68,47 @@ export function ApartmentRequestForm({ apartmentSlug }: ApartmentRequestFormProp
           type="email"
           autoComplete="email"
           aria-invalid={has("email") || has("contact")}
-          aria-describedby={has("email") || has("contact") ? `${f("email")}-error` : undefined}
+          aria-describedby={
+            has("email") || has("contact") ? `${f("email")}-error` : undefined
+          }
           className={inputClass}
         />
       </Field>
       <Field id={f("phone")} label={t("phone")}>
-        <input id={f("phone")} name="phone" type="tel" autoComplete="tel" className={inputClass} />
+        <input
+          id={f("phone")}
+          name="phone"
+          type="tel"
+          autoComplete="tel"
+          className={inputClass}
+        />
       </Field>
       <Field id={f("arrival")} label={t("arrival")}>
-        <input id={f("arrival")} name="arrival" type="date" className={inputClass} />
+        <input
+          id={f("arrival")}
+          name="arrival"
+          type="date"
+          className={inputClass}
+        />
       </Field>
       <Field id={f("departure")} label={t("departure")}>
-        <input id={f("departure")} name="departure" type="date" className={inputClass} />
+        <input
+          id={f("departure")}
+          name="departure"
+          type="date"
+          className={inputClass}
+        />
       </Field>
       <Field id={f("guests")} label={t("guests")}>
-        <input id={f("guests")} name="guests" type="number" min={1} max={8} defaultValue={1} className={inputClass} />
+        <input
+          id={f("guests")}
+          name="guests"
+          type="number"
+          min={1}
+          max={8}
+          defaultValue={1}
+          className={inputClass}
+        />
       </Field>
       <Field id={f("message")} label={t("message")} optional={t("optional")}>
         <input id={f("message")} name="message" className={inputClass} />
@@ -86,12 +125,19 @@ export function ApartmentRequestForm({ apartmentSlug }: ApartmentRequestFormProp
           />
           <span>
             {t("consent")}{" "}
-            <Link href="/privacy" className="text-brand-green underline underline-offset-4">
+            <Link
+              href="/privacy"
+              className="text-brand-green underline underline-offset-4"
+            >
               {t("privacyLink")}
             </Link>
           </span>
         </label>
-        {has("consent") && <p className="rise mt-2 text-xs text-brand-red">{t("errors.consent")}</p>}
+        {has("consent") && (
+          <p className="rise mt-2 text-xs text-brand-red">
+            {t("errors.consent")}
+          </p>
+        )}
       </div>
       {has("generic") && (
         <p role="alert" className="text-sm text-brand-red sm:col-span-2">

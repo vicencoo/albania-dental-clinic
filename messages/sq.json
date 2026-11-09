@@ -67,7 +67,7 @@
       "packages": "Trajtimi dhe qëndrimi në një plan të vetëm.",
       "faq": "Përgjigje për pyetjet më të shpeshta.",
       "apartments": "Apartamente private të rezervuara për pacientët tanë.",
-      "travel": "Fluturimet, mbërritja dhe këshilla praktike.",
+      "travel": "Transporti nga aeroporti, fluturimet dhe këshilla praktike.",
       "discoverAlbania": "Kthejeni trajtimin në një pushim të shkurtër.",
       "beforeAfter": "Raste të ndara me pëlqimin e pacientëve.",
       "patientStories": "Përvoja të treguara nga pacientët tanë.",
@@ -332,7 +332,7 @@
     },
     "travel": {
       "title": "Udhëtimi",
-      "description": "Fluturimet, dokumentet, monedha dhe këshilla praktike për pacientët që udhëtojnë."
+      "description": "Transporti nga dhe për në aeroport, fluturimet, dokumentet, monedha dhe këshilla praktike për pacientët që udhëtojnë."
     },
     "discoverAlbania": {
       "title": "Zbulo Shqipërinë",
@@ -445,6 +445,7 @@
     },
     "trust": [
       "Dhëmbë fiks në një ditë",
+      "Transport nga dhe për në aeroport",
       "Diagnozë 3D CBCT",
       "Laborator digjital në klinikë",
       "Kirurgji implantesh e udhëhequr",
@@ -502,7 +503,7 @@
     "tourism": {
       "eyebrow": "Turizëm dentar",
       "title": "Ne organizojmë trajtimin dhe qëndrimin tuaj",
-      "text": "Po udhëtoni për trajtim? Ne i planifikojmë datat sipas ndërhyrjes dhe mund të qëndroni në apartamentet e vetë klinikës.",
+      "text": "Po udhëtoni për trajtim? Ne i planifikojmë datat sipas ndërhyrjes, ju presim në aeroport dhe mund të qëndroni në apartamentet e vetë klinikës.",
       "items": [
         {
           "title": "Plan personal",
@@ -511,6 +512,10 @@
         {
           "title": "Apartamentet tona",
           "text": "Apartamente private të rezervuara për pacientët gjatë trajtimit."
+        },
+        {
+          "title": "Transporti",
+          "text": "Ju presim në aeroport, ju kthejmë në fund dhe ju çojmë kudo që keni nevojë gjatë qëndrimit."
         },
         {
           "title": "Zbulo Shqipërinë",
@@ -741,7 +746,7 @@
     "closing": "Prandaj Albania Dental Clinic është një nga klinikat e pakta në Shqipëri që mund të ofrojnë dhëmbë të plotë në një ditë."
   },
   "tourismPage": {
-    "intro": "Pacientët vijnë nga e gjithë Shqipëria dhe nga jashtë. Ne e organizojmë trajtimin dhe qëndrimin së bashku, që ju të mendoni vetëm për buzëqeshjen e re."
+    "intro": "Pacientët vijnë nga e gjithë Shqipëria dhe nga jashtë. Ne organizojmë trajtimin, qëndrimin dhe transportin nga aeroporti, që ju të mendoni vetëm për buzëqeshjen e re."
   },
   "tourismHow": {
     "intro": "Pesë hapa të thjeshtë nga mesazhi i parë deri te fluturimi për në shtëpi.",
@@ -756,7 +761,7 @@
       },
       {
         "title": "Rezervoni datat dhe qëndrimin",
-        "text": "Zgjidhni datat; mund t'ju rezervojmë një nga apartamentet tona."
+        "text": "Zgjidhni datat; ju rezervojmë një nga apartamentet tona dhe ju presim në aeroport."
       },
       {
         "title": "Trajtimi",
@@ -780,6 +785,10 @@
   "travelPage": {
     "intro": "Informacion praktik për të planifikuar udhëtimin.",
     "sections": [
+      {
+        "title": "Transporti",
+        "text": "Klinika ju pret në aeroportin e Tiranës dhe ju kthen atje në fund të trajtimit. Gjatë qëndrimit, nëse keni nevojë të shkoni diku — në klinikë, në apartament apo gjetkë — transportin e organizojmë ne. Mjafton të na dërgoni të dhënat e fluturimit."
+      },
       {
         "title": "Fluturimet",
         "text": "Aeroporti Ndërkombëtar i Tiranës (TIA) ka fluturime direkte nga shumë qytete italiane dhe evropiane. Takimet i planifikojmë sipas mbërritjes dhe largimit tuaj."

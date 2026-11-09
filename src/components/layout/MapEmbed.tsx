@@ -21,7 +21,7 @@ export function MapEmbed({ src, title }: { src: string; title: string }) {
         src={src}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="aspect-square w-full grayscale-[30%]"
+        className="aspect-square w-full grayscale-30"
       />
     );
   }

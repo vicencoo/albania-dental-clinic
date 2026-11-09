@@ -67,7 +67,7 @@
       "packages": "Cure e soggiorno in un unico piano.",
       "faq": "Le risposte alle domande più frequenti.",
       "apartments": "Appartamenti privati riservati ai nostri pazienti.",
-      "travel": "Voli, arrivo e consigli pratici.",
+      "travel": "Transfer dall'aeroporto, voli e consigli pratici.",
       "discoverAlbania": "Trasforma le cure in una breve vacanza.",
       "beforeAfter": "Casi condivisi con il consenso dei pazienti.",
       "patientStories": "Esperienze raccontate dai nostri pazienti.",
@@ -332,7 +332,7 @@
     },
     "travel": {
       "title": "Il viaggio",
-      "description": "Voli, documenti, valuta e consigli pratici per chi viaggia in Albania per le cure."
+      "description": "Transfer da e per l'aeroporto, voli, documenti, valuta e consigli pratici per chi viaggia in Albania per le cure."
     },
     "discoverAlbania": {
       "title": "Scopri l'Albania",
@@ -445,6 +445,7 @@
     },
     "trust": [
       "Denti fissi in un giorno",
+      "Transfer da e per l'aeroporto",
       "Diagnosi 3D CBCT",
       "Laboratorio digitale interno",
       "Chirurgia implantare guidata",
@@ -502,7 +503,7 @@
     "tourism": {
       "eyebrow": "Turismo dentale",
       "title": "Cure e soggiorno, organizzati per te",
-      "text": "Viaggi per curarti? Pianifichiamo le date intorno all'intervento e puoi soggiornare negli appartamenti della clinica.",
+      "text": "Viaggi per curarti? Pianifichiamo le date intorno all'intervento, ti veniamo a prendere in aeroporto e puoi soggiornare negli appartamenti della clinica.",
       "items": [
         {
           "title": "Piano personale",
@@ -511,6 +512,10 @@
         {
           "title": "I nostri appartamenti",
           "text": "Appartamenti privati riservati ai pazienti durante le cure."
+        },
+        {
+          "title": "Trasporto",
+          "text": "Ti accogliamo in aeroporto, ti riaccompagniamo alla fine e ti portiamo ovunque tu abbia bisogno durante il soggiorno."
         },
         {
           "title": "Scopri l'Albania",
@@ -741,7 +746,7 @@
     "closing": "Per questo Albania Dental Clinic è una delle poche cliniche in Albania che possono offrire denti completi in un giorno."
   },
   "tourismPage": {
-    "intro": "I pazienti arrivano da tutta l'Albania e dall'estero. Organizziamo cure e soggiorno insieme, così puoi pensare solo al tuo nuovo sorriso."
+    "intro": "I pazienti arrivano da tutta l'Albania e dall'estero. Organizziamo cure, soggiorno e transfer dall'aeroporto, così puoi pensare solo al tuo nuovo sorriso."
   },
   "tourismHow": {
     "intro": "Cinque semplici passi dal primo messaggio al volo di ritorno.",
@@ -756,7 +761,7 @@
       },
       {
         "title": "Prenota date e alloggio",
-        "text": "Scegli le date; possiamo riservarti uno dei nostri appartamenti."
+        "text": "Scegli le date; possiamo riservarti uno dei nostri appartamenti e ti veniamo a prendere in aeroporto."
       },
       {
         "title": "Le cure",
@@ -780,6 +785,10 @@
   "travelPage": {
     "intro": "Informazioni pratiche per organizzare il viaggio.",
     "sections": [
+      {
+        "title": "Trasporto",
+        "text": "La clinica ti viene a prendere all'aeroporto di Tirana e ti riaccompagna alla fine delle cure. Durante il soggiorno, se hai bisogno di spostarti — in clinica, in appartamento o altrove — il trasporto lo organizziamo noi. Basta inviarci i dati del volo."
+      },
       {
         "title": "Voli",
         "text": "L'aeroporto internazionale di Tirana (TIA) ha voli diretti da molte città italiane ed europee. Pianifichiamo gli appuntamenti in base al tuo arrivo e alla tua partenza."

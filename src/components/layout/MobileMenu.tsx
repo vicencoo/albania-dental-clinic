@@ -55,7 +55,7 @@ export function MobileMenu() {
         aria-controls={drawerId}
         onClick={() => setOpen(true)}
         aria-label={t("ui.openMenu")}
-        className="grid size-10 place-items-center rounded-full bg-white/[0.06] text-brand-white transition-colors hover:bg-white/[0.12]"
+        className="grid size-10 place-items-center rounded-full bg-white/6 text-brand-white transition-colors hover:bg-white/12"
       >
         <Icon name="menu" className="size-5" />
       </button>
@@ -65,8 +65,10 @@ export function MobileMenu() {
         role="dialog"
         aria-modal="true"
         aria-label={t("ui.mainNavigation")}
-        className={`obsidian fixed inset-0 z-50 flex flex-col transition-[opacity,visibility,transform] duration-500 ease-(--ease-luxe) ${
-          open ? "visible translate-x-0 opacity-100" : "invisible translate-x-8 opacity-0"
+        className={`obsidian fixed inset-0 z-50 flex flex-col transition-[opacity,visibility,transform] duration-500 ease-luxe ${
+          open
+            ? "visible translate-x-0 opacity-100"
+            : "invisible translate-x-8 opacity-0"
         }`}
       >
         <div className="flex items-center justify-between border-b border-white/10 px-5 py-3">
@@ -85,7 +87,10 @@ export function MobileMenu() {
           <LanguageSwitcher variant="inline" />
         </div>
 
-        <nav className="flex-1 overflow-y-auto px-5 pb-28" aria-label={t("ui.mainNavigation")}>
+        <nav
+          className="flex-1 overflow-y-auto px-5 pb-28"
+          aria-label={t("ui.mainNavigation")}
+        >
           <ul className="divide-y divide-white/10">
             {mainNav.map((item) => {
               const sectionId = `${baseId}-section-${item.id}`;
@@ -126,7 +131,11 @@ export function MobileMenu() {
                     </span>
                   </button>
                   <div id={sectionId} hidden={!isExpanded} className="pb-4">
-                    <Link href={item.href} onClick={close} className="block py-2 text-sm font-semibold text-brand-white">
+                    <Link
+                      href={item.href}
+                      onClick={close}
+                      className="block py-2 text-sm font-semibold text-brand-white"
+                    >
                       {t(item.labelKey)}
                     </Link>
                     {item.columns.map((column, i) => (
@@ -142,7 +151,9 @@ export function MobileMenu() {
                               <Link
                                 href={link.href}
                                 onClick={close}
-                                aria-current={pathname === link.href ? "page" : undefined}
+                                aria-current={
+                                  pathname === link.href ? "page" : undefined
+                                }
                                 className={`block py-2 text-sm ${pathname === link.href ? "text-brand-leaf" : "text-brand-white/75"}`}
                               >
                                 {t(link.labelKey)}

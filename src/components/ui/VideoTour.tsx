@@ -10,11 +10,22 @@ export interface VideoTourProps {
 }
 
 /** Clinic video tour (no preload, native controls) or a photo mosaic fallback. */
-export function VideoTour({ src, poster, title, fallbackImages = [] }: VideoTourProps) {
+export function VideoTour({
+  src,
+  poster,
+  title,
+  fallbackImages = [],
+}: VideoTourProps) {
   if (src) {
     return (
-      <div className="reveal-scale overflow-clip rounded-[2rem] bg-brand-forest shadow-soft">
-        <video controls preload="none" poster={poster} className="aspect-video w-full" aria-label={title}>
+      <div className="reveal-scale overflow-clip rounded-4xl bg-brand-forest shadow-soft">
+        <video
+          controls
+          preload="none"
+          poster={poster}
+          className="aspect-video w-full"
+          aria-label={title}
+        >
           <source src={src} type="video/mp4" />
         </video>
       </div>
@@ -22,7 +33,7 @@ export function VideoTour({ src, poster, title, fallbackImages = [] }: VideoTour
   }
 
   return (
-    <div className="grid auto-rows-[14rem] grid-cols-2 gap-4 md:auto-rows-[16rem] md:grid-cols-4">
+    <div className="grid auto-rows-56 grid-cols-2 gap-4 md:auto-rows-64 md:grid-cols-4">
       {fallbackImages.map((image, i) => (
         <figure
           key={image.src}

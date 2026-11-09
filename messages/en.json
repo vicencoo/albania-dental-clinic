@@ -67,7 +67,7 @@
       "packages": "Treatment and stay combined in one plan.",
       "faq": "Answers to the questions patients ask most.",
       "apartments": "Private apartments reserved for our patients.",
-      "travel": "Flights, arrival and practical tips.",
+      "travel": "Airport transfers, flights and practical tips.",
       "discoverAlbania": "Turn your treatment into a short holiday.",
       "beforeAfter": "Cases shared with our patients' consent.",
       "patientStories": "Experiences told by our patients.",
@@ -319,6 +319,7 @@
     },
     "trust": [
       "Same-day fixed teeth",
+      "Airport transfers",
       "3D CBCT diagnostics",
       "In-house digital laboratory",
       "Guided implant surgery",
@@ -376,7 +377,7 @@
     "tourism": {
       "eyebrow": "Dental tourism",
       "title": "Your treatment and your stay, organised",
-      "text": "Travelling for treatment? We plan the dates around your surgery and you can stay in the clinic's own apartments.",
+      "text": "Travelling for treatment? We plan the dates around your surgery, pick you up at the airport and you can stay in the clinic's own apartments.",
       "items": [
         {
           "title": "Personal plan",
@@ -385,6 +386,10 @@
         {
           "title": "Our apartments",
           "text": "Private apartments reserved for patients during treatment."
+        },
+        {
+          "title": "Transport",
+          "text": "We meet you at the airport, take you back at the end and drive you wherever you need to go during your stay."
         },
         {
           "title": "Discover Albania",
@@ -615,7 +620,7 @@
     "closing": "That is why Albania Dental Clinic is one of the few clinics in Albania that can offer complete same-day teeth."
   },
   "tourismPage": {
-    "intro": "Patients come to us from Albania and abroad. We organise treatment and stay together, so you can focus on your new smile."
+    "intro": "Patients come to us from Albania and abroad. We organise your treatment, your stay and your airport transfers, so you can focus on your new smile."
   },
   "tourismHow": {
     "intro": "Five simple steps from your first message to your flight home.",
@@ -630,7 +635,7 @@
       },
       {
         "title": "Book dates and stay",
-        "text": "Choose your dates; we can reserve one of our apartments for you."
+        "text": "Choose your dates; we can reserve one of our apartments for you and pick you up at the airport."
       },
       {
         "title": "Treatment",
@@ -654,6 +659,10 @@
   "travelPage": {
     "intro": "Practical information to plan your trip.",
     "sections": [
+      {
+        "title": "Transport",
+        "text": "The clinic picks you up at Tirana airport and takes you back at the end of your treatment. During your stay, if you need to go somewhere — to the clinic, your apartment or elsewhere — we arrange the transport. Just send us your flight details."
+      },
       {
         "title": "Flights",
         "text": "Tirana International Airport (TIA) has direct flights from many Italian and European cities. We plan your appointments around your arrival and departure."
@@ -896,7 +905,7 @@
     },
     "travel": {
       "title": "Travel",
-      "description": "Flights, documents, currency and practical tips for patients travelling to Albania."
+      "description": "Airport transfers, flights, documents, currency and practical tips for patients travelling to Albania."
     },
     "discoverAlbania": {
       "title": "Discover Albania",

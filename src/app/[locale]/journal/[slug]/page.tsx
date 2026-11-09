@@ -14,7 +14,11 @@ import { paragraphs, readingMinutes } from "@/lib/style";
 
 type Props = PageProps<"/[locale]/journal/[slug]">;
 
-export function generateStaticParams({ params }: { params: { locale: string } }) {
+export function generateStaticParams({
+  params,
+}: {
+  params: { locale: string };
+}) {
   return journalPosts
     .filter((p) => (p.locales as string[]).includes(params.locale))
     .map((p) => ({ slug: p.slug }));
@@ -46,28 +50,47 @@ export default async function JournalPostPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations();
   const title = post.title[locale];
-  const dateFmt = new Intl.DateTimeFormat(locale, { day: "numeric", month: "long", year: "numeric" });
+  const dateFmt = new Intl.DateTimeFormat(locale, {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
 
   return (
     <>
       {/* Reading progress (CSS scroll-driven animation) */}
-      <div aria-hidden className="read-progress tricolor-line fixed inset-x-0 top-0 z-50 [transform:scaleX(0)] rounded-none" />
+      <div
+        aria-hidden
+        className="read-progress tricolor-line fixed inset-x-0 top-0 z-50 transform-[scaleX(0)] rounded-none"
+      />
 
       <PageHero
         title={title}
         intro={post.excerpt[locale]}
-        breadcrumbs={[{ label: t("nav.journal"), href: "/journal" }, { label: title }]}
+        breadcrumbs={[
+          { label: t("nav.journal"), href: "/journal" },
+          { label: title },
+        ]}
       >
         <p className="text-xs uppercase tracking-widest text-brand-muted">
-          {t("ui.published")} <time dateTime={post.publishedAt}>{dateFmt.format(new Date(post.publishedAt))}</time> ·{" "}
-          {t("ui.minRead", { minutes: readingMinutes(post.body[locale]) })}
+          {t("ui.published")}{" "}
+          <time dateTime={post.publishedAt}>
+            {dateFmt.format(new Date(post.publishedAt))}
+          </time>{" "}
+          · {t("ui.minRead", { minutes: readingMinutes(post.body[locale]) })}
         </p>
       </PageHero>
 
       <article className="container-luxe max-w-3xl py-16 lg:py-20">
         {post.coverImage && (
-          <div className="reveal-scale relative mb-12 aspect-[16/9] overflow-clip rounded-[2rem] bg-brand-sand">
-            <Image src={post.coverImage} alt="" fill sizes="(min-width: 768px) 48rem, 100vw" className="object-cover" />
+          <div className="reveal-scale relative mb-12 aspect-video overflow-clip rounded-4xl bg-brand-sand">
+            <Image
+              src={post.coverImage}
+              alt=""
+              fill
+              sizes="(min-width: 768px) 48rem, 100vw"
+              className="object-cover"
+            />
           </div>
         )}
         <div className="space-y-6 text-lg leading-[1.85] text-brand-ink/85">
@@ -85,7 +108,8 @@ export default async function JournalPostPage({ params }: Props) {
           ))}
         </div>
         <p className="mt-10 flex items-center gap-2 border-t border-brand-sand pt-6 text-xs text-brand-muted">
-          <Icon name="shield" className="size-4 text-brand-gold" /> {t("ui.medicalNote")}
+          <Icon name="shield" className="size-4 text-brand-gold" />{" "}
+          {t("ui.medicalNote")}
         </p>
         <div className="mt-8">
           <Button href="/journal" variant="ghost" icon="arrowLeft">
@@ -110,7 +134,10 @@ export default async function JournalPostPage({ params }: Props) {
           publisher: {
             "@type": "Organization",
             name: site.name,
-            logo: { "@type": "ImageObject", url: `${siteUrl()}/images/brand/logo-full.png` },
+            logo: {
+              "@type": "ImageObject",
+              url: `${siteUrl()}/images/brand/logo-full.png`,
+            },
           },
         }}
       />

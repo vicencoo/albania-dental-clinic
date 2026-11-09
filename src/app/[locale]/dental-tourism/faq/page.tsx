@@ -29,15 +29,14 @@ export default async function Page({ params }: Props) {
         title={t(`pages.${KEY}.title`)}
         eyebrow={t("nav.tourism")}
         intro={t("faqPage.intro")}
-        breadcrumbs={[{ label: t("nav.tourism"), href: "/dental-tourism" }, { label: t("nav.faq") }]}
+        breadcrumbs={[
+          { label: t("nav.tourism"), href: "/dental-tourism" },
+          { label: t("nav.faq") },
+        ]}
       >
         <nav aria-label={t("nav.faq")} className="flex flex-wrap gap-2">
           {topics.map((topic) => (
-            <a
-              key={topic}
-              href={`#${topic}`}
-              className="hero-pill"
-            >
+            <a key={topic} href={`#${topic}`} className="hero-pill">
               {t(`faqPage.topics.${topic}`)}
             </a>
           ))}
@@ -48,13 +47,15 @@ export default async function Page({ params }: Props) {
         <div className="container-luxe max-w-4xl space-y-16">
           {topics.map((topic) => (
             <div key={topic} id={topic}>
-              <h2 className="reveal text-4xl">{t(`faqPage.topics.${topic}`)}</h2>
+              <h2 className="reveal text-4xl">
+                {t(`faqPage.topics.${topic}`)}
+              </h2>
               <div className="mt-6">
                 <FAQAccordion items={getFaqsByTopic(topic)} schema={false} />
               </div>
             </div>
           ))}
-          <div className="reveal rounded-[2rem] bg-brand-porcelain p-8 text-center">
+          <div className="reveal rounded-4xl bg-brand-porcelain p-8 text-center">
             <p className="font-heading text-3xl">{t("ui.askQuestion")}</p>
             <div className="mt-6">
               <Button href="/contact">{t("nav.contact")}</Button>

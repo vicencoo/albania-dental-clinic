@@ -8,20 +8,34 @@ import { stagger } from "@/lib/style";
 export function EnvironmentPreview() {
   const t = useTranslations();
   const photos = [
-    { src: "/images/clinic/treatment-room.jpg", alt: t("environmentPage.gallery.room"), className: "row-span-2 reveal-from-left" },
-    { src: "/images/treatments/children.jpg", alt: t("environmentPage.gallery.children"), className: "reveal-from-right" },
-    { src: "/images/clinic/tech-cbct-unit.jpg", alt: t("environmentPage.gallery.cbct"), className: "reveal-up" },
+    {
+      src: "/images/clinic/treatment-room.jpg",
+      alt: t("environmentPage.gallery.room"),
+      className: "row-span-2 reveal-from-left",
+    },
+    {
+      src: "/images/treatments/children.jpg",
+      alt: t("environmentPage.gallery.children"),
+      className: "reveal-from-right",
+    },
+    {
+      src: "/images/clinic/tech-cbct-unit.jpg",
+      alt: t("environmentPage.gallery.cbct"),
+      className: "reveal-up",
+    },
   ];
 
   return (
     <section className="bg-brand-white py-28 lg:py-40">
       <div className="container-luxe grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="grid auto-rows-[11rem] grid-cols-2 gap-4 sm:auto-rows-[14rem]">
+        <div className="grid auto-rows-44 grid-cols-2 gap-4 sm:auto-rows-56">
           {photos.map((photo, i) => (
             <figure
               key={photo.src}
               className={`lift relative overflow-clip rounded-xl bg-brand-sand ${photo.className} ${
-                i === 0 ? "[border-radius:50%_50%_0.75rem_0.75rem/32%_32%_0.75rem_0.75rem]" : ""
+                i === 0
+                  ? "rounded-[50%_50%_0.75rem_0.75rem/32%_32%_0.75rem_0.75rem]"
+                  : ""
               }`}
               style={stagger(i)}
             >

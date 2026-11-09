@@ -2,38 +2,50 @@
 
 import { useEffect } from "react";
 
-const GROUPS = [".reveal-stagger", ".reveal-sides", ".reveal-alternate", ".reveal-group"].join(",");
+const GROUPS = [
+  ".reveal-stagger",
+  ".reveal-sides",
+  ".reveal-alternate",
+  ".reveal-group",
+].join(",");
 
 /** Group containers (their children animate) and single reveal elements — see globals.css. */
 const TRIGGERS = [
   GROUPS,
-  ".reveal", ".reveal-up", ".reveal-fade", ".reveal-scale", ".reveal-text", ".reveal-left",
-  ".reveal-right", ".reveal-from-left", ".reveal-from-right", ".reveal-rotate", ".reveal-flip",
-  ".reveal-zoom", ".reveal-spin", ".reveal-arch", ".reveal-img-zoom",
+  ".reveal",
+  ".reveal-up",
+  ".reveal-fade",
+  ".reveal-scale",
+  ".reveal-text",
+  ".reveal-left",
+  ".reveal-right",
+  ".reveal-from-left",
+  ".reveal-from-right",
+  ".reveal-rotate",
+  ".reveal-flip",
+  ".reveal-zoom",
+  ".reveal-spin",
+  ".reveal-arch",
+  ".reveal-img-zoom",
 ].join(",");
 
-/** Reveal once the element is this far inside the viewport. */
 const OFFSET = 70;
 
 /** The paused CSS entrance animations (rv-*) that belong to this trigger. */
 function entranceAnimations(trigger: HTMLElement): CSSAnimation[] {
-  const targets = trigger.matches(GROUPS) ? Array.from(trigger.children) : [trigger];
+  const targets = trigger.matches(GROUPS)
+    ? Array.from(trigger.children)
+    : [trigger];
   return targets.flatMap((t) =>
     t
       .getAnimations()
-      .filter((a): a is CSSAnimation => a instanceof CSSAnimation && a.animationName.startsWith("rv-")),
+      .filter(
+        (a): a is CSSAnimation =>
+          a instanceof CSSAnimation && a.animationName.startsWith("rv-"),
+      ),
   );
 }
 
-/**
- * Scroll-triggered reveals for every `.reveal*` element on the page.
- *
- * CSS sets each entrance animation up paused (element hidden on its first keyframe); this
- * plays it when the element scrolls into view. Playing through the Web Animations API means
- * no DOM attributes are touched before React hydrates. IntersectionObserver is used instead
- * of CSS scroll timelines because iOS Safari applied those late — items showed first and
- * only animated after more scrolling.
- */
 export function ScrollReveal() {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;

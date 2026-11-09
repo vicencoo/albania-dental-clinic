@@ -19,6 +19,7 @@ export const packages: Package[] = [
       { sq: "Planifikim digjital i ndërhyrjes", it: "Pianificazione digitale dell'intervento", en: "Digital surgical planning" },
       { sq: "Implante dhe dhëmbë fiks të përkohshëm", it: "Impianti e denti fissi provvisori", en: "Implants and fixed provisional teeth" },
       { sq: "Qëndrim në apartamentin e klinikës (sipas disponueshmërisë)", it: "Soggiorno nell'appartamento della clinica (secondo disponibilità)", en: "Stay in the clinic's apartment (subject to availability)" },
+      { sq: "Transport nga dhe për në aeroport", it: "Transfer da e per l'aeroporto", en: "Airport transfers, both ways" },
       { sq: "Kontrolle pas ndërhyrjes", it: "Controlli post-intervento", en: "Post-operative check-ups" },
     ],
     treatments: ["all-on-4", "all-on-6"],

@@ -4,11 +4,23 @@ import { useEffect, useId, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import Image from "next/image";
-import { localeFlags, localeLabels, localeNames, routing, type AppLocale } from "@/i18n/routing";
+import {
+  localeFlags,
+  localeLabels,
+  localeNames,
+  routing,
+  type AppLocale,
+} from "@/i18n/routing";
 import { Icon } from "@/components/ui/Icon";
 
 /** Decorative round flag — the visible label/name carries the meaning. */
-function Flag({ locale, className = "size-4" }: { locale: AppLocale; className?: string }) {
+function Flag({
+  locale,
+  className = "size-4",
+}: {
+  locale: AppLocale;
+  className?: string;
+}) {
   return (
     <Image
       src={localeFlags[locale]}
@@ -31,7 +43,10 @@ interface LanguageSwitcherProps {
 }
 
 /** Keeps the current path when switching language. */
-export function LanguageSwitcher({ className = "", variant = "dropdown" }: LanguageSwitcherProps) {
+export function LanguageSwitcher({
+  className = "",
+  variant = "dropdown",
+}: LanguageSwitcherProps) {
   const t = useTranslations("ui");
   const locale = useLocale();
   const pathname = usePathname();
@@ -39,7 +54,7 @@ export function LanguageSwitcher({ className = "", variant = "dropdown" }: Langu
   if (variant === "inline") {
     return (
       <nav aria-label={t("language")} className={className}>
-        <ul className="inline-flex rounded-full border border-white/10 bg-white/[0.04] p-1">
+        <ul className="inline-flex rounded-full border border-white/10 bg-white/4 p-1">
           {routing.locales.map((l) => (
             <li key={l}>
               <Link
@@ -49,7 +64,9 @@ export function LanguageSwitcher({ className = "", variant = "dropdown" }: Langu
                 lang={l}
                 aria-current={l === locale ? "true" : undefined}
                 className={`flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide transition-colors ${
-                  l === locale ? "bg-brand-white text-brand-obsidian" : "text-brand-white/60 hover:text-brand-white"
+                  l === locale
+                    ? "bg-brand-white text-brand-obsidian"
+                    : "text-brand-white/60 hover:text-brand-white"
                 }`}
               >
                 <Flag locale={l} className="size-3.5" />
@@ -99,7 +116,8 @@ function LanguageDropdown({ className }: { className: string }) {
       ref={rootRef}
       className={`relative ${className}`}
       onBlur={(e) => {
-        if (!rootRef.current?.contains(e.relatedTarget as Node | null)) setOpen(false);
+        if (!rootRef.current?.contains(e.relatedTarget as Node | null))
+          setOpen(false);
       }}
     >
       <button
@@ -109,8 +127,8 @@ function LanguageDropdown({ className }: { className: string }) {
         aria-controls={menuId}
         aria-label={`${t("language")}: ${localeNames[locale as keyof typeof localeNames]}`}
         onClick={() => setOpen((v) => !v)}
-        className={`flex h-9 items-center gap-1.5 rounded-full px-3 text-[0.8rem] font-semibold text-brand-white/75 transition-colors hover:bg-white/[0.06] hover:text-brand-white ${
-          open ? "bg-white/[0.06] text-brand-white" : ""
+        className={`flex h-9 items-center gap-1.5 rounded-full px-3 text-[0.8rem] font-semibold text-brand-white/75 transition-colors hover:bg-white/6] hover:text-brand-white ${
+          open ? "bg-white/6 text-brand-white" : ""
         }`}
       >
         <Flag locale={locale as AppLocale} />
@@ -137,8 +155,10 @@ function LanguageDropdown({ className }: { className: string }) {
                 lang={l}
                 aria-current={current ? "true" : undefined}
                 onClick={() => setOpen(false)}
-                className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm transition-colors hover:bg-white/[0.06] ${
-                  current ? "text-brand-leaf" : "text-brand-white/80 hover:text-brand-white"
+                className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm transition-colors hover:bg-white/6 ${
+                  current
+                    ? "text-brand-leaf"
+                    : "text-brand-white/80 hover:text-brand-white"
                 }`}
               >
                 <span className="flex items-center gap-3">

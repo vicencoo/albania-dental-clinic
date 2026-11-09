@@ -18,8 +18,11 @@ export function Header() {
   return (
     <header className="scroll-shadow sticky top-0 z-40 border-b border-white/[0.07] text-brand-white">
       {/* Solid layer (no backdrop-filter: it repainted on every scroll frame and trapped the fixed mobile drawer). */}
-      <span aria-hidden className="absolute inset-0 -z-10 bg-brand-obsidian/[0.97]" />
-      <div className="container-luxe flex h-[4.25rem] items-center justify-between gap-6">
+      <span
+        aria-hidden
+        className="absolute inset-0 -z-10 bg-brand-obsidian/97"
+      />
+      <div className="container-luxe flex h-17 items-center justify-between gap-6">
         <Link href="/" aria-label="Albania Dental Clinic" className="shrink-0">
           <Logo tone="dark" className="[&_img]:size-9" />
         </Link>

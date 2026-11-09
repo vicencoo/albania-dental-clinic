@@ -21,16 +21,28 @@ export function ContactDetails() {
       value: site.phone,
       href: `tel:${site.phone.replace(/\s/g, "")}`,
     },
-    !isPlaceholder(site.email) && { icon: "mail", label: t("email"), value: site.email, href: `mailto:${site.email}` },
+    !isPlaceholder(site.email) && {
+      icon: "mail",
+      label: t("email"),
+      value: site.email,
+      href: `mailto:${site.email}`,
+    },
     !isPlaceholder(site.hours[0]?.days) && {
       icon: "clock",
       label: t("hours"),
-      value: site.hours.map((h) => `${h.days} ${h.open}–${h.close}`).join(" · "),
+      value: site.hours
+        .map((h) => `${h.days} ${h.open}–${h.close}`)
+        .join(" · "),
     },
-  ].filter(Boolean) as { icon: IconName; label: string; value: string; href?: string }[];
+  ].filter(Boolean) as {
+    icon: IconName;
+    label: string;
+    value: string;
+    href?: string;
+  }[];
 
   return (
-    <div className="reveal rounded-[2rem] border border-brand-sand bg-brand-white p-8">
+    <div className="reveal rounded-4xl border border-brand-sand bg-brand-white p-8">
       {rows.length > 0 ? (
         <dl className="space-y-5">
           {rows.map((row) => (
@@ -41,7 +53,10 @@ export function ContactDetails() {
               </dt>
               <dd className="pt-2.5">
                 {row.href ? (
-                  <a href={row.href} className="link-underline hover:text-brand-green">
+                  <a
+                    href={row.href}
+                    className="link-underline hover:text-brand-green"
+                  >
                     {row.value}
                   </a>
                 ) : (
@@ -52,7 +67,9 @@ export function ContactDetails() {
           ))}
         </dl>
       ) : (
-        <p className="text-sm leading-relaxed text-brand-muted">{t("contactSoon")}</p>
+        <p className="text-sm leading-relaxed text-brand-muted">
+          {t("contactSoon")}
+        </p>
       )}
 
       <div className="mt-8 flex flex-col gap-3">
@@ -61,7 +78,12 @@ export function ContactDetails() {
             {t("whatsappCta")}
           </Button>
         )}
-        <Button external={site.social.instagram} variant="secondary" leadingIcon="instagram" icon={null}>
+        <Button
+          external={site.social.instagram}
+          variant="secondary"
+          leadingIcon="instagram"
+          icon={null}
+        >
           @albaniadental_clinic
         </Button>
       </div>

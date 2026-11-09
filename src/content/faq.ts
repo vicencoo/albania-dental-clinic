@@ -101,6 +101,20 @@ export const faqs: Faq[] = [
     },
   },
   {
+    id: "tourism-transport",
+    topic: "tourism",
+    question: {
+      sq: "A më presin në aeroport?",
+      it: "Qualcuno mi viene a prendere in aeroporto?",
+      en: "Will someone pick me up at the airport?",
+    },
+    answer: {
+      sq: "Po. Klinika ju pret në aeroportin e Tiranës dhe ju kthen atje në fund të trajtimit. Gjatë qëndrimit organizojmë edhe transportin kur keni nevojë të shkoni diku. Mjafton të na dërgoni të dhënat e fluturimit.",
+      it: "Sì. La clinica ti viene a prendere all'aeroporto di Tirana e ti riaccompagna alla fine delle cure. Durante il soggiorno organizziamo anche il trasporto quando hai bisogno di spostarti. Basta inviarci i dati del volo.",
+      en: "Yes. The clinic picks you up at Tirana airport and takes you back at the end of your treatment. During your stay we also arrange transport whenever you need to go somewhere. Just send us your flight details.",
+    },
+  },
+  {
     id: "tourism-3",
     topic: "tourism",
     question: {

@@ -8,7 +8,7 @@ import { stagger } from "@/lib/style";
 
 const KEY = "travel";
 const PATH = "/dental-tourism/travel";
-const icons: IconName[] = ["plane", "shield", "euro", "globe"];
+const icons: IconName[] = ["car", "plane", "shield", "euro", "globe"];
 
 type Props = PageProps<"/[locale]/dental-tourism/travel">;
 
@@ -20,7 +20,10 @@ export default async function Page({ params }: Props) {
   const locale = asLocale((await params).locale);
   setRequestLocale(locale);
   const t = await getTranslations();
-  const sections = t.raw("travelPage.sections") as { title: string; text: string }[];
+  const sections = t.raw("travelPage.sections") as {
+    title: string;
+    text: string;
+  }[];
 
   return (
     <>
@@ -29,18 +32,27 @@ export default async function Page({ params }: Props) {
         title={t(`pages.${KEY}.title`)}
         eyebrow={t("nav.tourism")}
         intro={t("travelPage.intro")}
-        breadcrumbs={[{ label: t("nav.tourism"), href: "/dental-tourism" }, { label: t("nav.travel") }]}
+        breadcrumbs={[
+          { label: t("nav.tourism"), href: "/dental-tourism" },
+          { label: t("nav.travel") },
+        ]}
       />
       <section className="py-20 lg:py-24">
         <ul className="container-luxe grid gap-6 md:grid-cols-2">
           {sections.map((s, i) => (
-            <li key={s.title} className={`${i % 2 ? "reveal-left" : "reveal-right"} lift flex gap-6 rounded-[2rem] border border-brand-sand bg-brand-white p-8`} style={stagger(i % 2)}>
+            <li
+              key={s.title}
+              className={`${i === 0 ? "reveal-up md:col-span-2" : i % 2 ? "reveal-right" : "reveal-left"} lift flex gap-6 rounded-4xl border border-brand-sand bg-brand-white p-8`}
+              style={stagger(i === 0 ? 0 : (i + 1) % 2)}
+            >
               <span className="grid size-14 shrink-0 place-items-center rounded-full bg-brand-sky text-brand-blue">
                 <Icon name={icons[i] ?? "check"} className="size-6" />
               </span>
               <div>
                 <h2 className="text-3xl">{s.title}</h2>
-                <p className="mt-3 leading-relaxed text-brand-muted">{s.text}</p>
+                <p className="mt-3 leading-relaxed text-brand-muted">
+                  {s.text}
+                </p>
               </div>
             </li>
           ))}

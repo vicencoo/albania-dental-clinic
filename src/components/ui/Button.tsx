@@ -7,13 +7,15 @@ import { Icon, type IconName } from "./Icon";
 type Variant = "primary" | "secondary" | "ghost" | "light" | "outline-light";
 
 const variants: Record<Variant, string> = {
-  primary: "shine bg-brand-green text-brand-white shadow-glow hover:bg-brand-leaf hover:text-brand-obsidian",
+  primary:
+    "shine bg-brand-green text-brand-white shadow-glow hover:bg-brand-leaf hover:text-brand-obsidian",
   // secondary / ghost adapt automatically inside dark (.obsidian) sections — always readable.
   secondary:
     "border border-brand-ink/20 text-brand-ink hover:border-brand-green hover:text-brand-green in-[.obsidian]:border-white/30 in-[.obsidian]:text-brand-white in-[.obsidian]:hover:border-brand-leaf in-[.obsidian]:hover:text-brand-leaf",
   ghost: "px-0! text-brand-green link-underline in-[.obsidian]:text-brand-leaf",
   light: "shine bg-brand-white text-brand-obsidian hover:bg-brand-leaf",
-  "outline-light": "border border-brand-white/30 text-brand-white hover:border-brand-leaf hover:text-brand-leaf",
+  "outline-light":
+    "border border-brand-white/30 text-brand-white hover:border-brand-leaf hover:text-brand-leaf",
 };
 
 const base =
@@ -27,9 +29,18 @@ type ButtonProps = {
   icon?: IconName | null;
   leadingIcon?: IconName;
 } & (
-  | ({ href: AppPath } & Omit<ComponentProps<typeof Link>, "href" | "className">)
-  | ({ href?: undefined; external?: undefined } & Omit<ComponentProps<"button">, "className">)
-  | ({ href?: undefined; external: string } & Omit<ComponentProps<"a">, "className" | "href">)
+  | ({ href: AppPath } & Omit<
+      ComponentProps<typeof Link>,
+      "href" | "className"
+    >)
+  | ({ href?: undefined; external?: undefined } & Omit<
+      ComponentProps<"button">,
+      "className"
+    >)
+  | ({ href?: undefined; external: string } & Omit<
+      ComponentProps<"a">,
+      "className" | "href"
+    >)
 );
 
 export function Button({
@@ -48,7 +59,7 @@ export function Button({
       {icon && (
         <Icon
           name={icon}
-          className="size-4 transition-transform duration-300 ease-(--ease-luxe) group-hover:translate-x-1"
+          className="size-4 transition-transform duration-300 ease-luxe group-hover:translate-x-1"
         />
       )}
     </>
@@ -64,7 +75,13 @@ export function Button({
   if ("external" in props && props.external) {
     const { external, ...rest } = props;
     return (
-      <a href={external} target="_blank" rel="noopener noreferrer" {...rest} className={classes}>
+      <a
+        href={external}
+        target="_blank"
+        rel="noopener noreferrer"
+        {...rest}
+        className={classes}
+      >
         {content}
       </a>
     );

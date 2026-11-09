@@ -28,7 +28,10 @@ export default async function Page({ params }: Props) {
         title={t(`pages.${KEY}.title`)}
         eyebrow={t("nav.groups.people")}
         intro={t("teamPage.intro")}
-        breadcrumbs={[{ label: t("nav.clinic"), href: "/clinic" }, { label: t("nav.team") }]}
+        breadcrumbs={[
+          { label: t("nav.clinic"), href: "/clinic" },
+          { label: t("nav.team") },
+        ]}
       />
       <section className="py-20 lg:py-24">
         <div className="container-luxe">
@@ -39,10 +42,15 @@ export default async function Page({ params }: Props) {
               </li>
             ))}
             <li className="reveal" style={stagger(publishedTeam.length)}>
-              <div className="grid h-full min-h-72 place-items-center rounded-[2rem] border border-dashed border-brand-gold/50 bg-brand-porcelain p-8 text-center">
+              <div className="grid h-full min-h-72 place-items-center rounded-4xl border border-dashed border-brand-gold/50 bg-brand-porcelain p-8 text-center">
                 <div>
-                  <Icon name="user" className="mx-auto size-10 text-brand-gold" />
-                  <p className="mt-4 text-sm text-brand-muted">{t("teamPage.comingSoon")}</p>
+                  <Icon
+                    name="user"
+                    className="mx-auto size-10 text-brand-gold"
+                  />
+                  <p className="mt-4 text-sm text-brand-muted">
+                    {t("teamPage.comingSoon")}
+                  </p>
                 </div>
               </div>
             </li>
