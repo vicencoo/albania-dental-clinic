@@ -7,6 +7,7 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { ScrollReveal } from "@/components/layout/ScrollReveal";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { site, siteUrl } from "@/content/site";
 import { fontVariables } from "@/lib/fonts";
@@ -50,6 +51,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           <WhatsAppButton />
           <CookieBanner />
           <GoogleAds />
+          <ScrollReveal />
         </NextIntlClientProvider>
       </body>
     </html>

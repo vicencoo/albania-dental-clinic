@@ -41,7 +41,7 @@
     },
     "featured": {
       "sameDay": {
-        "title": "Arrive without teeth, leave with fixed teeth",
+        "title": "Fixed teeth on implants, in one day",
         "text": "3D diagnosis, guided surgery and our own digital lab, all in one place."
       },
       "clinic": {
@@ -308,9 +308,9 @@
   "home": {
     "hero": {
       "eyebrow": "Albania Dental Clinic · Dr. Donela Dede",
-      "title": "Arrive without teeth.",
-      "accent": "Leave with a smile.",
-      "text": "Same-day fixed teeth, implantology and our own digital laboratory — all in one place, at one of the few clinics in Albania that offer complete same-day teeth.",
+      "title": "Fixed teeth",
+      "accent": "in a single day.",
+      "text": "Implants, 3D diagnosis and our own digital laboratory — all under one roof, at one of the few clinics in Albania that offer this treatment.",
       "primary": "Book a free consultation",
       "secondary": "How same-day teeth work",
       "badge": "One of the few clinics in Albania",
@@ -836,7 +836,7 @@
     },
     "sameDay": {
       "title": "Same-Day Teeth",
-      "description": "Arrive without teeth, leave with fixed teeth: complete same-day teeth on implants with 3D diagnosis, guided surgery and our own lab."
+      "description": "A full arch of fixed teeth on implants in a single day, with 3D diagnosis, guided surgery and our own in-house lab."
     },
     "sameDayHow": {
       "title": "Same-day teeth: how it works",

@@ -41,7 +41,7 @@
     },
     "featured": {
       "sameDay": {
-        "title": "Vini pa dhëmbë, largohuni me dhëmbë fiks",
+        "title": "Dhëmbë fiks mbi implante, në një ditë",
         "text": "Diagnozë 3D, kirurgji e udhëhequr dhe laboratori ynë digjital, të gjitha në një vend."
       },
       "clinic": {
@@ -171,7 +171,7 @@
         },
         {
           "title": "Dizajn digjital",
-          "text": "Forma dhe ngjyra dizajnohen digjitalisht dhe bien dakord me ju."
+          "text": "Formën dhe ngjyrën i dizajnojmë digjitalisht dhe i vendosim së bashku me ju."
         },
         {
           "title": "Punimi në laborator",
@@ -219,7 +219,7 @@
     "rights": "Të gjitha të drejtat të rezervuara.",
     "cookie": {
       "title": "Cookies",
-      "text": "Përdorim cookies të Google Ads për të matur cilat reklama tona sjellin kërkesa për konsultë. Aktivizohen vetëm nëse pranoni.",
+      "text": "Përdorim cookies të Google Ads për të matur cilat nga reklamat tona sjellin kërkesa për konsultë. Aktivizohen vetëm nëse pranoni.",
       "accept": "Prano",
       "reject": "Refuzo",
       "more": "Politika e cookies",
@@ -268,11 +268,11 @@
   "pages": {
     "home": {
       "title": "Albania Dental Clinic — Dhëmbë në një ditë dhe implante",
-      "description": "Dhëmbë fiks në një ditë, implantologji dhe laborator digjital në klinikë. Një nga klinikat e pakta në Shqipëri me dhëmbë të plotë në një ditë. Dr. Donela Dede."
+      "description": "Dhëmbë fiks mbi implante në një ditë, implantologji dhe laborator digjital në klinikë. Një nga klinikat e pakta në Shqipëri që e ofron këtë trajtim. Dr. Donela Dede."
     },
     "sameDay": {
       "title": "Dhëmbë në një ditë",
-      "description": "Vini pa dhëmbë, largohuni me dhëmbë fiks: dhëmbë të plotë mbi implante në një ditë, me diagnozë 3D, kirurgji të udhëhequr dhe laboratorin tonë."
+      "description": "Një hark i plotë dhëmbësh fiks mbi implante në një ditë të vetme, me diagnozë 3D, kirurgji të udhëhequr dhe laboratorin tonë në klinikë."
     },
     "sameDayHow": {
       "title": "Dhëmbë në një ditë: si funksionon",
@@ -396,7 +396,7 @@
     "email": "Email",
     "phone": "Telefoni / WhatsApp",
     "country": "Shteti",
-    "interest": "Jam i interesuar për",
+    "interest": "Më intereson",
     "interestOptions": {
       "sameDay": "Dhëmbë në një ditë",
       "implants": "Implante",
@@ -434,9 +434,9 @@
   "home": {
     "hero": {
       "eyebrow": "Albania Dental Clinic · Dr. Donela Dede",
-      "title": "Vini pa dhëmbë.",
-      "accent": "Largohuni me buzëqeshje.",
-      "text": "Dhëmbë fiks në një ditë, implantologji dhe laboratori ynë digjital — të gjitha në një vend, në një nga klinikat e pakta në Shqipëri që ofrojnë dhëmbë të plotë në një ditë.",
+      "title": "Dhëmbë fiks",
+      "accent": "në një ditë të vetme.",
+      "text": "Implante, diagnozë 3D dhe laboratori ynë digjital — të gjitha nën një çati, në një nga klinikat e pakta në Shqipëri që e ofrojnë këtë trajtim.",
       "primary": "Rezervo një konsultë falas",
       "secondary": "Si funksionojnë dhëmbët në një ditë",
       "badge": "Një nga klinikat e pakta në Shqipëri",
@@ -483,7 +483,7 @@
     },
     "results": {
       "eyebrow": "Rezultatet",
-      "title": "Punë që duket",
+      "title": "Rezultate që flasin vetë",
       "text": "Një urë e vjetër e zëvendësuar me një punim të ri mbi implante. E ndarë me pëlqimin e pacientit.",
       "cta": "Shiko më shumë rezultate"
     },
@@ -501,12 +501,12 @@
     },
     "tourism": {
       "eyebrow": "Turizëm dentar",
-      "title": "Trajtimi dhe qëndrimi juaj, të organizuara",
+      "title": "Ne organizojmë trajtimin dhe qëndrimin tuaj",
       "text": "Po udhëtoni për trajtim? Ne i planifikojmë datat sipas ndërhyrjes dhe mund të qëndroni në apartamentet e vetë klinikës.",
       "items": [
         {
           "title": "Plan personal",
-          "text": "Dërgoni radiografinë, merrni një plan dhe ditët që duhet të qëndroni."
+          "text": "Dërgoni radiografinë dhe merrni një plan trajtimi, me ditët që duhet të qëndroni."
         },
         {
           "title": "Apartamentet tona",
@@ -531,7 +531,7 @@
     "intro": "Nëse keni humbur shumë ose të gjithë dhëmbët, ose dhëmbët tuaj nuk mund të shpëtohen më, mund të merrni një hark të plotë dhëmbësh fiks mbi implante — në një ditë të vetme.",
     "what": {
       "title": "Çfarë janë dhëmbët në një ditë?",
-      "text": "Një hark i plotë dhëmbësh fiks fiksohet mbi pak implante (zakonisht katër ose gjashtë, si në All-on-4 dhe All-on-6) menjëherë pas ndërhyrjes. Nuk kaloni muaj me protezë të lëvizshme: shkoni në shtëpi me dhëmbë fiks të përkohshëm dhe, pas shërimit, ata zëvendësohen me urën përfundimtare të punuar në laboratorin tonë."
+      "text": "Një hark i plotë dhëmbësh fiks vendoset mbi pak implante (zakonisht katër ose gjashtë, si në All-on-4 dhe All-on-6) menjëherë pas ndërhyrjes. Nuk kaloni muaj me protezë të lëvizshme: shkoni në shtëpi me dhëmbë fiks të përkohshëm dhe, pas shërimit, ata zëvendësohen me urën përfundimtare të punuar në laboratorin tonë."
     },
     "benefits": [
       {
@@ -540,11 +540,11 @@
       },
       {
         "title": "Një ditë ndërhyrjeje",
-        "text": "Heqja e dhëmbëve, implantet dhe dhëmbët fiks të përkohshëm në të njëjtin seancë."
+        "text": "Heqja e dhëmbëve, implantet dhe dhëmbët fiks të përkohshëm në të njëjtën seancë."
       },
       {
         "title": "Më pak udhëtime",
-        "text": "Ideale për pacientët nga jashtë falë laboratorit në klinikë."
+        "text": "Ideale për pacientët nga jashtë, falë laboratorit në klinikë."
       },
       {
         "title": "Vetëbesimi kthehet",
@@ -667,7 +667,7 @@
     "approach": [
       {
         "title": "Fillimisht dëgjimi",
-        "text": "Çdo plan fillon duke kuptuar çfarë dëshiron dhe nga çfarë frikësohet pacienti."
+        "text": "Çdo plan fillon duke kuptuar çfarë dëshiron pacienti dhe çfarë e shqetëson."
       },
       {
         "title": "Saktësia",
@@ -790,7 +790,7 @@
       },
       {
         "title": "Paratë",
-        "text": "Monedha vendase është leku shqiptar (ALL). Kartat pranohen gjerësisht në qytete dhe euro pranohet shpesh në zonat turistike."
+        "text": "Monedha vendase është leku shqiptar (ALL). Kartat pranohen gjerësisht në qytete dhe euroja pranohet shpesh në zonat turistike."
       },
       {
         "title": "Gjuha",
@@ -803,7 +803,7 @@
     "places": [
       {
         "title": "Riviera shqiptare",
-        "text": "Ujë kristal dhe plazhe nga Vlora deri në Dhërmi, Himarë dhe Ksamil."
+        "text": "Ujëra të kristalta dhe plazhe nga Vlora deri në Dhërmi, Himarë dhe Ksamil."
       },
       {
         "title": "Berati dhe Gjirokastra",
@@ -875,7 +875,7 @@
     "next": [
       "Shqyrtojmë kërkesën dhe radiografinë tuaj",
       "Ju kontaktojmë me telefon, WhatsApp ose email",
-      "Bien dakord për datën e konsultës dhe, nëse duhet, qëndrimin"
+      "Biem dakord për datën e konsultës dhe, nëse duhet, për qëndrimin"
     ]
   },
   "contactPage": {
@@ -921,11 +921,11 @@
       },
       {
         "title": "Të domosdoshme",
-        "text": "Gjithmonë aktive: një cookie që mban mend gjuhën dhe zgjedhja juaj për cookies (e ruajtur në shfletues). Nuk përmbajnë të dhëna personale dhe nuk përdoren për reklama."
+        "text": "Gjithmonë aktive: një cookie që mban mend gjuhën, si dhe zgjedhja juaj për cookies (e ruajtur në shfletues). Nuk përmbajnë të dhëna personale dhe nuk përdoren për reklama."
       },
       {
         "title": "Reklamat (Google Ads)",
-        "text": "Vetëm nëse klikoni “Prano”: cookies të Google Ads matin nëse një vizitë nga një reklamë jona sjell një kërkesë për konsultë ose një mesazh në WhatsApp. Google Ads nuk ngarkohet fare derisa të pranoni. Ofruesi: Google Ireland Ltd."
+        "text": "Vetëm nëse klikoni “Prano”: cookies të Google Ads matin nëse një vizitë nga një reklamë e jona sjell një kërkesë për konsultë ose një mesazh në WhatsApp. Google Ads nuk ngarkohet fare derisa të pranoni. Ofruesi: Google Ireland Ltd."
       },
       {
         "title": "Google Maps",

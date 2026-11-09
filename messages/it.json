@@ -41,7 +41,7 @@
     },
     "featured": {
       "sameDay": {
-        "title": "Arrivi senza denti, esci con denti fissi",
+        "title": "Denti fissi su impianti, in un giorno",
         "text": "Diagnosi 3D, chirurgia guidata e il nostro laboratorio digitale, tutto in un unico luogo."
       },
       "clinic": {
@@ -272,7 +272,7 @@
     },
     "sameDay": {
       "title": "Denti in un giorno",
-      "description": "Arrivi senza denti, esci con denti fissi: denti completi su impianti in un giorno con diagnosi 3D, chirurgia guidata e laboratorio interno."
+      "description": "Un'arcata completa di denti fissi su impianti in un solo giorno, con diagnosi 3D, chirurgia guidata e laboratorio interno."
     },
     "sameDayHow": {
       "title": "Denti in un giorno: come funziona",
@@ -434,9 +434,9 @@
   "home": {
     "hero": {
       "eyebrow": "Albania Dental Clinic · Dr.ssa Donela Dede",
-      "title": "Arrivi senza denti.",
-      "accent": "Esci con un sorriso.",
-      "text": "Denti fissi in un giorno, implantologia e il nostro laboratorio digitale — tutto in un unico luogo, in una delle poche cliniche in Albania che offrono denti completi in un giorno.",
+      "title": "Denti fissi",
+      "accent": "in un solo giorno.",
+      "text": "Impianti, diagnosi 3D e il nostro laboratorio digitale — tutto sotto lo stesso tetto, in una delle poche cliniche in Albania che offrono questo trattamento.",
       "primary": "Prenota una consulenza gratuita",
       "secondary": "Come funzionano i denti in un giorno",
       "badge": "Una delle poche cliniche in Albania",

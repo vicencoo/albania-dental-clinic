@@ -224,10 +224,10 @@
 }
 
 /* ============================================================ Animations
- * Pure CSS — no animation library.
+ * CSS keyframes — no animation library (scroll reveals are triggered by <ScrollReveal>).
  * 1. Load-in: .rise / .fade-in with a stagger index (style={{"--i": n}}).
- * 2. Scroll reveal: .reveal* uses scroll-driven animations (animation-timeline: view()).
- *    Browsers without support simply show the content (no hidden state).
+ * 2. Scroll reveal: .reveal* is triggered by <ScrollReveal> (IntersectionObserver → animation.play()).
+ *    Without JS the content is simply shown (no hidden state).
  * 3. Ambient: .kenburns, .float, .marquee, .shimmer, .pulse-ring.
  * Everything is disabled under prefers-reduced-motion.
  */
@@ -431,26 +431,27 @@
 }
 
 /*
- * ===================================================== Scroll reveals (pure CSS)
- * Elements fly in from outside to their place when they scroll into view — no JavaScript,
- * no library.
+ * ===================================================== Scroll reveals
+ * Elements fly in from outside to their place when they scroll into view — no library.
  *
  * How it works (scroll-TRIGGERED, time-based — not scrubbed by the scroll position):
- *  1. A tiny scroll-driven animation on the PARENT flips a registered custom property
- *     (--reveal: 1 → 2) once the parent is ~70px inside the viewport.
- *  2. Children read that value with a container style query, @container style(--reveal: 2),
- *     and start a normal time-based animation: fast, always played to the end, never
- *     "lagging" behind the scroll.
+ *  1. CSS gives every reveal element its entrance animation PAUSED, so it rests on the first
+ *     keyframe (hidden / offset).
+ *  2. <ScrollReveal> (mounted once in the locale layout) watches the triggers — group
+ *     containers and single reveal elements — with an IntersectionObserver and calls .play()
+ *     on their animations once they are ~70px inside the viewport. When finished it sets
+ *     data-rv="done", which removes the animation for good.
+ *  IntersectionObserver behaves the same in every browser (CSS scroll timelines + style
+ *  queries were applied late by iOS Safari, so items showed first and animated afterwards),
+ *  and playing via the Web Animations API touches no DOM attributes before hydration.
  *
  * Best practices:
- *  - Fail-safe: content is hidden only when the browser supports scroll timelines, and a
- *    child is hidden only while its parent positively reports --reveal: 1. Without
- *    support everything is simply visible.
+ *  - Fail-safe: without JS (@media scripting) everything is simply visible.
  *  - prefers-reduced-motion: nothing is ever hidden or moved.
  *  - Only transform / opacity / clip-path / scale are animated (GPU-friendly).
  *  - body has overflow-x: clip, so elements entering from the sides never add a scrollbar.
  *
- * Single elements (the parent becomes the trigger automatically):
+ * Single elements (each one is its own trigger):
  *   reveal / reveal-up   from below          reveal-scale     zoom in
  *   reveal-from-left     from the left       reveal-fade      fade only
  *   reveal-from-right    from the right      reveal-text      heading rises out of a mask
@@ -464,77 +465,53 @@
  * Legacy names: reveal-left = from right, reveal-right = from left, reveal-flip = rise + scale,
  * reveal-rotate = long rise, reveal-zoom = zoom, reveal-spin = pop.
  */
-@property --reveal {
-  syntax: "<integer>";
-  inherits: false;
-  initial-value: 0;
-}
-
-@keyframes reveal-trigger {
-  from { --reveal: 1; }
-  to { --reveal: 2; }
-}
-
 @layer utilities {
+  /* Stagger index from position (cycles every 4), unless set inline with stagger(n). */
+  :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > :nth-child(4n + 1) { --i: 0; }
+  :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > :nth-child(4n + 2) { --i: 1; }
+  :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > :nth-child(4n + 3) { --i: 2; }
+  :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > :nth-child(4n + 4) { --i: 3; }
+
+  /* Only when JS runs (it plays the animations) and motion is welcome; otherwise just visible. */
+  @media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+    /* 1 — Waiting: the entrance is set up PAUSED, so the element rests on its first keyframe
+       (hidden / offset). <ScrollReveal> calls .play() once it scrolls into view. */
+    :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > *,
+    :is(.reveal, .reveal-up, .reveal-fade, .reveal-scale, .reveal-text, .reveal-left, .reveal-right,
+    .reveal-from-left, .reveal-from-right, .reveal-rotate, .reveal-flip, .reveal-zoom, .reveal-spin,
+    .reveal-arch, .reveal-img-zoom) {
+      animation: rv-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both paused;
+      animation-delay: calc(var(--i, 0) * 90ms);
+    }
+
+    .reveal-fade { animation-name: rv-fade; animation-duration: 1s; }
+    :is(.reveal-scale, .reveal-zoom) { animation-name: rv-scale; }
+    .reveal-text { animation-name: rv-text; animation-duration: 0.9s; }
+    :is(.reveal-from-left, .reveal-right) { animation-name: rv-from-left; animation-duration: 0.9s; }
+    :is(.reveal-from-right, .reveal-left) { animation-name: rv-from-right; animation-duration: 0.9s; }
+    .reveal-rotate { animation-name: rv-up-long; }
+    .reveal-flip { animation-name: rv-up-scale; }
+    .reveal-spin { animation-name: rv-pop; }
+    .reveal-arch { animation-name: rv-unveil; animation-duration: 1.1s; }
+    .reveal-img-zoom { animation-name: rv-img-zoom; animation-duration: 1.4s; }
+
+    .reveal-stagger > * { animation-name: rv-up-scale; }
+    .reveal-sides > :nth-child(3n + 1) { animation-name: rv-from-left; animation-duration: 0.9s; }
+    .reveal-sides > :nth-child(3n + 2) { animation-name: rv-up-long; animation-duration: 0.9s; }
+    .reveal-sides > :nth-child(3n) { animation-name: rv-from-right; animation-duration: 0.9s; }
+    .reveal-alternate > :nth-child(odd) { animation-name: rv-from-left; animation-duration: 0.9s; }
+    .reveal-alternate > :nth-child(even) { animation-name: rv-from-right; animation-duration: 0.9s; }
+
+    /* 2 — Finished: drop the animation so a later re-render / re-show never hides it again. */
+    :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group)[data-rv="done"] > *,
+    :is(.reveal, .reveal-up, .reveal-fade, .reveal-scale, .reveal-text, .reveal-left, .reveal-right,
+    .reveal-from-left, .reveal-from-right, .reveal-rotate, .reveal-flip, .reveal-zoom, .reveal-spin,
+    .reveal-arch, .reveal-img-zoom)[data-rv="done"] {
+      animation: none;
+    }
+  }
+
   @supports (animation-timeline: view()) {
-    /* 1 — Triggers: group containers, and the parent of any single reveal element. */
-    :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group),
-    :has(> :is(.reveal, .reveal-up, .reveal-fade, .reveal-scale, .reveal-text, .reveal-left, .reveal-right,
-      .reveal-from-left, .reveal-from-right, .reveal-rotate, .reveal-flip, .reveal-zoom, .reveal-spin,
-      .reveal-arch, .reveal-img-zoom)) {
-      animation: reveal-trigger linear both;
-      animation-timeline: view();
-      /* --reveal flips half-way through this range: when the element is ~70px in view. */
-      animation-range: entry 0% entry 140px;
-    }
-
-    /* Stagger index from position (cycles every 4), unless set inline with stagger(n). */
-    :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > :nth-child(4n + 1) { --i: 0; }
-    :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > :nth-child(4n + 2) { --i: 1; }
-    :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > :nth-child(4n + 3) { --i: 2; }
-    :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > :nth-child(4n + 4) { --i: 3; }
-
-    /* 2 — Waiting state: hidden until the trigger fires (only when motion is welcome). */
-    @media (prefers-reduced-motion: no-preference) {
-      @container style(--reveal: 1) {
-        :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > *,
-        :is(.reveal, .reveal-up, .reveal-fade, .reveal-scale, .reveal-text, .reveal-left, .reveal-right,
-      .reveal-from-left, .reveal-from-right, .reveal-rotate, .reveal-flip, .reveal-zoom, .reveal-spin,
-      .reveal-arch, .reveal-img-zoom) {
-          opacity: 0;
-        }
-      }
-    }
-
-    /* 3 — In view: time-based entrance, always played to the end. */
-    @container style(--reveal: 2) {
-      :is(.reveal-stagger, .reveal-sides, .reveal-alternate, .reveal-group) > *,
-      :is(.reveal, .reveal-up, .reveal-fade, .reveal-scale, .reveal-text, .reveal-left, .reveal-right,
-      .reveal-from-left, .reveal-from-right, .reveal-rotate, .reveal-flip, .reveal-zoom, .reveal-spin,
-      .reveal-arch, .reveal-img-zoom) {
-        animation: rv-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
-        animation-delay: calc(var(--i, 0) * 90ms);
-      }
-
-      .reveal-fade { animation-name: rv-fade; animation-duration: 1s; }
-      :is(.reveal-scale, .reveal-zoom) { animation-name: rv-scale; }
-      .reveal-text { animation-name: rv-text; animation-duration: 0.9s; }
-      :is(.reveal-from-left, .reveal-right) { animation-name: rv-from-left; animation-duration: 0.9s; }
-      :is(.reveal-from-right, .reveal-left) { animation-name: rv-from-right; animation-duration: 0.9s; }
-      .reveal-rotate { animation-name: rv-up-long; }
-      .reveal-flip { animation-name: rv-up-scale; }
-      .reveal-spin { animation-name: rv-pop; }
-      .reveal-arch { animation-name: rv-unveil; animation-duration: 1.1s; }
-      .reveal-img-zoom { animation-name: rv-img-zoom; animation-duration: 1.4s; }
-
-      .reveal-stagger > * { animation-name: rv-up-scale; }
-      .reveal-sides > :nth-child(3n + 1) { animation-name: rv-from-left; animation-duration: 0.9s; }
-      .reveal-sides > :nth-child(3n + 2) { animation-name: rv-up-long; animation-duration: 0.9s; }
-      .reveal-sides > :nth-child(3n) { animation-name: rv-from-right; animation-duration: 0.9s; }
-      .reveal-alternate > :nth-child(odd) { animation-name: rv-from-left; animation-duration: 0.9s; }
-      .reveal-alternate > :nth-child(even) { animation-name: rv-from-right; animation-duration: 0.9s; }
-    }
-
     /* Scroll-linked effects that SHOULD follow the scroll position. */
     .parallax {
       animation: parallax linear both;
