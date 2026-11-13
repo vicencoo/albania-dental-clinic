@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 import { apartments } from "@/content/apartments";
-import { journalPosts } from "@/content/journal";
 import { staticRoutes } from "@/content/navigation";
 import { publishedTeam } from "@/content/team";
 import { publishedTestimonials } from "@/content/testimonials";
@@ -8,6 +7,7 @@ import { treatmentCategories, treatments, treatmentHref } from "@/content/treatm
 import type { AppPath } from "@/content/types";
 import { routing, type AppLocale } from "@/i18n/routing";
 import { hreflangAlternates, localizedUrl } from "@/lib/metadata";
+import { getPostSlugs } from "@/sanity/posts";
 
 function entries(path: AppPath, locales: readonly AppLocale[] = routing.locales): MetadataRoute.Sitemap {
   return locales.map((locale) => ({
@@ -16,7 +16,7 @@ function entries(path: AppPath, locales: readonly AppLocale[] = routing.locales)
   }));
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const dynamicRoutes: AppPath[] = [
     ...treatmentCategories.map((c) => `/treatments/${c.slug}` as AppPath),
     ...treatments.map((t) => treatmentHref(t) as AppPath),
@@ -25,8 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...publishedTestimonials.map((t) => `/results/patient-stories/${t.slug}` as AppPath),
   ];
 
+  const journalSlugs = await getPostSlugs();
+
   return [
     ...[...staticRoutes, ...dynamicRoutes].flatMap((path) => entries(path)),
-    ...journalPosts.flatMap((post) => entries(`/journal/${post.slug}`, post.locales)),
+    ...journalSlugs.flatMap((slug) => entries(`/journal/${slug}` as AppPath)),
   ];
 }

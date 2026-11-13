@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
     globalNotFound: true,
   },
   cacheComponents: true,
+  // Journal images are served from Sanity's CDN.
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
+  },
   // Old URL kept working after the page was renamed.
   async redirects() {
     return [

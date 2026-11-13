@@ -35,7 +35,7 @@ export default function proxy(request: NextRequest) {
     }
 
     // Internal route segment is the locale code ("sq"), not the public prefix ("/al").
-    if (!isKnownPath(rest, locale)) {
+    if (!isKnownPath(rest)) {
       return NextResponse.rewrite(new URL(`/${locale}/${NOT_FOUND_SEGMENT}`, request.url));
     }
   }

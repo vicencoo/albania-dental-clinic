@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props) {
   return pageMetadata(asLocale((await params).locale), KEY, PATH);
 }
 
-export default async function Page({ params }: Props) {
+export default async function CookiesPage({ params }: Props) {
   const locale = asLocale((await params).locale);
   setRequestLocale(locale);
   const t = await getTranslations();

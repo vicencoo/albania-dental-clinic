@@ -440,7 +440,7 @@
       "text": "Dhëmbë të rinj mbi implante, diagnozë 3D dhe laboratori ynë digjital — të gjitha nën një çati, në një nga klinikat e pakta në Shqipëri që e kryejnë të gjithë trajtimin në një ditë.",
       "primary": "Rezervo një konsultë falas",
       "secondary": "Si funksionojnë dhëmbët në një ditë",
-      "badge": "Një nga klinikat e pakta në Shqipëri",
+      "badge": "Skaner 3D CT dhe laborator dixhital nën të njëjtin çati",
       "imageAlt": "Dr. Donela Dede me një paciente në Albania Dental Clinic",
       "scroll": "Lëviz"
     },
@@ -493,7 +493,7 @@
       "eyebrow": "Njihuni me mjeken",
       "title": "Dr. Donela Dede",
       "text": "Dr. Donela Dede drejton Albania Dental Clinic dhe ndjek personalisht çdo pacient — nga skanimi i parë 3D deri te buzëqeshja përfundimtare. Puna e saj përqendrohet në kirurgji orale, implantologji, endodonti dhe estetikë dentare.",
-      "cta": "Njihuni me Dr. Dede"
+      "cta": "Njihuni me Dr. Donela Dede"
     },
     "environment": {
       "eyebrow": "Klinika jonë",
@@ -733,7 +733,7 @@
       },
       {
         "title": "Përvojë kirurgjikale",
-        "text": "Kirurgji orale dhe implantologji të kryera nga Dr. Dede, me planifikim digjital."
+        "text": "Kirurgji orale dhe implantologji të kryera nga Dr. Donela Dede, me planifikim digjital."
       },
       {
         "title": "Laboratori ynë",
