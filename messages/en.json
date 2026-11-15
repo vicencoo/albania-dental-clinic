@@ -587,14 +587,21 @@
         "text": "Provisional fixed teeth are produced on the day of surgery."
       }
     ],
-    "imageAlt": "Zirconia bridge milled in the clinic's laboratory"
+    "imageAlt": "Zirconia bridge milled in the clinic's laboratory",
+    "videosTitle": "Inside the lab",
+    "design": "Designing new teeth on screen",
+    "milling": "Milling the design into zirconia"
   },
   "environmentPage": {
     "intro": "A bright and calm place, designed so that adults and children feel at ease.",
     "gallery": {
+      "exterior": "The clinic entrance",
+      "reception": "Reception",
+      "waiting": "Waiting lounge",
       "room": "Treatment room",
-      "children": "Our youngest patients",
-      "doctor": "Dr. Donela Dede with a patient",
+      "lounge": "Relaxation area",
+      "sign": "Welcome desk",
+      "equipment": "Modern equipment",
       "cbct": "3D CBCT on site"
     }
   },

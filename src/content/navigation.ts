@@ -41,7 +41,7 @@ export const mainNav: NavItem[] = [
     featured: {
       titleKey: "nav.featured.sameDay.title",
       textKey: "nav.featured.sameDay.text",
-      image: "/images/results/case-1-after.jpg",
+      image: "/images/lab/implant-bridge-design.webp",
       href: "/same-day-teeth/how-it-works",
     },
   },
@@ -95,7 +95,7 @@ export const mainNav: NavItem[] = [
     featured: {
       titleKey: "nav.featured.clinic.title",
       textKey: "nav.featured.clinic.text",
-      image: "/images/team/dr-donela-dede-with-patient.jpg",
+      image: "/images/clinic/reception-sign.webp",
       href: "/clinic/why-choose-us",
     },
   },
@@ -126,7 +126,7 @@ export const mainNav: NavItem[] = [
     featured: {
       titleKey: "nav.featured.tourism.title",
       textKey: "nav.featured.tourism.text",
-      image: "/images/brand/logo-on-green.jpg",
+      image: "/images/clinic/exterior.webp",
       href: "/dental-tourism/apartments",
     },
   },

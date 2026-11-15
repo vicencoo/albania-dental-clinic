@@ -1,24 +1,24 @@
 import type { Treatment, TreatmentCategory, TreatmentCategorySlug } from "./types";
 
-/**
- * Images come from the clinic's Instagram (low resolution). Replace with the
- * high-resolution files listed in public/images/README.md when available.
- */
+/** Clinic photos (optimized WebP in public/images). */
 const img = {
-  implant: "/images/treatments/implant-render.jpg",
-  scan: "/images/clinic/tech-3d-ct-scan.jpg",
-  cbct: "/images/clinic/tech-cbct-unit.jpg",
-  lab: "/images/lab/zirconia-bridge.jpg",
-  room: "/images/clinic/treatment-room.jpg",
-  children: "/images/treatments/children.jpg",
-  after: "/images/results/case-1-after.jpg",
-  doctor: "/images/team/dr-donela-dede-with-patient.jpg",
+  implant: "/images/lab/implant-bridge-design.webp",
+  fullArch: "/images/lab/full-arch-design.webp",
+  design: "/images/lab/design-closeup.webp",
+  cbct: "/images/clinic/cbct.webp",
+  scan: "/images/lab/technician-scan.webp",
+  milling: "/images/lab/milling-unit.webp",
+  furnace: "/images/lab/printer-furnace.webp",
+  room: "/images/clinic/treatment-room.webp",
+  room2: "/images/clinic/treatment-room-2.webp",
+  equipment: "/images/clinic/equipment.webp",
+  xray: "/images/clinic/digital-x-ray.webp",
 } as const;
 
 export const treatmentCategories: TreatmentCategory[] = [
   { slug: "implantology", labelKey: "treatments.categories.implantology", image: img.implant },
-  { slug: "digital-implant", labelKey: "treatments.categories.digital-implant", image: img.scan },
-  { slug: "aesthetic", labelKey: "treatments.categories.aesthetic", image: img.lab },
+  { slug: "digital-implant", labelKey: "treatments.categories.digital-implant", image: img.design },
+  { slug: "aesthetic", labelKey: "treatments.categories.aesthetic", image: img.furnace },
   { slug: "general", labelKey: "treatments.categories.general", image: img.room },
 ];
 
@@ -26,28 +26,28 @@ const bySlug: Record<TreatmentCategorySlug, [slug: string, image: string, relate
   implantology: [
     ["single-implant", img.implant, ["3d-ct-scan", "zirconia-crowns"]],
     ["multiple-implants", img.implant, ["guided-surgery", "bridges"]],
-    ["all-on-4", img.implant, ["all-on-6", "guided-surgery"]],
-    ["all-on-6", img.implant, ["all-on-4", "bone-grafting-sinus-lift"]],
-    ["replacing-old-bridges", img.implant, ["all-on-4", "zirconia-crowns"]],
-    ["bone-grafting-sinus-lift", img.scan, ["3d-ct-scan", "single-implant"]],
+    ["all-on-4", img.fullArch, ["all-on-6", "guided-surgery"]],
+    ["all-on-6", img.fullArch, ["all-on-4", "bone-grafting-sinus-lift"]],
+    ["replacing-old-bridges", img.fullArch, ["all-on-4", "zirconia-crowns"]],
+    ["bone-grafting-sinus-lift", img.cbct, ["3d-ct-scan", "single-implant"]],
   ],
   "digital-implant": [
-    ["3d-ct-scan", img.scan, ["guided-surgery", "single-implant"]],
-    ["digital-impressions", img.lab, ["zirconia-crowns", "digital-smile-design"]],
-    ["guided-surgery", img.cbct, ["3d-ct-scan", "all-on-4"]],
-    ["digital-smile-design", img.lab, ["veneers", "zirconia-crowns"]],
+    ["3d-ct-scan", img.cbct, ["guided-surgery", "single-implant"]],
+    ["digital-impressions", img.scan, ["zirconia-crowns", "digital-smile-design"]],
+    ["guided-surgery", img.design, ["3d-ct-scan", "all-on-4"]],
+    ["digital-smile-design", img.design, ["veneers", "zirconia-crowns"]],
   ],
   aesthetic: [
-    ["zirconia-crowns", img.lab, ["bridges", "digital-smile-design"]],
-    ["veneers", img.lab, ["teeth-whitening", "digital-smile-design"]],
-    ["bridges", img.lab, ["zirconia-crowns", "multiple-implants"]],
-    ["teeth-whitening", img.doctor, ["veneers", "hygiene"]],
+    ["zirconia-crowns", img.milling, ["bridges", "digital-smile-design"]],
+    ["veneers", img.furnace, ["teeth-whitening", "digital-smile-design"]],
+    ["bridges", img.milling, ["zirconia-crowns", "multiple-implants"]],
+    ["teeth-whitening", img.room2, ["veneers", "hygiene"]],
   ],
   general: [
-    ["endodontics", img.room, ["zirconia-crowns", "oral-surgery"]],
+    ["endodontics", img.equipment, ["zirconia-crowns", "oral-surgery"]],
     ["oral-surgery", img.room, ["single-implant", "bone-grafting-sinus-lift"]],
-    ["hygiene", img.room, ["teeth-whitening", "children"]],
-    ["children", img.children, ["hygiene"]],
+    ["hygiene", img.room2, ["teeth-whitening", "children"]],
+    ["children", img.room, ["hygiene"]],
   ],
 };
 

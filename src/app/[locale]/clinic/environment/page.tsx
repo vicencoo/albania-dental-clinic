@@ -31,14 +31,16 @@ export default async function ClinicEnvironmentPage({ params }: Props) {
       />
       <section className="py-20 lg:py-24">
         <div className="container-luxe">
-          {/* TODO: pass src/poster once the clinic supplies a video tour */}
           <VideoTour
             title={t(`pages.${KEY}.title`)}
             fallbackImages={[
-              { src: "/images/clinic/treatment-room.jpg", caption: t("environmentPage.gallery.room") },
-              { src: "/images/treatments/children.jpg", caption: t("environmentPage.gallery.children") },
-              { src: "/images/clinic/tech-cbct-unit.jpg", caption: t("environmentPage.gallery.cbct") },
-              { src: "/images/team/dr-donela-dede-with-patient.jpg", caption: t("environmentPage.gallery.doctor") },
+              { src: "/images/clinic/exterior.webp", caption: t("environmentPage.gallery.exterior") },
+              { src: "/images/clinic/reception.webp", caption: t("environmentPage.gallery.reception") },
+              { src: "/images/clinic/waiting-room.webp", caption: t("environmentPage.gallery.waiting") },
+              { src: "/images/clinic/equipment.webp", caption: t("environmentPage.gallery.equipment") },
+              { src: "/images/clinic/lounge.webp", caption: t("environmentPage.gallery.lounge") },
+              { src: "/images/clinic/reception-sign.webp", caption: t("environmentPage.gallery.sign") },
+              { src: "/images/clinic/treatment-room.webp", caption: t("environmentPage.gallery.room") },
             ]}
           />
           <div className="reveal mt-12 text-center">

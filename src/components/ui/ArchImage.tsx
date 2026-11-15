@@ -16,6 +16,8 @@ export interface ArchImageProps {
   /** Aspect ratio class for the frame, e.g. "aspect-[3/4]". */
   ratio?: string;
   sizes?: string;
+  /** Output quality (must be listed in images.qualities in next.config.ts). */
+  quality?: number;
   priority?: boolean;
   /** "load" plays on page load (hero), "scroll" reveals on scroll, "none" is static. */
   animate?: "load" | "scroll" | "none";
@@ -33,6 +35,7 @@ export function ArchImage({
   ratio = "aspect-[3/4]",
   sizes = "(min-width: 1024px) 40vw, 90vw",
   priority,
+  quality,
   animate = "scroll",
   kenburns,
   position = "50% 50%",
@@ -54,6 +57,7 @@ export function ArchImage({
         fill
         sizes={sizes}
         priority={priority}
+        quality={quality}
         className={cx("object-cover", kenburns && "kenburns")}
         style={{ objectPosition: position }}
       />

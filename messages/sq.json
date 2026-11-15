@@ -713,14 +713,21 @@
         "text": "Dhëmbët fiks të përkohshëm përgatiten në ditën e ndërhyrjes."
       }
     ],
-    "imageAlt": "Urë zirkoni e frezuar në laboratorin e klinikës"
+    "imageAlt": "Urë zirkoni e frezuar në laboratorin e klinikës",
+    "videosTitle": "Brenda laboratorit",
+    "design": "Dizajnimi i dhëmbëve të rinj në ekran",
+    "milling": "Frezimi i dizajnit në zirkon"
   },
   "environmentPage": {
     "intro": "Një ambient i ndritshëm dhe i qetë, i menduar që të rriturit dhe fëmijët të ndihen mirë.",
     "gallery": {
+      "exterior": "Hyrja e klinikës",
+      "reception": "Recepsioni",
+      "waiting": "Salla e pritjes",
       "room": "Kabineti i trajtimit",
-      "children": "Pacientët tanë më të vegjël",
-      "doctor": "Dr. Donela Dede me një paciente",
+      "lounge": "Këndi i relaksit",
+      "sign": "Pritja",
+      "equipment": "Pajisje moderne",
       "cbct": "Tomografi 3D CBCT në klinikë"
     }
   },

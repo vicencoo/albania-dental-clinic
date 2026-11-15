@@ -8,12 +8,12 @@ import { site } from "@/content/site";
 import { publishedTestimonials } from "@/content/testimonials";
 
 const feed = [
-  "/images/clinic/tech-3d-ct-scan.jpg",
-  "/images/team/dr-donela-dede-with-patient.jpg",
-  "/images/lab/zirconia-bridge.jpg",
-  "/images/treatments/children.jpg",
-  "/images/treatments/implant-render.jpg",
-  "/images/clinic/treatment-room.jpg",
+  "/images/clinic/exterior.webp",
+  "/images/lab/implant-bridge-design.webp",
+  "/images/clinic/treatment-room.webp",
+  "/images/lab/technician-design.webp",
+  "/images/clinic/waiting-room.webp",
+  "/images/lab/milling-unit.webp",
 ];
 
 /**

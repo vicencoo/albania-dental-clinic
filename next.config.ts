@@ -12,6 +12,8 @@ const nextConfig: NextConfig = {
   // Journal images are served from Sanity's CDN.
   images: {
     remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
+    // 90 is used only for the hero portrait, where detail matters most.
+    qualities: [75, 90],
   },
   // Old URL kept working after the page was renamed.
   async redirects() {

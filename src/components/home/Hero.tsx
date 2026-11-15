@@ -82,13 +82,14 @@ export function Hero() {
             style={stagger(3)}
           />
           <ArchImage
-            src="/images/team/dr-donela-dede-with-patient.jpg"
+            src="/images/team/dr-donela-dede-desk.webp"
             alt={t("imageAlt")}
             animate="load"
             priority
             ratio="aspect-[9/16]"
             position="50% 30%"
-            sizes="(min-width: 1024px) 24rem, 22rem"
+            sizes="(min-width: 1024px) 32rem, 30rem"
+            quality={90}
             className="relative shadow-soft"
           />
 
@@ -99,7 +100,7 @@ export function Hero() {
           >
             <div className="relative aspect-3/4 overflow-clip rounded-lg">
               <Image
-                src="/images/clinic/tech-3d-ct-scan.jpg"
+                src="/images/lab/implant-bridge-design.webp"
                 alt=""
                 fill
                 sizes="180px"

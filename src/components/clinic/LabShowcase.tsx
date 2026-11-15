@@ -13,7 +13,7 @@ export function LabShowcase() {
   return (
     <div className="grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr]">
       <div className="relative mx-auto w-full max-w-sm">
-        <ArchImage src="/images/lab/zirconia-bridge.jpg" alt={t("imageAlt")} className="shadow-soft" />
+        <ArchImage src="/images/lab/technician-design.webp" alt={t("imageAlt")} className="shadow-soft" />
         <div className="float absolute -right-8 top-10 hidden rounded-2xl bg-brand-white px-5 py-4 shadow-soft sm:block">
           <p className="eyebrow">CAD/CAM</p>
           <p className="mt-1 font-heading text-2xl">Zirconia</p>

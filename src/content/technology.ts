@@ -9,7 +9,7 @@ export const technologies: Technology[] = [
       it: "Lo scanner CBCT in clinica crea un'immagine tridimensionale delle arcate con una bassa dose di radiazioni. Vediamo con precisione volume osseo, nervi e seni prima di ogni impianto.",
       en: "The CBCT scanner in the clinic creates a three-dimensional image of the jaws with a low radiation dose. We see bone volume, nerves and sinuses precisely before every implant.",
     },
-    image: "/images/clinic/tech-cbct-unit.jpg",
+    image: "/images/clinic/cbct.webp",
   },
   {
     slug: "intraoral-scanner",
@@ -28,7 +28,7 @@ export const technologies: Technology[] = [
       it: "Radiografie digitali e panoramiche offrono immagini nitide all'istante, con meno radiazioni rispetto alle pellicole tradizionali.",
       en: "Digital X-rays and panoramic images give clear results instantly, with less radiation than traditional film.",
     },
-    image: "/images/clinic/tech-3d-ct-scan.jpg",
+    image: "/images/clinic/digital-x-ray.webp",
   },
   {
     slug: "cad-cam-lab",
@@ -38,7 +38,7 @@ export const technologies: Technology[] = [
       it: "Corone, ponti e arcate complete vengono progettati al computer e fresati in zirconia nel nostro laboratorio, anche il giorno dell'intervento.",
       en: "Crowns, bridges and full-arch teeth are designed on the computer and milled in zirconia in our laboratory — even on the day of surgery.",
     },
-    image: "/images/lab/zirconia-bridge.jpg",
+    image: "/images/lab/milling-unit.webp",
   },
   {
     slug: "guided-surgery",
@@ -48,6 +48,6 @@ export const technologies: Technology[] = [
       it: "Gli impianti vengono pianificati virtualmente sulla TAC 3D e inseriti tramite una guida chirurgica: più precisione, incisioni ridotte e guarigione più confortevole.",
       en: "Implants are planned virtually on the 3D scan and placed through a surgical guide: more precision, smaller incisions and a more comfortable recovery.",
     },
-    image: "/images/treatments/implant-render.jpg",
+    image: "/images/lab/full-arch-design.webp",
   },
 ];

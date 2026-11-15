@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BeforeAfterSlider } from "@/components/results/BeforeAfterSlider";
 import { Button } from "@/components/ui/Button";
@@ -36,7 +37,7 @@ export default async function SameDayTeethPage({ params }: Props) {
         eyebrow={t("nav.featured.sameDay.title")}
         intro={t("sameDay.intro")}
         breadcrumbs={[{ label: t("nav.sameDay") }]}
-        image={{ src: "/images/treatments/implant-render.jpg", alt: t("nav.featured.sameDay.title") }}
+        image={{ src: "/images/lab/implant-bridge-design.webp", alt: t("nav.featured.sameDay.title") }}
       >
         <Button href="/book">{t("ui.bookCta")}</Button>
         <Button href="/same-day-teeth/candidates" variant="secondary">
@@ -47,13 +48,23 @@ export default async function SameDayTeethPage({ params }: Props) {
       <section className="py-24 lg:py-28">
         <div className="container-luxe grid gap-14 lg:grid-cols-2 lg:items-center">
           <SectionHeading eyebrow={t("sameDay.eyebrow")} title={t("sameDay.what.title")} intro={t("sameDay.what.text")} />
-          {featured && (
+          {featured ? (
             <div className="reveal-scale">
               <BeforeAfterSlider
                 before={featured.beforeImage}
                 after={featured.afterImage}
                 alt={featured.title[locale]}
                 ratio="aspect-[622/274]"
+              />
+            </div>
+          ) : (
+            <div className="reveal-scale relative aspect-[4/3] overflow-clip rounded-4xl bg-brand-navy shadow-soft">
+              <Image
+                src="/images/lab/full-arch-design.webp"
+                alt={t("sameDay.what.title")}
+                fill
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                className="object-cover"
               />
             </div>
           )}

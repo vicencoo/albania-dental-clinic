@@ -20,11 +20,11 @@ export default async function ClinicPage({ params }: Props) {
   const t = await getTranslations();
 
   const cards: LinkCardItem[] = [
-    { href: "/clinic/dr-donela-dede", key: "drDede", image: "/images/team/dr-donela-dede-with-patient.jpg" },
+    { href: "/clinic/dr-donela-dede", key: "drDede", image: "/images/team/dr-donela-dede-desk.webp" },
     { href: "/clinic/team", key: "team", icon: "user" },
-    { href: "/clinic/technology", key: "technology", image: "/images/clinic/tech-cbct-unit.jpg" },
-    { href: "/clinic/laboratory", key: "laboratory", image: "/images/lab/zirconia-bridge.jpg" },
-    { href: "/clinic/environment", key: "environment", image: "/images/clinic/treatment-room.jpg" },
+    { href: "/clinic/technology", key: "technology", image: "/images/clinic/cbct.webp" },
+    { href: "/clinic/laboratory", key: "laboratory", image: "/images/lab/milling-unit.webp" },
+    { href: "/clinic/environment", key: "environment", image: "/images/clinic/reception.webp" },
     { href: "/clinic/why-choose-us", key: "whyChooseUs", icon: "sparkle" },
   ].map(({ key, ...rest }) => ({
     ...rest,
@@ -39,7 +39,7 @@ export default async function ClinicPage({ params }: Props) {
         eyebrow={t("nav.groups.place")}
         intro={t("clinicPage.intro")}
         breadcrumbs={[{ label: t("nav.clinic") }]}
-        image={{ src: "/images/clinic/treatment-room.jpg", alt: t("environmentPage.gallery.room") }}
+        image={{ src: "/images/clinic/waiting-room.webp", alt: t("environmentPage.gallery.waiting") }}
       />
       <section className="py-20 lg:py-24">
         <div className="container-luxe">

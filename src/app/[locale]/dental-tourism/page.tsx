@@ -40,7 +40,7 @@ export default async function DentalTourismPage({ params }: Props) {
         eyebrow={t("home.tourism.title")}
         intro={t("tourismPage.intro")}
         breadcrumbs={[{ label: t("nav.tourism") }]}
-        image={{ src: "/images/brand/logo-on-green.jpg", alt: t("ui.logoAlt") }}
+        image={{ src: "/images/clinic/exterior.webp", alt: t("ui.logoAlt") }}
       >
         <Button href="/book">{t("ui.bookCta")}</Button>
       </PageHero>

@@ -28,7 +28,7 @@ export default async function ClinicTechnologyPage({ params }: Props) {
         intro={t("technologyPage.intro")}
         tone="sky"
         breadcrumbs={[{ label: t("nav.clinic"), href: "/clinic" }, { label: t("nav.technology") }]}
-        image={{ src: "/images/clinic/tech-cbct-unit.jpg", alt: t("environmentPage.gallery.cbct") }}
+        image={{ src: "/images/clinic/cbct.webp", alt: t("environmentPage.gallery.cbct") }}
       />
       <section className="py-20 lg:py-28">
         <div className="container-luxe space-y-24">

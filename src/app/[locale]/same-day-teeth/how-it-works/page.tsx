@@ -28,7 +28,7 @@ export default async function SameDayTeethHowItWorksPage({ params }: Props) {
         eyebrow={t("nav.sameDay")}
         intro={t("sameDayHow.intro")}
         breadcrumbs={[{ label: t("nav.sameDay"), href: "/same-day-teeth" }, { label: t("nav.sameDayHow") }]}
-        image={{ src: "/images/clinic/tech-3d-ct-scan.jpg", alt: t("treatments.items.3d-ct-scan") }}
+        image={{ src: "/images/clinic/cbct.webp", alt: t("treatments.items.3d-ct-scan") }}
       />
 
       <section className="bg-brand-porcelain py-20 grain lg:py-28">

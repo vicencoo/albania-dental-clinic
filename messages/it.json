@@ -713,14 +713,21 @@
         "text": "I denti provvisori fissi vengono realizzati il giorno dell'intervento."
       }
     ],
-    "imageAlt": "Ponte in zirconia fresato nel laboratorio della clinica"
+    "imageAlt": "Ponte in zirconia fresato nel laboratorio della clinica",
+    "videosTitle": "Dentro il laboratorio",
+    "design": "Progettazione dei nuovi denti sullo schermo",
+    "milling": "Fresatura del progetto in zirconia"
   },
   "environmentPage": {
     "intro": "Un luogo luminoso e tranquillo, pensato perché adulti e bambini si sentano a proprio agio.",
     "gallery": {
+      "exterior": "L'ingresso della clinica",
+      "reception": "Reception",
+      "waiting": "Sala d'attesa",
       "room": "Sala di trattamento",
-      "children": "I nostri pazienti più piccoli",
-      "doctor": "La Dr.ssa Donela Dede con una paziente",
+      "lounge": "Area relax",
+      "sign": "Accoglienza",
+      "equipment": "Attrezzature moderne",
       "cbct": "TAC 3D CBCT in sede"
     }
   },

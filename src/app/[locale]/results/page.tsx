@@ -26,7 +26,7 @@ export default async function ResultsPage({ params }: Props) {
         eyebrow={t("home.results.title")}
         intro={t("resultsPage.intro")}
         breadcrumbs={[{ label: t("nav.results") }]}
-        image={{ src: "/images/treatments/implant-render.jpg", alt: t("nav.beforeAfter") }}
+        image={{ src: "/images/lab/full-arch-design.webp", alt: t("nav.beforeAfter") }}
       />
       <section className="py-20 lg:py-24">
         <div className="container-luxe">
@@ -37,13 +37,13 @@ export default async function ResultsPage({ params }: Props) {
                 href: "/results/before-after",
                 title: t("nav.beforeAfter"),
                 text: t("nav.descriptions.beforeAfter"),
-                image: "/images/results/case-1-before.jpg",
+                image: "/images/lab/design-closeup.webp",
               },
               {
                 href: "/results/patient-stories",
                 title: t("nav.patientStories"),
                 text: t("nav.descriptions.patientStories"),
-                image: "/images/team/dr-donela-dede-with-patient.jpg",
+                image: "/images/clinic/waiting-room.webp",
               },
             ]}
           />

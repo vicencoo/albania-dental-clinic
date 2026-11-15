@@ -21,7 +21,7 @@ export const journalPosts: JournalPost[] = [
       en: "For many people, losing teeth means months with a removable denture. Same-day teeth change that: a complete arch of fixed teeth is attached to four or six implants right after surgery.\n\nEverything starts with a 3D CBCT scan. It shows how much bone you have and where nerves and sinuses run. On this scan we digitally plan the implant positions and the shape of your new teeth.\n\nOn the day of surgery, under local anaesthesia, teeth that cannot be saved are removed and the implants are placed. Meanwhile our laboratory prepares the fixed provisional bridge, which is attached that same day. After a few months of healing it is replaced by the final bridge.\n\nImmediate loading is not possible for everyone: it needs enough bone and good general health. That is why the decision is always made after the 3D scan and a clinical examination.",
     },
     publishedAt: "2026-10-20",
-    coverImage: "/images/results/case-1-after.jpg",
+    coverImage: "/images/lab/implant-bridge-design.webp",
     locales: ["sq", "it", "en"],
   },
   {
@@ -42,7 +42,7 @@ export const journalPosts: JournalPost[] = [
       en: "A panoramic X-ray is useful, but it shows the mouth in only two dimensions. For an implant we also need to know the width of the bone, its density and the exact distance from nerves and sinuses.\n\nA CBCT (Cone Beam CT) scan provides this information in a few seconds, with a much lower radiation dose than a traditional medical CT. The result is a 3D model of the jaws that we can rotate and measure on screen.\n\nOn this model we plan the implants virtually and, when needed, prepare a surgical guide. Surgery is therefore more precise, incisions are smaller and recovery is more comfortable.\n\nAt Albania Dental Clinic the CBCT scanner is inside the clinic: there is no need to go to another centre, and the result is ready immediately.",
     },
     publishedAt: "2026-09-15",
-    coverImage: "/images/clinic/tech-3d-ct-scan.jpg",
+    coverImage: "/images/clinic/cbct.webp",
     locales: ["sq", "it", "en"],
   },
   {
@@ -63,7 +63,7 @@ export const journalPosts: JournalPost[] = [
       en: "The first step is always a recent X-ray. A panoramic image lets us give you a first opinion and an idea of how many days you will need, even before you book your flight.\n\nThen you choose your dates. We plan appointments around your arrival and departure, leaving time to rest after surgery. The clinic also has its own apartments for patients, so you do not need to look for a hotel.\n\nDuring treatment, the 3D scan, surgery and laboratory work all happen in the same clinic. That means fewer transfers and fewer days away from home.\n\nAfter you return we stay in touch on WhatsApp and plan the visit for your final teeth together. And if you have time, Albania is worth discovering: sea, mountains and historic towns.",
     },
     publishedAt: "2026-08-28",
-    coverImage: "/images/clinic/treatment-room.jpg",
+    coverImage: "/images/clinic/exterior.webp",
     locales: ["sq", "it", "en"],
   },
 ];

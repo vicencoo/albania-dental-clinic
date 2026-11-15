@@ -33,14 +33,14 @@ export function VideoTour({
   }
 
   return (
-    <div className="grid auto-rows-56 grid-cols-2 gap-4 md:auto-rows-64 md:grid-cols-4">
+    <div className="grid grid-flow-dense auto-rows-56 grid-cols-2 gap-4 md:auto-rows-64 md:grid-cols-4">
       {fallbackImages.map((image, i) => (
         <figure
           key={image.src}
           className={cx(
             "reveal-scale lift group relative overflow-clip rounded-[1.75rem] bg-brand-sand",
             i === 0 && "row-span-2 md:col-span-2",
-            i === 3 && "md:col-span-2",
+            (i === 3 || i === 6) && "md:col-span-2",
           )}
           style={stagger(i)}
         >

@@ -9,18 +9,18 @@ export function EnvironmentPreview() {
   const t = useTranslations();
   const photos = [
     {
-      src: "/images/clinic/treatment-room.jpg",
-      alt: t("environmentPage.gallery.room"),
+      src: "/images/clinic/reception.webp",
+      alt: t("environmentPage.gallery.reception"),
       className: "row-span-2 reveal-from-left",
     },
     {
-      src: "/images/treatments/children.jpg",
-      alt: t("environmentPage.gallery.children"),
+      src: "/images/clinic/treatment-room.webp",
+      alt: t("environmentPage.gallery.room"),
       className: "reveal-from-right",
     },
     {
-      src: "/images/clinic/tech-cbct-unit.jpg",
-      alt: t("environmentPage.gallery.cbct"),
+      src: "/images/clinic/waiting-room.webp",
+      alt: t("environmentPage.gallery.waiting"),
       className: "reveal-up",
     },
   ];

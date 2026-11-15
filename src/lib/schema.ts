@@ -12,7 +12,7 @@ export function dentistSchema(): Record<string, unknown> {
     name: site.name,
     url: siteUrl(),
     logo: `${siteUrl()}/images/brand/logo-full.png`,
-    image: `${siteUrl()}/images/team/dr-donela-dede-with-patient.jpg`,
+    image: `${siteUrl()}/images/clinic/exterior.webp`,
     telephone: real(site.phone),
     email: real(site.email),
     employee: { "@type": "Person", name: site.leadDoctor, jobTitle: "Dentist" },
