@@ -44,20 +44,22 @@ export function ApartmentGallery({ images, title }: ApartmentGalleryProps) {
 
   return (
     <>
-      <ul className="grid auto-rows-48 grid-cols-2 gap-3 md:auto-rows-60 md:grid-cols-4">
+      {/* Masonry columns: thumbnails keep their natural aspect ratio — nothing is cropped. */}
+      <ul className="columns-2 gap-3 md:columns-3">
         {images.map((src, i) => (
-          <li key={src} className={i === 0 ? "col-span-2 row-span-2" : ""}>
+          <li key={src} className="mb-3 break-inside-avoid">
             <button
               type="button"
               onClick={() => setIndex(i)}
-              className="lift relative block size-full overflow-clip rounded-3xl bg-brand-sand"
+              className="lift block w-full overflow-clip rounded-3xl bg-brand-sand"
             >
               <Image
                 src={src}
                 alt={`${title} — ${i + 1}/${images.length}`}
-                fill
-                sizes="(min-width: 768px) 25vw, 50vw"
-                className="zoom-target object-cover"
+                width={1200}
+                height={900}
+                sizes="(min-width: 768px) 33vw, 50vw"
+                className="zoom-target block h-auto w-full"
               />
             </button>
           </li>

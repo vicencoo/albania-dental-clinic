@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { cx, stagger } from "@/lib/style";
+import { stagger } from "@/lib/style";
 
 export interface VideoTourProps {
   src?: string;
   poster?: string;
   title: string;
-  /** Shown as a mosaic while no video is available. */
-  fallbackImages?: { src: string; caption: string }[];
+  /** Shown as a masonry gallery while no video is available. */
+  fallbackImages?: { src: string; caption: string; width: number; height: number }[];
 }
 
 /** Clinic video tour (no preload, native controls) or a photo mosaic fallback. */
@@ -32,26 +32,26 @@ export function VideoTour({
     );
   }
 
+  // Masonry columns: every photo keeps its natural aspect ratio — nothing is cropped.
   return (
-    <div className="grid grid-flow-dense auto-rows-56 grid-cols-2 gap-4 md:auto-rows-64 md:grid-cols-4">
+    <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
       {fallbackImages.map((image, i) => (
         <figure
           key={image.src}
-          className={cx(
-            "reveal-scale lift group relative overflow-clip rounded-[1.75rem] bg-brand-sand",
-            i === 0 && "row-span-2 md:col-span-2",
-            (i === 3 || i === 6) && "md:col-span-2",
-          )}
+          className="reveal-scale group mb-4 break-inside-avoid"
           style={stagger(i)}
         >
-          <Image
-            src={image.src}
-            alt={image.caption}
-            fill
-            sizes="(min-width: 768px) 40vw, 50vw"
-            className="zoom-target object-cover"
-          />
-          <figcaption className="absolute inset-x-3 bottom-3 rounded-full bg-brand-white/85 px-4 py-2 text-xs font-medium text-brand-ink backdrop-blur-sm transition-transform duration-500 group-hover:-translate-y-1">
+          <div className="lift overflow-clip rounded-[1.75rem] bg-brand-sand">
+            <Image
+              src={image.src}
+              alt={image.caption}
+              width={image.width}
+              height={image.height}
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="zoom-target block h-auto w-full"
+            />
+          </div>
+          <figcaption className="mt-3 px-2 text-sm font-medium text-brand-ink">
             {image.caption}
           </figcaption>
         </figure>

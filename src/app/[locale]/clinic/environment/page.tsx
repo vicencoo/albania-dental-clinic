@@ -34,13 +34,13 @@ export default async function ClinicEnvironmentPage({ params }: Props) {
           <VideoTour
             title={t(`pages.${KEY}.title`)}
             fallbackImages={[
-              { src: "/images/clinic/exterior.webp", caption: t("environmentPage.gallery.exterior") },
-              { src: "/images/clinic/reception.webp", caption: t("environmentPage.gallery.reception") },
-              { src: "/images/clinic/waiting-room.webp", caption: t("environmentPage.gallery.waiting") },
-              { src: "/images/clinic/equipment.webp", caption: t("environmentPage.gallery.equipment") },
-              { src: "/images/clinic/lounge.webp", caption: t("environmentPage.gallery.lounge") },
-              { src: "/images/clinic/reception-sign.webp", caption: t("environmentPage.gallery.sign") },
-              { src: "/images/clinic/treatment-room.webp", caption: t("environmentPage.gallery.room") },
+              { src: "/images/clinic/exterior.webp", caption: t("environmentPage.gallery.exterior"), width: 1032, height: 1100 },
+              { src: "/images/clinic/reception.webp", caption: t("environmentPage.gallery.reception"), width: 1050, height: 1400 },
+              { src: "/images/clinic/waiting-room.webp", caption: t("environmentPage.gallery.waiting"), width: 1050, height: 1400 },
+              { src: "/images/clinic/equipment.webp", caption: t("environmentPage.gallery.equipment"), width: 1600, height: 1200 },
+              { src: "/images/clinic/lounge.webp", caption: t("environmentPage.gallery.lounge"), width: 1050, height: 1400 },
+              { src: "/images/clinic/reception-sign.webp", caption: t("environmentPage.gallery.sign"), width: 1050, height: 1400 },
+              { src: "/images/clinic/treatment-room.webp", caption: t("environmentPage.gallery.room"), width: 1050, height: 1400 },
             ]}
           />
           <div className="reveal mt-12 text-center">
