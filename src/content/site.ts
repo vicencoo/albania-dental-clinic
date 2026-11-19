@@ -4,7 +4,7 @@
 export const site = {
   name: "Albania Dental Clinic",
   leadDoctor: "Dr. Donela Dede",
-  domain: "https://albaniadentalvlore.al", // e.g. "https://www.example.com" — used for sitemap, canonical & hreflang
+  domain: "https://www.albaniadentalvlore.al", // e.g. "https://www.example.com" — used for sitemap, canonical & hreflang
   phone: "[PHONE]",
   whatsapp: "355697298567", // international format without "+" or spaces, for wa.me links
   email: "[EMAIL]",
