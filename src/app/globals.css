@@ -87,6 +87,13 @@
     text-wrap: balance;
   }
 
+  /* Section headings are large too: same optical correction, a little lighter. */
+  h1,
+  h2 {
+    letter-spacing: -0.008em;
+    word-spacing: -0.05em;
+  }
+
   p {
     text-wrap: pretty;
   }
@@ -169,11 +176,16 @@
 }
 
 /* Large display heading: light weight, generous tracking. */
+/*
+ * Large serif headlines (page heroes). Big type needs tighter tracking than body text, and
+ * Cormorant's word space is wide, so both are pulled in slightly at display sizes.
+ */
 @utility display {
   font-family: var(--font-heading);
   font-weight: 300;
-  letter-spacing: 0.01em;
-  line-height: 0.98;
+  letter-spacing: -0.015em;
+  word-spacing: -0.08em;
+  line-height: 1;
 }
 
 /*

@@ -285,6 +285,10 @@
     "xray": "Panoramic X-ray or CT (optional)",
     "xrayHint": "JPG, PNG, WEBP or PDF · max 10 MB",
     "xrayChoose": "Choose a file",
+    "xraySelected": "File selected",
+    "xrayChange": "Change",
+    "xrayRemove": "Remove",
+    "xrayPreview": "Preview of the selected X-ray",
     "consent": "I agree that Albania Dental Clinic processes my data, including any X-ray, to answer my request.",
     "privacyLink": "Privacy policy",
     "submit": "Send request",
@@ -778,7 +782,6 @@
   },
   "legal": {
     "updated": "Last updated: November 2026",
-    "draftNote": "This text is a draft and will be reviewed by the clinic before publication.",
     "privacy": [
       {
         "title": "Who we are",
@@ -843,6 +846,10 @@
       {
         "title": "Intellectual property",
         "text": "Texts, photographs and the logo belong to Albania Dental Clinic and may not be reused without permission."
+      },
+      {
+        "title": "Emails and requests",
+        "text": "When you send a request through this website, it is delivered to the clinic by email using Resend (Resend, Inc.), an email delivery service that processes the message and any attachments on our behalf, on servers in the European Union. Resend only delivers the email and does not use your data for its own purposes."
       }
     ]
   },

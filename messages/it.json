@@ -411,6 +411,10 @@
     "xray": "Panoramica o TAC (facoltativa)",
     "xrayHint": "JPG, PNG, WEBP o PDF · max 10 MB",
     "xrayChoose": "Scegli un file",
+    "xraySelected": "File selezionato",
+    "xrayChange": "Cambia",
+    "xrayRemove": "Rimuovi",
+    "xrayPreview": "Anteprima della radiografia selezionata",
     "consent": "Acconsento al trattamento dei miei dati, comprese eventuali radiografie, da parte di Albania Dental Clinic per rispondere alla mia richiesta.",
     "privacyLink": "Informativa privacy",
     "submit": "Invia richiesta",
@@ -904,7 +908,6 @@
   },
   "legal": {
     "updated": "Ultimo aggiornamento: novembre 2026",
-    "draftNote": "Questo testo è una bozza e sarà verificato dalla clinica prima della pubblicazione.",
     "privacy": [
       {
         "title": "Chi siamo",
@@ -969,6 +972,10 @@
       {
         "title": "Proprietà intellettuale",
         "text": "Testi, fotografie e logo appartengono ad Albania Dental Clinic e non possono essere riutilizzati senza autorizzazione."
+      },
+      {
+        "title": "Email e richieste",
+        "text": "Quando invii una richiesta tramite questo sito, viene recapitata alla clinica via email tramite Resend (Resend, Inc.), un servizio di invio email che tratta il messaggio ed eventuali allegati per nostro conto, su server nell'Unione Europea. Resend si limita a recapitare l'email e non utilizza i tuoi dati per scopi propri."
       }
     ]
   }

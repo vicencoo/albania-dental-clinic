@@ -411,6 +411,10 @@
     "xray": "Ortopanoramikë ose tomografi (opsionale)",
     "xrayHint": "JPG, PNG, WEBP ose PDF · maks. 10 MB",
     "xrayChoose": "Zgjidhni një skedar",
+    "xraySelected": "Skedari u zgjodh",
+    "xrayChange": "Ndrysho",
+    "xrayRemove": "Hiq",
+    "xrayPreview": "Pamje e radiografisë së zgjedhur",
     "consent": "Pranoj që Albania Dental Clinic të përpunojë të dhënat e mia, përfshirë radiografitë, për t'iu përgjigjur kërkesës sime.",
     "privacyLink": "Politika e privatësisë",
     "submit": "Dërgo kërkesën",
@@ -904,7 +908,6 @@
   },
   "legal": {
     "updated": "Përditësuar së fundmi: nëntor 2026",
-    "draftNote": "Ky tekst është draft dhe do të rishikohet nga klinika para publikimit.",
     "privacy": [
       {
         "title": "Kush jemi",
@@ -969,6 +972,10 @@
       {
         "title": "Pronësia intelektuale",
         "text": "Tekstet, fotografitë dhe logoja i përkasin Albania Dental Clinic dhe nuk mund të ripërdoren pa leje."
+      },
+      {
+        "title": "Email-et dhe kërkesat",
+        "text": "Kur dërgoni një kërkesë përmes kësaj faqeje, ajo i dërgohet klinikës me email përmes Resend (Resend, Inc.), një shërbim dërgimi email-esh që e përpunon mesazhin dhe bashkëngjitjet në emrin tonë, në serverë në Bashkimin Evropian. Resend vetëm e dorëzon email-in dhe nuk i përdor të dhënat tuaja për qëllimet e veta."
       }
     ]
   }

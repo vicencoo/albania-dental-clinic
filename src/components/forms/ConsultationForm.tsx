@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
@@ -29,7 +29,40 @@ export function ConsultationForm({
   const t = useTranslations("form");
   const id = useId();
   const { errors, pending, onSubmit, has } = useRequestForm();
-  const [fileName, setFileName] = useState<string | null>(null);
+  const fileInput = useRef<HTMLInputElement>(null);
+  const [file, setFile] = useState<{
+    name: string;
+    size: string;
+    preview: string | null;
+  } | null>(null);
+
+  // Free the temporary preview URL when the file changes or the form unmounts.
+  useEffect(
+    () => () => {
+      if (file?.preview) URL.revokeObjectURL(file.preview);
+    },
+    [file],
+  );
+
+  function onFileChange(selected: File | undefined) {
+    if (!selected) return setFile(null);
+    const kb = selected.size / 1024;
+    setFile({
+      name: selected.name,
+      size:
+        kb < 1024
+          ? `${Math.max(1, Math.round(kb))} KB`
+          : `${(kb / 1024).toFixed(1)} MB`,
+      preview: selected.type.startsWith("image/")
+        ? URL.createObjectURL(selected)
+        : null,
+    });
+  }
+
+  function removeFile() {
+    if (fileInput.current) fileInput.current.value = "";
+    setFile(null);
+  }
 
   const f = (name: string) => `${id}-${name}`;
   const described = (name: string, error: boolean, hint = false) =>
@@ -150,27 +183,78 @@ export function ConsultationForm({
         error={has("xray") ? t("errors.xray") : undefined}
         className="sm:col-span-2"
       >
-        <label
-          htmlFor={f("xray")}
-          className="group flex cursor-pointer items-center gap-4 rounded-2xl border border-dashed border-brand-gold/60 bg-brand-porcelain px-5 py-5 transition-colors hover:border-brand-gold hover:bg-brand-sand/60 has-focus-visible:ring-2 has-focus-visible:ring-brand-gold"
-        >
-          <span className="grid size-11 shrink-0 place-items-center rounded-full bg-brand-white text-brand-green transition-transform duration-300 group-hover:-translate-y-0.5">
-            <Icon name="upload" className="size-5" />
-          </span>
-          <span className="min-w-0 flex-1 truncate text-sm text-brand-muted">
-            {fileName ?? t("xrayChoose")}
-          </span>
+        <div>
           <input
+            ref={fileInput}
             id={f("xray")}
             name="xray"
             type="file"
             accept="image/jpeg,image/png,image/webp,application/pdf"
             aria-invalid={has("xray")}
             aria-describedby={described("xray", has("xray"), true)}
-            onChange={(e) => setFileName(e.target.files?.[0]?.name ?? null)}
-            className="sr-only"
+            onChange={(e) => onFileChange(e.target.files?.[0])}
+            className="peer sr-only"
           />
-        </label>
+          {file ? (
+            /* Selected: preview + name + change / remove */
+            <div className="rise flex items-center gap-4 rounded-2xl border border-brand-green/40 bg-brand-green/[0.05] p-3 peer-focus-visible:ring-2 peer-focus-visible:ring-brand-gold">
+              <div className="relative grid size-20 shrink-0 place-items-center overflow-clip rounded-xl bg-brand-obsidian sm:size-24">
+                {file.preview ? (
+                  // eslint-disable-next-line @next/next/no-img-element -- local blob preview, not an optimisable asset
+                  <img
+                    src={file.preview}
+                    alt={t("xrayPreview")}
+                    className="size-full object-contain"
+                  />
+                ) : (
+                  <span className="flex flex-col items-center gap-1 text-brand-white">
+                    <Icon name="upload" className="size-6" />
+                    <span className="font-label text-[0.65rem] tracking-[0.2em]">
+                      PDF
+                    </span>
+                  </span>
+                )}
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="flex items-center gap-1.5 text-xs font-semibold text-brand-green">
+                  <Icon name="check" className="size-4" />
+                  {t("xraySelected")}
+                </p>
+                <p className="mt-1 truncate text-sm text-brand-ink">
+                  {file.name}
+                </p>
+                <p className="text-xs text-brand-muted">{file.size}</p>
+                <div className="mt-2 flex gap-4 text-xs font-semibold">
+                  <label
+                    htmlFor={f("xray")}
+                    className="cursor-pointer text-brand-green underline-offset-4 hover:underline"
+                  >
+                    {t("xrayChange")}
+                  </label>
+                  <button
+                    type="button"
+                    onClick={removeFile}
+                    className="text-brand-muted underline-offset-4 hover:text-brand-red hover:underline"
+                  >
+                    {t("xrayRemove")}
+                  </button>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <label
+              htmlFor={f("xray")}
+              className="group flex cursor-pointer items-center gap-4 rounded-2xl border border-dashed border-brand-gold/60 bg-brand-porcelain px-5 py-5 transition-colors hover:border-brand-gold hover:bg-brand-sand/60 peer-focus-visible:ring-2 peer-focus-visible:ring-brand-gold"
+            >
+              <span className="grid size-11 shrink-0 place-items-center rounded-full bg-brand-white text-brand-green transition-transform duration-300 group-hover:-translate-y-0.5">
+                <Icon name="upload" className="size-5" />
+              </span>
+              <span className="min-w-0 flex-1 truncate text-sm text-brand-muted">
+                {t("xrayChoose")}
+              </span>
+            </label>
+          )}
+        </div>
       </Field>
 
       <div className="sm:col-span-2">
