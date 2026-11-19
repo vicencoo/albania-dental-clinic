@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import "../globals.css";
@@ -57,6 +59,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           <ScrollTopOnReload />
           <ScrollReveal />
         </NextIntlClientProvider>
+        {/* Vercel Web Analytics + Speed Insights: cookieless, active only when deployed on Vercel. */}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
