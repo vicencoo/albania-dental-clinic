@@ -4,7 +4,6 @@
  * page for an unknown param happens after the static shell has started streaming,
  * so the status would otherwise stay 200).
  */
-import { apartments } from "./apartments";
 import { team } from "./team";
 import { testimonials } from "./testimonials";
 import { staticRoutes } from "./navigation";
@@ -25,11 +24,9 @@ export function isKnownPath(segments: string[]): boolean {
   if (a === "treatments" && len === 2) return !!getCategory(b);
   if (a === "treatments" && len === 3) return !!getTreatment(b, c);
   if (a === "clinic" && b === "team" && len === 3) return team.some((m) => m.slug === c);
-  if (a === "dental-tourism" && b === "apartments" && len === 3)
-    return apartments.some((x) => x.slug === c);
   if (a === "results" && b === "patient-stories" && len === 3)
     return testimonials.some((t) => t.slug === c && t.consentConfirmed);
-  if (a === "journal" && len === 2) return true;
+  if (a === "blog" && len === 2) return true;
 
   return knownStatic.has(`/${segments.join("/")}`.replace(/\/$/, "") || "/");
 }

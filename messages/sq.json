@@ -25,7 +25,7 @@
     "beforeAfter": "Para dhe pas",
     "patientStories": "Historitë e pacientëve",
     "prices": "Çmimet",
-    "journal": "Artikuj",
+    "blog": "Blog",
     "book": "Rezervo konsultë",
     "contact": "Kontakt",
     "thankYou": "Faleminderit",
@@ -66,7 +66,7 @@
       "tourismHow": "Nga mesazhi i parë deri te fluturimi për në shtëpi.",
       "packages": "Trajtimi dhe qëndrimi në një plan të vetëm.",
       "faq": "Përgjigje për pyetjet më të shpeshta.",
-      "apartments": "Apartamente private të rezervuara për pacientët tanë.",
+      "apartments": "Apartamente private të klinikës, për pacientët tanë.",
       "travel": "Transporti nga aeroporti, fluturimet dhe këshilla praktike.",
       "discoverAlbania": "Kthejeni trajtimin në një pushim të shkurtër.",
       "beforeAfter": "Raste të ndara me pëlqimin e pacientëve.",
@@ -247,7 +247,7 @@
     "hours": "Orari",
     "openMap": "Hap në Google Maps",
     "published": "Publikuar",
-    "backToJournal": "Kthehu te artikujt",
+    "backToBlog": "Kthehu te blogu",
     "relatedTreatments": "Trajtime të ngjashme",
     "includes": "Çfarë përfshihet",
     "photosSoon": "Galeria e fotove së shpejti",
@@ -325,7 +325,7 @@
     },
     "apartments": {
       "title": "Apartamentet",
-      "description": "Apartamente private të rezervuara për pacientët e Albania Dental Clinic gjatë trajtimit."
+      "description": "Apartamentet private të Albania Dental Clinic, ku pacientët qëndrojnë gjatë trajtimit."
     },
     "packages": {
       "title": "Paketat",
@@ -359,8 +359,8 @@
       "title": "Krahasimi i çmimeve",
       "description": "Krahasoni çmimet e trajtimeve dentare në Shqipëri me Mbretërinë e Bashkuar, Italinë dhe Turqinë. Kërkoni një ofertë personale falas."
     },
-    "journal": {
-      "title": "Artikuj",
+    "blog": {
+      "title": "Blog",
       "description": "Artikuj për implantet, dhëmbët në një ditë dhe turizmin dentar në Shqipëri."
     },
     "book": {
@@ -512,7 +512,7 @@
         },
         {
           "title": "Apartamentet tona",
-          "text": "Apartamente private të rezervuara për pacientët gjatë trajtimit."
+          "text": "Apartamente private të klinikës, ku pacientët qëndrojnë gjatë trajtimit."
         },
         {
           "title": "Transporti",
@@ -769,7 +769,7 @@
       },
       {
         "title": "Rezervoni datat dhe qëndrimin",
-        "text": "Zgjidhni datat; ju rezervojmë një nga apartamentet tona dhe ju presim në aeroport."
+        "text": "Zgjidhni datat; mund të qëndroni në një nga apartamentet tona dhe ju presim në aeroport."
       },
       {
         "title": "Trajtimi",
@@ -786,9 +786,9 @@
     "note": "Çmimet varen nga rasti juaj dhe konfirmohen me shkrim pas konsultës."
   },
   "apartmentsPage": {
-    "intro": "Apartamentet e klinikës janë të rezervuara për pacientët gjatë trajtimit — një vend i qetë për të pushuar mes takimeve.",
-    "formTitle": "Rezervoni konsultën dhe qëndrimin",
-    "formText": "Apartamentet tona nuk jepen me qira ditore — janë të rezervuara për pacientët gjatë trajtimit. Dërgoni kërkesën dhe, nëse e keni, radiografinë: ne e planifikojmë së bashku trajtimin dhe qëndrimin tuaj."
+    "intro": "Klinika ka apartamentet e veta për pacientët — vende të qeta dhe të rehatshme për të pushuar mes takimeve dhe pas ndërhyrjes, pa pasur nevojë të kërkoni hotel.",
+    "title": "Një qëndrim i menduar për trajtimin",
+    "text": "Apartamentet tona nuk jepen me qira ditore: janë vetëm për pacientët e klinikës gjatë trajtimit. Qëndrimin e organizojmë së bashku me planin e trajtimit: mjafton të na tregoni datat."
   },
   "travelPage": {
     "intro": "Informacion praktik për të planifikuar udhëtimin.",
@@ -820,19 +820,19 @@
     "places": [
       {
         "title": "Riviera shqiptare",
-        "text": "Ujëra të kristalta dhe plazhe nga Vlora deri në Dhërmi, Himarë dhe Ksamil."
-      },
-      {
-        "title": "Berati dhe Gjirokastra",
-        "text": "Dy qytete të UNESCO-s me shtëpi guri dhe trashëgimi osmane."
-      },
-      {
-        "title": "Butrinti",
-        "text": "Një park arkeologjik me rrënoja greke, romake dhe veneciane në mes të natyrës."
+        "text": "Në jug të Vlorës, bregdeti hapet me ujëra të kristalta dhe plazhe në Dhërmi, Himarë dhe Ksamil."
       },
       {
         "title": "Tirana",
         "text": "Një kryeqytet plot jetë me rrugë shumëngjyrëshe, kafene, muze dhe malin e Dajtit."
+      },
+      {
+        "title": "Vlora",
+        "text": "Aty ku Adriatiku takon Jonin: Lungomare, qyteti i Pavarësisë së 1912-s dhe gadishulli i Karaburunit."
+      },
+      {
+        "title": "Berati",
+        "text": "«Qyteti i një mbi një dritareve»: qytet i UNESCO-s me shtëpi të bardha osmane nën një kështjellë ende të banuar."
       }
     ],
     "note": "Këshilla jonë: vizitoni para ndërhyrjes dhe pushoni pas saj."
@@ -877,13 +877,13 @@
       "fullTreatment": "trajtim i plotë"
     },
     "from": "nga {price}",
-    "freeQuote": "Ofertë falas",
+    "savings": "deri në {percent}%",
     "disclaimerTitle": "Çmimi juaj i saktë",
     "disclaimer": "Çmimet mund të ndryshojnë në bazë të kompleksitetit të çdo rasti. Kërkoni një ofertë personale falas për një çmim të saktë bazuar në dokumentacionin tuaj dentar.",
     "disclaimerCta": "Kërkoni një ofertë falas",
     "sourceNote": "Çmimet për vendet e tjera janë mesatare orientuese të tregut dhe mund të ndryshojnë. Shfaqen vetëm për krahasim."
   },
-  "journalPage": {
+  "blogPage": {
     "intro": "Artikuj të qartë për implantet, dhëmbët në një ditë dhe turizmin dentar në Shqipëri."
   },
   "bookPage": {

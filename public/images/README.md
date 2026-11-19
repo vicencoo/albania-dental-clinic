@@ -18,5 +18,9 @@ aim for < 150 KB per photo.
 - **results/** — before/after photos per case: `<slug>-before.webp` and `<slug>-after.webp`,
   same framing and lighting, **only with signed written patient consent**
   (add the case in `src/content/results.ts` with `consentConfirmed: true`).
-- **apartments/** — photos of each patient apartment: `<slug>-01.webp`, `<slug>-02.webp`, …
+- **apartments/** — photos of the clinic's apartments (any names), then list them in
+  `src/content/apartments.ts` (`apartmentImages`).
+- **discover/** — one photo per place on Discover Albania, picked up automatically:
+  `riviera.webp`, `tirana.webp`, `vlora.webp`, `berat.webp` (`.jpg`/`.png` also work).
+  Use photos you own or that are licensed for commercial use.
 - **team/** — portraits of the other team members, named `<slug>.webp`.

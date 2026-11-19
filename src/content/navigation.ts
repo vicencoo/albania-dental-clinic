@@ -2,7 +2,11 @@
  * Single source of truth for header mega menu, mobile drawer, footer and sitemap.
  * Labels are translation keys resolved with next-intl (messages/*.json).
  */
-import { treatmentCategories, getTreatmentsByCategory, treatmentHref } from "./treatments";
+import {
+  treatmentCategories,
+  getTreatmentsByCategory,
+  treatmentHref,
+} from "./treatments";
 import type { AppPath, FooterGroup, NavItem } from "./types";
 
 export const bookHref: AppPath = "/book";
@@ -15,7 +19,9 @@ export function isActivePath(pathname: string, href: string): boolean {
 
 /** True when the current page belongs to a top-level nav item (its own section or an `alsoActive` one). */
 export function isNavItemActive(pathname: string, item: NavItem): boolean {
-  return [item.href, ...(item.alsoActive ?? [])].some((href) => isActivePath(pathname, href));
+  return [item.href, ...(item.alsoActive ?? [])].some((href) =>
+    isActivePath(pathname, href),
+  );
 }
 
 /** Where a top-level item navigates on click: its own overview page (e.g. /treatments). */
@@ -34,7 +40,10 @@ export const mainNav: NavItem[] = [
         links: [
           { labelKey: "nav.sameDayOverview", href: "/same-day-teeth" },
           { labelKey: "nav.sameDayHow", href: "/same-day-teeth/how-it-works" },
-          { labelKey: "nav.sameDayCandidates", href: "/same-day-teeth/candidates" },
+          {
+            labelKey: "nav.sameDayCandidates",
+            href: "/same-day-teeth/candidates",
+          },
         ],
       },
     ],
@@ -119,7 +128,10 @@ export const mainNav: NavItem[] = [
         links: [
           { labelKey: "nav.apartments", href: "/dental-tourism/apartments" },
           { labelKey: "nav.travel", href: "/dental-tourism/travel" },
-          { labelKey: "nav.discoverAlbania", href: "/dental-tourism/discover-albania" },
+          {
+            labelKey: "nav.discoverAlbania",
+            href: "/dental-tourism/discover-albania",
+          },
         ],
       },
     ],
@@ -130,7 +142,7 @@ export const mainNav: NavItem[] = [
       href: "/dental-tourism/apartments",
     },
   },
-  { id: "journal", labelKey: "nav.journal", href: "/journal" },
+  // { id: "blog", labelKey: "nav.blog", href: "/blog" },
 ];
 
 export const footerNav: FooterGroup[] = [
@@ -151,7 +163,7 @@ export const footerNav: FooterGroup[] = [
       { labelKey: "nav.technology", href: "/clinic/technology" },
       { labelKey: "nav.laboratory", href: "/clinic/laboratory" },
       { labelKey: "nav.results", href: "/results" },
-      { labelKey: "nav.journal", href: "/journal" },
+      { labelKey: "nav.blog", href: "/blog" },
     ],
   },
   {
@@ -206,7 +218,7 @@ export const staticRoutes: AppPath[] = [
   "/results/before-after",
   "/results/patient-stories",
   "/prices",
-  "/journal",
+  "/blog",
   "/book",
   "/contact",
   "/privacy",

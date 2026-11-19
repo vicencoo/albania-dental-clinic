@@ -8,7 +8,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { StepList } from "@/components/ui/StepList";
 import { getCategory, getTreatmentsByCategory, treatmentCategories } from "@/content/treatments";
 import { asLocale } from "@/lib/locale";
-import { buildMetadata } from "@/lib/metadata";
+import { seoMetadata } from "@/lib/metadata";
+import { categorySeo } from "@/content/seo";
 import { stagger } from "@/lib/style";
 
 type Props = PageProps<"/[locale]/treatments/[category]">;
@@ -23,13 +24,12 @@ export async function generateMetadata({ params }: Props) {
   const category = getCategory(slug);
   if (!category) notFound();
   const t = await getTranslations({ locale });
-  return buildMetadata({
-    locale,
-    path: `/treatments/${category.slug}`,
+  const seo = categorySeo[category.slug]?.[locale] ?? {
     title: t(category.labelKey),
     description: t(`treatments.categoryText.${category.slug}`),
-    image: category.image,
-  });
+    keywords: [],
+  };
+  return seoMetadata(locale, `/treatments/${category.slug}`, seo);
 }
 
 export default async function CategoryPage({ params }: Props) {

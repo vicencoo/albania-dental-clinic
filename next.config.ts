@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     globalNotFound: true,
   },
   cacheComponents: true,
-  // Journal images are served from Sanity's CDN.
+  // Blog images are served from Sanity's CDN.
   images: {
     remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
     // 90 is used only for the hero portrait, where detail matters most.
@@ -21,6 +21,12 @@ const nextConfig: NextConfig = {
       {
         source: "/:locale(al|it|en)/clinic/why-one-of-two",
         destination: "/:locale/clinic/why-choose-us",
+        permanent: true,
+      },
+      // The journal was renamed to blog.
+      {
+        source: "/:locale(al|it|en)/journal/:slug*",
+        destination: "/:locale/blog/:slug*",
         permanent: true,
       },
     ];

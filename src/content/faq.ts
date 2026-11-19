@@ -95,9 +95,9 @@ export const faqs: Faq[] = [
       en: "Where can I stay during treatment?",
     },
     answer: {
-      sq: "Klinika ka apartamentet e veta të rezervuara për pacientët. Na tregoni datat tuaja dhe do t'ju konfirmojmë disponueshmërinë së bashku me planin e trajtimit.",
-      it: "La clinica dispone di propri appartamenti riservati ai pazienti. Indicaci le tue date e ti confermeremo la disponibilità insieme al piano di cura.",
-      en: "The clinic has its own apartments reserved for patients. Tell us your dates and we will confirm availability together with your treatment plan.",
+      sq: "Klinika ka apartamentet e veta për pacientët. Na tregoni datat tuaja dhe do t'ju konfirmojmë disponueshmërinë së bashku me planin e trajtimit.",
+      it: "La clinica dispone di propri appartamenti per i pazienti. Indicaci le tue date e ti confermeremo la disponibilità insieme al piano di cura.",
+      en: "The clinic has its own apartments for patients. Tell us your dates and we will confirm availability together with your treatment plan.",
     },
   },
   {

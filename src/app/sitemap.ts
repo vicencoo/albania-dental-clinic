@@ -1,5 +1,4 @@
 import type { MetadataRoute } from "next";
-import { apartments } from "@/content/apartments";
 import { staticRoutes } from "@/content/navigation";
 import { publishedTeam } from "@/content/team";
 import { publishedTestimonials } from "@/content/testimonials";
@@ -21,14 +20,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...treatmentCategories.map((c) => `/treatments/${c.slug}` as AppPath),
     ...treatments.map((t) => treatmentHref(t) as AppPath),
     ...publishedTeam.filter((m) => !m.isLead).map((m) => `/clinic/team/${m.slug}` as AppPath),
-    ...apartments.map((a) => `/dental-tourism/apartments/${a.slug}` as AppPath),
     ...publishedTestimonials.map((t) => `/results/patient-stories/${t.slug}` as AppPath),
   ];
 
-  const journalSlugs = await getPostSlugs();
+  const blogSlugs = await getPostSlugs();
 
   return [
     ...[...staticRoutes, ...dynamicRoutes].flatMap((path) => entries(path)),
-    ...journalSlugs.flatMap((slug) => entries(`/journal/${slug}` as AppPath)),
+    ...blogSlugs.flatMap((slug) => entries(`/blog/${slug}` as AppPath)),
   ];
 }

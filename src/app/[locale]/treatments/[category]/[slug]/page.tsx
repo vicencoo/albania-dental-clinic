@@ -11,7 +11,9 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getFaqsByTopic } from "@/content/faq";
 import { getCategory, getTreatment, getTreatmentBySlug, treatmentHref, treatments } from "@/content/treatments";
 import { asLocale } from "@/lib/locale";
-import { buildMetadata, localizedUrl } from "@/lib/metadata";
+import { seoMetadata, localizedUrl } from "@/lib/metadata";
+import { treatmentSeo } from "@/content/seo";
+import { siteUrl } from "@/content/site";
 import { stagger } from "@/lib/style";
 
 type Props = PageProps<"/[locale]/treatments/[category]/[slug]">;
@@ -32,13 +34,12 @@ async function load(params: Props["params"]) {
 export async function generateMetadata({ params }: Props) {
   const { locale, treatment } = await load(params);
   const t = await getTranslations({ locale });
-  return buildMetadata({
-    locale,
-    path: treatmentHref(treatment),
+  const seo = treatmentSeo[treatment.slug]?.[locale] ?? {
     title: t(treatment.labelKey),
     description: t(`treatments.desc.${treatment.slug}`),
-    image: treatment.image,
-  });
+    keywords: [],
+  };
+  return seoMetadata(locale, treatmentHref(treatment), seo);
 }
 
 export default async function TreatmentPage({ params }: Props) {
@@ -113,6 +114,11 @@ export default async function TreatmentPage({ params }: Props) {
           name: title,
           description: t(`treatments.desc.${treatment.slug}`),
           url: localizedUrl(locale, treatmentHref(treatment)),
+          image: `${siteUrl()}${treatment.image}`,
+          bodyLocation: "Mouth",
+          procedureType: category.slug === "general" ? "https://schema.org/TherapeuticProcedure" : "https://schema.org/SurgicalProcedure",
+          inLanguage: locale,
+          provider: { "@id": `${siteUrl()}/#dentist` },
         }}
       />
     </>

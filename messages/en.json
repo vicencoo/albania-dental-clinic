@@ -25,7 +25,7 @@
     "beforeAfter": "Before & after",
     "patientStories": "Patient stories",
     "prices": "Prices",
-    "journal": "Journal",
+    "blog": "Blog",
     "book": "Book consultation",
     "contact": "Contact",
     "thankYou": "Thank you",
@@ -66,7 +66,7 @@
       "tourismHow": "From your first message to your flight home.",
       "packages": "Treatment and stay combined in one plan.",
       "faq": "Answers to the questions patients ask most.",
-      "apartments": "Private apartments reserved for our patients.",
+      "apartments": "The clinic's own private apartments, for our patients.",
       "travel": "Airport transfers, flights and practical tips.",
       "discoverAlbania": "Turn your treatment into a short holiday.",
       "beforeAfter": "Cases shared with our patients' consent.",
@@ -239,7 +239,7 @@
     "hours": "Opening hours",
     "openMap": "Open in Google Maps",
     "published": "Published",
-    "backToJournal": "Back to the journal",
+    "backToBlog": "Back to the blog",
     "relatedTreatments": "Related treatments",
     "includes": "What's included",
     "photosSoon": "Photo gallery coming soon",
@@ -386,7 +386,7 @@
         },
         {
           "title": "Our apartments",
-          "text": "Private apartments reserved for patients during treatment."
+          "text": "The clinic's own private apartments, where patients stay during treatment."
         },
         {
           "title": "Transport",
@@ -643,7 +643,7 @@
       },
       {
         "title": "Book dates and stay",
-        "text": "Choose your dates; we can reserve one of our apartments for you and pick you up at the airport."
+        "text": "Choose your dates; you can stay in one of our apartments and we pick you up at the airport."
       },
       {
         "title": "Treatment",
@@ -660,9 +660,9 @@
     "note": "Prices depend on your case and are confirmed in writing after the consultation."
   },
   "apartmentsPage": {
-    "intro": "The clinic's own apartments are reserved for patients during treatment — a quiet place to rest between appointments.",
-    "formTitle": "Book your consultation and stay",
-    "formText": "Our apartments are not for daily rental — they are reserved for patients during their treatment. Send your request and, if you have one, your X-ray: we plan the treatment and your stay together."
+    "intro": "The clinic has its own apartments for patients — quiet, comfortable places to rest between appointments and after surgery, without looking for a hotel.",
+    "title": "A stay planned around your treatment",
+    "text": "Our apartments are not for daily rental: they are only for the clinic's patients during treatment. We organise your stay together with your treatment plan — just tell us your dates."
   },
   "travelPage": {
     "intro": "Practical information to plan your trip.",
@@ -694,19 +694,19 @@
     "places": [
       {
         "title": "The Albanian Riviera",
-        "text": "Crystal-clear water and beaches from Vlorë to Dhërmi, Himarë and Ksamil."
-      },
-      {
-        "title": "Berat & Gjirokastër",
-        "text": "Two UNESCO-listed towns of stone houses and Ottoman heritage."
-      },
-      {
-        "title": "Butrint",
-        "text": "An archaeological park with Greek, Roman and Venetian ruins in a natural setting."
+        "text": "South of Vlorë, the coast opens onto crystal-clear water and beaches at Dhërmi, Himarë and Ksamil."
       },
       {
         "title": "Tirana",
         "text": "A lively capital of colourful streets, cafés, museums and the Dajti mountain."
+      },
+      {
+        "title": "Vlora",
+        "text": "Where the Adriatic meets the Ionian: the Lungomare promenade, the city of Albania's 1912 independence and the Karaburun peninsula."
+      },
+      {
+        "title": "Berat",
+        "text": "The “city of a thousand windows”: a UNESCO-listed town of white Ottoman houses beneath a castle that is still inhabited."
       }
     ],
     "note": "Our advice: plan sightseeing before surgery, and rest after it."
@@ -751,13 +751,13 @@
       "fullTreatment": "full treatment"
     },
     "from": "from {price}",
-    "freeQuote": "Free quote",
+    "savings": "up to {percent}%",
     "disclaimerTitle": "Your exact price",
     "disclaimer": "Prices may vary based on individual case complexity. Request a free personalized quote for an exact price based on your dental records.",
     "disclaimerCta": "Request a free quote",
     "sourceNote": "Prices for other countries are indicative market averages and may change. They are shown for comparison only."
   },
-  "journalPage": {
+  "blogPage": {
     "intro": "Clear articles about implants, same-day teeth and dental tourism in Albania."
   },
   "bookPage": {
@@ -905,7 +905,7 @@
     },
     "apartments": {
       "title": "Apartments",
-      "description": "Private apartments reserved for patients of Albania Dental Clinic during treatment."
+      "description": "The private apartments of Albania Dental Clinic, where patients stay during treatment."
     },
     "packages": {
       "title": "Packages",
@@ -939,8 +939,8 @@
       "title": "Price comparison",
       "description": "Compare dental treatment prices in Albania with the UK, Italy and Turkey. Request a free personalised quote."
     },
-    "journal": {
-      "title": "Journal",
+    "blog": {
+      "title": "Blog",
       "description": "Articles about implants, same-day teeth and dental tourism in Albania."
     },
     "book": {

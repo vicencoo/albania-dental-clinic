@@ -49,7 +49,7 @@ export default async function ContactPage({ params }: Props) {
           </div>
         </div>
       </section>
-      <JsonLd data={dentistSchema()} />
+      <JsonLd data={dentistSchema(locale, (k) => t(k))} />
     </>
   );
 }

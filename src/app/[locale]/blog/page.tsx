@@ -7,12 +7,13 @@ import { asLocale } from "@/lib/locale";
 import { pageMetadata } from "@/lib/metadata";
 import { readingMinutes, stagger } from "@/lib/style";
 import { urlFor } from "@/sanity/client";
+import { categoryLabels } from "@/sanity/categories";
 import { getPosts } from "@/sanity/posts";
 
-const KEY = "journal";
-const PATH = "/journal";
+const KEY = "blog";
+const PATH = "/blog";
 
-type Props = PageProps<"/[locale]/journal">;
+type Props = PageProps<"/[locale]/blog">;
 
 export async function generateMetadata({ params }: Props) {
   return pageMetadata(asLocale((await params).locale), KEY, PATH);
@@ -33,37 +34,34 @@ export default async function Page({ params }: Props) {
     <>
       <PageHero
         title={t(`pages.${KEY}.title`)}
-        intro={t("journalPage.intro")}
-        breadcrumbs={[{ label: t("nav.journal") }]}
+        intro={t("blogPage.intro")}
+        breadcrumbs={[{ label: t("nav.blog") }]}
       />
       <section className="py-20 lg:py-24">
-        <ul className="container-luxe grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="container-luxe grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post, i) => (
-            <li
-              key={post._id}
-              className={`reveal ${i === 0 ? "md:col-span-2 lg:col-span-3" : ""}`}
-              style={stagger(i % 3)}
-            >
+            <li key={post._id} className="reveal" style={stagger(i % 3)}>
               <Link
-                href={`/journal/${post.slug}`}
-                className={`lift group grid h-full overflow-clip rounded-4xl border border-brand-sand bg-brand-white ${
-                  i === 0 ? "lg:grid-cols-2" : ""
-                }`}
+                href={`/blog/${post.slug}`}
+                className="lift group flex h-full flex-col overflow-clip rounded-3xl border border-brand-sand bg-brand-white"
               >
-                <div
-                  className={`relative overflow-clip bg-brand-sand ${i === 0 ? "aspect-16/10 lg:aspect-auto" : "aspect-16/10"}`}
-                >
+                <div className="relative aspect-16/10 overflow-clip bg-brand-sand">
                   {post.mainImage?.asset && (
                     <Image
                       src={urlFor(post.mainImage).width(1600).height(1000).auto("format").url()}
                       alt={post.mainImage.alt ?? ""}
                       fill
-                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                       className="zoom-target object-cover"
                     />
                   )}
                 </div>
-                <div className="flex flex-col p-8">
+                <div className="flex flex-1 flex-col p-6">
+                  {post.category && categoryLabels[post.category] && (
+                    <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-brand-green">
+                      {categoryLabels[post.category]}
+                    </p>
+                  )}
                   <p className="text-xs uppercase tracking-widest text-brand-muted">
                     <time dateTime={post.publishedAt}>
                       {dateFmt.format(new Date(post.publishedAt))}
@@ -73,15 +71,13 @@ export default async function Page({ params }: Props) {
                       minutes: readingMinutes(post.bodyText ?? ""),
                     })}
                   </p>
-                  <h2
-                    className={`mt-4 transition-colors group-hover:text-brand-green ${i === 0 ? "text-4xl lg:text-5xl" : "text-3xl"}`}
-                  >
+                  <h2 className="mt-3 text-2xl leading-tight transition-colors group-hover:text-brand-green">
                     {post.title}
                   </h2>
                   {post.excerpt && (
-                    <p className="mt-3 flex-1 leading-relaxed text-brand-muted">{post.excerpt}</p>
+                    <p className="mt-3 line-clamp-3 flex-1 text-sm leading-relaxed text-brand-muted">{post.excerpt}</p>
                   )}
-                  <span className="mt-6 inline-flex items-center gap-2 text-sm text-brand-green">
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm text-brand-green">
                     {t("ui.readMore")}
                     <Icon
                       name="arrow"

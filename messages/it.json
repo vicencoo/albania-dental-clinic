@@ -25,7 +25,7 @@
     "beforeAfter": "Prima e dopo",
     "patientStories": "Storie dei pazienti",
     "prices": "Prezzi",
-    "journal": "Journal",
+    "blog": "Blog",
     "book": "Prenota consulenza",
     "contact": "Contatti",
     "thankYou": "Grazie",
@@ -66,7 +66,7 @@
       "tourismHow": "Dal primo messaggio al volo di ritorno.",
       "packages": "Cure e soggiorno in un unico piano.",
       "faq": "Le risposte alle domande più frequenti.",
-      "apartments": "Appartamenti privati riservati ai nostri pazienti.",
+      "apartments": "Appartamenti privati della clinica, per i nostri pazienti.",
       "travel": "Transfer dall'aeroporto, voli e consigli pratici.",
       "discoverAlbania": "Trasforma le cure in una breve vacanza.",
       "beforeAfter": "Casi condivisi con il consenso dei pazienti.",
@@ -247,7 +247,7 @@
     "hours": "Orari",
     "openMap": "Apri in Google Maps",
     "published": "Pubblicato",
-    "backToJournal": "Torna al journal",
+    "backToBlog": "Torna al blog",
     "relatedTreatments": "Trattamenti correlati",
     "includes": "Cosa è incluso",
     "photosSoon": "Galleria fotografica in arrivo",
@@ -325,7 +325,7 @@
     },
     "apartments": {
       "title": "Appartamenti",
-      "description": "Appartamenti privati riservati ai pazienti di Albania Dental Clinic durante le cure."
+      "description": "Gli appartamenti privati di Albania Dental Clinic, dove i pazienti soggiornano durante le cure."
     },
     "packages": {
       "title": "Pacchetti",
@@ -359,8 +359,8 @@
       "title": "Confronto prezzi",
       "description": "Confronta i prezzi dei trattamenti dentali in Albania con Regno Unito, Italia e Turchia. Richiedi un preventivo personalizzato gratuito."
     },
-    "journal": {
-      "title": "Journal",
+    "blog": {
+      "title": "Blog",
       "description": "Articoli su impianti, denti in un giorno e turismo dentale in Albania."
     },
     "book": {
@@ -512,7 +512,7 @@
         },
         {
           "title": "I nostri appartamenti",
-          "text": "Appartamenti privati riservati ai pazienti durante le cure."
+          "text": "Appartamenti privati della clinica, dove i pazienti soggiornano durante le cure."
         },
         {
           "title": "Trasporto",
@@ -769,7 +769,7 @@
       },
       {
         "title": "Prenota date e alloggio",
-        "text": "Scegli le date; possiamo riservarti uno dei nostri appartamenti e ti veniamo a prendere in aeroporto."
+        "text": "Scegli le date; puoi soggiornare in uno dei nostri appartamenti e ti veniamo a prendere in aeroporto."
       },
       {
         "title": "Le cure",
@@ -786,9 +786,9 @@
     "note": "I prezzi dipendono dal caso e vengono confermati per iscritto dopo la consulenza."
   },
   "apartmentsPage": {
-    "intro": "Gli appartamenti della clinica sono riservati ai pazienti durante le cure: un luogo tranquillo dove riposare tra un appuntamento e l'altro.",
-    "formTitle": "Prenota consulenza e soggiorno",
-    "formText": "I nostri appartamenti non sono in affitto giornaliero: sono riservati ai pazienti durante le cure. Invia la richiesta e, se ce l'hai, la radiografia: pianifichiamo insieme cure e soggiorno."
+    "intro": "La clinica dispone di propri appartamenti per i pazienti: luoghi tranquilli e confortevoli dove riposare tra un appuntamento e l'altro e dopo l'intervento, senza cercare un hotel.",
+    "title": "Un soggiorno pensato per le cure",
+    "text": "I nostri appartamenti non sono in affitto giornaliero: sono solo per i pazienti della clinica durante le cure. Organizziamo il soggiorno insieme al piano di cura: ti basta indicarci le date."
   },
   "travelPage": {
     "intro": "Informazioni pratiche per organizzare il viaggio.",
@@ -820,19 +820,19 @@
     "places": [
       {
         "title": "La Riviera albanese",
-        "text": "Acque cristalline e spiagge da Valona a Dhërmi, Himara e Ksamil."
-      },
-      {
-        "title": "Berat e Argirocastro",
-        "text": "Due città patrimonio UNESCO di case in pietra ed eredità ottomana."
-      },
-      {
-        "title": "Butrinto",
-        "text": "Un parco archeologico con rovine greche, romane e veneziane immerse nella natura."
+        "text": "A sud di Valona, la costa si apre su acque cristalline e spiagge a Dhërmi, Himara e Ksamil."
       },
       {
         "title": "Tirana",
         "text": "Una capitale vivace di strade colorate, caffè, musei e il monte Dajti."
+      },
+      {
+        "title": "Valona",
+        "text": "Dove l'Adriatico incontra lo Ionio: il Lungomare, la città dell'indipendenza albanese del 1912 e la penisola di Karaburun."
+      },
+      {
+        "title": "Berat",
+        "text": "La «città dalle mille finestre»: patrimonio UNESCO, con case ottomane bianche sotto un castello ancora abitato."
       }
     ],
     "note": "Il nostro consiglio: visita prima dell'intervento e riposa dopo."
@@ -877,13 +877,13 @@
       "fullTreatment": "trattamento completo"
     },
     "from": "da {price}",
-    "freeQuote": "Preventivo gratuito",
+    "savings": "fino al {percent}%",
     "disclaimerTitle": "Il tuo prezzo esatto",
     "disclaimer": "I prezzi possono variare in base alla complessità del singolo caso. Richiedi un preventivo personalizzato gratuito per un prezzo esatto basato sulla tua documentazione dentale.",
     "disclaimerCta": "Richiedi un preventivo gratuito",
     "sourceNote": "I prezzi degli altri paesi sono medie di mercato indicative e possono variare. Sono mostrati solo a scopo di confronto."
   },
-  "journalPage": {
+  "blogPage": {
     "intro": "Articoli chiari su impianti, denti in un giorno e turismo dentale in Albania."
   },
   "bookPage": {

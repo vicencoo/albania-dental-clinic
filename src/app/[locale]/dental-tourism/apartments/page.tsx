@@ -1,8 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ApartmentCard } from "@/components/tourism/ApartmentCard";
+import { ApartmentGallery } from "@/components/tourism/ApartmentGallery";
 import { CTABand } from "@/components/ui/CTABand";
 import { PageHero } from "@/components/ui/PageHero";
-import { apartments } from "@/content/apartments";
+import { apartmentImages } from "@/content/apartments";
 import { asLocale } from "@/lib/locale";
 import { pageMetadata } from "@/lib/metadata";
 import { stagger } from "@/lib/style";
@@ -31,13 +31,17 @@ export default async function DentalTourismApartmentsPage({ params }: Props) {
         breadcrumbs={[{ label: t("nav.tourism"), href: "/dental-tourism" }, { label: t("nav.apartments") }]}
       />
       <section className="py-20 lg:py-24">
-        <ul className="reveal-alternate container-luxe space-y-8">
-          {apartments.map((apartment, i) => (
-            <li key={apartment.slug} className="reveal" style={stagger(i)}>
-              <ApartmentCard apartment={apartment} />
-            </li>
-          ))}
-        </ul>
+        <div className="container-luxe space-y-12">
+          <div className="max-w-2xl">
+            <h2 className="reveal text-4xl">{t("apartmentsPage.title")}</h2>
+            <p className="reveal mt-4 text-lg leading-relaxed text-brand-muted" style={stagger(1)}>
+              {t("apartmentsPage.text")}
+            </p>
+          </div>
+          <div className="reveal">
+            <ApartmentGallery images={apartmentImages} title={t(`pages.${KEY}.title`)} />
+          </div>
+        </div>
       </section>
       <CTABand title={t("ui.bookCta")} text={t("ui.announcement")} />
     </>

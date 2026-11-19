@@ -12,7 +12,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { CTABand } from "@/components/ui/CTABand";
 import { asLocale } from "@/lib/locale";
 import { pageMetadata } from "@/lib/metadata";
-import { dentistSchema } from "@/lib/schema";
+import { dentistSchema, websiteSchema } from "@/lib/schema";
 
 type Props = PageProps<"/[locale]">;
 
@@ -37,7 +37,7 @@ export default async function HomePage({ params }: Props) {
       <TourismPreview />
       <StoriesPreview />
       <CTABand title={t("ui.bookCta")} text={t("ui.announcement")} />
-      <JsonLd data={dentistSchema()} />
+      <JsonLd data={[dentistSchema(locale, (k) => t(k)), websiteSchema(locale)]} />
     </>
   );
 }

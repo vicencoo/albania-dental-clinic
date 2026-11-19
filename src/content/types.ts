@@ -47,18 +47,6 @@ export interface TeamMember {
 
 /* ----------------------------------------------------------- Dental tourism */
 
-export interface Apartment {
-  slug: string;
-  name: LocalizedString;
-  description: LocalizedString;
-  location: string;
-  /** Max guests. Keep undefined until confirmed. */
-  capacity?: number;
-  amenities: LocalizedString[];
-  images: string[];
-  distanceToClinic: string;
-}
-
 export interface Package {
   slug: string;
   name: LocalizedString;

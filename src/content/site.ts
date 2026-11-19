@@ -4,13 +4,13 @@
 export const site = {
   name: "Albania Dental Clinic",
   leadDoctor: "Dr. Donela Dede",
-  domain: "[DOMAIN]", // e.g. "https://www.example.com" — used for sitemap, canonical & hreflang
+  domain: "https://albaniadentalvlore.al", // e.g. "https://www.example.com" — used for sitemap, canonical & hreflang
   phone: "[PHONE]",
-  whatsapp: "[WHATSAPP]", // international format without "+" or spaces, for wa.me links
+  whatsapp: "355697298567", // international format without "+" or spaces, for wa.me links
   email: "[EMAIL]",
   address: {
     street: "[ADDRESS]",
-    city: "[CITY]",
+    city: "Vlorë",
     postalCode: "[POSTAL_CODE]",
     country: "AL",
   },

@@ -7,7 +7,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 /** Digital steps in blue, care steps in emerald. */
 const iconColor = ["text-brand-blue", "text-brand-blue", "text-brand-green", "text-brand-green"];
 
-const icons: IconName[] = ["cube", "target", "lab", "sparkle"];
+const icons: IconName[] = ["cube", "target", "lab", "clock"];
 
 /** 3D diagnosis + guided surgery + own lab under one roof. */
 export function OneRoofSection() {

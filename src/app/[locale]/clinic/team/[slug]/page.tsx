@@ -31,7 +31,6 @@ export async function generateMetadata({ params }: Props) {
     path: `/clinic/team/${member.slug}`,
     title: member.name,
     description: member.role[locale],
-    image: member.photo,
     // Placeholder entries stay out of search engines until real data is added.
     noindex: /^\[.*\]$/.test(member.name),
   });

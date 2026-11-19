@@ -1,6 +1,6 @@
 import { groq } from "next-sanity";
 
-/** Fields needed for a journal card (list page). `bodyText` is plain text for reading time. */
+/** Fields needed for a blog card (list page). `bodyText` is plain text for reading time. */
 const CARD_FIELDS = `
   _id,
   title,

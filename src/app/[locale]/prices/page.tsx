@@ -37,15 +37,15 @@ export default async function PricesPage({ params }: Props) {
     return treatment ? [{ ...row, treatment }] : [];
   });
 
-  /** Our price, or a "Free quote" link while the clinic hasn't confirmed it. Never invented. */
-  const ourPrice = (price: string) =>
-    isPlaceholder(price) ? (
-      <Link href="/book" className="link-underline font-semibold text-brand-green">
-        {t("pricesPage.freeQuote")}
-      </Link>
-    ) : (
-      <span className="font-semibold text-brand-green">{price}</span>
-    );
+  /** "Up to X%" badge, plus the clinic's own price once it is confirmed (never invented). */
+  const ourPrice = (price: string, savings: number) => (
+    <span className="inline-flex flex-col items-end gap-1">
+      {!isPlaceholder(price) && <span className="font-semibold text-brand-green">{price}</span>}
+      <span className="whitespace-nowrap rounded-full bg-brand-green px-3 py-1 text-xs font-semibold text-brand-white">
+        {t("pricesPage.savings", { percent: savings })}
+      </span>
+    </span>
+  );
 
   return (
     <>
@@ -97,7 +97,7 @@ export default async function PricesPage({ params }: Props) {
                         <span className="mt-0.5 block text-xs text-brand-muted">{t(`pricesPage.units.${row.unit}`)}</span>
                       )}
                     </th>
-                    <td className="bg-brand-green/[0.07] px-6 py-4.5 text-right">{ourPrice(row.treatment.price)}</td>
+                    <td className="bg-brand-green/[0.07] px-6 py-4.5 text-right">{ourPrice(row.treatment.price, row.savings)}</td>
                     {compareCountries.map((c) => (
                       <td key={c} className="px-6 py-4.5 text-right tabular-nums text-brand-ink/80">
                         {t("pricesPage.from", { price: euro.format(row.prices[c]) })}
@@ -120,7 +120,7 @@ export default async function PricesPage({ params }: Props) {
                 <dl className="mt-4 space-y-2 text-sm">
                   <div className="flex items-center justify-between rounded-xl bg-brand-green/[0.07] px-3 py-2">
                     <dt className="font-semibold text-brand-green">{t("pricesPage.ourClinic")}</dt>
-                    <dd>{ourPrice(row.treatment.price)}</dd>
+                    <dd>{ourPrice(row.treatment.price, row.savings)}</dd>
                   </div>
                   {compareCountries.map((c) => (
                     <div key={c} className="flex items-center justify-between px-3">

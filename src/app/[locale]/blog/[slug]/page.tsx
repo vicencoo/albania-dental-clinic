@@ -6,15 +6,17 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { Button } from "@/components/ui/Button";
 import { CTABand } from "@/components/ui/CTABand";
 import { Icon } from "@/components/ui/Icon";
-import { PageHero } from "@/components/ui/PageHero";
+import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { site, siteUrl } from "@/content/site";
 import { asLocale } from "@/lib/locale";
 import { buildMetadata, localizedUrl } from "@/lib/metadata";
 import { readingMinutes } from "@/lib/style";
 import { urlFor } from "@/sanity/client";
+import { Link } from "@/i18n/navigation";
+import { categoryLabels } from "@/sanity/categories";
 import { getPost, getPostSlugs } from "@/sanity/posts";
 
-type Props = PageProps<"/[locale]/journal/[slug]">;
+type Props = PageProps<"/[locale]/blog/[slug]">;
 
 const components: PortableTextComponents = {
   block: {
@@ -56,18 +58,20 @@ export async function generateMetadata({ params }: Props) {
   const { locale, post } = await load(params);
   return buildMetadata({
     locale,
-    path: `/journal/${post.slug}`,
+    path: `/blog/${post.slug}`,
     title: post.seoTitle || post.title,
     description: post.seoDescription || post.excerpt,
-    image: post.mainImage ? urlFor(post.mainImage).width(1200).height(630).url() : undefined,
+    type: "article",
+    publishedTime: post.publishedAt,
   });
 }
 
-export default async function JournalPostPage({ params }: Props) {
+export default async function BlogPostPage({ params }: Props) {
   const { locale, post } = await load(params);
   setRequestLocale(locale);
   const t = await getTranslations();
-  const cover = post.mainImage ? urlFor(post.mainImage).width(1600).height(900).url() : undefined;
+  // Wide, uncropped source: the full-width cover is cropped by CSS (object-cover).
+  const cover = post.mainImage ? urlFor(post.mainImage).width(2400).auto("format").url() : undefined;
   const dateFmt = new Intl.DateTimeFormat(locale, {
     day: "numeric",
     month: "long",
@@ -82,35 +86,62 @@ export default async function JournalPostPage({ params }: Props) {
         className="read-progress tricolor-line fixed inset-x-0 top-0 z-50 transform-[scaleX(0)] rounded-none"
       />
 
-      <PageHero
-        title={post.title}
-        intro={post.excerpt}
-        breadcrumbs={[
-          { label: t("nav.journal"), href: "/journal" },
-          { label: post.title },
-        ]}
-      >
-        <p className="text-xs uppercase tracking-widest text-brand-muted">
-          {t("ui.published")}{" "}
-          <time dateTime={post.publishedAt}>
-            {dateFmt.format(new Date(post.publishedAt))}
-          </time>{" "}
-          · {t("ui.minRead", { minutes: readingMinutes(post.bodyText ?? "") })}
-        </p>
-      </PageHero>
-
-      <article className="container-luxe max-w-3xl py-16 lg:py-20">
+      {/* Header: cover photo as a soft background under a white wash, title on top.
+          The wash + light blur also hides covers that are not very sharp. */}
+      <header className="relative overflow-clip bg-brand-porcelain">
         {cover && (
-          <div className="reveal-scale relative mb-12 aspect-video overflow-clip rounded-4xl bg-brand-sand">
+          <>
             <Image
               src={cover}
-              alt={post.mainImage?.alt ?? ""}
+              alt=""
               fill
-              sizes="(min-width: 768px) 48rem, 100vw"
-              className="object-cover"
+              priority
+              sizes="100vw"
+              className="scale-105 object-cover blur-[1px]"
             />
-          </div>
+            <div
+              aria-hidden
+              className="absolute inset-0 bg-linear-to-b from-brand-white/55 via-brand-white/70 to-brand-white"
+            />
+          </>
         )}
+        <div className="container-luxe relative max-w-3xl py-16 lg:py-28">
+          {/* Breadcrumb trail kept for search engines and screen readers only. */}
+          <div className="sr-only">
+            <Breadcrumbs items={[{ label: t("nav.blog"), href: "/blog" }, { label: post.title }]} />
+          </div>
+          <div className="flex items-center justify-between gap-6 text-xs uppercase tracking-[0.18em]">
+            <Link
+              href="/blog"
+              className="group inline-flex items-center gap-2 text-brand-green transition-colors hover:text-brand-ink"
+            >
+              <Icon
+                name="arrowLeft"
+                className="size-4 transition-transform duration-300 group-hover:-translate-x-1"
+              />
+              {t("ui.backToBlog")}
+            </Link>
+            {post.category && categoryLabels[post.category] && (
+              <span className="text-right text-brand-green">{categoryLabels[post.category]}</span>
+            )}
+          </div>
+          <h1 className="rise display mt-10 text-4xl text-brand-ink sm:text-5xl lg:text-6xl">{post.title}</h1>
+          <p className="rise mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-brand-muted">
+            <span className="inline-flex items-center gap-2">
+              <Icon name="calendar" className="size-4" />
+              <time dateTime={post.publishedAt}>{dateFmt.format(new Date(post.publishedAt))}</time>
+            </span>
+            <span className="inline-flex items-center gap-2">
+              <Icon name="clock" className="size-4" />
+              {t("ui.minRead", { minutes: readingMinutes(post.bodyText ?? "") })}
+            </span>
+          </p>
+        </div>
+      </header>
+
+      <article className="container-luxe max-w-3xl py-12 lg:py-16">
+        {post.excerpt && <p className="text-xl leading-relaxed text-brand-ink/75">{post.excerpt}</p>}
+        <hr className="my-10 border-brand-sand" />
         <div className="space-y-6 text-lg leading-[1.85] text-brand-ink/85">
           <PortableText value={post.body} components={components} />
         </div>
@@ -119,8 +150,8 @@ export default async function JournalPostPage({ params }: Props) {
           {t("ui.medicalNote")}
         </p>
         <div className="mt-8">
-          <Button href="/journal" variant="ghost" icon="arrowLeft">
-            {t("ui.backToJournal")}
+          <Button href="/blog" variant="ghost" leadingIcon="arrowLeft" icon={null}>
+            {t("ui.backToBlog")}
           </Button>
         </div>
       </article>
@@ -130,12 +161,12 @@ export default async function JournalPostPage({ params }: Props) {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "Article",
+          "@type": "BlogPosting",
           headline: post.title,
           description: post.excerpt,
           datePublished: post.publishedAt,
           image: cover,
-          mainEntityOfPage: localizedUrl(locale, `/journal/${post.slug}`),
+          mainEntityOfPage: localizedUrl(locale, `/blog/${post.slug}`),
           author: { "@type": "Organization", name: site.name },
           publisher: {
             "@type": "Organization",

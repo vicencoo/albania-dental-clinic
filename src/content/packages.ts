@@ -18,7 +18,7 @@ export const packages: Package[] = [
       { sq: "Konsultë dhe tomografi 3D CBCT", it: "Visita e TAC 3D CBCT", en: "Consultation and 3D CBCT scan" },
       { sq: "Planifikim digjital i ndërhyrjes", it: "Pianificazione digitale dell'intervento", en: "Digital surgical planning" },
       { sq: "Implante dhe dhëmbë fiks të përkohshëm", it: "Impianti e denti fissi provvisori", en: "Implants and fixed provisional teeth" },
-      { sq: "Qëndrim në apartamentin e klinikës (sipas disponueshmërisë)", it: "Soggiorno nell'appartamento della clinica (secondo disponibilità)", en: "Stay in the clinic's apartment (subject to availability)" },
+      { sq: "Qëndrim në një nga apartamentet e klinikës (sipas disponueshmërisë)", it: "Soggiorno in uno degli appartamenti della clinica (secondo disponibilità)", en: "Stay in one of the clinic's apartments (subject to availability)" },
       { sq: "Transport nga dhe për në aeroport", it: "Transfer da e per l'aeroporto", en: "Airport transfers, both ways" },
       { sq: "Kontrolle pas ndërhyrjes", it: "Controlli post-intervento", en: "Post-operative check-ups" },
     ],
