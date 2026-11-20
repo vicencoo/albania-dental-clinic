@@ -107,6 +107,118 @@
     outline: 2px solid var(--color-brand-leaf);
     outline-offset: 3px;
   }
+
+  /*
+   * Branded scrollbar: slim emerald pill on a transparent track.
+   * Chromium/Safari use ::-webkit-scrollbar (rounded, inset thumb). Firefox only supports the
+   * standard properties, which are kept behind @supports because Chromium ignores the
+   * ::-webkit-scrollbar styles whenever scrollbar-color is set.
+   */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    /* Transparent border + padding-box clip = a pill that floats inside the track. */
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background: linear-gradient(180deg, var(--color-brand-green), var(--color-brand-green-dark))
+      padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    border-width: 2px;
+    background: linear-gradient(180deg, var(--color-brand-leaf), var(--color-brand-green))
+      padding-box;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: var(--color-brand-green-dark) padding-box;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  /* Inner scroll areas (menus, carousels, modals): thinner, no visible track. */
+  body *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  body *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  body *::-webkit-scrollbar-thumb {
+    border-width: 2px;
+    background: rgb(91 100 97 / 0.45) padding-box;
+  }
+  body *::-webkit-scrollbar-thumb:hover {
+    background: var(--color-brand-green) padding-box;
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    html {
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-brand-green) transparent;
+    }
+    body * {
+      scrollbar-width: thin;
+      scrollbar-color: rgb(91 100 97 / 0.45) transparent;
+    }
+  }
+}
+
+/*
+ * Floating page scrollbar (<OverlayScrollbar>): on mouse/trackpad devices the native root
+ * scrollbar is hidden — it always sits in a gutter filled with the page background — and an
+ * emerald pill is drawn over the content instead. Without JS the native bar above is kept.
+ */
+@layer components {
+  html.overlay-scrollbar {
+    scrollbar-width: none;
+  }
+  html.overlay-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .overlay-scrollbar-rail {
+    display: none;
+  }
+  html.overlay-scrollbar .overlay-scrollbar-rail {
+    display: block;
+    position: fixed;
+    inset: 0 0 0 auto;
+    z-index: 70;
+    width: 14px;
+  }
+  html.overlay-scrollbar .overlay-scrollbar-rail[data-hidden="true"] {
+    display: none;
+  }
+  .overlay-scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 7px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, var(--color-brand-leaf), var(--color-brand-green));
+    box-shadow: 0 0 0 1px rgb(9 12 11 / 0.15);
+    cursor: grab;
+    touch-action: none;
+    transition:
+      width 0.2s var(--ease-luxe),
+      background 0.2s;
+    will-change: transform;
+  }
+  .overlay-scrollbar-rail:hover .overlay-scrollbar-thumb,
+  .overlay-scrollbar-rail[data-dragging="true"] .overlay-scrollbar-thumb {
+    width: 10px;
+  }
+  .overlay-scrollbar-rail[data-dragging="true"] .overlay-scrollbar-thumb {
+    cursor: grabbing;
+    background: var(--color-brand-green-dark);
+  }
+  html:has(.overlay-scrollbar-rail[data-dragging="true"]) {
+    user-select: none;
+  }
 }
 
 /* ------------------------------------------------------------------ Layout */
