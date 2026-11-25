@@ -30,7 +30,7 @@ export const pageSeo: Partial<Record<AppPath, LocalizedSeo>> = {
       title: "Albania Dental Clinic Vlorë – Implante dhe dhëmbë në një ditë",
       description:
         "Albania Dental Clinic në Vlorë: implante dentare, dhëmbë fiks në një ditë (All-on-4, All-on-6), skaner 3D dhe laborator dixhital në klinikë. Drejtuar nga Dr. Donela Dede.",
-      keywords: ["dentist Vlorë", "klinikë dentare Vlorë", "implante dentare Vlorë", 
+      keywords: ["dentist Vlorë", "klinikë dentare Vlorë", "klinika dentare Vlorë", "klinika dentare vlore", "implante dentare Vlorë", 
         "klinikë dentare Shqipëri",
         "dentist Shqipëri",
         "implante dentare",
@@ -60,6 +60,9 @@ export const pageSeo: Partial<Record<AppPath, LocalizedSeo>> = {
         "All-on-6 Albania",
         "turismo dentale Albania",
         "dentista Albania prezzi",
+        "cliniche dentali Albania",
+        "rifare i denti in Albania",
+        "sbiancamento dentale Albania",
         "corone in zirconio",
         "faccette dentali Albania",
         "dentista italiano Albania",
@@ -105,7 +108,7 @@ export const pageSeo: Partial<Record<AppPath, LocalizedSeo>> = {
     it: {
       title: "Denti fissi in un giorno in Albania – carico immediato",
       description:
-        "Un'arcata completa di denti fissi su impianti in un solo giorno: diagnosi 3D, chirurgia guidata e laboratorio interno. Scopri se sei candidato.",
+        "Rifare i denti in Albania in un giorno: arcata completa di denti fissi su impianti, TAC 3D, chirurgia guidata e laboratorio interno. Scopri se sei candidato.",
       keywords: ["denti fissi in un giorno Valona", 
         "denti fissi in un giorno",
         "denti in un giorno Albania",
@@ -115,6 +118,7 @@ export const pageSeo: Partial<Record<AppPath, LocalizedSeo>> = {
         "All-on-4",
         "All-on-6",
         "denti fissi in 24 ore",
+        "rifare i denti in Albania",
       ],
     },
     en: {
@@ -420,6 +424,8 @@ export const pageSeo: Partial<Record<AppPath, LocalizedSeo>> = {
         "Cure dentali a Valona, sul mare in Albania: piano personale, transfer dall'aeroporto e appartamenti della clinica. Impianti e denti in un giorno, in italiano.",
       keywords: ["turismo dentale Valona", "dentista Valona", 
         "turismo dentale Albania",
+        "cliniche dentali Albania",
+        "rifare i denti in Albania",
         "dentista all'estero",
         "impianti dentali all'estero",
         "curarsi i denti in Albania",
@@ -639,16 +645,19 @@ export const pageSeo: Partial<Record<AppPath, LocalizedSeo>> = {
       keywords: ["çmime dentisti Vlorë", "çmimi i implantit", "sa kushton implanti", "çmim All-on-4", "çmim kurore zirkoni", "çmim fasete", "dentist çmime"],
     },
     it: {
-      title: "Prezzi dentista in Albania – impianti, All-on-4, corone",
+      title: "Dentista Albania prezzi – costo impianti, All-on-4, corone",
       description:
         "Confronta i prezzi di impianti, All-on-4, corone in zirconio e faccette con Italia, Regno Unito e Turchia. Risparmia fino all'80%. Richiedi il preventivo.",
       keywords: ["prezzi dentista Valona", "impianti dentali Valona prezzi", 
         "prezzi dentista Albania",
+        "dentista Albania prezzi",
+        "cliniche dentali Albania prezzi",
         "quanto costa un impianto in Albania",
         "prezzo All-on-4 Albania",
         "costo impianti dentali Albania",
         "prezzo corone in zirconio",
         "prezzo faccette dentali",
+        "prezzo sbiancamento dentale Albania",
         "dentista Albania vs Italia",
       ],
     },
@@ -743,10 +752,10 @@ export const categorySeo: Record<string, LocalizedSeo> = {
       keywords: ["implante Vlorë", "implantologji", "implante dentare", "implant dentar çmim", "All-on-4", "All-on-6", "sinus lift"],
     },
     it: {
-      title: "Implantologia – impianti dentali in Albania",
+      title: "Impianti dentali in Albania – implantologia a Valona",
       description:
-        "Impianti singoli e multipli, All-on-4, All-on-6, innesto osseo e rialzo del seno mascellare, pianificati con TAC 3D e chirurgia guidata.",
-      keywords: ["impianti dentali Valona", "implantologia Albania", "impianti dentali Albania", "impianto dentale prezzo", "All-on-4", "All-on-6", "rialzo del seno"],
+        "Impianti dentali in Albania: singoli e multipli, All-on-4, All-on-6, innesto osseo e rialzo del seno, con TAC 3D e chirurgia guidata. Chiedi il costo.",
+      keywords: ["impianti dentali Valona", "implantologia Albania", "impianti dentali Albania", "costo impianti dentali Albania", "impianto dentale prezzo", "rifare i denti in Albania", "All-on-4", "All-on-6", "rialzo del seno"],
     },
     en: {
       title: "Implantology – Dental Implants in Albania",
@@ -786,7 +795,7 @@ export const categorySeo: Record<string, LocalizedSeo> = {
       title: "Estetica dentale – faccette, corone zirconio, sbiancamento",
       description:
         "Faccette, corone in zirconio, ponti e sbiancamento professionale, progettati nel nostro laboratorio per un sorriso naturale.",
-      keywords: ["estetica dentale Albania", "faccette dentali", "corone in zirconio", "sbiancamento denti", "Hollywood smile Albania"],
+      keywords: ["estetica dentale Albania", "faccette dentali", "faccette dentali Albania", "corone in zirconio", "sbiancamento denti", "sbiancamento dentale Albania", "Hollywood smile Albania"],
     },
     en: {
       title: "Cosmetic Dentistry – Veneers, Zirconia Crowns, Whitening",
@@ -1050,7 +1059,7 @@ export const treatmentSeo: Record<string, LocalizedSeo> = {
     it: {
       title: "Faccette dentali in Albania – Hollywood smile",
       description:
-        "Sottili gusci in ceramica che correggono forma, colore e piccoli spazi con una preparazione minima. Un sorriso naturale e luminoso.",
+        "Faccette dentali in Albania: sottili gusci in ceramica che correggono forma, colore e piccoli spazi con preparazione minima, per un sorriso naturale.",
       keywords: ["faccette dentali Valona", "faccette dentali Albania", "faccette in ceramica", "prezzo faccette dentali", "Hollywood smile", "faccette E-max"],
     },
     en: {
@@ -1088,10 +1097,10 @@ export const treatmentSeo: Record<string, LocalizedSeo> = {
       keywords: ["zbardhim dhëmbësh", "zbardhim profesional", "dhëmbë të bardhë", "çmim zbardhimi"],
     },
     it: {
-      title: "Sbiancamento dentale professionale",
+      title: "Sbiancamento dentale in Albania – professionale",
       description:
-        "Sbiancamento professionale che illumina il sorriso in sicurezza sotto controllo clinico.",
-      keywords: ["sbiancamento denti", "sbiancamento professionale", "denti bianchi", "prezzo sbiancamento"],
+        "Sbiancamento dentale professionale in Albania, a Valona: illumina il sorriso in sicurezza sotto controllo clinico. Chiedi un preventivo.",
+      keywords: ["sbiancamento dentale Albania", "sbiancamento denti Valona", "sbiancamento denti", "sbiancamento professionale", "denti bianchi", "prezzo sbiancamento"],
     },
     en: {
       title: "Professional Teeth Whitening",
@@ -1184,7 +1193,7 @@ export const treatmentSeo: Record<string, LocalizedSeo> = {
 
 /** Keywords added to every page in each language (brand + core searches). */
 export const baseKeywords: Record<AppLocale, string[]> = {
-  sq: ["Albania Dental Clinic", "klinikë dentare", "dentist Shqipëri", "dentist Vlorë"],
-  it: ["Albania Dental Clinic", "dentista Albania", "clinica dentale Albania", "dentista Valona"],
+  sq: ["Albania Dental Clinic", "klinikë dentare", "klinika dentare Vlorë", "dentist Shqipëri", "dentist Vlorë"],
+  it: ["Albania Dental Clinic", "dentista Albania", "clinica dentale Albania", "impianti dentali Albania", "dentista Valona"],
   en: ["Albania Dental Clinic", "dentist Albania", "dental clinic Albania", "dentist Vlore"],
 };
